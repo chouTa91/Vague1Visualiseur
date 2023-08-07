@@ -3,7 +3,7 @@
 
 <div th:fragment="fragment-db2-chargement (tirId, tableLines, typeTraitement)" id="fragment-db2-chargement">
 
-	<table th:id="${'tir' + tirId + '-' + typeTraitement + '-table'}" class="display cell-border" style="width:100%">
+	<table th:id="${'tir' + tirId + '-' + typeTraitement + '-table'}" class="table table-striped" style="width:100%">
 		<thead>
 			<tr>
 				<th scope="col">Table</th>
@@ -24,11 +24,11 @@
 			</tr>
 		</tbody>
 	</table>
-	
+
 	<script type="text/javascript" th:inline="javascript">
-			// Initialisation du JS du fragment.
-			
-			suivi.datatable.initDataTable("#tir" + [[${tirId}]] + '-'+ [[${typeTraitement}]] +'-table');
+		// Initialisation du JS du fragment.
+
+		suivi.datatable.initDataTable("#tir" + [[${ tirId }]] + '-' + [[${ typeTraitement }]] + '-table');
 
 	</script>
 

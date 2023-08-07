@@ -1,8 +1,30 @@
-
 .suivi-migration-error {
 	background: #fa7272;
 }
 
 .suivi-migration-succes {
 	background: #a4ef99;
+}
+
+.hide {
+	display: none;
+}
+
+
+.code__wrap {
+	display: flex;
+	width: 100%;
+}
+
+.code__wrap__side1 {
+
+	width: 25%;
+}
+
+.code__wrap__side2 {
+	margin: 10px;
+	width: 75%;
+}
+.menu__item{
+	cursor: pointer;
 }

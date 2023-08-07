@@ -1,61 +1,61 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<th:span th:fragment="fragment-dl1-controlefichier (dl1ControleFilesContainer)"
-	id="fragment-dl1-controlefichier">
-		
-		<div class="text-primary">
-			<span>Dernier rafraichissement des données : </span>
-			<span th:text="${dl1ControleFilesContainer.refreshDate}"></span>
-		</div>
-		
-		<div>
-			
-			<span th:classappend="${dl1ControleFilesContainer.hasMissingFile ? 'suivi-migration-error' : 'suivi-migration-succes'}">
+<th:span th:fragment="fragment-dl1-controlefichier (dl1ControleFilesContainer)" id="fragment-dl1-controlefichier">
+
+	<div class="text-primary">
+		<span>Dernier rafraichissement des données : </span>
+		<span th:text="${dl1ControleFilesContainer.refreshDate}"></span>
+	</div>
+
+	<div>
+
+		<span
+			th:classappend="${dl1ControleFilesContainer.hasMissingFile ? 'suivi-migration-error' : 'suivi-migration-succes'}">
 			<span>Total des fichiers trouvés pour DL1 :</span>
 			<span class="fw-bold" th:text="${dl1ControleFilesContainer.total}"></span>
 			<span class="fw-bold"> / </span>
 			<span class="fw-bold" th:text="${dl1ControleFilesContainer.dl1Files.size * 438}"></span>
-			</span>
-		</div>
-		
-		<br/>
-		
-		<table id="tir1-dl1-controle-fichier-table" class="display cell-border" style="width:100%">
-			<thead>
-				<tr>
-					<th scope="col">Direction</th>
-					<th scope="col">Nombre de fichiers</th>
-					<th scope="col">Fichiers manquants</th>
-					<th scope="col">Précisions</th>
-				</tr>
-			</thead>
-			<tbody id="controle-fichier-tbody">
-				<tr th:each="directionRegionale, drStats : ${dl1ControleFilesContainer.dl1Files}"
-					th:classappend="${directionRegionale.hasMissingFile ? 'table-danger' : ''}">
-					<td th:text="${directionRegionale.code}"></td>
-					<td th:text="${directionRegionale.count}"></td>
-					<td >
-						<div th:each="fichierManquant : ${directionRegionale.missingFiles}">
-							<span class="" th:text="${fichierManquant}"></span>
-						</div>
-					</td>
-					<td >
-						<div th:each="alert : ${directionRegionale.alertsMessages}">
-							<span class="" th:text="${alert}"></span>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		</span>
+	</div>
 
-		<script type="text/javascript" th:inline="javascript">
-			// Initialisation du JS du fragment.
-			suivi.dl1.subscriber.initSubscribe();
-			
-			suivi.datatable.initDataTable("#tir1-dl1-controle-fichier-table");
+	<br />
 
-		</script>
+	<table id="tir1-dl1-controle-fichier-table" class="table table-striped" style="width:100%">
+		<thead>
+			<tr>
+				<th scope="col">Direction</th>
+				<th scope="col">Nombre de fichiers</th>
+				<th scope="col">Fichiers manquants</th>
+				<th scope="col">Précisions</th>
+			</tr>
+		</thead>
+		<tbody id="controle-fichier-tbody">
+			<tr th:each="directionRegionale, drStats : ${dl1ControleFilesContainer.dl1Files}"
+				th:classappend="${directionRegionale.hasMissingFile ? 'table-danger' : ''}">
+				<td th:text="${directionRegionale.code}"></td>
+				<td th:text="${directionRegionale.count}"></td>
+				<td>
+					<div th:each="fichierManquant : ${directionRegionale.missingFiles}">
+						<span class="" th:text="${fichierManquant}"></span>
+					</div>
+				</td>
+				<td>
+					<div th:each="alert : ${directionRegionale.alertsMessages}">
+						<span class="" th:text="${alert}"></span>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script type="text/javascript" th:inline="javascript">
+		// Initialisation du JS du fragment.
+		//suivi.dl1.subscriber.initSubscribe();
+
+		suivi.datatable.initDataTable("#tir1-dl1-controle-fichier-table");
+
+	</script>
 </th:span>
 
 </html>

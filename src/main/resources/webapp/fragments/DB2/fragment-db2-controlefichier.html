@@ -1,50 +1,49 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<th:span th:fragment="fragment-db2-controlefichier (db2ControleFiles)"
-	id="fragment-db2-controlefichier">
-	
-		<div class="text-primary">
-			<span>Dernier rafraichissement des données : </span>
-			<span th:text="${db2ControleFiles.refreshDate}"></span>
-		</div>
-		
-		<div>
-		<span  th:classappend="${db2ControleFiles.count != 368 ? 'suivi-migration-error' : 'suivi-migration-succes'}">
+<th:span th:fragment="fragment-db2-controlefichier (db2ControleFiles)" id="fragment-db2-controlefichier">
+
+	<div class="text-primary">
+		<span>Dernier rafraichissement des données : </span>
+		<span th:text="${db2ControleFiles.refreshDate}"></span>
+	</div>
+
+	<div>
+		<span th:classappend="${db2ControleFiles.count != 368 ? 'suivi-migration-error' : 'suivi-migration-succes'}">
 			<span>Total des fichiers trouvés pour DB2 :</span>
 			<span class="fw-bold" th:text="${db2ControleFiles.count}"></span>
 			<span class="fw-bold"> / </span>
 			<span class="fw-bold">368</span>
 		</span>
-		</div>
-		
-		<br/>
-		
-		<table id="tir1-db2-controle-fichier-table" class="display cell-border" style="width:100%">
-			<thead>
-				<tr>
-					<th scope="col">Nombre de fichiers</th>
-					<th scope="col">Fichiers manquants</th>
-				</tr>
-			</thead>
-			<tbody id="controle-fichier-tbody">
-				<tr th:classappend="${!db2ControleFiles.missingFiles.isEmpty ? 'table-danger' : ''}">
-					<td th:text="${db2ControleFiles.count}"></td>
-					<td >
-						<div th:each="fichierManquant : ${db2ControleFiles.missingFiles}">
-							<span class="" th:text="${fichierManquant}"></span>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	
-		<script type="text/javascript" th:inline="javascript">
-			// Initialisation du JS du fragment.
-			suivi.db2.subscriber.initSubscribe();
+	</div>
 
-			suivi.datatable.initDataTableSingleRow("#tir1-db2-controle-fichier-table");
-		</script>
+	<br />
+
+	<table id="tir1-db2-controle-fichier-table" class="table table-striped" style="width:100%">
+		<thead>
+			<tr>
+				<th scope="col">Nombre de fichiers</th>
+				<th scope="col">Fichiers manquants</th>
+			</tr>
+		</thead>
+		<tbody id="controle-fichier-tbody">
+			<tr th:classappend="${!db2ControleFiles.missingFiles.isEmpty ? 'table-danger' : ''}">
+				<td th:text="${db2ControleFiles.count}"></td>
+				<td>
+					<div th:each="fichierManquant : ${db2ControleFiles.missingFiles}">
+						<span class="" th:text="${fichierManquant}"></span>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script type="text/javascript" th:inline="javascript">
+		// Initialisation du JS du fragment.
+		//suivi.db2.subscriber.initSubscribe();
+
+		suivi.datatable.initDataTableSingleRow("#tir1-db2-controle-fichier-table");
+	</script>
 
 </th:span>
 

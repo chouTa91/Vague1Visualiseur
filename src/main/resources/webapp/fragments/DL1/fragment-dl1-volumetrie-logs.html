@@ -2,52 +2,72 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <!-- Modal d'affichage des logs. -->
-<th:span th:fragment="fragment-dl1-volumetrie-logs"
-	id="fragment-dl1-volumetrie-logs">
+<th:span th:fragment="fragment-dl1-volumetrie-logs" id="fragment-dl1-volumetrie-logs">
 
-	<div class="modal fade" id="tir1-dl1-volumetrie-oracle-logs-modal"
-		tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="tir1-dl1-volumetrie-oracle-logs-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+		 data-backdrop="static" aria-hidden="true">
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">
-						Affichage des logs pour <span th:if="${tableName != null}"
-							th:text="${tableName}"></span>
+						Affichage des logs pour <span th:if="${tableName != null}" th:text="${tableName}"></span>
 					</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"
-						aria-label="Close"></button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<div th:each="log, logStats : ${logs}">
-						<span th:text="${log.fileName}" style="background-color: greenyellow"></span><br>
-						<textarea th:text="${log.content}" th:id="${'log-viewer-' + logStats.index}"></textarea>
-						<script type="text/javascript" th:inline="javascript">
-							suivi.codemirror[[${logStats.index}]] = CodeMirror.fromTextArea(document.getElementById('log-viewer-' + [[${logStats.index}]]), {
-						        readOnly: true,
-						        mode: "shell",
-						        styleActiveLine: true,
-						        theme: "3024-day",
-						        lineNumbers: true,
-						        autoRefresh: true,
-					   		});
-						</script>			
-					</div>
-					<div th:if="${#lists.isEmpty(logs)}">
-						Aucun fichier trouvé pour <span th:text="${tableName}"></span>.
+					<div class="code__wrap">
+						<div class="code__wrap__side1">
+							<ul class="list-group">
+								<li th:each="log, logStats : ${logs}"
+									class="list-group-item list-group-item-action menu__item"
+									onclick="activeLi(this)"
+									th:data-content="${log.content}"
+									th:data-index="${logStats.index}"
+									th:classappend="${logStats.index == 0 ? 'active' : ''}"
+									th:attrappend="aria-current=${logStats.index == 0 ? 'true' : 'false'}">
+									<span th:text="${log.fileName}" ></span>
+								</li>
+							</ul>
+						</div>
+						<div class="code__wrap__side2">
+							<textarea id="codemirrorElemt"></textarea>
+						</div>
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary"
-						data-bs-dismiss="modal">Fermer</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" th:inline="javascript">
-			// Initialisation du JS du fragment.
-			
-					
+		var suiviScript;
+		function activeLi(me){
+			document.querySelectorAll(".menu__item").forEach(e=>{
+				e.classList.remove('active');
+			});
+			me.classList.add('active');
+			suiviScript.getDoc().setValue(me.dataset.content);
+		}
+
+		$(document).on('show.bs.modal','#tir1-dl1-volumetrie-oracle-logs-modal', function (event) {
+			const elm = document.querySelector('#tir1-dl1-volumetrie-oracle-logs-modal .active');
+			const textArea = document.getElementById('codemirrorElemt');
+			textArea.textContent = elm.dataset.content;
+			suiviScript = CodeMirror.fromTextArea(textArea, {
+				readOnly: true,
+				mode: "shell",
+				styleActiveLine: true,
+				theme: "3024-day",
+				lineNumbers: true,
+				autoRefresh: true,
+			});
+		});
+		$(document).on('hide.bs.modal','#tir1-dl1-volumetrie-oracle-logs-modal', function (event) {
+			suiviScript.toTextArea();
+		});
+
 	</script>
 </th:span>
 
