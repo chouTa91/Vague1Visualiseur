@@ -1,0 +1,207 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 06:17:45 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P7101A_30108.ctl
+Data File:      Tab.U.P7101A.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P7101A00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P7101A, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP01A                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP01A                               NEXT     *   ;  O(") CHARACTER            
+CXAS3                                NEXT     3   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CXASS                                NEXT     3   ;  O(") CHARACTER            
+CXIN                                 NEXT     8   ;  O(") CHARACTER            
+CTOFFD                               NEXT     7   ;  O(") CHARACTER            
+NIMER1                               NEXT     6   ;  O(") CHARACTER            
+CXTCD                                NEXT     9   ;  O(") CHARACTER            
+CXPPP                                NEXT    10   ;  O(") CHARACTER            
+CXPPE                                NEXT    10   ;  O(") CHARACTER            
+DIMEC                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXRCE1                               NEXT     *   ;  O(") CHARACTER            
+LNENTP                               NEXT    40   ;  O(") CHARACTER            
+FSCOT4                               NEXT     3   ;  O(") CHARACTER            
+CDRM3R                               NEXT     5   ;  O(") CHARACTER            
+CDAR3                                NEXT     6   ;  O(") CHARACTER            
+CSRME3                               NEXT     3   ;  O(") CHARACTER            
+CDORE                                NEXT     1   ;  O(") CHARACTER            
+FSMEC                                NEXT     3   ;  O(") CHARACTER            
+CSPAP                                NEXT     1   ;  O(") CHARACTER            
+CXIDP                                NEXT    10   ;  O(") CHARACTER            
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+LLPERS                               NEXT   300   ;  O(") CHARACTER            
+
+Record 24633976: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633977: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633978: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633985: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633986: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633987: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633988: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633989: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633990: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633991: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 24633992: Rejected - Error on table P7101A.
+ORA-14400: inserted partition key does not map to any partition
+
+Specify SKIP=24633992 when continuing the load.
+The following index(es) on table P7101A were processed:
+index RSOV0200.IP7101A1 loaded successfully with 24633981 keys
+index RSOV0200.XP7101AA partition P7101A_DR_01_PART loaded successfully with 5162 keys
+index RSOV0200.XP7101AA partition P7101A_DR_12_PART loaded successfully with 710 keys
+index RSOV0200.XP7101AA partition P7101A_DR_13_PART loaded successfully with 4974 keys
+index RSOV0200.XP7101AA partition P7101A_DR_16_PART loaded successfully with 15593 keys
+index RSOV0200.XP7101AA partition P7101A_DR_17_PART loaded successfully with 6823515 keys
+index RSOV0200.XP7101AA partition P7101A_DR_20_PART loaded successfully with 3519 keys
+index RSOV0200.XP7101AA partition P7101A_DR_24_PART loaded successfully with 8812 keys
+index RSOV0200.XP7101AA partition P7101A_DR_25_PART loaded successfully with 7006 keys
+index RSOV0200.XP7101AA partition P7101A_DR_26_PART loaded successfully with 2151 keys
+index RSOV0200.XP7101AA partition P7101A_DR_27_PART loaded successfully with 3386 keys
+index RSOV0200.XP7101AA partition P7101A_DR_31_PART loaded successfully with 10623 keys
+index RSOV0200.XP7101AA partition P7101A_DR_32_PART loaded successfully with 11486277 keys
+index RSOV0200.XP7101AA partition P7101A_DR_34_PART loaded successfully with 26966 keys
+index RSOV0200.XP7101AA partition P7101A_DR_35_PART loaded successfully with 3915 keys
+index RSOV0200.XP7101AA partition P7101A_DR_39_PART loaded successfully with 1149 keys
+index RSOV0200.XP7101AA partition P7101A_DR_40_PART loaded successfully with 1839 keys
+index RSOV0200.XP7101AA partition P7101A_DR_41_PART loaded successfully with 2010 keys
+index RSOV0200.XP7101AA partition P7101A_DR_44_PART loaded successfully with 2925 keys
+index RSOV0200.XP7101AA partition P7101A_DR_46_PART loaded successfully with 16130 keys
+index RSOV0200.XP7101AA partition P7101A_DR_48_PART loaded successfully with 8612 keys
+index RSOV0200.XP7101AA partition P7101A_DR_49_PART loaded successfully with 12514 keys
+index RSOV0200.XP7101AA partition P7101A_DR_50_PART loaded successfully with 4466 keys
+index RSOV0200.XP7101AA partition P7101A_DR_51_PART loaded successfully with 5017095 keys
+index RSOV0200.XP7101AA partition P7101A_DR_56_PART loaded successfully with 5298 keys
+index RSOV0200.XP7101AA partition P7101A_DR_57_PART loaded successfully with 13580 keys
+index RSOV0200.XP7101AA partition P7101A_DR_61_PART loaded successfully with 22203 keys
+index RSOV0200.XP7101AA partition P7101A_DR_63_PART loaded successfully with 14861 keys
+index RSOV0200.XP7101AA partition P7101A_DR_65_PART loaded successfully with 1098710 keys
+index RSOV0200.XP7101AA partition P7101A_DR_66_PART loaded successfully with 513 keys
+index RSOV0200.XP7101AA partition P7101A_DR_67_PART loaded successfully with 339 keys
+index RSOV0200.XP7101AA partition P7101A_DR_68_PART loaded successfully with 2345 keys
+index RSOV0200.XP7101AA partition P7101A_DR_69_PART loaded successfully with 671 keys
+index RSOV0200.XP7101AA partition P7101A_DR_71_PART loaded successfully with 6 keys
+
+MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
+
+Table P7101A:
+  24633981 Rows successfully loaded.
+  11 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P7101A_DR_01_PART: 5162 Rows loaded.
+  Partition P7101A_DR_12_PART: 710 Rows loaded.
+  Partition P7101A_DR_13_PART: 4974 Rows loaded.
+  Partition P7101A_DR_16_PART: 15606 Rows loaded.
+  Partition P7101A_DR_17_PART: 6824540 Rows loaded.
+  Partition P7101A_DR_20_PART: 3520 Rows loaded.
+  Partition P7101A_DR_24_PART: 8813 Rows loaded.
+  Partition P7101A_DR_25_PART: 7016 Rows loaded.
+  Partition P7101A_DR_26_PART: 2151 Rows loaded.
+  Partition P7101A_DR_27_PART: 3387 Rows loaded.
+  Partition P7101A_DR_31_PART: 10625 Rows loaded.
+  Partition P7101A_DR_32_PART: 11489900 Rows loaded.
+  Partition P7101A_DR_34_PART: 26972 Rows loaded.
+  Partition P7101A_DR_35_PART: 3917 Rows loaded.
+  Partition P7101A_DR_39_PART: 1150 Rows loaded.
+  Partition P7101A_DR_40_PART: 1840 Rows loaded.
+  Partition P7101A_DR_41_PART: 2010 Rows loaded.
+  Partition P7101A_DR_44_PART: 2927 Rows loaded.
+  Partition P7101A_DR_46_PART: 16130 Rows loaded.
+  Partition P7101A_DR_48_PART: 8619 Rows loaded.
+  Partition P7101A_DR_49_PART: 12516 Rows loaded.
+  Partition P7101A_DR_50_PART: 4482 Rows loaded.
+  Partition P7101A_DR_51_PART: 5018394 Rows loaded.
+  Partition P7101A_DR_56_PART: 5298 Rows loaded.
+  Partition P7101A_DR_57_PART: 13581 Rows loaded.
+  Partition P7101A_DR_61_PART: 22204 Rows loaded.
+  Partition P7101A_DR_63_PART: 14863 Rows loaded.
+  Partition P7101A_DR_65_PART: 1098799 Rows loaded.
+  Partition P7101A_DR_66_PART: 513 Rows loaded.
+  Partition P7101A_DR_67_PART: 339 Rows loaded.
+  Partition P7101A_DR_68_PART: 2346 Rows loaded.
+  Partition P7101A_DR_69_PART: 671 Rows loaded.
+  Partition P7101A_DR_71_PART: 6 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records rejected:        11
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:    10060
+Total stream buffers loaded by SQL*Loader load thread:    30153
+
+Run began on Thu Jun 01 06:17:45 2023
+Run ended on Thu Jun 01 06:51:07 2023
+
+Elapsed time was:     00:33:21.44
+CPU time was:         00:01:51.62
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 06:17:45 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 24635167.
+
+Table P7101A:
+  24633981 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P7101A00.log
+for more information about the load.

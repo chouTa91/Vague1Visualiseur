@@ -1,0 +1,108 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 21:46:34 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P0161A_30108.ctl
+Data File:      Tab.U.P0161A.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P0161A00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P0161A, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP61A                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP61A                               NEXT     *   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CDSIR                                NEXT     9   ;  O(") CHARACTER            
+LNRS1                                NEXT    40   ;  O(") CHARACTER            
+LNIND1                               NEXT    30   ;  O(") CHARACTER            
+LNPIN                                NEXT    25   ;  O(") CHARACTER            
+CDCIV                                NEXT     5   ;  O(") CHARACTER            
+CDTIT                                NEXT     5   ;  O(") CHARACTER            
+CDSIG                                NEXT    20   ;  O(") CHARACTER            
+LZGRP                                NEXT    20   ;  O(") CHARACTER            
+CZNAE                                NEXT     5   ;  O(") CHARACTER            
+CIAPN                                NEXT     1   ;  O(") CHARACTER            
+CDCJ                                 NEXT     4   ;  O(") CHARACTER            
+CICJ                                 NEXT     1   ;  O(") CHARACTER            
+CDSCT                                NEXT     1   ;  O(") CHARACTER            
+DIENT                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFENT                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CMCES                                NEXT     2   ;  O(") CHARACTER            
+DFLIQ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+LJGLO                                NEXT    40   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+CDSIGS                               NEXT    20   ;  O(") CHARACTER            
+CSRLJ                                NEXT     1   ;  O(") CHARACTER            
+DERLJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+
+The following index(es) on table P0161A were processed:
+index RSOV0200.IP0161A1 loaded successfully with 8072905 keys
+
+Table P0161A:
+  8072905 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       8072905
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     2611
+Total stream buffers loaded by SQL*Loader load thread:     2611
+
+Run began on Wed May 31 21:46:34 2023
+Run ended on Wed May 31 21:51:34 2023
+
+Elapsed time was:     00:04:59.55
+CPU time was:         00:00:22.22
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 21:46:34 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 8072905.
+
+Table P0161A:
+  8072905 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P0161A00.log
+for more information about the load.
+
+ number of rows inserted not checked 

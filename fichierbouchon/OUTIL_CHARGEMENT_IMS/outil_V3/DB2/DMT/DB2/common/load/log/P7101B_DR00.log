@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P7101B ...
+
+Loading process of table P7101B
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	24278382 row(s) inserted
+
+
+Elapsed Time: 1083 seconds
+DARPPP1.P7101B;OK;24278382;24278382

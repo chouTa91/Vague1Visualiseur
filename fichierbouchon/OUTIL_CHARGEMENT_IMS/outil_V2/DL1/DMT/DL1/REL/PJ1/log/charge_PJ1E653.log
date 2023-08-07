@@ -1,0 +1,119 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:22:39 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/tmp/PJ1E.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PJ1E.DR65.BR3.net
+  File processing option string: "fix 122"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/tmp/charge_PJ1E653.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PJ1E, subpartition PJ1E_DR_65_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PJ1A_RSTINC                          4:11     8           CHARACTER            
+PJ1E_DIJUS                          12:19     8           CHARACTER            
+PJ1E_NSJUS                          20:23     4           ZONED DECIMAL (4, 0) 
+PJ1E_DEJUS                          24:31     8           CHARACTER            
+PJ1E_DIJUC                          32:39     8           CHARACTER            
+PJ1E_NSPIE                          40:47     8           CHARACTER            
+PJ1E_CSJUS                          48:48     1           CHARACTER            
+PJ1E_CSOFJ                          49:49     1           CHARACTER            
+PJ1E_CSNJU                          50:51     2           CHARACTER            
+PJ1E_CSCEE                          52:52     1           CHARACTER            
+PJ1E_QMGJU                          53:61     9           ZONED DECIMAL (9, 2) 
+PJ1E_CSNTP                          62:62     1           CHARACTER            
+PJ1E_NSETP                          63:73    11           CHARACTER            
+PJ1E_NSETJ                          74:82     9           CHARACTER            
+PJ1E_RSDB3                          83:84     2           ZONED DECIMAL (2, 0) 
+PJ1E_FSJUFS                         85:85     1           CHARACTER            
+PJ1E_FSJUIN                         86:86     1           CHARACTER            
+PJ1E_FSJUSA                         87:87     1           CHARACTER            
+PJ1E_FSJUPA                         88:88     1           CHARACTER            
+PJ1E_FSJURE                         89:89     1           CHARACTER            
+PJ1E_FSJURS                         90:90     1           CHARACTER            
+PJ1E_CSTRTN                         91:91     1           CHARACTER            
+PJ1E_FSPMPF                         92:92     1           CHARACTER            
+PJ1E_RSTID                         93:100     8           CHARACTER            
+PJ1E_FSMCR                        101:101     1           CHARACTER            
+PJ1E_CYGJU                        102:102     1           CHARACTER            
+PJ1E_CTRAJU                       103:103     1           CHARACTER            
+PJ1E_CSETG3                       104:104     1           CHARACTER            
+PJ1E_CSAS13                       105:106     2           ZONED DECIMAL (2, 0) 
+PJ1E_CSIRP3                       107:107     1           CHARACTER            
+PJ1E_CSRS3                        108:109     2           CHARACTER            
+PJ1E_FSEAM3                       110:110     1           CHARACTER            
+PJ1E_CSPIE                        111:111     1           CHARACTER            
+PJ1E_FILLER                       112:121    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PJ1E were processed:
+index RSOV0200.PK_PJ1E partition PJ1E_DR_65_BR3_PART loaded successfully with 1233503 keys
+
+Table PJ1E, subpartition PJ1E_DR_65_BR3_PART:
+  1233503 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       1233503
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      287
+Total stream buffers loaded by SQL*Loader load thread:      574
+
+Run began on Wed Jun 07 16:22:39 2023
+Run ended on Wed Jun 07 16:23:45 2023
+
+Elapsed time was:     00:01:05.16
+CPU time was:         00:00:06.69
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:22:39 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 1233503.
+
+Table PJ1E, subpartition PJ1E_DR_65_BR3_PART:
+  1233503 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/log/charge_PJ1E653.log
+for more information about the load.
+
+ number of rows inserted not checked 

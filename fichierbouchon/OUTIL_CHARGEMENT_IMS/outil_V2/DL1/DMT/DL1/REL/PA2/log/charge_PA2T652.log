@@ -1,0 +1,101 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:05:44 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2T.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2T.DR65.BR2.net
+  File processing option string: "fix 112"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2T652.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2T, subpartition PA2T_DR_65_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2T_CSTIDI                         12:13     2           CHARACTER            
+PA2T_ISDIVI                         14:35    22           CHARACTER            
+PA2T_GSDIVI                         36:53    18           CHARACTER            
+PA2T_FIUMA1                         54:54     1           CHARACTER            
+PA2T_DSELA1                         55:62     8           CHARACTER            
+PA2T_DSACP1                         63:70     8           CHARACTER            
+PA2T_CKSID1                         71:72     2           CHARACTER            
+PA2T_DEPOR1                         73:80     8           CHARACTER            
+PA2T_DSPOR1                         81:88     8           CHARACTER            
+PA2T_CMAFF1                         89:90     2           CHARACTER            
+PA2T_FIANR1                         91:91     1           CHARACTER            
+PA2T_FSPKDR                         92:92     1           CHARACTER            
+PA2T_FILLER                        93:101     9           CHARACTER            
+PA2T_FILLER_1                     102:111    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2T were processed:
+index RSOV0200.PA21 partition PA2T_DR_65_BR2_PART loaded successfully with 229322 keys
+index RSOV0200.PK_PA2T partition PA2T_DR_65_BR2_PART loaded successfully with 229322 keys
+
+Table PA2T, subpartition PA2T_DR_65_BR2_PART:
+  229322 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        229322
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       49
+Total stream buffers loaded by SQL*Loader load thread:       98
+
+Run began on Wed Jun 07 12:05:44 2023
+Run ended on Wed Jun 07 12:06:01 2023
+
+Elapsed time was:     00:00:16.54
+CPU time was:         00:00:00.60
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:05:44 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 229322.
+
+Table PA2T, subpartition PA2T_DR_65_BR2_PART:
+  229322 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2T652.log
+for more information about the load.
+
+ number of rows inserted not checked 

@@ -1,0 +1,158 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:23:41 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/tmp/PA4A.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA4A.DR32.BR0.net
+  File processing option string: "fix 474"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/tmp/charge_PA4A320.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA4A, partition PA4A_DR_32_PART, loaded from every logical record.
+Insert option in effect for this partition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                    3:3     1           CHARACTER            
+  (FILLER FIELD)
+PA4A_CSTIE                            4:5     2           CHARACTER            
+PA4A_NSTI                            6:11     6           CHARACTER            
+PA4A_CSCIV1                         12:16     5           CHARACTER            
+PA4A_LNTIN1                         17:26    10           CHARACTER            
+PA4A_LNTIE                          27:53    27           CHARACTER            
+PA4A_LNRES                          54:80    27           CHARACTER            
+PA4A_CSTAT                          81:81     1           CHARACTER            
+PA4A_DEPUT                          82:89     8           CHARACTER            
+PA4A_NSDTP                         90:100    11           CHARACTER            
+PA4A_DSINV                        101:108     8           CHARACTER            
+PA4A_QSPLA                        109:115     7           CHARACTER            
+PA4A_QSDNI                        116:122     7           CHARACTER            
+PA4A_CSTAL                        123:123     1           CHARACTER            
+PA4A_CSTAN                        124:124     1           CHARACTER            
+PA4A_CSAN3                        125:127     3           CHARACTER            
+PA4A_LSCOL                        128:137    10           CHARACTER            
+PA4A_CSCOF                        138:139     2           CHARACTER            
+PA4A_DIJU4                        140:147     8           CHARACTER            
+PA4A_CSSTI                        148:148     1           CHARACTER            
+PA4A_CSIDX4                       149:149     1           CHARACTER            
+PA4A_CSAST                        150:151     2           CHARACTER            
+PA4A_ISAENT                       152:166    15           CHARACTER            
+PA4A_CSTEMT                       167:167     1           CHARACTER            
+PA4A_CSEPAT                       168:171     4           CHARACTER            
+PA4A_CSAGST                       172:172     1           CHARACTER            
+PA4A_CSALRT                       173:173     1           CHARACTER            
+PA4A_CSAS9                        174:175     2           CHARACTER            
+PA4A_DICRE                        176:183     8           CHARACTER            
+PA4A_DEACR                        184:191     8           CHARACTER            
+PA4A_DEARR                        192:199     8           CHARACTER            
+PA4A_DEPCR                        200:207     8           CHARACTER            
+PA4A_DEPRR                        208:215     8           CHARACTER            
+PA4A_DDRAL                        216:223     8           CHARACTER            
+PA4A_DFRAL                        224:231     8           CHARACTER            
+PA4A_DIEFR                        232:239     8           CHARACTER            
+PA4A_DDRLJ                        240:247     8           CHARACTER            
+PA4A_DSFGC                        248:255     8           CHARACTER            
+PA4A_QSEFRT                       256:260     5           CHARACTER            
+PA4A_CSRLJT                       261:261     1           CHARACTER            
+PA4A_CSCCAT                       262:263     2           CHARACTER            
+PA4A_FSHA4A                       264:264     1           CHARACTER            
+PA4A_NSTI0                        265:269     5           CHARACTER            
+PA4A_CSRER                        270:271     2           CHARACTER            
+PA4A_CSTORF                       272:272     1           CHARACTER            
+PA4A_CSORGF                       273:274     2           CHARACTER            
+PA4A_CSSORF                       275:277     3           CHARACTER            
+PA4A_CSSECF                       278:280     3           CHARACTER            
+PA4A_CTIMP                        281:284     4           CHARACTER            
+PA4A_NSJUS4                       285:288     4           CHARACTER            
+PA4A_CZNAE4                       289:293     5           CHARACTER            
+PA4A_CSREA2                       294:294     1           CHARACTER            
+PA4A_CSREA3                       295:295     1           CHARACTER            
+PA4A_CSCMC                        296:296     1           CHARACTER            
+PA4A_LNENC                        297:345    49           CHARACTER            
+PA4A_CNAS                         346:346     1           CHARACTER            
+PA4A_CASEC                        347:347     1           CHARACTER            
+PA4A_QSACU                        348:351     4           CHARACTER            
+PA4A_LNTIL                        352:391    40           CHARACTER            
+PA4A_LNTIEN                       392:418    27           CHARACTER            
+PA4A_CDCPE                        419:419     1           CHARACTER            
+PA4A_QSESD1                       420:423     4           CHARACTER            
+PA4A_CSSMX                        424:425     2           CHARACTER            
+PA4A_CDPRCA                       426:428     3           CHARACTER            
+PA4A_DMMODA                       429:436     8           CHARACTER            
+PA4A_FIPRDA                       437:437     1           CHARACTER            
+PA4A_FIPSY                        438:438     1           CHARACTER            
+PA4A_NSADEL                       439:447     9           CHARACTER            
+PA4A_CDPUBL                       448:450     3           CHARACTER            
+PA4A_FILLER                       451:453     3           CHARACTER            
+PA4A_FILLER_1                     454:463    10           CHARACTER            
+PA4A_FILLER_2                     464:473    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA4A were processed:
+index RSOV0200.PA41 partition PA4A_DR_32_PART loaded successfully with 726340 keys
+index RSOV0200.PA43 partition PA4A_DR_32_PART loaded successfully with 638137 keys
+index RSOV0200.PK_PA4A partition PA4A_DR_32_PART loaded successfully with 726340 keys
+
+Table PA4A, partition PA4A_DR_32_PART:
+  726340 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        726340
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      329
+Total stream buffers loaded by SQL*Loader load thread:     1313
+
+Run began on Wed Jun 07 16:23:41 2023
+Run ended on Wed Jun 07 16:25:51 2023
+
+Elapsed time was:     00:02:10.06
+CPU time was:         00:00:07.89
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:23:41 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 726340.
+
+Table PA4A, partition PA4A_DR_32_PART:
+  726340 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/log/charge_PA4A320.log
+for more information about the load.
+
+ number of rows inserted not checked 

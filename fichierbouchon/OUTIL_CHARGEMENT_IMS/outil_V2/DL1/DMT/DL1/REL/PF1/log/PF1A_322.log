@@ -1,0 +1,17 @@
+Processing PF1A ...
+Temp nettoyage : 8 seconds
+
+Loading process of table PF1A
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	257456 row(s) inserted
+
+
+PF1A;OK;257456;257456
+Temps chargement : 11 seconds
+Elapsed Time: 19 seconds

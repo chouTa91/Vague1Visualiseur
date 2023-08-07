@@ -1,0 +1,126 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 00:22:38 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P0151G_30108.ctl
+Data File:      Tab.U.P0151G.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P0151G00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P0151G, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP51G                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP51G                               NEXT     *   ;  O(") CHARACTER            
+CXAS3                                NEXT     3   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CXDE                                 NEXT     1   ;  O(") CHARACTER            
+DDSIT                                NEXT     *   ;  O(") DATE YYYYMMDD        
+QKDSF                                NEXT     *   ;  O(") CHARACTER            
+CDSF                                 NEXT     1   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+
+The following index(es) on table P0151G were processed:
+index RSOV0200.IP0151G1 loaded successfully with 2766597 keys
+
+Table P0151G:
+  2766597 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P0151G_DR_01_PART: 13 Rows loaded.
+  Partition P0151G_DR_12_PART: 2 Rows loaded.
+  Partition P0151G_DR_13_PART: 12 Rows loaded.
+  Partition P0151G_DR_16_PART: 14 Rows loaded.
+  Partition P0151G_DR_17_PART: 865539 Rows loaded.
+  Partition P0151G_DR_20_PART: 13 Rows loaded.
+  Partition P0151G_DR_24_PART: 24 Rows loaded.
+  Partition P0151G_DR_25_PART: 15 Rows loaded.
+  Partition P0151G_DR_26_PART: 6 Rows loaded.
+  Partition P0151G_DR_27_PART: 7 Rows loaded.
+  Partition P0151G_DR_31_PART: 12 Rows loaded.
+  Partition P0151G_DR_32_PART: 1150136 Rows loaded.
+  Partition P0151G_DR_34_PART: 44 Rows loaded.
+  Partition P0151G_DR_35_PART: 17 Rows loaded.
+  Partition P0151G_DR_39_PART: 5 Rows loaded.
+  Partition P0151G_DR_40_PART: 3 Rows loaded.
+  Partition P0151G_DR_41_PART: 8 Rows loaded.
+  Partition P0151G_DR_44_PART: 4 Rows loaded.
+  Partition P0151G_DR_46_PART: 17 Rows loaded.
+  Partition P0151G_DR_48_PART: 11 Rows loaded.
+  Partition P0151G_DR_49_PART: 20 Rows loaded.
+  Partition P0151G_DR_50_PART: 8 Rows loaded.
+  Partition P0151G_DR_51_PART: 602286 Rows loaded.
+  Partition P0151G_DR_56_PART: 12 Rows loaded.
+  Partition P0151G_DR_57_PART: 37 Rows loaded.
+  Partition P0151G_DR_61_PART: 25 Rows loaded.
+  Partition P0151G_DR_63_PART: 30 Rows loaded.
+  Partition P0151G_DR_65_PART: 148241 Rows loaded.
+  Partition P0151G_DR_66_PART: 6 Rows loaded.
+  Partition P0151G_DR_67_PART: 10 Rows loaded.
+  Partition P0151G_DR_68_PART: 3 Rows loaded.
+  Partition P0151G_DR_69_PART: 4 Rows loaded.
+  Partition P0151G_DR_71_PART: 13 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       2766597
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      657
+Total stream buffers loaded by SQL*Loader load thread:      623
+
+Run began on Thu Jun 01 00:22:38 2023
+Run ended on Thu Jun 01 00:23:37 2023
+
+Elapsed time was:     00:00:59.65
+CPU time was:         00:00:06.11
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 00:22:38 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 2766597.
+
+Table P0151G:
+  2766597 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P0151G00.log
+for more information about the load.
+
+ number of rows inserted not checked 

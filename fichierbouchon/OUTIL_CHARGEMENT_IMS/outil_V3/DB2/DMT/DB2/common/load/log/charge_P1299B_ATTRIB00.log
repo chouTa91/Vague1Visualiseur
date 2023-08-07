@@ -1,0 +1,206 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 01:38:12 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P1299B_30108.ctl
+Data File:      Tab.U.P1299B.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P1299B_ATTRIB00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P1299B_ATTRIB, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CXASS                               FIRST     3   ;  O(") CHARACTER            
+CXALAF                               NEXT     *   ;  O(") CHARACTER            
+CXNUM                                NEXT     *   ;  O(") CHARACTER            
+DFRCR                                NEXT     *   ;  O(") DATE YYYYMMDD        
+QMODP                                NEXT     *   ;  O(") CHARACTER            
+CDSTA                                NEXT     *   ;  O(") CHARACTER            
+TXPAS                                NEXT     *   ;  O(") CHARACTER            
+DDRIS                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFDTN                                NEXT     *   ;  O(") DATE YYYYMMDD        
+PJNCD                                NEXT     *   ;  O(") CHARACTER            
+QMODC                                NEXT     *   ;  O(") CHARACTER            
+RSRPN                                NEXT     *   ;  O(") CHARACTER            
+DDRIC                                NEXT     *   ;  O(") DATE YYYYMMDD        
+REFEX                                NEXT     7   ;  O(") CHARACTER            
+QMPRA                                NEXT     *   ;  O(") CHARACTER            
+CDCSN                                NEXT     1   ;  O(") CHARACTER            
+CIVAN                                NEXT     1   ;  O(") CHARACTER            
+DEATN                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXDEN                                NEXT    17   ;  O(") CHARACTER            
+DDRDI                                NEXT     *   ;  O(") DATE YYYYMMDD        
+PJTRD                                NEXT     *   ;  O(") CHARACTER            
+DDINN                                NEXT     *   ;  O(") DATE YYYYMMDD        
+QMISN                                NEXT     *   ;  O(") CHARACTER            
+CUICP                                NEXT     1   ;  O(") CHARACTER            
+CDCRS                                NEXT     1   ;  O(") CHARACTER            
+DDRCS                                NEXT     *   ;  O(") DATE YYYYMMDD        
+TXSAS                                NEXT     *   ;  O(") CHARACTER            
+CDQAR                                NEXT     2   ;  O(") CHARACTER            
+CXGFR                                NEXT    17   ;  O(") CHARACTER            
+QMSJP                                NEXT     *   ;  O(") CHARACTER            
+CSRSN                                NEXT     *   ;  O(") CHARACTER            
+PJICP                                NEXT     *   ;  O(") CHARACTER            
+CDRGR                                NEXT     1   ;  O(") CHARACTER            
+DFCTO                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFCTN                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CDQAL                                NEXT     2   ;  O(") CHARACTER            
+QMSJN                                NEXT     *   ;  O(") CHARACTER            
+DFRIS                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CDRGN                                NEXT     1   ;  O(") CHARACTER            
+PJFIR                                NEXT     *   ;  O(") CHARACTER            
+QMSRN                                NEXT     *   ;  O(") CHARACTER            
+CDRGI                                NEXT     5   ;  O(") CHARACTER            
+CXGFG                                NEXT    17   ;  O(") CHARACTER            
+TSP                                  NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+CUISL                                NEXT     1   ;  O(") CHARACTER            
+CUDIF                                NEXT     1   ;  O(") CHARACTER            
+TXSAA                                NEXT     *   ;  O(") CHARACTER            
+PJFIL                                NEXT     *   ;  O(") CHARACTER            
+CXODN1                               NEXT     *   ;  O(") CHARACTER            
+CDAER                                NEXT     *   ;  O(") CHARACTER            
+CDRGC                                NEXT     5   ;  O(") CHARACTER            
+CMRPT                                NEXT     2   ;  O(") CHARACTER            
+DESJC                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFDEN                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFRIC                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CSODN                                NEXT     2   ;  O(") CHARACTER            
+PJISL                                NEXT     *   ;  O(") CHARACTER            
+CPROR                                NEXT    12   ;  O(") CHARACTER            
+PJDIF                                NEXT     *   ;  O(") CHARACTER            
+CMRPO                                NEXT     2   ;  O(") CHARACTER            
+CDAER1                               NEXT     *   ;  O(") CHARACTER            
+CIVCO                                NEXT     1   ;  O(") CHARACTER            
+CPROD                                NEXT    12   ;  O(") CHARACTER            
+DFRDI                                NEXT     *   ;  O(") DATE YYYYMMDD        
+QMPCA                                NEXT     *   ;  O(") CHARACTER            
+CDOPS                                NEXT     1   ;  O(") CHARACTER            
+FICAP                                NEXT     1   ;  O(") CHARACTER            
+PHTRD                                NEXT     *   ;  O(") CHARACTER            
+CDMTR                                NEXT     *   ;  O(") CHARACTER            
+CDMTN                                NEXT     *   ;  O(") CHARACTER            
+QMDSP                                NEXT     *   ;  O(") CHARACTER            
+DFJTP                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXODN                                NEXT     *   ;  O(") CHARACTER            
+QMPSA                                NEXT     *   ;  O(") CHARACTER            
+DFRCS                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CSRRDN                               NEXT     1   ;  O(") CHARACTER            
+CDNDT1                               NEXT     1   ;  O(") CHARACTER            
+QMBPJ4                               NEXT     *   ;  O(") CHARACTER            
+PJTRAA                               NEXT     *   ;  O(") CHARACTER            
+QRICC                                NEXT     *   ;  O(") CHARACTER            
+CDSPR                                NEXT     2   ;  O(") CHARACTER            
+CDSPRA                               NEXT     2   ;  O(") CHARACTER            
+NIPRN                                NEXT     *   ;  O(") CHARACTER            
+PHTRE                                NEXT     *   ;  O(") CHARACTER            
+CDSPN                                NEXT     1   ;  O(") CHARACTER            
+CDSPNA                               NEXT     1   ;  O(") CHARACTER            
+CSAHF1                               NEXT     2   ;  O(") CHARACTER            
+CSPAA1                               NEXT     3   ;  O(") CHARACTER            
+QMSRNA                               NEXT     *   ;  O(") CHARACTER            
+NSRAF                                NEXT     *   ;  O(") CHARACTER            
+TYPFIA                               NEXT     1   ;  O(") CHARACTER            
+CCOGE2                               NEXT    10   ;  O(") CHARACTER            
+CDNAB2                               NEXT     6   ;  O(") CHARACTER            
+NBMRE2                               NEXT     *   ;  O(") CHARACTER            
+CXISP                                NEXT    15   ;  O(") CHARACTER            
+CXGFF                                NEXT    17   ;  O(") CHARACTER            
+DFLIMA                               NEXT     *   ;  O(") DATE YYYYMMDD        
+FIUDO                                NEXT     1   ;  O(") CHARACTER            
+FIUEX                                NEXT     1   ;  O(") CHARACTER            
+NBJEC                                NEXT     *   ;  O(") CHARACTER            
+FIUACC                               NEXT     1   ;  O(") CHARACTER            
+CDDSD                                NEXT     *   ;  O(") CHARACTER            
+QMAJS                                NEXT     *   ;  O(") CHARACTER            
+FIAA4                                NEXT     1   ;  O(") CHARACTER            
+PSAST                                NEXT     *   ;  O(") CHARACTER            
+TSCRS                                NEXT     *   ;  O(") CHARACTER            
+PSJFC                                NEXT     *   ;  O(") CHARACTER            
+FSADG2                               NEXT     1   ;  O(") CHARACTER            
+CSDTP                                NEXT     *   ;  O(") CHARACTER            
+QMAJSI                               NEXT     *   ;  O(") CHARACTER            
+QMAJSR                               NEXT     *   ;  O(") CHARACTER            
+CUARC                                NEXT     1   ;  O(") CHARACTER            
+DDARC                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFARC                                NEXT     *   ;  O(") DATE YYYYMMDD        
+PJARC                                NEXT     *   ;  O(") CHARACTER            
+FSXSJ2                               NEXT     1   ;  O(") CHARACTER            
+
+The following index(es) on table P1299B_ATTRIB were processed:
+index RSOV0200.IP1299B1 partition P1299B_ATTRIB_DR_17_PART loaded successfully with 1831220 keys
+index RSOV0200.IP1299B1 partition P1299B_ATTRIB_DR_32_PART loaded successfully with 2671139 keys
+index RSOV0200.IP1299B1 partition P1299B_ATTRIB_DR_51_PART loaded successfully with 1294943 keys
+index RSOV0200.IP1299B1 partition P1299B_ATTRIB_DR_65_PART loaded successfully with 397247 keys
+index RSOV0200.UP1299B1 partition P1299B_ATTRIB_DR_17_PART loaded successfully with 1831220 keys
+index RSOV0200.UP1299B1 partition P1299B_ATTRIB_DR_32_PART loaded successfully with 2671139 keys
+index RSOV0200.UP1299B1 partition P1299B_ATTRIB_DR_51_PART loaded successfully with 1294943 keys
+index RSOV0200.UP1299B1 partition P1299B_ATTRIB_DR_65_PART loaded successfully with 397247 keys
+
+Table P1299B_ATTRIB:
+  6194549 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P1299B_ATTRIB_DR_17_PART: 1831220 Rows loaded.
+  Partition P1299B_ATTRIB_DR_32_PART: 2671139 Rows loaded.
+  Partition P1299B_ATTRIB_DR_51_PART: 1294943 Rows loaded.
+  Partition P1299B_ATTRIB_DR_65_PART: 397247 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       6194549
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     3964
+Total stream buffers loaded by SQL*Loader load thread:     7927
+
+Run began on Thu Jun 01 01:38:12 2023
+Run ended on Thu Jun 01 01:44:12 2023
+
+Elapsed time was:     00:06:00.03
+CPU time was:         00:01:26.55
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 01:38:12 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 6194549.
+
+Table P1299B_ATTRIB:
+  6194549 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P1299B_ATTRIB00.log
+for more information about the load.
+
+ number of rows inserted not checked 

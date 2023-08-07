@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P0404P ...
+
+Loading process of table P0404P
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	91188 row(s) inserted
+
+
+Elapsed Time: 9 seconds
+DARPPP1.P0404P;OK;91188;91188

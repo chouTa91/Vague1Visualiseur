@@ -1,0 +1,115 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 13:22:14 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2I.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2I.DR32.BR2.net
+  File processing option string: "fix 162"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2I322.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2I, subpartition PA2I_DR_32_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2I_CSTPR                          12:12     1           CHARACTER            
+PA2I_DDPER                          13:20     8           CHARACTER            
+PA2I_DFPER                          21:28     8           CHARACTER            
+PA2I_CSOSP                          29:29     1           CHARACTER            
+PA2I_CSNPE                          30:31     2           CHARACTER            
+PA2I_CSMME1                         32:32     1           CHARACTER            
+PA2I_CSCER                          33:33     1           CHARACTER            
+PA2I_FSHA2I                         34:34     1           CHARACTER            
+PA2I_PSHARD                         35:37     3           CHARACTER            
+PA2I_PSCACI                         38:40     3           CHARACTER            
+PA2I_PSCACG                         41:43     3           CHARACTER            
+PA2I_PSJSD                          44:45     2           CHARACTER            
+PA2I_CSDMS                          46:46     1           CHARACTER            
+PA2I_QMBARD                         47:53     7           ZONED DECIMAL (7, 2) 
+PA2I_DIPER                          54:61     8           CHARACTER            
+PA2I_LNENT                          62:88    27           CHARACTER            
+PA2I_CSMDEC                         89:89     1           CHARACTER            
+PA2I_FSPJUS                         90:90     1           CHARACTER            
+PA2I_DIJUSP                         91:98     8           CHARACTER            
+PA2I_CSOSP4                         99:99     1           CHARACTER            
+PA2I_CSITT1                       100:100     1           CHARACTER            
+PA2I_CYBARD                       101:101     1           CHARACTER            
+PA2I_CSFRSB                       102:102     1           CHARACTER            
+PA2I_FILLER                       103:111     9           CHARACTER            
+PA2I_FILLER_1                     112:121    10           CHARACTER            
+PA2I_FILLER_2                     122:131    10           CHARACTER            
+PA2I_FILLER_3                     132:141    10           CHARACTER            
+PA2I_FILLER_4                     142:151    10           CHARACTER            
+PA2I_FILLER_5                     152:161    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2I were processed:
+index RSOV0200.PK_PA2I partition PA2I_DR_32_BR2_PART loaded successfully with 3466892 keys
+
+Table PA2I, subpartition PA2I_DR_32_BR2_PART:
+  3466892 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       3466892
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     1071
+Total stream buffers loaded by SQL*Loader load thread:     1072
+
+Run began on Wed Jun 07 13:22:14 2023
+Run ended on Wed Jun 07 13:25:36 2023
+
+Elapsed time was:     00:03:22.00
+CPU time was:         00:00:15.03
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 13:22:14 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 3466892.
+
+Table PA2I, subpartition PA2I_DR_32_BR2_PART:
+  3466892 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2I322.log
+for more information about the load.
+
+ number of rows inserted not checked 

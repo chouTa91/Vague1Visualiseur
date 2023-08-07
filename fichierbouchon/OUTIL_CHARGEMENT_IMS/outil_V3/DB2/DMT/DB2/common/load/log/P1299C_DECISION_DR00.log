@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P1299C_DECISION ...
+
+Loading process of table P1299C_DECISION
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	12289970 row(s) inserted
+
+
+Elapsed Time: 400 seconds
+DARPPP1.P1299C_DECISION;OK;12289970;12289970

@@ -1,0 +1,17 @@
+Processing PI2C ...
+Temp nettoyage : 83 seconds
+
+Loading process of table PI2C
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	2962373 row(s) inserted
+
+
+PI2C;OK;2962373;2962373
+Temps chargement : 48 seconds
+Elapsed Time: 131 seconds

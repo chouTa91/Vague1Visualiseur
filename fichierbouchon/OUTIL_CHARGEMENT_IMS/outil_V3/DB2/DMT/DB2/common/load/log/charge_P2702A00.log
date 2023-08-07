@@ -1,0 +1,84 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 01:51:12 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P2702A_30108.ctl
+Data File:      Tab.U.P2702A.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P2702A00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P2702A, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP02A                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP02A                               NEXT     *   ;  O(") CHARACTER            
+CXASS                                NEXT     3   ;  O(") CHARACTER            
+NSDST                                NEXT     8   ;  O(") CHARACTER            
+CXMODC                               NEXT     4   ;  O(") CHARACTER            
+DICREC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HICREC                               NEXT     *   ;  O(") CHARACTER            
+CIREEM                               NEXT     *   ;  O(") CHARACTER            
+NSFICN                               NEXT     *   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CETATC                               NEXT     1   ;  O(") CHARACTER            
+CEMEDI                               NEXT     2   ;  O(") CHARACTER            
+DEDITC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HSEDIC                               NEXT     *   ;  O(") CHARACTER            
+CXDRC                                NEXT     2   ;  O(") CHARACTER            
+LNDRC                                NEXT    27   ;  O(") CHARACTER            
+CXASAC                               NEXT     2   ;  O(") CHARACTER            
+LNASAC                               NEXT    27   ;  O(") CHARACTER            
+CXSITE                               NEXT     3   ;  O(") CHARACTER            
+LNSITE                               NEXT    27   ;  O(") CHARACTER            
+CXALEC                               NEXT     5   ;  O(") CHARACTER            
+LNALEC                               NEXT    27   ;  O(") CHARACTER            
+DEREJC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HIREJC                               NEXT     *   ;  O(") CHARACTER            
+CMREJC                               NEXT     4   ;  O(") CHARACTER            
+DASUPC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HASUPC                               NEXT     *   ;  O(") CHARACTER            
+CMSUPC                               NEXT     2   ;  O(") CHARACTER            
+DEDISC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HIDISC                               NEXT     *   ;  O(") CHARACTER            
+DENDIC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HINDIC                               NEXT     *   ;  O(") CHARACTER            
+CMNDIC                               NEXT     2   ;  O(") CHARACTER            
+DDATTC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HDATTC                               NEXT     *   ;  O(") CHARACTER            
+CDRECO                               NEXT     1   ;  O(") CHARACTER            
+NIRECO                               NEXT    16   ;  O(") CHARACTER            
+CXALAO                               NEXT     *   ;  O(") CHARACTER            
+CXGED                                NEXT    16   ;  O(") CHARACTER            
+CXTSCE                               NEXT    17   ;  O(") CHARACTER            
+CCMESC                               NEXT     4   ;  O(") CHARACTER            
+CSDST                                NEXT     1   ;  O(") CHARACTER            
+
+SQL*Loader-926: OCI error while executing delete/truncate (due to REPLACE/TRUNCATE keyword) for table P2702A
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS'
+
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 01:51:12 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct

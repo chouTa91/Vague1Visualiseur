@@ -1,0 +1,118 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 15:45:56 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/PK1B.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PK1B.DR65.BR3.net
+  File processing option string: "fix 132"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/charge_PK1B653.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PK1B, subpartition PK1B_DR_65_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PK1A_RSIN                            4:11     8           CHARACTER            
+PK1B_RSEQ                           12:14     3           CHARACTER            
+PK1B_CSDOS                          15:15     1           CHARACTER            
+PK1B_CSTEQ                          16:17     2           CHARACTER            
+PK1B_DDSUI                          18:25     8           CHARACTER            
+PK1B_DFRE                           26:33     8           CHARACTER            
+PK1B_CSEDO                          34:35     2           CHARACTER            
+PK1B_CSESD                          36:37     2           CHARACTER            
+PK1B_CSESD1                         38:39     2           CHARACTER            
+PK1B_QSDPC                          40:40     1           CHARACTER            
+PK1B_RSODO                          41:51    11           CHARACTER            
+PK1B_CSAN5                          52:54     3           CHARACTER            
+PK1B_NSARC                          55:66    12           CHARACTER            
+PK1B_NSACT1                         67:68     2           CHARACTER            
+PK1B_QSDPC1                         69:69     1           CHARACTER            
+PK1B_NSACT8                         70:71     2           CHARACTER            
+PK1B_CSLDS                          72:77     6           CHARACTER            
+PK1B_NSACTD                         78:79     2           CHARACTER            
+PK1B_FILLER                         80:91    12           CHARACTER            
+PK1B_CSPAD                          92:92     1           CHARACTER            
+PK1B_FSPA1                          93:93     1           CHARACTER            
+PK1B_FSPA2                          94:94     1           CHARACTER            
+PK1B_QSIPI                          95:95     1           CHARACTER            
+PK1B_DSDST                         96:103     8           CHARACTER            
+PK1B_GSOSC6                       104:109     6           CHARACTER            
+PK1B_FSIPI                        110:110     1           CHARACTER            
+PK1B_FSDRC                        111:111     1           CHARACTER            
+PK1B_NSACTP                       112:113     2           CHARACTER            
+PK1B_RSEQT                        114:116     3           CHARACTER            
+PK1B_NSACTT                       117:118     2           CHARACTER            
+PK1B_NSACTA                       119:120     2           CHARACTER            
+PK1B_DFECDA                       121:128     8           CHARACTER            
+PK1B_FILLER_1                     129:131     3           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PK1B were processed:
+index RSOV0200.PK_PK1B partition PK1B_DR_65_BR3_PART loaded successfully with 798930 keys
+
+Table PK1B, subpartition PK1B_DR_65_BR3_PART:
+  798930 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        798930
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      201
+Total stream buffers loaded by SQL*Loader load thread:      402
+
+Run began on Wed Jun 07 15:45:56 2023
+Run ended on Wed Jun 07 15:46:40 2023
+
+Elapsed time was:     00:00:43.88
+CPU time was:         00:00:03.80
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 15:45:56 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 798930.
+
+Table PK1B, subpartition PK1B_DR_65_BR3_PART:
+  798930 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/log/charge_PK1B653.log
+for more information about the load.
+
+ number of rows inserted not checked 

@@ -1,0 +1,142 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:05:19 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2Q.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2Q.DR65.BR2.net
+  File processing option string: "fix 254"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2Q652.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2Q, subpartition PA2Q_DR_65_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2P_RSF3                           12:13     2           CHARACTER            
+PA2Q_NSSTA                          14:15     2           CHARACTER            
+PA2Q_RSTI9                          16:23     8           CHARACTER            
+PA2Q_NSTOF1                         24:26     3           CHARACTER            
+PA2Q_ISAIS                          27:31     5           CHARACTER            
+PA2Q_CSMFR                          32:33     2           CHARACTER            
+PA2Q_CSTME                          34:35     2           CHARACTER            
+PA2Q_CSSTS                          36:36     1           CHARACTER            
+PA2Q_CSSTG                          37:37     1           CHARACTER            
+PA2Q_DDSTF                          38:45     8           CHARACTER            
+PA2Q_DFSTF                          46:53     8           CHARACTER            
+PA2Q_PSJFR                          54:55     2           CHARACTER            
+PA2Q_PSMFR                          56:58     3           CHARACTER            
+PA2Q_QMSTA                          59:63     5           CHARACTER            
+PA2Q_QMTFR                          64:66     3           CHARACTER            
+PA2Q_PSTFR                          67:70     4           CHARACTER            
+PA2Q_PSHFR1                         71:72     2           CHARACTER            
+PA2Q_CSEFS                          73:73     1           CHARACTER            
+PA2Q_CSCOF1                         74:75     2           CHARACTER            
+PA2Q_CSOF3                          76:76     1           CHARACTER            
+PA2Q_CSFFN1                         77:78     2           CHARACTER            
+PA2Q_CSROM7                         79:83     5           CHARACTER            
+PA2Q_CSCFF1                         84:85     2           CHARACTER            
+PA2Q_CSJUR1                         86:86     1           CHARACTER            
+PA2Q_CSFFS                          87:89     3           CHARACTER            
+PA2Q_FSMRE                          90:90     1           CHARACTER            
+PA2Q_FSMNT                          91:91     1           CHARACTER            
+PA2Q_FSSEN                          92:92     1           CHARACTER            
+PA2Q_FSFSE2                         93:93     1           CHARACTER            
+PA2Q_DDSTF2                        94:101     8           CHARACTER            
+PA2Q_DMSTA                        102:109     8           CHARACTER            
+PA2Q_LNORG                        110:139    30           CHARACTER            
+PA2Q_LSSTA1                       140:169    30           CHARACTER            
+PA2Q_CSNCF                        170:176     7           CHARACTER            
+PA2Q_CSCFM                        177:177     1           CHARACTER            
+PA2Q_CSTFR3                       178:178     1           CHARACTER            
+PA2Q_RSEQ9                        179:181     3           CHARACTER            
+PA2Q_RSEQ10                       182:184     3           CHARACTER            
+PA2Q_CSNDD5                       185:186     2           CHARACTER            
+PA2Q_CSIST                        187:187     1           CHARACTER            
+PA2Q_CSIST1                       188:188     1           CHARACTER            
+PA2Q_RSOD13                       189:191     3           CHARACTER            
+PA2Q_CSOSF1                       192:192     1           CHARACTER            
+PA2Q_CSED2                        193:193     1           CHARACTER            
+PA2Q_CYTFR                        194:194     1           CHARACTER            
+PA2Q_CYSTA                        195:195     1           CHARACTER            
+PA2Q_LLSTA                        196:210    15           CHARACTER            
+PA2Q_CNIVP                        211:212     2           CHARACTER            
+PA2Q_CRCNA                        213:213     1           CHARACTER            
+PA2Q_CSFOP                        214:215     2           CHARACTER            
+PA2Q_FFPST                        216:216     1           CHARACTER            
+PA2Q_CDABSA                       217:218     2           CHARACTER            
+PA2Q_FICPC                        219:219     1           CHARACTER            
+PA2Q_FILLER                       220:229    10           CHARACTER            
+PA2Q_FILLER_1                     230:239    10           CHARACTER            
+PA2Q_FILLER_2                     240:253    14           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2Q were processed:
+index RSOV0200.PK_PA2Q partition PA2Q_DR_65_BR2_PART loaded successfully with 17434 keys
+
+Table PA2Q, subpartition PA2Q_DR_65_BR2_PART:
+  17434 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         17434
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        5
+Total stream buffers loaded by SQL*Loader load thread:       16
+
+Run began on Wed Jun 07 12:05:19 2023
+Run ended on Wed Jun 07 12:05:21 2023
+
+Elapsed time was:     00:00:01.91
+CPU time was:         00:00:00.19
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:05:19 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 17434.
+
+Table PA2Q, subpartition PA2Q_DR_65_BR2_PART:
+  17434 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2Q652.log
+for more information about the load.
+
+ number of rows inserted not checked 

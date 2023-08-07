@@ -1,0 +1,11 @@
+Convert PD2M11 with cobol program CNV-PD2M11 using conv table-297-to-P1
+Target DB set to 'ORACLE'
+NL_Protector set to '@%@!'
+directing outputs to /pdt/CAPGEMINI/COPY_FROM_NAS_V2/DB2_LINUXDATA/
+Data file format NAS !
+nb recs read   : 10030742 
+nb recs written: 10030742 
+Max input  rec Len: 3181 
+Max Output rec Len(including LF): 6976 
+Elapsed Time: 2585 seconds
+DARPPP1.PD2M11;OK;10030742;10030742

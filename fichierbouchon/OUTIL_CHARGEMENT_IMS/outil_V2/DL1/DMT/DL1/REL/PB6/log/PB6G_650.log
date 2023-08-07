@@ -1,0 +1,17 @@
+Processing PB6G ...
+Temp nettoyage : 1 seconds
+
+Loading process of table PB6G
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	4504 row(s) inserted
+
+
+PB6G;OK;4504;4504
+Temps chargement : 1 seconds
+Elapsed Time: 2 seconds

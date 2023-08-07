@@ -1,0 +1,416 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 00:32:36 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P0151S_30108.ctl
+Data File:      Tab.U.P0151S.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P0151S00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P0151S, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP51S                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP51S                               NEXT     *   ;  O(") CHARACTER            
+CXAS3                                NEXT     3   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CDTIDJ                               NEXT     2   ;  O(") CHARACTER            
+CXASS                                NEXT     3   ;  O(") CHARACTER            
+CXIN                                 NEXT     8   ;  O(") CHARACTER            
+ISDIVJ                               NEXT    20   ;  O(") CHARACTER            
+FIHST                                NEXT     1   ;  O(") CHARACTER            
+CDANT                                NEXT     3   ;  O(") CHARACTER            
+CDDPT                                NEXT     2   ;  O(") CHARACTER            
+CDCOM                                NEXT     3   ;  O(") CHARACTER            
+CDSUB                                NEXT     1   ;  O(") CHARACTER            
+CXALE                                NEXT     5   ;  O(") CHARACTER            
+AOPOS                                NEXT     5   ;  O(") CHARACTER            
+DDASS                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFASS                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CKENC                                NEXT     3   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+CKNIR                                NEXT     *   ;  O(") CHARACTER            
+CDSTN                                NEXT     *   ;  O(") CHARACTER            
+CDRDB                                NEXT     2   ;  O(") CHARACTER            
+DIVER                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CDONI                                NEXT     *   ;  O(") CHARACTER            
+FITRE                                NEXT     1   ;  O(") CHARACTER            
+FITRN                                NEXT     1   ;  O(") CHARACTER            
+DETRN                                NEXT     *   ;  O(") DATE YYYYMMDD        
+
+Record 7086652: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086656: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086657: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086658: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086659: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086660: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086661: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086663: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086664: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086665: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 7086666: Rejected - Error on table P0151S.
+ORA-14400: inserted partition key does not map to any partition
+
+Specify SKIP=7086666 when continuing the load.
+The following index(es) on table P0151S were processed:
+index RSOV0200.IP0151S1 loaded successfully with 7086655 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_01_PART loaded successfully with 84562 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_12_PART loaded successfully with 13842 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_13_PART loaded successfully with 56641 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_16_PART loaded successfully with 37174 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_17_PART loaded successfully with 1500281 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_20_PART loaded successfully with 36280 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_24_PART loaded successfully with 74826 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_25_PART loaded successfully with 33215 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_26_PART loaded successfully with 16018 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_27_PART loaded successfully with 60599 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_31_PART loaded successfully with 75639 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_32_PART loaded successfully with 2831810 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_34_PART loaded successfully with 151762 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_35_PART loaded successfully with 41907 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_39_PART loaded successfully with 36958 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_40_PART loaded successfully with 18569 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_41_PART loaded successfully with 20440 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_44_PART loaded successfully with 27074 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_46_PART loaded successfully with 119690 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_48_PART loaded successfully with 81762 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_49_PART loaded successfully with 35664 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_50_PART loaded successfully with 40182 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_51_PART loaded successfully with 1065123 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_56_PART loaded successfully with 43455 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_57_PART loaded successfully with 58823 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_61_PART loaded successfully with 39243 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_63_PART loaded successfully with 78879 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_65_PART loaded successfully with 360261 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_66_PART loaded successfully with 11323 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_67_PART loaded successfully with 6997 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_68_PART loaded successfully with 23779 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_69_PART loaded successfully with 3021 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_70_PART loaded successfully with 137 keys
+index RSOV0200.TP0151S1 partition P0151S_DR_71_PART loaded successfully with 719 keys
+index RSOV0200.XP0151SB partition P0151S_DR_01_PART loaded successfully with 84562 keys
+index RSOV0200.XP0151SB partition P0151S_DR_12_PART loaded successfully with 13842 keys
+index RSOV0200.XP0151SB partition P0151S_DR_13_PART loaded successfully with 56641 keys
+index RSOV0200.XP0151SB partition P0151S_DR_16_PART loaded successfully with 37174 keys
+index RSOV0200.XP0151SB partition P0151S_DR_17_PART loaded successfully with 1500281 keys
+index RSOV0200.XP0151SB partition P0151S_DR_20_PART loaded successfully with 36280 keys
+index RSOV0200.XP0151SB partition P0151S_DR_24_PART loaded successfully with 74826 keys
+index RSOV0200.XP0151SB partition P0151S_DR_25_PART loaded successfully with 33215 keys
+index RSOV0200.XP0151SB partition P0151S_DR_26_PART loaded successfully with 16018 keys
+index RSOV0200.XP0151SB partition P0151S_DR_27_PART loaded successfully with 60599 keys
+index RSOV0200.XP0151SB partition P0151S_DR_31_PART loaded successfully with 75639 keys
+index RSOV0200.XP0151SB partition P0151S_DR_32_PART loaded successfully with 2831810 keys
+index RSOV0200.XP0151SB partition P0151S_DR_34_PART loaded successfully with 151762 keys
+index RSOV0200.XP0151SB partition P0151S_DR_35_PART loaded successfully with 41907 keys
+index RSOV0200.XP0151SB partition P0151S_DR_39_PART loaded successfully with 36958 keys
+index RSOV0200.XP0151SB partition P0151S_DR_40_PART loaded successfully with 18569 keys
+index RSOV0200.XP0151SB partition P0151S_DR_41_PART loaded successfully with 20440 keys
+index RSOV0200.XP0151SB partition P0151S_DR_44_PART loaded successfully with 27074 keys
+index RSOV0200.XP0151SB partition P0151S_DR_46_PART loaded successfully with 119690 keys
+index RSOV0200.XP0151SB partition P0151S_DR_48_PART loaded successfully with 81762 keys
+index RSOV0200.XP0151SB partition P0151S_DR_49_PART loaded successfully with 35664 keys
+index RSOV0200.XP0151SB partition P0151S_DR_50_PART loaded successfully with 40182 keys
+index RSOV0200.XP0151SB partition P0151S_DR_51_PART loaded successfully with 1065123 keys
+index RSOV0200.XP0151SB partition P0151S_DR_56_PART loaded successfully with 43455 keys
+index RSOV0200.XP0151SB partition P0151S_DR_57_PART loaded successfully with 58823 keys
+index RSOV0200.XP0151SB partition P0151S_DR_61_PART loaded successfully with 39243 keys
+index RSOV0200.XP0151SB partition P0151S_DR_63_PART loaded successfully with 78879 keys
+index RSOV0200.XP0151SB partition P0151S_DR_65_PART loaded successfully with 360261 keys
+index RSOV0200.XP0151SB partition P0151S_DR_66_PART loaded successfully with 11323 keys
+index RSOV0200.XP0151SB partition P0151S_DR_67_PART loaded successfully with 6997 keys
+index RSOV0200.XP0151SB partition P0151S_DR_68_PART loaded successfully with 23779 keys
+index RSOV0200.XP0151SB partition P0151S_DR_69_PART loaded successfully with 3021 keys
+index RSOV0200.XP0151SB partition P0151S_DR_70_PART loaded successfully with 137 keys
+index RSOV0200.XP0151SB partition P0151S_DR_71_PART loaded successfully with 719 keys
+index RSOV0200.XP0151SD partition P0151S_DR_01_PART loaded successfully with 84562 keys
+index RSOV0200.XP0151SD partition P0151S_DR_12_PART loaded successfully with 13842 keys
+index RSOV0200.XP0151SD partition P0151S_DR_13_PART loaded successfully with 56641 keys
+index RSOV0200.XP0151SD partition P0151S_DR_16_PART loaded successfully with 37174 keys
+index RSOV0200.XP0151SD partition P0151S_DR_17_PART loaded successfully with 1500281 keys
+index RSOV0200.XP0151SD partition P0151S_DR_20_PART loaded successfully with 36280 keys
+index RSOV0200.XP0151SD partition P0151S_DR_24_PART loaded successfully with 74826 keys
+index RSOV0200.XP0151SD partition P0151S_DR_25_PART loaded successfully with 33215 keys
+index RSOV0200.XP0151SD partition P0151S_DR_26_PART loaded successfully with 16018 keys
+index RSOV0200.XP0151SD partition P0151S_DR_27_PART loaded successfully with 60599 keys
+index RSOV0200.XP0151SD partition P0151S_DR_31_PART loaded successfully with 75639 keys
+index RSOV0200.XP0151SD partition P0151S_DR_32_PART loaded successfully with 2831810 keys
+index RSOV0200.XP0151SD partition P0151S_DR_34_PART loaded successfully with 151762 keys
+index RSOV0200.XP0151SD partition P0151S_DR_35_PART loaded successfully with 41907 keys
+index RSOV0200.XP0151SD partition P0151S_DR_39_PART loaded successfully with 36958 keys
+index RSOV0200.XP0151SD partition P0151S_DR_40_PART loaded successfully with 18569 keys
+index RSOV0200.XP0151SD partition P0151S_DR_41_PART loaded successfully with 20440 keys
+index RSOV0200.XP0151SD partition P0151S_DR_44_PART loaded successfully with 27074 keys
+index RSOV0200.XP0151SD partition P0151S_DR_46_PART loaded successfully with 119690 keys
+index RSOV0200.XP0151SD partition P0151S_DR_48_PART loaded successfully with 81762 keys
+index RSOV0200.XP0151SD partition P0151S_DR_49_PART loaded successfully with 35664 keys
+index RSOV0200.XP0151SD partition P0151S_DR_50_PART loaded successfully with 40182 keys
+index RSOV0200.XP0151SD partition P0151S_DR_51_PART loaded successfully with 1065123 keys
+index RSOV0200.XP0151SD partition P0151S_DR_56_PART loaded successfully with 43455 keys
+index RSOV0200.XP0151SD partition P0151S_DR_57_PART loaded successfully with 58823 keys
+index RSOV0200.XP0151SD partition P0151S_DR_61_PART loaded successfully with 39243 keys
+index RSOV0200.XP0151SD partition P0151S_DR_63_PART loaded successfully with 78879 keys
+index RSOV0200.XP0151SD partition P0151S_DR_65_PART loaded successfully with 360261 keys
+index RSOV0200.XP0151SD partition P0151S_DR_66_PART loaded successfully with 11323 keys
+index RSOV0200.XP0151SD partition P0151S_DR_67_PART loaded successfully with 6997 keys
+index RSOV0200.XP0151SD partition P0151S_DR_68_PART loaded successfully with 23779 keys
+index RSOV0200.XP0151SD partition P0151S_DR_69_PART loaded successfully with 3021 keys
+index RSOV0200.XP0151SD partition P0151S_DR_70_PART loaded successfully with 137 keys
+index RSOV0200.XP0151SD partition P0151S_DR_71_PART loaded successfully with 719 keys
+index RSOV0200.XP0151SE partition P0151S_DR_01_PART loaded successfully with 84562 keys
+index RSOV0200.XP0151SE partition P0151S_DR_12_PART loaded successfully with 13842 keys
+index RSOV0200.XP0151SE partition P0151S_DR_13_PART loaded successfully with 56641 keys
+index RSOV0200.XP0151SE partition P0151S_DR_16_PART loaded successfully with 37174 keys
+index RSOV0200.XP0151SE partition P0151S_DR_17_PART loaded successfully with 1500281 keys
+index RSOV0200.XP0151SE partition P0151S_DR_20_PART loaded successfully with 36280 keys
+index RSOV0200.XP0151SE partition P0151S_DR_24_PART loaded successfully with 74826 keys
+index RSOV0200.XP0151SE partition P0151S_DR_25_PART loaded successfully with 33215 keys
+index RSOV0200.XP0151SE partition P0151S_DR_26_PART loaded successfully with 16018 keys
+index RSOV0200.XP0151SE partition P0151S_DR_27_PART loaded successfully with 60599 keys
+index RSOV0200.XP0151SE partition P0151S_DR_31_PART loaded successfully with 75639 keys
+index RSOV0200.XP0151SE partition P0151S_DR_32_PART loaded successfully with 2831810 keys
+index RSOV0200.XP0151SE partition P0151S_DR_34_PART loaded successfully with 151762 keys
+index RSOV0200.XP0151SE partition P0151S_DR_35_PART loaded successfully with 41907 keys
+index RSOV0200.XP0151SE partition P0151S_DR_39_PART loaded successfully with 36958 keys
+index RSOV0200.XP0151SE partition P0151S_DR_40_PART loaded successfully with 18569 keys
+index RSOV0200.XP0151SE partition P0151S_DR_41_PART loaded successfully with 20440 keys
+index RSOV0200.XP0151SE partition P0151S_DR_44_PART loaded successfully with 27074 keys
+index RSOV0200.XP0151SE partition P0151S_DR_46_PART loaded successfully with 119690 keys
+index RSOV0200.XP0151SE partition P0151S_DR_48_PART loaded successfully with 81762 keys
+index RSOV0200.XP0151SE partition P0151S_DR_49_PART loaded successfully with 35664 keys
+index RSOV0200.XP0151SE partition P0151S_DR_50_PART loaded successfully with 40182 keys
+index RSOV0200.XP0151SE partition P0151S_DR_51_PART loaded successfully with 1065123 keys
+index RSOV0200.XP0151SE partition P0151S_DR_56_PART loaded successfully with 43455 keys
+index RSOV0200.XP0151SE partition P0151S_DR_57_PART loaded successfully with 58823 keys
+index RSOV0200.XP0151SE partition P0151S_DR_61_PART loaded successfully with 39243 keys
+index RSOV0200.XP0151SE partition P0151S_DR_63_PART loaded successfully with 78879 keys
+index RSOV0200.XP0151SE partition P0151S_DR_65_PART loaded successfully with 360261 keys
+index RSOV0200.XP0151SE partition P0151S_DR_66_PART loaded successfully with 11323 keys
+index RSOV0200.XP0151SE partition P0151S_DR_67_PART loaded successfully with 6997 keys
+index RSOV0200.XP0151SE partition P0151S_DR_68_PART loaded successfully with 23779 keys
+index RSOV0200.XP0151SE partition P0151S_DR_69_PART loaded successfully with 3021 keys
+index RSOV0200.XP0151SE partition P0151S_DR_70_PART loaded successfully with 137 keys
+index RSOV0200.XP0151SE partition P0151S_DR_71_PART loaded successfully with 719 keys
+index RSOV0200.XP0151SF partition P0151S_DR_01_PART loaded successfully with 84562 keys
+index RSOV0200.XP0151SF partition P0151S_DR_12_PART loaded successfully with 13842 keys
+index RSOV0200.XP0151SF partition P0151S_DR_13_PART loaded successfully with 56641 keys
+index RSOV0200.XP0151SF partition P0151S_DR_16_PART loaded successfully with 37174 keys
+index RSOV0200.XP0151SF partition P0151S_DR_17_PART loaded successfully with 1500281 keys
+index RSOV0200.XP0151SF partition P0151S_DR_20_PART loaded successfully with 36280 keys
+index RSOV0200.XP0151SF partition P0151S_DR_24_PART loaded successfully with 74826 keys
+index RSOV0200.XP0151SF partition P0151S_DR_25_PART loaded successfully with 33215 keys
+index RSOV0200.XP0151SF partition P0151S_DR_26_PART loaded successfully with 16018 keys
+index RSOV0200.XP0151SF partition P0151S_DR_27_PART loaded successfully with 60599 keys
+index RSOV0200.XP0151SF partition P0151S_DR_31_PART loaded successfully with 75639 keys
+index RSOV0200.XP0151SF partition P0151S_DR_32_PART loaded successfully with 2831810 keys
+index RSOV0200.XP0151SF partition P0151S_DR_34_PART loaded successfully with 151762 keys
+index RSOV0200.XP0151SF partition P0151S_DR_35_PART loaded successfully with 41907 keys
+index RSOV0200.XP0151SF partition P0151S_DR_39_PART loaded successfully with 36958 keys
+index RSOV0200.XP0151SF partition P0151S_DR_40_PART loaded successfully with 18569 keys
+index RSOV0200.XP0151SF partition P0151S_DR_41_PART loaded successfully with 20440 keys
+index RSOV0200.XP0151SF partition P0151S_DR_44_PART loaded successfully with 27074 keys
+index RSOV0200.XP0151SF partition P0151S_DR_46_PART loaded successfully with 119690 keys
+index RSOV0200.XP0151SF partition P0151S_DR_48_PART loaded successfully with 81762 keys
+index RSOV0200.XP0151SF partition P0151S_DR_49_PART loaded successfully with 35664 keys
+index RSOV0200.XP0151SF partition P0151S_DR_50_PART loaded successfully with 40182 keys
+index RSOV0200.XP0151SF partition P0151S_DR_51_PART loaded successfully with 1065123 keys
+index RSOV0200.XP0151SF partition P0151S_DR_56_PART loaded successfully with 43455 keys
+index RSOV0200.XP0151SF partition P0151S_DR_57_PART loaded successfully with 58823 keys
+index RSOV0200.XP0151SF partition P0151S_DR_61_PART loaded successfully with 39243 keys
+index RSOV0200.XP0151SF partition P0151S_DR_63_PART loaded successfully with 78879 keys
+index RSOV0200.XP0151SF partition P0151S_DR_65_PART loaded successfully with 360261 keys
+index RSOV0200.XP0151SF partition P0151S_DR_66_PART loaded successfully with 11323 keys
+index RSOV0200.XP0151SF partition P0151S_DR_67_PART loaded successfully with 6997 keys
+index RSOV0200.XP0151SF partition P0151S_DR_68_PART loaded successfully with 23779 keys
+index RSOV0200.XP0151SF partition P0151S_DR_69_PART loaded successfully with 3021 keys
+index RSOV0200.XP0151SF partition P0151S_DR_70_PART loaded successfully with 137 keys
+index RSOV0200.XP0151SF partition P0151S_DR_71_PART loaded successfully with 719 keys
+index RSOV0200.XP0151SG partition P0151S_DR_01_PART loaded successfully with 84562 keys
+index RSOV0200.XP0151SG partition P0151S_DR_12_PART loaded successfully with 13842 keys
+index RSOV0200.XP0151SG partition P0151S_DR_13_PART loaded successfully with 56641 keys
+index RSOV0200.XP0151SG partition P0151S_DR_16_PART loaded successfully with 37174 keys
+index RSOV0200.XP0151SG partition P0151S_DR_17_PART loaded successfully with 1500281 keys
+index RSOV0200.XP0151SG partition P0151S_DR_20_PART loaded successfully with 36280 keys
+index RSOV0200.XP0151SG partition P0151S_DR_24_PART loaded successfully with 74826 keys
+index RSOV0200.XP0151SG partition P0151S_DR_25_PART loaded successfully with 33215 keys
+index RSOV0200.XP0151SG partition P0151S_DR_26_PART loaded successfully with 16018 keys
+index RSOV0200.XP0151SG partition P0151S_DR_27_PART loaded successfully with 60599 keys
+index RSOV0200.XP0151SG partition P0151S_DR_31_PART loaded successfully with 75639 keys
+index RSOV0200.XP0151SG partition P0151S_DR_32_PART loaded successfully with 2831810 keys
+index RSOV0200.XP0151SG partition P0151S_DR_34_PART loaded successfully with 151762 keys
+index RSOV0200.XP0151SG partition P0151S_DR_35_PART loaded successfully with 41907 keys
+index RSOV0200.XP0151SG partition P0151S_DR_39_PART loaded successfully with 36958 keys
+index RSOV0200.XP0151SG partition P0151S_DR_40_PART loaded successfully with 18569 keys
+index RSOV0200.XP0151SG partition P0151S_DR_41_PART loaded successfully with 20440 keys
+index RSOV0200.XP0151SG partition P0151S_DR_44_PART loaded successfully with 27074 keys
+index RSOV0200.XP0151SG partition P0151S_DR_46_PART loaded successfully with 119690 keys
+index RSOV0200.XP0151SG partition P0151S_DR_48_PART loaded successfully with 81762 keys
+index RSOV0200.XP0151SG partition P0151S_DR_49_PART loaded successfully with 35664 keys
+index RSOV0200.XP0151SG partition P0151S_DR_50_PART loaded successfully with 40182 keys
+index RSOV0200.XP0151SG partition P0151S_DR_51_PART loaded successfully with 1065123 keys
+index RSOV0200.XP0151SG partition P0151S_DR_56_PART loaded successfully with 43455 keys
+index RSOV0200.XP0151SG partition P0151S_DR_57_PART loaded successfully with 58823 keys
+index RSOV0200.XP0151SG partition P0151S_DR_61_PART loaded successfully with 39243 keys
+index RSOV0200.XP0151SG partition P0151S_DR_63_PART loaded successfully with 78879 keys
+index RSOV0200.XP0151SG partition P0151S_DR_65_PART loaded successfully with 360261 keys
+index RSOV0200.XP0151SG partition P0151S_DR_66_PART loaded successfully with 11323 keys
+index RSOV0200.XP0151SG partition P0151S_DR_67_PART loaded successfully with 6997 keys
+index RSOV0200.XP0151SG partition P0151S_DR_68_PART loaded successfully with 23779 keys
+index RSOV0200.XP0151SG partition P0151S_DR_69_PART loaded successfully with 3021 keys
+index RSOV0200.XP0151SG partition P0151S_DR_70_PART loaded successfully with 137 keys
+index RSOV0200.XP0151SG partition P0151S_DR_71_PART loaded successfully with 719 keys
+index RSOV0200.XP0151SH partition P0151S_DR_01_PART loaded successfully with 84562 keys
+index RSOV0200.XP0151SH partition P0151S_DR_12_PART loaded successfully with 13842 keys
+index RSOV0200.XP0151SH partition P0151S_DR_13_PART loaded successfully with 56641 keys
+index RSOV0200.XP0151SH partition P0151S_DR_16_PART loaded successfully with 37174 keys
+index RSOV0200.XP0151SH partition P0151S_DR_17_PART loaded successfully with 1500281 keys
+index RSOV0200.XP0151SH partition P0151S_DR_20_PART loaded successfully with 36280 keys
+index RSOV0200.XP0151SH partition P0151S_DR_24_PART loaded successfully with 74826 keys
+index RSOV0200.XP0151SH partition P0151S_DR_25_PART loaded successfully with 33215 keys
+index RSOV0200.XP0151SH partition P0151S_DR_26_PART loaded successfully with 16018 keys
+index RSOV0200.XP0151SH partition P0151S_DR_27_PART loaded successfully with 60599 keys
+index RSOV0200.XP0151SH partition P0151S_DR_31_PART loaded successfully with 75639 keys
+index RSOV0200.XP0151SH partition P0151S_DR_32_PART loaded successfully with 2831810 keys
+index RSOV0200.XP0151SH partition P0151S_DR_34_PART loaded successfully with 151762 keys
+index RSOV0200.XP0151SH partition P0151S_DR_35_PART loaded successfully with 41907 keys
+index RSOV0200.XP0151SH partition P0151S_DR_39_PART loaded successfully with 36958 keys
+index RSOV0200.XP0151SH partition P0151S_DR_40_PART loaded successfully with 18569 keys
+index RSOV0200.XP0151SH partition P0151S_DR_41_PART loaded successfully with 20440 keys
+index RSOV0200.XP0151SH partition P0151S_DR_44_PART loaded successfully with 27074 keys
+index RSOV0200.XP0151SH partition P0151S_DR_46_PART loaded successfully with 119690 keys
+index RSOV0200.XP0151SH partition P0151S_DR_48_PART loaded successfully with 81762 keys
+index RSOV0200.XP0151SH partition P0151S_DR_49_PART loaded successfully with 35664 keys
+index RSOV0200.XP0151SH partition P0151S_DR_50_PART loaded successfully with 40182 keys
+index RSOV0200.XP0151SH partition P0151S_DR_51_PART loaded successfully with 1065123 keys
+index RSOV0200.XP0151SH partition P0151S_DR_56_PART loaded successfully with 43455 keys
+index RSOV0200.XP0151SH partition P0151S_DR_57_PART loaded successfully with 58823 keys
+index RSOV0200.XP0151SH partition P0151S_DR_61_PART loaded successfully with 39243 keys
+index RSOV0200.XP0151SH partition P0151S_DR_63_PART loaded successfully with 78879 keys
+index RSOV0200.XP0151SH partition P0151S_DR_65_PART loaded successfully with 360261 keys
+index RSOV0200.XP0151SH partition P0151S_DR_66_PART loaded successfully with 11323 keys
+index RSOV0200.XP0151SH partition P0151S_DR_67_PART loaded successfully with 6997 keys
+index RSOV0200.XP0151SH partition P0151S_DR_68_PART loaded successfully with 23779 keys
+index RSOV0200.XP0151SH partition P0151S_DR_69_PART loaded successfully with 3021 keys
+index RSOV0200.XP0151SH partition P0151S_DR_70_PART loaded successfully with 137 keys
+index RSOV0200.XP0151SH partition P0151S_DR_71_PART loaded successfully with 719 keys
+
+MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
+
+Table P0151S:
+  7086655 Rows successfully loaded.
+  11 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P0151S_DR_01_PART: 84562 Rows loaded.
+  Partition P0151S_DR_12_PART: 13842 Rows loaded.
+  Partition P0151S_DR_13_PART: 56641 Rows loaded.
+  Partition P0151S_DR_16_PART: 37174 Rows loaded.
+  Partition P0151S_DR_17_PART: 1500281 Rows loaded.
+  Partition P0151S_DR_20_PART: 36280 Rows loaded.
+  Partition P0151S_DR_24_PART: 74826 Rows loaded.
+  Partition P0151S_DR_25_PART: 33215 Rows loaded.
+  Partition P0151S_DR_26_PART: 16018 Rows loaded.
+  Partition P0151S_DR_27_PART: 60599 Rows loaded.
+  Partition P0151S_DR_31_PART: 75639 Rows loaded.
+  Partition P0151S_DR_32_PART: 2831810 Rows loaded.
+  Partition P0151S_DR_34_PART: 151762 Rows loaded.
+  Partition P0151S_DR_35_PART: 41907 Rows loaded.
+  Partition P0151S_DR_39_PART: 36958 Rows loaded.
+  Partition P0151S_DR_40_PART: 18569 Rows loaded.
+  Partition P0151S_DR_41_PART: 20440 Rows loaded.
+  Partition P0151S_DR_44_PART: 27074 Rows loaded.
+  Partition P0151S_DR_46_PART: 119690 Rows loaded.
+  Partition P0151S_DR_48_PART: 81762 Rows loaded.
+  Partition P0151S_DR_49_PART: 35664 Rows loaded.
+  Partition P0151S_DR_50_PART: 40182 Rows loaded.
+  Partition P0151S_DR_51_PART: 1065123 Rows loaded.
+  Partition P0151S_DR_56_PART: 43455 Rows loaded.
+  Partition P0151S_DR_57_PART: 58823 Rows loaded.
+  Partition P0151S_DR_61_PART: 39243 Rows loaded.
+  Partition P0151S_DR_63_PART: 78879 Rows loaded.
+  Partition P0151S_DR_65_PART: 360261 Rows loaded.
+  Partition P0151S_DR_66_PART: 11323 Rows loaded.
+  Partition P0151S_DR_67_PART: 6997 Rows loaded.
+  Partition P0151S_DR_68_PART: 23779 Rows loaded.
+  Partition P0151S_DR_69_PART: 3021 Rows loaded.
+  Partition P0151S_DR_70_PART: 137 Rows loaded.
+  Partition P0151S_DR_71_PART: 719 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records rejected:        11
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     2077
+Total stream buffers loaded by SQL*Loader load thread:     2920
+
+Run began on Thu Jun 01 00:32:36 2023
+Run ended on Thu Jun 01 00:42:15 2023
+
+Elapsed time was:     00:09:39.22
+CPU time was:         00:00:25.19
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 00:32:36 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 7087162.
+
+Table P0151S:
+  7086655 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P0151S00.log
+for more information about the load.

@@ -1,0 +1,15 @@
+Reloading table DARPPP1.PD2M21 ...
+
+Loading process of table PD2M21
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	40773 row(s) inserted
+
+
+Elapsed Time: 15 seconds
+DARPPP1.PD2M21;OK;40773;40773

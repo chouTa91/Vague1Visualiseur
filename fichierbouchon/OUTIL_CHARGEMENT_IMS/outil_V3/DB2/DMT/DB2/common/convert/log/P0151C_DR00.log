@@ -1,0 +1,47 @@
+Convert P0151C default tools using conv table-297-to-P1
+Target DB set to 'ORACLE'
+NL_Protector set to '@%@!'
+directing outputs to /pdt/CAPGEMINI/COPY_FROM_NAS_V2/DB2_LINUXDATA/
+Data file format NAS !
+QUALIFICATION REPORT For Table P0151C:
+
+Reporting of interesting characters per categories:
+case  0: basic printable characters    : nb chars = 4969000415
+case  1: 00 Low value character        : nb chars = 1111
+case  2: 25 (LF --> 0A on target)      : nb chars = 86
+case  3: chars below 40, may be ok     : nb chars = 1625877
+case  4: chars below 40, problematic   : nb chars = 0
+case  5: Pb du High Value FF           : nb chars = 0
+case  6: 9F: Currency sign or Euro     : nb chars = 1
+case  7: Risque d'overpunch (C0 D0)    : nb chars = 135
+
+Reporting per column, the number of interesting chars:
+Column_Name                   ;      case  0;      case  1;      case  2;      case  3;      case  4;      case  5;      case  6;      case  7
+CDDPTA                        ;     40607596;            2;            0;            0;            0;            0;            0;            0
+CDCMN                         ;     70519920;         1095;            0;            0;            0;            0;            0;            0
+ADBDIS                        ;    520857177;            0;            0;            0;            0;            0;            0;           23
+CDTEL1                        ;    138240754;            6;            0;            0;            0;            0;            0;            0
+CDEMA                         ;    648884800;            0;            2;            0;            0;            0;            1;           77
+CKCAN                         ;     26971748;            8;            0;            0;            0;            0;            0;            0
+ADLI3                         ;    229337362;            0;            0;            0;            0;            0;            0;           10
+ADLI4                         ;    533114272;            0;            0;            0;            0;            0;            0;            2
+ADLI5                         ;     27427175;            0;           84;            1;            0;            0;            0;            0
+ADLI6                         ;    535709233;            0;            0;            0;            0;            0;            0;           23
+CXLI3                         ;     26810324;            0;            0;      1625876;            0;            0;            0;            0
+
+Reporting the number of occurences of interesting char (table level):
+char <<0>> nb occurences: 1111
+char <<0x5>> nb occurences: 1
+char <<0xd>> nb occurences: 1625876
+char <<0x25>> nb occurences: 86
+char <<0x9f>> nb occurences: 1
+char <<0xc0>> nb occurences: 108
+char <<0xd0>> nb occurences: 27
+nb rec processed: 14106794
+END of QUALIFICATION REPORT
+nb recs read   : 14106794 
+nb recs written: 14106794 
+Max input rec Len: 770 
+Max Output rec Len(including LF): 854 
+Elapsed Time: 93 seconds
+DARPPP1.P0151C;OK;14106794;14106794

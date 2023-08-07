@@ -1,0 +1,17 @@
+Processing PF1B ...
+Temp nettoyage : 378 seconds
+
+Loading process of table PF1B
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	1053190 row(s) inserted
+
+
+PF1B;OK;1053190;1053190
+Temps chargement : 159 seconds
+Elapsed Time: 537 seconds

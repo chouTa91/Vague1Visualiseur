@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P3301B ...
+
+Loading process of table P3301B
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	6328102 row(s) inserted
+
+
+Elapsed Time: 189 seconds
+DARPPP1.P3301B;OK;6328102;6328102

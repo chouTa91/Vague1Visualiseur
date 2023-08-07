@@ -1,0 +1,50 @@
+Convert P1299E_AIDESPL default tools using conv table-297-to-P1
+DARPPP1.P1299E_AIDESPL;OK;51925;51925
+Convert P2701A default tools using conv table-297-to-P1
+DARPPP1.P2701A;OK;0;0
+Convert P2702A default tools using conv table-297-to-P1
+DARPPP1.P2702A;OK;55877043;55877043
+Convert P2801A default tools using conv table-297-to-P1
+DARPPP1.P2801A;OK;9;9
+Convert P2801B default tools using conv table-297-to-P1
+DARPPP1.P2801B;OK;9;9
+Convert P7001A default tools using conv table-297-to-P1
+DARPPP1.P7001A;OK;369757;369757
+Convert P7101A default tools using conv table-297-to-P1
+DARPPP1.P7101A;OK;11489900;11489900
+Convert P7101B default tools using conv table-297-to-P1
+DARPPP1.P7101B;OK;11305379;11305379
+Convert P9001N default tools using conv table-297-to-P1
+DARPPP1.P9001N;OK;1308179;1308179
+Convert PD2A01 default tools using conv table-297-to-P1
+DARPPP1.PD2A01;OK;0;0
+Convert PD2A02 default tools using conv table-297-to-P1
+DARPPP1.PD2A02;OK;1;1
+Convert PD2A03 default tools using conv table-297-to-P1
+DARPPP1.PD2A03;OK;0;0
+Convert PD2I2F default tools using conv table-297-to-P1
+DARPPP1.PD2I2F;OK;1246546;1246546
+Convert PD2I2L default tools using conv table-297-to-P1
+DARPPP1.PD2I2L;OK;15455497;15455497
+Convert PD2I2P default tools using conv table-297-to-P1
+DARPPP1.PD2I2P;OK;0;0
+Convert PD2I2S default tools using conv table-297-to-P1
+DARPPP1.PD2I2S;OK;0;0
+Convert PD2M11 with cobol program CNV-PD2M11 using conv table-297-to-P1
+DARPPP1.PD2M11;OK;4135860;4135860
+Convert PD2M12 default tools using conv table-297-to-P1
+DARPPP1.PD2M12;OK;20548239;20548239
+Convert PD2M21 with cobol program CNV-PD2M21 using conv table-297-to-P1
+DARPPP1.PD2M21;OK;17916;17916
+Convert PD2M22 default tools using conv table-297-to-P1
+DARPPP1.PD2M22;OK;70384;70384
+Convert PD2M31 with cobol program CNV-PD2M31 using conv table-297-to-P1
+DARPPP1.PD2M31;OK;42589864;42589864
+Convert PD2M32 default tools using conv table-297-to-P1
+DARPPP1.PD2M32;OK;142070214;142070214
+Convert PD2M6A default tools using conv table-297-to-P1
+DARPPP1.PD2M6A;OK;214;214
+Convert PD2M6B default tools using conv table-297-to-P1
+DARPPP1.PD2M6B;OK;4074;4074
+Convert PD2S01 with cobol program CNV-PD2S01 using conv table-297-to-P1
+DARPPP1.PD2S01;OK;7;7

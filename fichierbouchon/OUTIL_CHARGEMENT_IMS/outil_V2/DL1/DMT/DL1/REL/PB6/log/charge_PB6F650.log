@@ -1,0 +1,94 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 11:51:47 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/tmp/PB6F.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PB6F.DR65.BR0.net
+  File processing option string: "fix 152"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/tmp/charge_PB6F650.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PB6F, partition PB6F_DR_65_PART, loaded from every logical record.
+Insert option in effect for this partition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                    3:3     1           CHARACTER            
+  (FILLER FIELD)
+PB6A_RSCV                            4:11     8           CHARACTER            
+PB6F_NSCOAC                         12:13     2           ZONED DECIMAL (2, 0) 
+PB6F_LSDS4                          14:92    79           CHARACTER            
+PB6F_FILLER                        93:102    10           ZONED DECIMAL (10, 0)
+PB6F_FILLER_1                     103:112    10           ZONED DECIMAL (10, 0)
+PB6F_FILLER_2                     113:122    10           ZONED DECIMAL (10, 0)
+PB6F_FILLER_3                     123:132    10           ZONED DECIMAL (10, 0)
+PB6F_FILLER_4                     133:142    10           ZONED DECIMAL (10, 0)
+PB6F_FILLER_5                     143:151     9           ZONED DECIMAL (9, 0) 
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PB6F were processed:
+index RSOV0200.PK_PB6F partition PB6F_DR_65_PART loaded successfully with 3175 keys
+
+Table PB6F, partition PB6F_DR_65_PART:
+  3175 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:          3175
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        1
+Total stream buffers loaded by SQL*Loader load thread:        1
+
+Run began on Wed Jun 07 11:51:47 2023
+Run ended on Wed Jun 07 11:51:47 2023
+
+Elapsed time was:     00:00:00.43
+CPU time was:         00:00:00.04
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 11:51:47 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 3175.
+
+Table PB6F, partition PB6F_DR_65_PART:
+  3175 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/log/charge_PB6F650.log
+for more information about the load.
+
+ number of rows inserted not checked 

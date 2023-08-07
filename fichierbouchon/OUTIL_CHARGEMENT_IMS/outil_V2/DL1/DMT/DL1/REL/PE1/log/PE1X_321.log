@@ -1,0 +1,17 @@
+Processing PE1X ...
+Temp nettoyage : 556 seconds
+
+Loading process of table PE1X
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	444129 row(s) inserted
+
+
+PE1X;OK;444129;444129
+Temps chargement : 34 seconds
+Elapsed Time: 590 seconds

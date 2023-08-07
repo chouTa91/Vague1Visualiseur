@@ -1,0 +1,183 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:40:32 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/PK1Q.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PK1Q.DR65.BR4.net
+  File processing option string: "fix 312"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/charge_PK1Q654.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PK1Q, subpartition PK1Q_DR_65_BR4_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '4'
+PK1A_RSIN                            4:11     8           CHARACTER            
+PK1Q_NSSAI                          12:13     2           CHARACTER            
+PK1Q_CDOSS1                         14:14     1           CHARACTER            
+PK1Q_RSALSS                         15:19     5           CHARACTER            
+PK1Q_RSWD1                          20:21     2           CHARACTER            
+PK1Q_RSPECB                         22:25     4           CHARACTER            
+PK1Q_CSMANS                         26:27     2           CHARACTER            
+PK1Q_DSANSS                         28:35     8           CHARACTER            
+PK1Q_RSEQ11                         36:38     3           CHARACTER            
+PK1Q_NSACTS                         39:40     2           CHARACTER            
+PK1Q_CSMDD                          41:42     2           CHARACTER            
+PK1Q_CSAAJR                         43:47     5           CHARACTER            
+PK1Q_DIINE1                         48:55     8           CHARACTER            
+PK1Q_DEESA1                         56:63     8           CHARACTER            
+PK1Q_DERSA1                         64:71     8           CHARACTER            
+PK1Q_DSDPC1                         72:79     8           CHARACTER            
+PK1Q_DSEPC1                         80:87     8           CHARACTER            
+PK1Q_DSRPC1                         88:95     8           CHARACTER            
+PK1Q_DERCV1                        96:103     8           CHARACTER            
+PK1Q_DELIN                        104:111     8           CHARACTER            
+PK1Q_DRLOB                        112:119     8           CHARACTER            
+PK1Q_FFEDE                        120:120     1           CHARACTER            
+PK1Q_CDOCT                        121:122     2           CHARACTER            
+PK1Q_DSDEN                        123:130     8           CHARACTER            
+PK1Q_DEDDT1                       131:138     8           CHARACTER            
+PK1Q_DEDEC1                       139:146     8           CHARACTER            
+PK1Q_CKDDT1                       147:148     2           CHARACTER            
+PK1Q_DEDDT                        149:156     8           CHARACTER            
+PK1Q_DEDEC                        157:164     8           CHARACTER            
+PK1Q_CKDDT                        165:166     2           CHARACTER            
+PK1Q_DFSSN                        167:174     8           CHARACTER            
+PK1Q_CSPCS_1                      175:176     2           CHARACTER            
+PK1Q_FVPCS_1                      177:177     1           CHARACTER            
+PK1Q_FVDTS_1                      178:178     1           CHARACTER            
+PK1Q_CSPCS_2                      179:180     2           CHARACTER            
+PK1Q_FVPCS_2                      181:181     1           CHARACTER            
+PK1Q_FVDTS_2                      182:182     1           CHARACTER            
+PK1Q_CSPCS_3                      183:184     2           CHARACTER            
+PK1Q_FVPCS_3                      185:185     1           CHARACTER            
+PK1Q_FVDTS_3                      186:186     1           CHARACTER            
+PK1Q_CSPCS_4                      187:188     2           CHARACTER            
+PK1Q_FVPCS_4                      189:189     1           CHARACTER            
+PK1Q_FVDTS_4                      190:190     1           CHARACTER            
+PK1Q_CSPCS_5                      191:192     2           CHARACTER            
+PK1Q_FVPCS_5                      193:193     1           CHARACTER            
+PK1Q_FVDTS_5                      194:194     1           CHARACTER            
+PK1Q_CSPCS_6                      195:196     2           CHARACTER            
+PK1Q_FVPCS_6                      197:197     1           CHARACTER            
+PK1Q_FVDTS_6                      198:198     1           CHARACTER            
+PK1Q_CSPCS_7                      199:200     2           CHARACTER            
+PK1Q_FVPCS_7                      201:201     1           CHARACTER            
+PK1Q_FVDTS_7                      202:202     1           CHARACTER            
+PK1Q_CSPCS_8                      203:204     2           CHARACTER            
+PK1Q_FVPCS_8                      205:205     1           CHARACTER            
+PK1Q_FVDTS_8                      206:206     1           CHARACTER            
+PK1Q_CSPCS_9                      207:208     2           CHARACTER            
+PK1Q_FVPCS_9                      209:209     1           CHARACTER            
+PK1Q_FVDTS_9                      210:210     1           CHARACTER            
+PK1Q_CSPCS_10                     211:212     2           CHARACTER            
+PK1Q_FVPCS_10                     213:213     1           CHARACTER            
+PK1Q_FVDTS_10                     214:214     1           CHARACTER            
+PK1Q_CSPCS_11                     215:216     2           CHARACTER            
+PK1Q_FVPCS_11                     217:217     1           CHARACTER            
+PK1Q_FVDTS_11                     218:218     1           CHARACTER            
+PK1Q_CSPCS_12                     219:220     2           CHARACTER            
+PK1Q_FVPCS_12                     221:221     1           CHARACTER            
+PK1Q_FVDTS_12                     222:222     1           CHARACTER            
+PK1Q_CSPCS_13                     223:224     2           CHARACTER            
+PK1Q_FVPCS_13                     225:225     1           CHARACTER            
+PK1Q_FVDTS_13                     226:226     1           CHARACTER            
+PK1Q_CSPCS_14                     227:228     2           CHARACTER            
+PK1Q_FVPCS_14                     229:229     1           CHARACTER            
+PK1Q_FVDTS_14                     230:230     1           CHARACTER            
+PK1Q_CSPCS_15                     231:232     2           CHARACTER            
+PK1Q_FVPCS_15                     233:233     1           CHARACTER            
+PK1Q_FVDTS_15                     234:234     1           CHARACTER            
+PK1Q_CSPCS_16                     235:236     2           CHARACTER            
+PK1Q_FVPCS_16                     237:237     1           CHARACTER            
+PK1Q_FVDTS_16                     238:238     1           CHARACTER            
+PK1Q_CSPCS_17                     239:240     2           CHARACTER            
+PK1Q_FVPCS_17                     241:241     1           CHARACTER            
+PK1Q_FVDTS_17                     242:242     1           CHARACTER            
+PK1Q_CSPCS_18                     243:244     2           CHARACTER            
+PK1Q_FVPCS_18                     245:245     1           CHARACTER            
+PK1Q_FVDTS_18                     246:246     1           CHARACTER            
+PK1Q_CSPCS_19                     247:248     2           CHARACTER            
+PK1Q_FVPCS_19                     249:249     1           CHARACTER            
+PK1Q_FVDTS_19                     250:250     1           CHARACTER            
+PK1Q_CSPCS_20                     251:252     2           CHARACTER            
+PK1Q_FVPCS_20                     253:253     1           CHARACTER            
+PK1Q_FVDTS_20                     254:254     1           CHARACTER            
+PK1Q_CSMDM1                       255:256     2           CHARACTER            
+PK1Q_FILLER                       257:261     5           CHARACTER            
+PK1Q_FILLER_1                     262:271    10           CHARACTER            
+PK1Q_FILLER_2                     272:281    10           CHARACTER            
+PK1Q_FILLER_3                     282:291    10           CHARACTER            
+PK1Q_FILLER_4                     292:301    10           CHARACTER            
+PK1Q_FILLER_5                     302:311    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PK1Q were processed:
+index RSOV0200.PK_PK1Q partition PK1Q_DR_65_BR4_PART loaded successfully with 10856 keys
+
+Table PK1Q, subpartition PK1Q_DR_65_BR4_PART:
+  10856 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         10856
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        4
+Total stream buffers loaded by SQL*Loader load thread:       13
+
+Run began on Wed Jun 07 16:40:32 2023
+Run ended on Wed Jun 07 16:40:33 2023
+
+Elapsed time was:     00:00:01.69
+CPU time was:         00:00:00.25
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:40:32 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 10856.
+
+Table PK1Q, subpartition PK1Q_DR_65_BR4_PART:
+  10856 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/log/charge_PK1Q654.log
+for more information about the load.
+
+ number of rows inserted not checked 

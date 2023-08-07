@@ -1,0 +1,92 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sat Jun 10 05:36:31 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PI1/tmp/PI1B.ctl
+Data File:      PI1B.DR32.BR1.ascii
+  File processing option string: "fix 1505"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PI1/tmp/charge_PI1B321.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PI1B, subpartition PI1B_DR_32_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PI1A_CCIND                           4:11     8           CHARACTER            
+PI1B_CCMES                          12:15     4           CHARACTER            
+PI1B_DSTRTS                         16:23     8           CHARACTER            
+PI1B_HSTRTS                         24:31     8           CHARACTER            
+PI1B_QSMES                          32:33     2           ZONED DECIMAL (2, 0) 
+PI1B_CCBAL                          34:36     3           ZONED DECIMAL (3, 0) 
+PI1B_CCTYM                          37:39     3           CHARACTER            
+PI1B_GCDME1                       40:1505  1466           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PI1B were processed:
+index RSOV0200.PK_PI1B partition PI1B_DR_32_BR1_PART was made unusable due to:
+ORA-01452: cannot CREATE UNIQUE INDEX; duplicate keys found
+index RSOV0200.PK_PI1B had 1 partitions made unusable due to:
+ORA-01452: cannot CREATE UNIQUE INDEX; duplicate keys found
+
+Table PI1B, subpartition PI1B_DR_32_BR1_PART:
+  1065145 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       1065145
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     1531
+Total stream buffers loaded by SQL*Loader load thread:     6121
+
+Run began on Sat Jun 10 05:36:31 2023
+Run ended on Sat Jun 10 05:37:11 2023
+
+Elapsed time was:     00:00:40.38
+CPU time was:         00:00:03.94
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sat Jun 10 05:36:31 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 1065145.
+
+Table PI1B, subpartition PI1B_DR_32_BR1_PART:
+  1065145 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PI1/log/charge_PI1B321.log
+for more information about the load.

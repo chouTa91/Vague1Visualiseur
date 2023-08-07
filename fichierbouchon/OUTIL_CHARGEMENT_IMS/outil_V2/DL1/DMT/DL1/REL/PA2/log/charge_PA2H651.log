@@ -1,0 +1,147 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 11:53:08 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2H.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2H.DR65.BR1.net
+  File processing option string: "fix 352"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2H651.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2H, subpartition PA2H_DR_65_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2H_CXPSE                          12:13     2           CHARACTER            
+PA2H_CDPSE                          14:16     3           CHARACTER            
+PA2H_CKPSE                          17:18     2           CHARACTER            
+PA2H_DMETA                          19:26     8           CHARACTER            
+PA2H_CIPSE                          27:28     2           CHARACTER            
+PA2H_CSTIES                         29:30     2           CHARACTER            
+PA2H_NSTIS                          31:36     6           CHARACTER            
+PA2H_RSAGS                          37:44     8           CHARACTER            
+PA2H_CSTIED                         45:46     2           CHARACTER            
+PA2H_NSTID                          47:52     6           CHARACTER            
+PA2H_LNINR1                         53:77    25           CHARACTER            
+PA2H_LNPIN7                         78:90    13           CHARACTER            
+PA2H_CMREF                          91:92     2           CHARACTER            
+PA2H_CMALT                          93:94     2           CHARACTER            
+PA2H_CMCLO                          95:96     2           CHARACTER            
+PA2H_DIAFE                         97:104     8           CHARACTER            
+PA2H_DERFU                        105:112     8           CHARACTER            
+PA2H_DEACC                        113:120     8           CHARACTER            
+PA2H_DEENT                        121:128     8           CHARACTER            
+PA2H_DEALT                        129:136     8           CHARACTER            
+PA2H_DFPRV                        137:144     8           CHARACTER            
+PA2H_DFPSE                        145:152     8           CHARACTER            
+PA2H_DFRPT                        153:160     8           CHARACTER            
+PA2H_DFPRL                        161:168     8           CHARACTER            
+PA2H_DFSRA                        169:176     8           CHARACTER            
+PA2H_DFSEM                        177:184     8           CHARACTER            
+PA2H_CMFSE                        185:186     2           CHARACTER            
+PA2H_CMFSA                        187:188     2           CHARACTER            
+PA2H_CXALAE                       189:198    10           CHARACTER            
+PA2H_NILOT                        199:201     3           CHARACTER            
+PA2H_CXSRE                        202:203     2           CHARACTER            
+PA2H_CXPRC                        204:205     2           CHARACTER            
+PA2H_CSTPIH                       206:208     3           CHARACTER            
+PA2H_FFPOP                        209:209     1           CHARACTER            
+PA2H_CAPJT                        210:210     1           CHARACTER            
+PA2H_DFEVA                        211:218     8           CHARACTER            
+PA2H_FVPJT                        219:219     1           CHARACTER            
+PA2H_DEBIN                        220:227     8           CHARACTER            
+PA2H_FVPST                        228:228     1           CHARACTER            
+PA2H_DFACF                        229:236     8           CHARACTER            
+PA2H_CXPSEP                       237:238     2           CHARACTER            
+PA2H_CMEVTB                       239:240     2           CHARACTER            
+PA2H_CXPAN                        241:243     3           CHARACTER            
+PA2H_CXPAR                        244:248     5           CHARACTER            
+PA2H_RSAGR                        249:256     8           CHARACTER            
+PA2H_ISSENQ                       257:270    14           CHARACTER            
+PA2H_CAACF                        271:272     2           CHARACTER            
+PA2H_CDPSSE                       273:275     3           CHARACTER            
+PA2H_FSPLSD                       276:276     1           CHARACTER            
+PA2H_DFPRVI                       277:284     8           CHARACTER            
+PA2H_DFARIM                       285:292     8           CHARACTER            
+PA2H_FIUMA2                       293:293     1           CHARACTER            
+PA2H_NSAGR1                       294:308    15           CHARACTER            
+PA2H_DEDPD7                       309:316     8           CHARACTER            
+PA2H_CSTPI7                       317:319     3           CHARACTER            
+PA2H_CSRPD7                       320:322     3           CHARACTER            
+PA2H_RLOBP7                       323:323     1           CHARACTER            
+PA2H_CSSMCL                       324:326     3           CHARACTER            
+PA2H_FILLER                       327:331     5           CHARACTER            
+PA2H_FILLER_1                     332:341    10           CHARACTER            
+PA2H_FILLER_2                     342:351    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2H were processed:
+index RSOV0200.PK_PA2H partition PA2H_DR_65_BR1_PART loaded successfully with 20141 keys
+
+Table PA2H, subpartition PA2H_DR_65_BR1_PART:
+  20141 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         20141
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        7
+Total stream buffers loaded by SQL*Loader load thread:       27
+
+Run began on Wed Jun 07 11:53:08 2023
+Run ended on Wed Jun 07 11:53:10 2023
+
+Elapsed time was:     00:00:02.65
+CPU time was:         00:00:00.21
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 11:53:08 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 20141.
+
+Table PA2H, subpartition PA2H_DR_65_BR1_PART:
+  20141 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2H651.log
+for more information about the load.
+
+ number of rows inserted not checked 

@@ -1,0 +1,17 @@
+Processing PE1J ...
+Temp nettoyage : 30 seconds
+
+Loading process of table PE1J
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	211920 row(s) inserted
+
+
+PE1J;OK;211920;211920
+Temps chargement : 4 seconds
+Elapsed Time: 34 seconds

@@ -1,0 +1,17 @@
+Processing PE1H ...
+Temp nettoyage : 188 seconds
+
+Loading process of table PE1H
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	2 row(s) inserted
+
+
+PE1H;KO;284675;2
+Temps chargement : 1 seconds
+Elapsed Time: 189 seconds

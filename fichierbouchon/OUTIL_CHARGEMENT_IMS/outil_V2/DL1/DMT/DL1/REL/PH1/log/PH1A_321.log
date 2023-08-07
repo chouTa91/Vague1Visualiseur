@@ -1,0 +1,17 @@
+Processing PH1A ...
+Temp nettoyage : 12 seconds
+
+Loading process of table PH1A
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	137014 row(s) inserted
+
+
+PH1A;OK;137014;137014
+Temps chargement : 8 seconds
+Elapsed Time: 20 seconds

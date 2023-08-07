@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P0172S ...
+
+Loading process of table P0172S
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	696746 row(s) inserted
+
+
+Elapsed Time: 28 seconds
+DARPPP1.P0172S;OK;696746;696746

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="fragment-db2-conversion (tirId, tableLines, typeTraitement)" id="fragment-db2-conversion">
+
+	<table th:id="${'tir' + tirId + '-' + typeTraitement + '-table'}" class="display cell-border" style="width:100%">
+		<thead>
+			<tr>
+				<th scope="col">Table</th>
+				<th scope="col">Nombre d'entrée calculées</th>
+				<th scope="col">Nombre d'entrée lues</th>
+				<th scope="col">Nombre d'entrée écrites</th>
+				<th scope="col">Taille maximale d'entrée</th>
+				<th scope="col">Taille maximale d'entrée (LF)</th>
+				<th scope="col">Temps de conversion</th>
+				<th scope="col">Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="line : ${tableLines}"
+				th:classappend="${#strings.equals(line.status, 'KO') ? 'table-danger' : ''}">
+				<td th:text="${line.tableName}"></td>
+				<td th:text="${#numbers.formatDecimal(line.nbRecProcessed, 0, 'WHITESPACE', 0, 'COMMA')}"></td>
+				<td th:text="${#numbers.formatDecimal(line.nbRecsRead, 0, 'WHITESPACE', 0, 'COMMA')}"></td>
+				<td th:text="${#numbers.formatDecimal(line.nbRecsWritten, 0, 'WHITESPACE', 0, 'COMMA')}"></td>
+				<td th:text="${#numbers.formatDecimal(line.maxInputRecLength, 0, 'WHITESPACE', 0, 'COMMA')}"></td>
+				<td th:text="${#numbers.formatDecimal(line.maxInputRecLengthLF, 0, 'WHITESPACE', 0, 'COMMA')}"></td>
+				<td th:text="${line.elapsedTime}"></td>
+				<td th:text="${line.status}"></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<script type="text/javascript" th:inline="javascript">
+			// Initialisation du JS du fragment.
+			
+			suivi.datatable.initDataTable("#tir" + [[${tirId}]] + '-'+ [[${typeTraitement}]] +'-table');
+
+	</script>
+
+</div>
+
+</html>

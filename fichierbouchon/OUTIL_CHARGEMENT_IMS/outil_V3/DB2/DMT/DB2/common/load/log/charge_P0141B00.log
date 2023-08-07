@@ -1,0 +1,301 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 23:18:05 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P0141B_30108.ctl
+Data File:      Tab.U.P0141B.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P0141B00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P0141B, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP41B                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP41B                               NEXT     *   ;  O(") CHARACTER            
+CXAS3                                NEXT     3   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CXASS                                NEXT     3   ;  O(") CHARACTER            
+CXIN                                 NEXT     8   ;  O(") CHARACTER            
+CDTIDI                               NEXT     2   ;  O(") CHARACTER            
+ISDIVI                               NEXT    20   ;  O(") CHARACTER            
+CXPEC                                NEXT     *   ;  O(") CHARACTER            
+CXAH                                 NEXT     1   ;  O(") CHARACTER            
+DIVER                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+ISEXTI                               NEXT    65   ;  O(") CHARACTER            
+CDPAYI                               NEXT     2   ;  O(") CHARACTER            
+
+Record 21428344: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428345: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428346: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428347: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428348: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428349: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428350: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428351: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428352: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428353: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 21428354: Rejected - Error on table P0141B.
+ORA-14400: inserted partition key does not map to any partition
+
+Specify SKIP=21428354 when continuing the load.
+The following index(es) on table P0141B were processed:
+index RSOV0200.IP0141B1 loaded successfully with 21428343 keys
+index RSOV0200.XP0141BB partition P0141B_DR_01_PART loaded successfully with 56762 keys
+index RSOV0200.XP0141BB partition P0141B_DR_12_PART loaded successfully with 7491 keys
+index RSOV0200.XP0141BB partition P0141B_DR_13_PART loaded successfully with 38782 keys
+index RSOV0200.XP0141BB partition P0141B_DR_16_PART loaded successfully with 31558 keys
+index RSOV0200.XP0141BB partition P0141B_DR_17_PART loaded successfully with 5740472 keys
+index RSOV0200.XP0141BB partition P0141B_DR_20_PART loaded successfully with 34968 keys
+index RSOV0200.XP0141BB partition P0141B_DR_24_PART loaded successfully with 64691 keys
+index RSOV0200.XP0141BB partition P0141B_DR_25_PART loaded successfully with 28486 keys
+index RSOV0200.XP0141BB partition P0141B_DR_26_PART loaded successfully with 9516 keys
+index RSOV0200.XP0141BB partition P0141B_DR_27_PART loaded successfully with 40886 keys
+index RSOV0200.XP0141BB partition P0141B_DR_31_PART loaded successfully with 64784 keys
+index RSOV0200.XP0141BB partition P0141B_DR_32_PART loaded successfully with 9204644 keys
+index RSOV0200.XP0141BB partition P0141B_DR_34_PART loaded successfully with 112577 keys
+index RSOV0200.XP0141BB partition P0141B_DR_35_PART loaded successfully with 25252 keys
+index RSOV0200.XP0141BB partition P0141B_DR_39_PART loaded successfully with 19709 keys
+index RSOV0200.XP0141BB partition P0141B_DR_40_PART loaded successfully with 11620 keys
+index RSOV0200.XP0141BB partition P0141B_DR_41_PART loaded successfully with 11988 keys
+index RSOV0200.XP0141BB partition P0141B_DR_44_PART loaded successfully with 16464 keys
+index RSOV0200.XP0141BB partition P0141B_DR_46_PART loaded successfully with 76327 keys
+index RSOV0200.XP0141BB partition P0141B_DR_48_PART loaded successfully with 54010 keys
+index RSOV0200.XP0141BB partition P0141B_DR_49_PART loaded successfully with 27493 keys
+index RSOV0200.XP0141BB partition P0141B_DR_50_PART loaded successfully with 31697 keys
+index RSOV0200.XP0141BB partition P0141B_DR_51_PART loaded successfully with 4389415 keys
+index RSOV0200.XP0141BB partition P0141B_DR_56_PART loaded successfully with 49124 keys
+index RSOV0200.XP0141BB partition P0141B_DR_57_PART loaded successfully with 49701 keys
+index RSOV0200.XP0141BB partition P0141B_DR_61_PART loaded successfully with 38852 keys
+index RSOV0200.XP0141BB partition P0141B_DR_63_PART loaded successfully with 70633 keys
+index RSOV0200.XP0141BB partition P0141B_DR_65_PART loaded successfully with 1091766 keys
+index RSOV0200.XP0141BB partition P0141B_DR_66_PART loaded successfully with 7786 keys
+index RSOV0200.XP0141BB partition P0141B_DR_67_PART loaded successfully with 3882 keys
+index RSOV0200.XP0141BB partition P0141B_DR_68_PART loaded successfully with 14199 keys
+index RSOV0200.XP0141BB partition P0141B_DR_69_PART loaded successfully with 2539 keys
+index RSOV0200.XP0141BB partition P0141B_DR_70_PART loaded successfully with 18 keys
+index RSOV0200.XP0141BB partition P0141B_DR_71_PART loaded successfully with 251 keys
+index RSOV0200.XP0141BC partition P0141B_DR_01_PART loaded successfully with 56762 keys
+index RSOV0200.XP0141BC partition P0141B_DR_12_PART loaded successfully with 7491 keys
+index RSOV0200.XP0141BC partition P0141B_DR_13_PART loaded successfully with 38782 keys
+index RSOV0200.XP0141BC partition P0141B_DR_16_PART loaded successfully with 31558 keys
+index RSOV0200.XP0141BC partition P0141B_DR_17_PART loaded successfully with 5740472 keys
+index RSOV0200.XP0141BC partition P0141B_DR_20_PART loaded successfully with 34968 keys
+index RSOV0200.XP0141BC partition P0141B_DR_24_PART loaded successfully with 64691 keys
+index RSOV0200.XP0141BC partition P0141B_DR_25_PART loaded successfully with 28486 keys
+index RSOV0200.XP0141BC partition P0141B_DR_26_PART loaded successfully with 9516 keys
+index RSOV0200.XP0141BC partition P0141B_DR_27_PART loaded successfully with 40886 keys
+index RSOV0200.XP0141BC partition P0141B_DR_31_PART loaded successfully with 64784 keys
+index RSOV0200.XP0141BC partition P0141B_DR_32_PART loaded successfully with 9204644 keys
+index RSOV0200.XP0141BC partition P0141B_DR_34_PART loaded successfully with 112577 keys
+index RSOV0200.XP0141BC partition P0141B_DR_35_PART loaded successfully with 25252 keys
+index RSOV0200.XP0141BC partition P0141B_DR_39_PART loaded successfully with 19709 keys
+index RSOV0200.XP0141BC partition P0141B_DR_40_PART loaded successfully with 11620 keys
+index RSOV0200.XP0141BC partition P0141B_DR_41_PART loaded successfully with 11988 keys
+index RSOV0200.XP0141BC partition P0141B_DR_44_PART loaded successfully with 16464 keys
+index RSOV0200.XP0141BC partition P0141B_DR_46_PART loaded successfully with 76327 keys
+index RSOV0200.XP0141BC partition P0141B_DR_48_PART loaded successfully with 54010 keys
+index RSOV0200.XP0141BC partition P0141B_DR_49_PART loaded successfully with 27493 keys
+index RSOV0200.XP0141BC partition P0141B_DR_50_PART loaded successfully with 31697 keys
+index RSOV0200.XP0141BC partition P0141B_DR_51_PART loaded successfully with 4389415 keys
+index RSOV0200.XP0141BC partition P0141B_DR_56_PART loaded successfully with 49124 keys
+index RSOV0200.XP0141BC partition P0141B_DR_57_PART loaded successfully with 49701 keys
+index RSOV0200.XP0141BC partition P0141B_DR_61_PART loaded successfully with 38852 keys
+index RSOV0200.XP0141BC partition P0141B_DR_63_PART loaded successfully with 70633 keys
+index RSOV0200.XP0141BC partition P0141B_DR_65_PART loaded successfully with 1091766 keys
+index RSOV0200.XP0141BC partition P0141B_DR_66_PART loaded successfully with 7786 keys
+index RSOV0200.XP0141BC partition P0141B_DR_67_PART loaded successfully with 3882 keys
+index RSOV0200.XP0141BC partition P0141B_DR_68_PART loaded successfully with 14199 keys
+index RSOV0200.XP0141BC partition P0141B_DR_69_PART loaded successfully with 2539 keys
+index RSOV0200.XP0141BC partition P0141B_DR_70_PART loaded successfully with 18 keys
+index RSOV0200.XP0141BC partition P0141B_DR_71_PART loaded successfully with 251 keys
+index RSOV0200.XP0141BD partition P0141B_DR_01_PART loaded successfully with 56762 keys
+index RSOV0200.XP0141BD partition P0141B_DR_12_PART loaded successfully with 7491 keys
+index RSOV0200.XP0141BD partition P0141B_DR_13_PART loaded successfully with 38782 keys
+index RSOV0200.XP0141BD partition P0141B_DR_16_PART loaded successfully with 31558 keys
+index RSOV0200.XP0141BD partition P0141B_DR_17_PART loaded successfully with 5740472 keys
+index RSOV0200.XP0141BD partition P0141B_DR_20_PART loaded successfully with 34968 keys
+index RSOV0200.XP0141BD partition P0141B_DR_24_PART loaded successfully with 64691 keys
+index RSOV0200.XP0141BD partition P0141B_DR_25_PART loaded successfully with 28486 keys
+index RSOV0200.XP0141BD partition P0141B_DR_26_PART loaded successfully with 9516 keys
+index RSOV0200.XP0141BD partition P0141B_DR_27_PART loaded successfully with 40886 keys
+index RSOV0200.XP0141BD partition P0141B_DR_31_PART loaded successfully with 64784 keys
+index RSOV0200.XP0141BD partition P0141B_DR_32_PART loaded successfully with 9204644 keys
+index RSOV0200.XP0141BD partition P0141B_DR_34_PART loaded successfully with 112577 keys
+index RSOV0200.XP0141BD partition P0141B_DR_35_PART loaded successfully with 25252 keys
+index RSOV0200.XP0141BD partition P0141B_DR_39_PART loaded successfully with 19709 keys
+index RSOV0200.XP0141BD partition P0141B_DR_40_PART loaded successfully with 11620 keys
+index RSOV0200.XP0141BD partition P0141B_DR_41_PART loaded successfully with 11988 keys
+index RSOV0200.XP0141BD partition P0141B_DR_44_PART loaded successfully with 16464 keys
+index RSOV0200.XP0141BD partition P0141B_DR_46_PART loaded successfully with 76327 keys
+index RSOV0200.XP0141BD partition P0141B_DR_48_PART loaded successfully with 54010 keys
+index RSOV0200.XP0141BD partition P0141B_DR_49_PART loaded successfully with 27493 keys
+index RSOV0200.XP0141BD partition P0141B_DR_50_PART loaded successfully with 31697 keys
+index RSOV0200.XP0141BD partition P0141B_DR_51_PART loaded successfully with 4389415 keys
+index RSOV0200.XP0141BD partition P0141B_DR_56_PART loaded successfully with 49124 keys
+index RSOV0200.XP0141BD partition P0141B_DR_57_PART loaded successfully with 49701 keys
+index RSOV0200.XP0141BD partition P0141B_DR_61_PART loaded successfully with 38852 keys
+index RSOV0200.XP0141BD partition P0141B_DR_63_PART loaded successfully with 70633 keys
+index RSOV0200.XP0141BD partition P0141B_DR_65_PART loaded successfully with 1091766 keys
+index RSOV0200.XP0141BD partition P0141B_DR_66_PART loaded successfully with 7786 keys
+index RSOV0200.XP0141BD partition P0141B_DR_67_PART loaded successfully with 3882 keys
+index RSOV0200.XP0141BD partition P0141B_DR_68_PART loaded successfully with 14199 keys
+index RSOV0200.XP0141BD partition P0141B_DR_69_PART loaded successfully with 2539 keys
+index RSOV0200.XP0141BD partition P0141B_DR_70_PART loaded successfully with 18 keys
+index RSOV0200.XP0141BD partition P0141B_DR_71_PART loaded successfully with 251 keys
+index RSOV0200.XP0141BE partition P0141B_DR_01_PART loaded successfully with 56762 keys
+index RSOV0200.XP0141BE partition P0141B_DR_12_PART loaded successfully with 7491 keys
+index RSOV0200.XP0141BE partition P0141B_DR_13_PART loaded successfully with 38782 keys
+index RSOV0200.XP0141BE partition P0141B_DR_16_PART loaded successfully with 31558 keys
+index RSOV0200.XP0141BE partition P0141B_DR_17_PART loaded successfully with 5740472 keys
+index RSOV0200.XP0141BE partition P0141B_DR_20_PART loaded successfully with 34968 keys
+index RSOV0200.XP0141BE partition P0141B_DR_24_PART loaded successfully with 64691 keys
+index RSOV0200.XP0141BE partition P0141B_DR_25_PART loaded successfully with 28486 keys
+index RSOV0200.XP0141BE partition P0141B_DR_26_PART loaded successfully with 9516 keys
+index RSOV0200.XP0141BE partition P0141B_DR_27_PART loaded successfully with 40886 keys
+index RSOV0200.XP0141BE partition P0141B_DR_31_PART loaded successfully with 64784 keys
+index RSOV0200.XP0141BE partition P0141B_DR_32_PART loaded successfully with 9204644 keys
+index RSOV0200.XP0141BE partition P0141B_DR_34_PART loaded successfully with 112577 keys
+index RSOV0200.XP0141BE partition P0141B_DR_35_PART loaded successfully with 25252 keys
+index RSOV0200.XP0141BE partition P0141B_DR_39_PART loaded successfully with 19709 keys
+index RSOV0200.XP0141BE partition P0141B_DR_40_PART loaded successfully with 11620 keys
+index RSOV0200.XP0141BE partition P0141B_DR_41_PART loaded successfully with 11988 keys
+index RSOV0200.XP0141BE partition P0141B_DR_44_PART loaded successfully with 16464 keys
+index RSOV0200.XP0141BE partition P0141B_DR_46_PART loaded successfully with 76327 keys
+index RSOV0200.XP0141BE partition P0141B_DR_48_PART loaded successfully with 54010 keys
+index RSOV0200.XP0141BE partition P0141B_DR_49_PART loaded successfully with 27493 keys
+index RSOV0200.XP0141BE partition P0141B_DR_50_PART loaded successfully with 31697 keys
+index RSOV0200.XP0141BE partition P0141B_DR_51_PART loaded successfully with 4389415 keys
+index RSOV0200.XP0141BE partition P0141B_DR_56_PART loaded successfully with 49124 keys
+index RSOV0200.XP0141BE partition P0141B_DR_57_PART loaded successfully with 49701 keys
+index RSOV0200.XP0141BE partition P0141B_DR_61_PART loaded successfully with 38852 keys
+index RSOV0200.XP0141BE partition P0141B_DR_63_PART loaded successfully with 70633 keys
+index RSOV0200.XP0141BE partition P0141B_DR_65_PART loaded successfully with 1091766 keys
+index RSOV0200.XP0141BE partition P0141B_DR_66_PART loaded successfully with 7786 keys
+index RSOV0200.XP0141BE partition P0141B_DR_67_PART loaded successfully with 3882 keys
+index RSOV0200.XP0141BE partition P0141B_DR_68_PART loaded successfully with 14199 keys
+index RSOV0200.XP0141BE partition P0141B_DR_69_PART loaded successfully with 2539 keys
+index RSOV0200.XP0141BE partition P0141B_DR_70_PART loaded successfully with 18 keys
+index RSOV0200.XP0141BE partition P0141B_DR_71_PART loaded successfully with 251 keys
+
+MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
+
+Table P0141B:
+  21428343 Rows successfully loaded.
+  11 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P0141B_DR_01_PART: 56762 Rows loaded.
+  Partition P0141B_DR_12_PART: 7491 Rows loaded.
+  Partition P0141B_DR_13_PART: 38782 Rows loaded.
+  Partition P0141B_DR_16_PART: 31558 Rows loaded.
+  Partition P0141B_DR_17_PART: 5740472 Rows loaded.
+  Partition P0141B_DR_20_PART: 34968 Rows loaded.
+  Partition P0141B_DR_24_PART: 64691 Rows loaded.
+  Partition P0141B_DR_25_PART: 28486 Rows loaded.
+  Partition P0141B_DR_26_PART: 9516 Rows loaded.
+  Partition P0141B_DR_27_PART: 40886 Rows loaded.
+  Partition P0141B_DR_31_PART: 64784 Rows loaded.
+  Partition P0141B_DR_32_PART: 9204644 Rows loaded.
+  Partition P0141B_DR_34_PART: 112577 Rows loaded.
+  Partition P0141B_DR_35_PART: 25252 Rows loaded.
+  Partition P0141B_DR_39_PART: 19709 Rows loaded.
+  Partition P0141B_DR_40_PART: 11620 Rows loaded.
+  Partition P0141B_DR_41_PART: 11988 Rows loaded.
+  Partition P0141B_DR_44_PART: 16464 Rows loaded.
+  Partition P0141B_DR_46_PART: 76327 Rows loaded.
+  Partition P0141B_DR_48_PART: 54010 Rows loaded.
+  Partition P0141B_DR_49_PART: 27493 Rows loaded.
+  Partition P0141B_DR_50_PART: 31697 Rows loaded.
+  Partition P0141B_DR_51_PART: 4389415 Rows loaded.
+  Partition P0141B_DR_56_PART: 49124 Rows loaded.
+  Partition P0141B_DR_57_PART: 49701 Rows loaded.
+  Partition P0141B_DR_61_PART: 38852 Rows loaded.
+  Partition P0141B_DR_63_PART: 70633 Rows loaded.
+  Partition P0141B_DR_65_PART: 1091766 Rows loaded.
+  Partition P0141B_DR_66_PART: 7786 Rows loaded.
+  Partition P0141B_DR_67_PART: 3882 Rows loaded.
+  Partition P0141B_DR_68_PART: 14199 Rows loaded.
+  Partition P0141B_DR_69_PART: 2539 Rows loaded.
+  Partition P0141B_DR_70_PART: 18 Rows loaded.
+  Partition P0141B_DR_71_PART: 251 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records rejected:        11
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     5858
+Total stream buffers loaded by SQL*Loader load thread:     6495
+
+Run began on Wed May 31 23:18:05 2023
+Run ended on Wed May 31 23:44:17 2023
+
+Elapsed time was:     00:26:11.26
+CPU time was:         00:00:51.36
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 23:18:05 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 21429609.
+
+Table P0141B:
+  21428343 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P0141B00.log
+for more information about the load.

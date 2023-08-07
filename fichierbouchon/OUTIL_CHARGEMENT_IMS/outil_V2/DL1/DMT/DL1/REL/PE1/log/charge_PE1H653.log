@@ -1,0 +1,309 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 18:58:28 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/PE1H.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PE1H.DR65.BR3.net
+  File processing option string: "fix 872"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/charge_PE1H653.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PE1H, subpartition PE1H_DR_65_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PE1A_RSIN                            4:11     8           CHARACTER            
+PE1H_RSOD                           12:14     3           CHARACTER            
+PE1H_CSAN9                          15:17     3           CHARACTER            
+PE1H_DEODD                          18:25     8           CHARACTER            
+PE1H_DSPOD                          26:33     8           CHARACTER            
+PE1H_DFLIM                          34:41     8           CHARACTER            
+PE1H_DSJTP                          42:49     8           CHARACTER            
+PE1H_DFCTR                          50:57     8           CHARACTER            
+PE1H_DSPOD1                         58:65     8           CHARACTER            
+PE1H_DEXCD                          66:73     8           CHARACTER            
+PE1H_CSMOT                          74:76     3           CHARACTER            
+PE1H_CSRD4                          77:78     2           CHARACTER            
+PE1H_CSSSP                          79:79     1           CHARACTER            
+PE1H_CSTFG                          80:80     1           CHARACTER            
+PE1H_CSARG                          81:83     3           CHARACTER            
+PE1H_CSPDV3                         84:84     1           CHARACTER            
+PE1H_CSD6                           85:85     1           CHARACTER            
+PE1H_CSVCA                          86:86     1           CHARACTER            
+PE1H_CSNED                          87:87     1           CHARACTER            
+PE1H_CSSOD                          88:88     1           CHARACTER            
+PE1H_CSQCA1                         89:89     1           CHARACTER            
+PE1H_CSRAD1                         90:90     1           CHARACTER            
+PE1H_FSAB1                          91:91     1           CHARACTER            
+PE1H_FSPCP                          92:92     1           CHARACTER            
+PE1H_RSPE1                         93:103    11           CHARACTER            
+PE1H_RSPE3                        104:114    11           CHARACTER            
+PE1H_DFCTF                        115:122     8           CHARACTER            
+PE1H_CSMOT2                       123:125     3           CHARACTER            
+PE1H_CSRRP                        126:126     1           CHARACTER            
+PE1H_CSVCO1                       127:127     1           CHARACTER            
+PE1H_DFDECH                       128:135     8           CHARACTER            
+PE1H_CSRD43                       136:137     2           CHARACTER            
+PE1H_DSNDL                        138:145     8           CHARACTER            
+PE1H_DSCCS                        146:153     8           CHARACTER            
+PE1H_CSGRO1                       154:155     2           CHARACTER            
+PE1H_CSODO                        156:157     2           CHARACTER            
+PE1H_DFCTE1                       158:165     8           CHARACTER            
+PE1H_FSAB2                        166:166     1           CHARACTER            
+PE1H_FSNOD                        167:167     1           CHARACTER            
+PE1H_DEODDH                       168:175     8           CHARACTER            
+PE1H_FSNEG1                       176:176     1           CHARACTER            
+PE1H_FSTPP                        177:177     1           CHARACTER            
+PE1H_CSAR27                       178:180     3           CHARACTER            
+PE1H_NSFIL1                       181:181     1           CHARACTER            
+PE1H_CSRD4H                       182:183     2           CHARACTER            
+PE1H_CSSSPH                       184:184     1           CHARACTER            
+PE1H_CSARGH                       185:187     3           CHARACTER            
+PE1H_NSFILH                       188:189     2           CHARACTER            
+PE1H_FSD11                        190:190     1           CHARACTER            
+PE1H_FSRRE1                       191:191     1           CHARACTER            
+PE1H_FSRRE2                       192:192     1           CHARACTER            
+PE1H_CSTD6                        193:193     1           CHARACTER            
+PE1H_FSBSC                        194:194     1           CHARACTER            
+PE1H_FSDJCR                       195:195     1           CHARACTER            
+PE1H_FSDJCF                       196:196     1           CHARACTER            
+PE1H_FSDJCS                       197:197     1           CHARACTER            
+PE1H_CSGROH                       198:199     2           CHARACTER            
+PE1H_FSEAC                        200:200     1           CHARACTER            
+PE1H_CSBCP                        201:201     1           CHARACTER            
+PE1H_DDPRA                        202:209     8           CHARACTER            
+PE1H_DDPRAH                       210:217     8           CHARACTER            
+PE1H_CSVCAH                       218:218     1           CHARACTER            
+PE1H_FSD11H                       219:219     1           CHARACTER            
+PE1H_CSCEE3                       220:220     1           CHARACTER            
+PE1H_DDPRD1                       221:228     8           CHARACTER            
+PE1H_CSBCC                        229:229     1           CHARACTER            
+PE1H_QMODH3                       230:238     9           ZONED DECIMAL (9, 2) 
+PE1H_QSAAMH                       239:240     2           CHARACTER            
+PE1H_RSIAT                        241:247     7           CHARACTER            
+PE1H_QMODH1                       248:256     9           ZONED DECIMAL (9, 2) 
+PE1H_QMODH2                       257:265     9           ZONED DECIMAL (9, 2) 
+PE1H_RSODRH                       266:268     3           CHARACTER            
+PE1H_CSMSC                        269:269     1           CHARACTER            
+PE1H_PSITF1                       270:273     4           CHARACTER            
+PE1H_NSRAL7                       274:275     2           CHARACTER            
+PE1H_NSRALI                       276:277     2           CHARACTER            
+PE1H_CSMALI                       278:280     3           CHARACTER            
+PE1H_RSRS2                        281:286     6           CHARACTER            
+PE1H_CSTAI1                       287:288     2           CHARACTER            
+PE1H_NSDEC9                       289:291     3           CHARACTER            
+PE1H_QSAAM                        292:293     2           CHARACTER            
+PE1H_PSALD                        294:298     5           CHARACTER            
+PE1H_CSRS                         299:300     2           CHARACTER            
+PE1H_CSEPA1                       301:304     4           CHARACTER            
+PE1H_NSRAL0                       305:306     2           CHARACTER            
+PE1H_CSALL0                       307:308     2           CHARACTER            
+PE1H_CSALD0                       309:309     1           CHARACTER            
+PE1H_RSOD9                        310:312     3           CHARACTER            
+PE1H_RSIA3                        313:319     7           CHARACTER            
+PE1H_PSITF5                       320:323     4           CHARACTER            
+PE1H_CST1D2_1                     324:325     2           CHARACTER            
+PE1H_CSAAJ8_1                     326:330     5           CHARACTER            
+PE1H_RSRP7_1                      331:333     3           CHARACTER            
+PE1H_NSRAN1_1                     334:335     2           CHARACTER            
+PE1H_CST1D2_2                     336:337     2           CHARACTER            
+PE1H_CSAAJ8_2                     338:342     5           CHARACTER            
+PE1H_RSRP7_2                      343:345     3           CHARACTER            
+PE1H_NSRAN1_2                     346:347     2           CHARACTER            
+PE1H_CST1D2_3                     348:349     2           CHARACTER            
+PE1H_CSAAJ8_3                     350:354     5           CHARACTER            
+PE1H_RSRP7_3                      355:357     3           CHARACTER            
+PE1H_NSRAN1_3                     358:359     2           CHARACTER            
+PE1H_CST1D2_4                     360:361     2           CHARACTER            
+PE1H_CSAAJ8_4                     362:366     5           CHARACTER            
+PE1H_RSRP7_4                      367:369     3           CHARACTER            
+PE1H_NSRAN1_4                     370:371     2           CHARACTER            
+PE1H_CST1D2_5                     372:373     2           CHARACTER            
+PE1H_CSAAJ8_5                     374:378     5           CHARACTER            
+PE1H_RSRP7_5                      379:381     3           CHARACTER            
+PE1H_NSRAN1_5                     382:383     2           CHARACTER            
+PE1H_CST1D2_6                     384:385     2           CHARACTER            
+PE1H_CSAAJ8_6                     386:390     5           CHARACTER            
+PE1H_RSRP7_6                      391:393     3           CHARACTER            
+PE1H_NSRAN1_6                     394:395     2           CHARACTER            
+PE1H_CST1D2_7                     396:397     2           CHARACTER            
+PE1H_CSAAJ8_7                     398:402     5           CHARACTER            
+PE1H_RSRP7_7                      403:405     3           CHARACTER            
+PE1H_NSRAN1_7                     406:407     2           CHARACTER            
+PE1H_CST1D2_8                     408:409     2           CHARACTER            
+PE1H_CSAAJ8_8                     410:414     5           CHARACTER            
+PE1H_RSRP7_8                      415:417     3           CHARACTER            
+PE1H_NSRAN1_8                     418:419     2           CHARACTER            
+PE1H_CST1D2_9                     420:421     2           CHARACTER            
+PE1H_CSAAJ8_9                     422:426     5           CHARACTER            
+PE1H_RSRP7_9                      427:429     3           CHARACTER            
+PE1H_NSRAN1_9                     430:431     2           CHARACTER            
+PE1H_CST1D2_10                    432:433     2           CHARACTER            
+PE1H_CSAAJ8_10                    434:438     5           CHARACTER            
+PE1H_RSRP7_10                     439:441     3           CHARACTER            
+PE1H_NSRAN1_10                    442:443     2           CHARACTER            
+PE1H_CST1D2_11                    444:445     2           CHARACTER            
+PE1H_CSAAJ8_11                    446:450     5           CHARACTER            
+PE1H_RSRP7_11                     451:453     3           CHARACTER            
+PE1H_NSRAN1_11                    454:455     2           CHARACTER            
+PE1H_CST1D2_12                    456:457     2           CHARACTER            
+PE1H_CSAAJ8_12                    458:462     5           CHARACTER            
+PE1H_RSRP7_12                     463:465     3           CHARACTER            
+PE1H_NSRAN1_12                    466:467     2           CHARACTER            
+PE1H_CST1D2_13                    468:469     2           CHARACTER            
+PE1H_CSAAJ8_13                    470:474     5           CHARACTER            
+PE1H_RSRP7_13                     475:477     3           CHARACTER            
+PE1H_NSRAN1_13                    478:479     2           CHARACTER            
+PE1H_CST1D2_14                    480:481     2           CHARACTER            
+PE1H_CSAAJ8_14                    482:486     5           CHARACTER            
+PE1H_RSRP7_14                     487:489     3           CHARACTER            
+PE1H_NSRAN1_14                    490:491     2           CHARACTER            
+PE1H_CST1D2_15                    492:493     2           CHARACTER            
+PE1H_CSAAJ8_15                    494:498     5           CHARACTER            
+PE1H_RSRP7_15                     499:501     3           CHARACTER            
+PE1H_NSRAN1_15                    502:503     2           CHARACTER            
+PE1H_DESI2_1                      504:511     8           CHARACTER            
+PE1H_DESI2_2                      512:519     8           CHARACTER            
+PE1H_DESI2_3                      520:527     8           CHARACTER            
+PE1H_DESI2_4                      528:535     8           CHARACTER            
+PE1H_DESI2_5                      536:543     8           CHARACTER            
+PE1H_DESI2_6                      544:551     8           CHARACTER            
+PE1H_DESI2_7                      552:559     8           CHARACTER            
+PE1H_DESI2_8                      560:567     8           CHARACTER            
+PE1H_DESI2_9                      568:575     8           CHARACTER            
+PE1H_DESI2_10                     576:583     8           CHARACTER            
+PE1H_DESI2_11                     584:591     8           CHARACTER            
+PE1H_DESI2_12                     592:599     8           CHARACTER            
+PE1H_DESI2_13                     600:607     8           CHARACTER            
+PE1H_DESI2_14                     608:615     8           CHARACTER            
+PE1H_DESI2_15                     616:623     8           CHARACTER            
+PE1H_DSFDT                        624:631     8           CHARACTER            
+PE1H_FSTRAN                       632:632     1           CHARACTER            
+PE1H_DDASA                        633:640     8           CHARACTER            
+PE1H_CSPLAN                       641:641     1           CHARACTER            
+PE1H_FSEAM1                       642:642     1           CHARACTER            
+PE1H_CYODH3                       643:643     1           CHARACTER            
+PE1H_DDPASA                       644:651     8           CHARACTER            
+PE1H_CSCA8                        652:652     1           CHARACTER            
+PE1H_QMPARP                       653:661     9           ZONED DECIMAL (9, 2) 
+PE1H_CYPARP                       662:662     1           CHARACTER            
+PE1H_CDTRA                        663:663     1           CHARACTER            
+PE1H_CDCAT                        664:664     1           CHARACTER            
+PE1H_CDELI                        665:665     1           CHARACTER            
+PE1H_CDPAT                        666:666     1           CHARACTER            
+PE1H_CDBLC                        667:667     1           CHARACTER            
+PE1H_CSTED                        668:668     1           CHARACTER            
+PE1H_DDAERT                       669:676     8           CHARACTER            
+PE1H_CSVAD                        677:677     1           CHARACTER            
+PE1H_CSVAM                        678:678     1           CHARACTER            
+PE1H_CSVAMH                       679:679     1           CHARACTER            
+PE1H_FSACVH                       680:680     1           CHARACTER            
+PE1H_FSPLIH                       681:681     1           CHARACTER            
+PE1H_CSNOD                        682:682     1           CHARACTER            
+PE1H_DCHOD                        683:690     8           CHARACTER            
+PE1H_TSACCA                       691:692     2           CHARACTER            
+PE1H_CDCRP                        693:693     1           CHARACTER            
+PE1H_PSRELE                       694:696     3           CHARACTER            
+PE1H_DFRCTA                       697:704     8           CHARACTER            
+PE1H_CSRRD                        705:705     1           CHARACTER            
+PE1H_QMBPJH                       706:712     7           ZONED DECIMAL (7, 2) 
+PE1H_NIPRA                        713:714     2           CHARACTER            
+PE1H_CDNDT                        715:715     1           CHARACTER            
+PE1H_PSRELF                       716:719     4           CHARACTER            
+PE1H_PJTRAB                       720:723     4           CHARACTER            
+PE1H_QMPCB1                       724:730     7           ZONED DECIMAL (7, 2) 
+PE1H_CZNAE1                       731:735     5           CHARACTER            
+PE1H_CSRAF                        736:736     1           CHARACTER            
+PE1H_CSSRP                        737:737     1           CHARACTER            
+PE1H_CSAPRV                       738:738     1           CHARACTER            
+PE1H_FIMAE                        739:739     1           CHARACTER            
+PE1H_DEMAE                        740:747     8           CHARACTER            
+PE1H_DEMAD                        748:755     8           CHARACTER            
+PE1H_DEMAF                        756:763     8           CHARACTER            
+PE1H_NSCVH                        764:779    16           CHARACTER            
+PE1H_CXSAL                        780:794    15           CHARACTER            
+PE1H_FIUACB                       795:795     1           CHARACTER            
+PE1H_FIUDOB                       796:796     1           CHARACTER            
+PE1H_FIUEXA                       797:797     1           CHARACTER            
+PE1H_NBJEC1                       798:801     4           CHARACTER            
+PE1H_DSFCSP                       802:809     8           CHARACTER            
+PE1H_FIAA41                       810:810     1           CHARACTER            
+PE1H_PSAST1                       811:814     4           ZONED DECIMAL (4, 0) 
+    DEFAULT if 811:814 = 0X00000cf0(character '')
+PE1H_CDSTA1                       815:816     2           CHARACTER            
+PE1H_FSADG                        817:817     1           CHARACTER            
+PE1H_CSDTP1                       818:821     4           ZONED DECIMAL (4, 0) 
+PE1H_FILLER                       822:831    10           CHARACTER            
+PE1H_FILLER_1                     832:841    10           CHARACTER            
+PE1H_FILLER_2                     842:851    10           CHARACTER            
+PE1H_FILLER_3                     852:861    10           CHARACTER            
+PE1H_FILLER_4                     862:871    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+
+Table PE1H, subpartition PE1H_DR_65_BR3_PART:
+  0 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             0
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        0
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Fri Jun 09 18:58:28 2023
+Run ended on Fri Jun 09 18:58:28 2023
+
+Elapsed time was:     00:00:00.39
+CPU time was:         00:00:00.05
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 18:58:28 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 0.
+
+Table PE1H, subpartition PE1H_DR_65_BR3_PART:
+  0 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/log/charge_PE1H653.log
+for more information about the load.
+
+ number of rows inserted not checked 

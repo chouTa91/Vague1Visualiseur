@@ -1,0 +1,17 @@
+Processing PE1Q ...
+Temp nettoyage : 0 seconds
+
+Loading process of table PE1Q
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	228 row(s) inserted
+
+
+PE1Q;OK;228;228
+Temps chargement : 2 seconds
+Elapsed Time: 2 seconds

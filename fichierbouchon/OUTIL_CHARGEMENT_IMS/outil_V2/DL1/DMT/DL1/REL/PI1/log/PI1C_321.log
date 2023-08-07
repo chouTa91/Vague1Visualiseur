@@ -1,0 +1,17 @@
+Processing PI1C ...
+Temp nettoyage : 233 seconds
+
+Loading process of table PI1C
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	8540233 row(s) inserted
+
+
+PI1C;OK;8540233;8540233
+Temps chargement : 207 seconds
+Elapsed Time: 440 seconds

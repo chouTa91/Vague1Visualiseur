@@ -1,0 +1,17 @@
+Processing PK1R ...
+Temp nettoyage : 0 seconds
+
+Loading process of table PK1R
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	28 row(s) inserted
+
+
+PK1R;OK;28;28
+Temps chargement : 1 seconds
+Elapsed Time: 1 seconds

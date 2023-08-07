@@ -1,0 +1,186 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 07:10:55 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/PD2A02_30108.ctl
+Data File:      Tab.U.PD2A02.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_PD2A0200.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PD2A02, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CSORG9                              FIRST     *   ;  O(") CHARACTER            
+DSTRTG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HSTRT9                               NEXT     8   ;  O(") CHARACTER            
+NSFICX                               NEXT     2   ;  O(") CHARACTER            
+QSTRC9                               NEXT     *   ;  O(") CHARACTER            
+CSCHA                                NEXT     5   ;  O(") CHARACTER            
+CSJOB                                NEXT     8   ;  O(") CHARACTER            
+CSPRG                                NEXT     8   ;  O(") CHARACTER            
+CDTCP                                NEXT     1   ;  O(") CHARACTER            
+NSLDB                                NEXT     *   ;  O(") CHARACTER            
+CCPJT                                NEXT     1   ;  O(") CHARACTER            
+CSENV                                NEXT     4   ;  O(") CHARACTER            
+FSIRLM                               NEXT     1   ;  O(") CHARACTER            
+FSCHKP                               NEXT     1   ;  O(") CHARACTER            
+CSFAMB                               NEXT     1   ;  O(") CHARACTER            
+FSSIG                                NEXT     1   ;  O(") CHARACTER            
+CSPRGA                               NEXT     8   ;  O(") CHARACTER            
+CSDOMV                               NEXT     4   ;  O(") CHARACTER            
+QTLSV                                NEXT     *   ;  O(") CHARACTER            
+GSPA01                               NEXT     2   ;  O(") CHARACTER            
+CSNI01                               NEXT     *   ;  O(") CHARACTER            
+LSQ301                               NEXT    30   ;  O(") CHARACTER            
+YQLS01                               NEXT     *   ;  O(") CHARACTER            
+GSPA02                               NEXT     2   ;  O(") CHARACTER            
+CSNI02                               NEXT     *   ;  O(") CHARACTER            
+LSQ302                               NEXT    30   ;  O(") CHARACTER            
+YQLS02                               NEXT     *   ;  O(") CHARACTER            
+GSPA03                               NEXT     2   ;  O(") CHARACTER            
+CSNI03                               NEXT     *   ;  O(") CHARACTER            
+LSQ303                               NEXT    30   ;  O(") CHARACTER            
+YQLS03                               NEXT     *   ;  O(") CHARACTER            
+GSPA04                               NEXT     2   ;  O(") CHARACTER            
+CSNI04                               NEXT     *   ;  O(") CHARACTER            
+LSQ304                               NEXT    30   ;  O(") CHARACTER            
+YQLS04                               NEXT     *   ;  O(") CHARACTER            
+GSPA05                               NEXT     2   ;  O(") CHARACTER            
+CSNI05                               NEXT     *   ;  O(") CHARACTER            
+LSQ305                               NEXT    30   ;  O(") CHARACTER            
+YQLS05                               NEXT     *   ;  O(") CHARACTER            
+GSPA06                               NEXT     2   ;  O(") CHARACTER            
+CSNI06                               NEXT     *   ;  O(") CHARACTER            
+LSQ306                               NEXT    30   ;  O(") CHARACTER            
+YQLS06                               NEXT     *   ;  O(") CHARACTER            
+GSPA07                               NEXT     2   ;  O(") CHARACTER            
+CSNI07                               NEXT     *   ;  O(") CHARACTER            
+LSQ307                               NEXT    30   ;  O(") CHARACTER            
+YQLS07                               NEXT     *   ;  O(") CHARACTER            
+GSPA08                               NEXT     2   ;  O(") CHARACTER            
+CSNI08                               NEXT     *   ;  O(") CHARACTER            
+LSQ308                               NEXT    30   ;  O(") CHARACTER            
+YQLS08                               NEXT     *   ;  O(") CHARACTER            
+GSPA09                               NEXT     2   ;  O(") CHARACTER            
+CSNI09                               NEXT     *   ;  O(") CHARACTER            
+LSQ309                               NEXT    30   ;  O(") CHARACTER            
+YQLS09                               NEXT     *   ;  O(") CHARACTER            
+GSPA10                               NEXT     2   ;  O(") CHARACTER            
+CSNI10                               NEXT     *   ;  O(") CHARACTER            
+LSQ310                               NEXT    30   ;  O(") CHARACTER            
+YQLS10                               NEXT     *   ;  O(") CHARACTER            
+GSPA11                               NEXT     2   ;  O(") CHARACTER            
+CSNI11                               NEXT     *   ;  O(") CHARACTER            
+LSQ311                               NEXT    30   ;  O(") CHARACTER            
+YQLS11                               NEXT     *   ;  O(") CHARACTER            
+GSPA12                               NEXT     2   ;  O(") CHARACTER            
+CSNI12                               NEXT     *   ;  O(") CHARACTER            
+LSQ312                               NEXT    30   ;  O(") CHARACTER            
+YQLS12                               NEXT     *   ;  O(") CHARACTER            
+GSPA13                               NEXT     2   ;  O(") CHARACTER            
+CSNI13                               NEXT     *   ;  O(") CHARACTER            
+LSQ313                               NEXT    30   ;  O(") CHARACTER            
+YQLS13                               NEXT     *   ;  O(") CHARACTER            
+GSPA14                               NEXT     2   ;  O(") CHARACTER            
+CSNI14                               NEXT     *   ;  O(") CHARACTER            
+LSQ314                               NEXT    30   ;  O(") CHARACTER            
+YQLS14                               NEXT     *   ;  O(") CHARACTER            
+GSPA15                               NEXT     2   ;  O(") CHARACTER            
+CSNI15                               NEXT     *   ;  O(") CHARACTER            
+LSQ315                               NEXT    30   ;  O(") CHARACTER            
+YQLS15                               NEXT     *   ;  O(") CHARACTER            
+GSPA16                               NEXT     2   ;  O(") CHARACTER            
+CSNI16                               NEXT     *   ;  O(") CHARACTER            
+LSQ316                               NEXT    30   ;  O(") CHARACTER            
+YQLS16                               NEXT     *   ;  O(") CHARACTER            
+GSPA17                               NEXT     2   ;  O(") CHARACTER            
+CSNI17                               NEXT     *   ;  O(") CHARACTER            
+LSQ317                               NEXT    30   ;  O(") CHARACTER            
+YQLS17                               NEXT     *   ;  O(") CHARACTER            
+GSPA18                               NEXT     2   ;  O(") CHARACTER            
+CSNI18                               NEXT     *   ;  O(") CHARACTER            
+LSQ318                               NEXT    30   ;  O(") CHARACTER            
+YQLS18                               NEXT     *   ;  O(") CHARACTER            
+GSPA19                               NEXT     2   ;  O(") CHARACTER            
+CSNI19                               NEXT     *   ;  O(") CHARACTER            
+LSQ319                               NEXT    30   ;  O(") CHARACTER            
+YQLS19                               NEXT     *   ;  O(") CHARACTER            
+GSPA20                               NEXT     2   ;  O(") CHARACTER            
+CSNI20                               NEXT     *   ;  O(") CHARACTER            
+LSQ320                               NEXT    30   ;  O(") CHARACTER            
+YQLS20                               NEXT     *   ;  O(") CHARACTER            
+SH2A02                               NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+
+The following index(es) on table PD2A02 were processed:
+index RSOV0200.JPD2A021 partition PD2A02_DR_32_PART loaded successfully with 1 keys
+index RSOV0200.JPD2A021 partition PD2A02_DR_65_PART loaded successfully with 1 keys
+
+Table PD2A02:
+  2 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date cache:
+   Max Size:      1000
+   Entries :         3
+   Hits    :         1
+   Misses  :         0
+
+  Partition PD2A02_DR_32_PART: 1 Row loaded.
+  Partition PD2A02_DR_65_PART: 1 Row loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             2
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        1
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Thu Jun 01 07:10:55 2023
+Run ended on Thu Jun 01 07:10:56 2023
+
+Elapsed time was:     00:00:00.40
+CPU time was:         00:00:00.09
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 07:10:55 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 2.
+
+Table PD2A02:
+  2 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_PD2A0200.log
+for more information about the load.
+
+ number of rows inserted not checked 

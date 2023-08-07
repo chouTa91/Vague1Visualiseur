@@ -1,0 +1,45 @@
+Convert P0101A default tools using conv table-297-to-P1
+Target DB set to 'ORACLE'
+NL_Protector set to '@%@!'
+directing outputs to /pdt/CAPGEMINI/COPY_FROM_NAS_V2/DB2_LINUXDATA/
+Data file format NAS !
+QUALIFICATION REPORT For Table P0101A:
+
+Reporting of interesting characters per categories:
+case  0: basic printable characters    : nb chars = 1621881557
+case  1: 00 Low value character        : nb chars = 0
+case  2: 25 (LF --> 0A on target)      : nb chars = 0
+case  3: chars below 40, may be ok     : nb chars = 14
+case  4: chars below 40, problematic   : nb chars = 0
+case  5: Pb du High Value FF           : nb chars = 0
+case  6: 9F: Currency sign or Euro     : nb chars = 2
+case  7: Risque d'overpunch (C0 D0)    : nb chars = 2595
+
+Reporting per column, the number of interesting chars:
+Column_Name                   ;      case  0;      case  1;      case  2;      case  3;      case  4;      case  5;      case  6;      case  7
+LNRS1                         ;    328904218;            0;            0;            8;            0;            0;            2;          812
+LNIND1                        ;    150007300;            0;            0;            2;            0;            0;            0;          108
+LNPIN                         ;    124988654;            0;            0;            0;            0;            0;            0;          521
+CDSIG                         ;     79463697;            0;            0;            1;            0;            0;            0;          102
+LZGRP                         ;     75821120;            0;            0;            1;            0;            0;            0;           99
+LJGLO                         ;    328836558;            0;            0;            2;            0;            0;            0;            0
+CXAGC                         ;     82225307;            0;            0;            0;            0;            0;            0;          953
+
+Reporting the number of occurences of interesting char (table level):
+char <<0x5>> nb occurences: 3
+char <<0x8>> nb occurences: 1
+char <<0x22>> nb occurences: 2
+char <<0x29>> nb occurences: 5
+char <<0x2b>> nb occurences: 2
+char <<0x39>> nb occurences: 1
+char <<0x9f>> nb occurences: 2
+char <<0xc0>> nb occurences: 2275
+char <<0xd0>> nb occurences: 320
+nb rec processed: 8222626
+END of QUALIFICATION REPORT
+nb recs read   : 8222626 
+nb recs written: 8222626 
+Max input rec Len: 401 
+Max Output rec Len(including LF): 410 
+Elapsed Time: 30 seconds
+DARPPP1.P0101A;OK;8222626;8222626

@@ -1,0 +1,39 @@
+Convert P0151E default tools using conv table-297-to-P1
+Target DB set to 'ORACLE'
+NL_Protector set to '@%@!'
+directing outputs to /pdt/CAPGEMINI/COPY_FROM_NAS_V2/DB2_LINUXDATA/
+Data file format NAS !
+QUALIFICATION REPORT For Table P0151E:
+
+Reporting of interesting characters per categories:
+case  0: basic printable characters    : nb chars = 568936156
+case  1: 00 Low value character        : nb chars = 21429
+case  2: 25 (LF --> 0A on target)      : nb chars = 0
+case  3: chars below 40, may be ok     : nb chars = 3
+case  4: chars below 40, problematic   : nb chars = 0
+case  5: Pb du High Value FF           : nb chars = 0
+case  6: 9F: Currency sign or Euro     : nb chars = 0
+case  7: Risque d'overpunch (C0 D0)    : nb chars = 96
+
+Reporting per column, the number of interesting chars:
+Column_Name                   ;      case  0;      case  1;      case  2;      case  3;      case  4;      case  5;      case  6;      case  7
+CSODB2                        ;     26612650;           50;            0;            0;            0;            0;            0;            0
+CSRDB2                        ;     26612650;           50;            0;            0;            0;            0;            0;            0
+NSCDB3                        ;     58548270;          110;            0;            0;            0;            0;            0;            0
+CSRIB2                        ;     10643990;           20;            0;            0;            0;            0;            0;            0
+LSBAI1                        ;      2216000;            0;            0;            0;            0;            0;            0;           64
+LNTTC1                        ;      5767710;        21199;            0;            3;            0;            0;            0;           32
+
+Reporting the number of occurences of interesting char (table level):
+char <<0>> nb occurences: 21429
+char <<0x5>> nb occurences: 3
+char <<0xc0>> nb occurences: 94
+char <<0xd0>> nb occurences: 2
+nb rec processed: 5333172
+END of QUALIFICATION REPORT
+nb recs read   : 5333172 
+nb recs written: 5333172 
+Max input rec Len: 520 
+Max Output rec Len(including LF): 469 
+Elapsed Time: 17 seconds
+DARPPP1.P0151E;OK;5333172;5333172

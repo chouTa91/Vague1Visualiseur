@@ -1,0 +1,17 @@
+Processing PB6D ...
+Temp nettoyage : 0 seconds
+
+Loading process of table PB6D
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	5601 row(s) inserted
+
+
+PB6D;OK;5601;5601
+Temps chargement : 1 seconds
+Elapsed Time: 1 seconds

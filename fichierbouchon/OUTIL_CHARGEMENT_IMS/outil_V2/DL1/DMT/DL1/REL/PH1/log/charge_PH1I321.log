@@ -1,0 +1,105 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 8 00:26:42 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/tmp/PH1I.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PH1I.DR32.BR1.net
+  File processing option string: "fix 155"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/tmp/charge_PH1I321.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PH1I, subpartition PH1I_DR_32_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PH1A_RSTIN                           4:11     8           CHARACTER            
+PH1H_CSTPS                          12:12     1           CHARACTER            
+PH1H_NSSPS                          13:14     2           ZONED DECIMAL (2, 0) 
+PH1I_DSDPS                          15:22     8           CHARACTER            
+PH1I_NSDEC2                         23:23     1           ZONED DECIMAL (1, 0) 
+PH1I_CSTDP                          24:24     1           CHARACTER            
+PH1I_CSNPS                          25:26     2           CHARACTER            
+PH1I_CSOPS                          27:28     2           CHARACTER            
+PH1I_RSDEC6                         29:37     9           CHARACTER            
+PH1I_QMDPS                          38:47    10           ZONED DECIMAL (10, 2)
+PH1I_QMBPA                          48:56     9           ZONED DECIMAL (9, 2) 
+PH1I_QMMFO                          57:63     7           ZONED DECIMAL (7, 2) 
+PH1I_PSMPR                          64:65     2           ZONED DECIMAL (2, 0) 
+PH1I_DDPPA                          66:73     8           CHARACTER            
+PH1I_DFPPA                          74:81     8           CHARACTER            
+PH1I_CSRSB                         82:116    35           CHARACTER            
+PH1I_FILLER                       117:126    10           ZONED DECIMAL (10, 0)
+PH1I_FILLER_1                     127:136    10           ZONED DECIMAL (10, 0)
+PH1I_FILLER_2                     137:146    10           ZONED DECIMAL (10, 0)
+PH1I_FILLER_3                     147:154     8           ZONED DECIMAL (8, 0) 
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PH1I were processed:
+index RSOV0200.PK_PH1I partition PH1I_DR_32_BR1_PART loaded successfully with 74330 keys
+
+Table PH1I, subpartition PH1I_DR_32_BR1_PART:
+  74330 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         74330
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       22
+Total stream buffers loaded by SQL*Loader load thread:       22
+
+Run began on Thu Jun 08 00:26:42 2023
+Run ended on Thu Jun 08 00:26:46 2023
+
+Elapsed time was:     00:00:04.05
+CPU time was:         00:00:00.33
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 8 00:26:42 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 74330.
+
+Table PH1I, subpartition PH1I_DR_32_BR1_PART:
+  74330 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/log/charge_PH1I321.log
+for more information about the load.
+
+ number of rows inserted not checked 

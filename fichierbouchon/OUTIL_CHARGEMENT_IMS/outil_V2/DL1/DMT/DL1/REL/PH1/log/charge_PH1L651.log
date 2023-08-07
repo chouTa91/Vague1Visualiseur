@@ -1,0 +1,97 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 13:12:47 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/tmp/PH1L.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PH1L.DR65.BR1.net
+  File processing option string: "fix 132"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/tmp/charge_PH1L651.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PH1L, subpartition PH1L_DR_65_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PH1A_RSTIN                           4:11     8           CHARACTER            
+PH1L_DERPA4                         12:17     6           CHARACTER            
+PH1L_NSETP1                         18:28    11           CHARACTER            
+PH1L_QMBAR2                         29:35     7           ZONED DECIMAL (7, 2) 
+PH1L_QMAV0                          36:42     7           ZONED DECIMAL (7, 2) 
+PH1L_QMPIB1                         43:49     7           ZONED DECIMAL (7, 2) 
+PH1L_QMPRP                          50:56     7           ZONED DECIMAL (7, 2) 
+PH1L_QMRMD                          57:63     7           ZONED DECIMAL (7, 2) 
+PH1L_LMRMD                          64:83    20           CHARACTER            
+PH1L_FILLER                         84:93    10           ZONED DECIMAL (10, 0)
+PH1L_FILLER_1                      94:103    10           ZONED DECIMAL (10, 0)
+PH1L_FILLER_2                     104:113    10           ZONED DECIMAL (10, 0)
+PH1L_FILLER_3                     114:123    10           ZONED DECIMAL (10, 0)
+PH1L_FILLER_4                     124:131     8           ZONED DECIMAL (8, 0) 
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+
+Table PH1L, subpartition PH1L_DR_65_BR1_PART:
+  0 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             0
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        0
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Wed Jun 07 13:12:47 2023
+Run ended on Wed Jun 07 13:12:48 2023
+
+Elapsed time was:     00:00:00.26
+CPU time was:         00:00:00.03
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 13:12:47 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 0.
+
+Table PH1L, subpartition PH1L_DR_65_BR1_PART:
+  0 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/log/charge_PH1L651.log
+for more information about the load.
+
+ number of rows inserted not checked 

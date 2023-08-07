@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+  <title>Ma page HTML avec plusieurs zones</title>
+  
+  
+  	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+	
+	<script type="text/javascript" class="init">
+		$(document).ready(function() {
+			$('#example').DataTable( {
+				dom: 'Bfrtip',
+				buttons: [
+					'copyHtml5',
+					'excelHtml5',
+					'csvHtml5',
+					'pdfHtml5'
+				]
+			} );
+		} );
+	</script>
+	
+	
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+    }
+
+    .left-column {
+      flex-basis: 50%;
+      margin-right: 20px;
+    }
+
+    .right-column {
+      flex-basis: 50%;
+      margin-left: 20px;
+    }
+
+    .zone {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333333;
+      text-align: center;
+    }
+
+    .zone-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .zone-content {
+      color: #666666;
+      line-height: 1.6;
+    }
+
+    .chart {
+      width: 100%;
+      height: 300px;
+      margin-top: 20px;
+    }
+    
+      table {
+      border-collapse: collapse;
+    }
+  
+    table, th, td {
+      border: 1px solid black;padding: 8px;
+      padding: 8px;
+    }
+  </style>
+  
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <div class="zone">
+        <div class="zone-title">Fichiers</div>
+        <div class="zone-content">
+          		        <div class="zone-content">
+		          <!-- Contenu de la zone 3 -->
+		          
+		              <h3>Nombre de fichiers total sur le NAS</h3>
+							<ul>
+								<li th:text="${dl1_nbrFichiersTotal}"></li>
+					        </ul>
+		              <h3>Liste des DR</h3>
+							<ul>
+								<li th:each="direction : ${dl1_listDr}" th:text="${direction}"></li>
+							</ul>
+					 <h3>Nombre de fichiers par DR</h3>
+
+						<table style="border: 1px solid black;">
+							<thead>
+								<tr>
+									<th>DR</th>
+									<th>Nombre de fichiers</th>
+									<th>Liste des fichiers manquants</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each="entry : ${infoFichierDL1}">
+									<td th:text="${entry.key}"></td>
+									<td th:text="${entry.value.nombreDeFichier}" th:style="${entry.value.nombreDeFichier == 438 ? 'background-color: green; color: white' : 'background-color: red; color: white'}"></td>
+									<td>
+										<ul>
+											<li th:each="fichier : ${entry.value.listFichierManquant}" th:text="${fichier}"></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+        </div>
+      </div>
+
+			<div class="zone">
+				<div class="zone-title">Zone 2 : Graphique</div>
+				<div class="zone-content">
+					<canvas id="chart"></canvas>
+				</div>
+			</div>
+
+			<div class="zone">
+		        <div class="zone-title">Zone 3 : Tableau de bord</div>
+		        <div class="zone-content">
+					<canvas id="chart"></canvas>
+				</div>
+		      </div>
+    </div>
+
+    <div class="right-column">
+      <div class="zone">
+        <div class="zone-title">Tableau DB2</div>
+        <div class="zone-content">
+        
+        <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Table</th>
+                <th>Info</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+             <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+                        <tr>
+                <td>PI2A</td>
+                <td>PI2A : 55000;55000</td>
+                <td>OK</td>
+            </tr>
+
+        </tbody>
+    </table>
+        
+        </div>
+      </div>
+
+      <div class="zone">
+        <div class="zone-title">Zone 5 : Configuration</div>
+        <div class="zone-content">
+          <!-- Contenu de la zone 5 -->
+        </div>
+      </div>
+
+      <div class="zone">
+        <div class="zone-title">Zone 6 : Alertes</div>
+        <div class="zone-content">
+          <!-- Contenu de la zone 6 -->
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+  
+
+  <script th:inline="javascript">
+  
+//Récupération des données du modèle
+  var dl1_nbrFichierParDR = /*[[${dl1_nbrFichierParDR}]]*/ {};
+
+  // Extraction des clés (directions) et des valeurs (nombre de fichiers)
+  var directions = Object.keys(dl1_nbrFichierParDR);
+  var nbrFichiers = Object.values(dl1_nbrFichierParDR);
+
+  // Configuration des données pour le graphique
+  var data = {
+    labels: directions,
+    datasets: [{
+      label: 'Nombre de fichiers',
+      data: nbrFichiers,
+      backgroundColor: 'rgba(54, 162, 235, 1)',
+      borderColor: 'rgba(54, 162, 235, 1)',
+      borderWidth: 1
+    }]
+  };
+
+  // Configuration des options du graphique
+  var options = {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: 'Nombre de fichiers par direction'
+      }
+    }
+  };
+
+  // Création du graphique à barres
+  var ctx2 = document.getElementById('chart').getContext('2d');
+  var chart = new Chart(ctx2, {
+    type: 'bar',
+    data: data,
+    options: options
+  });
+  
+  
+  // Sélectionner tous les éléments ayant la classe "zone-title"
+  const zoneTitles = document.querySelectorAll('.zone-title');
+
+  // Ajouter un gestionnaire d'événement au clic sur chaque zone-title
+  zoneTitles.forEach(zoneTitle => {
+    zoneTitle.addEventListener('click', () => {
+      // Récupérer la zone parente de la zone-title actuelle
+      const zone = zoneTitle.parentNode;
+
+      // Ajouter ou supprimer la classe "active" pour basculer l'état de l'accordéon
+      zone.classList.toggle('active');
+    });
+  });
+  
+ 
+  </script>
+
+</body>
+</html>

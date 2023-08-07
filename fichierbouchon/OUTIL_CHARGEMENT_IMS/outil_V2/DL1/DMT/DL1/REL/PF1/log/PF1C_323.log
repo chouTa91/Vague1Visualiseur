@@ -1,0 +1,17 @@
+Processing PF1C ...
+Temp nettoyage : 671 seconds
+
+Loading process of table PF1C
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	18314099 row(s) inserted
+
+
+PF1C;OK;18314099;18314099
+Temps chargement : 898 seconds
+Elapsed Time: 1569 seconds

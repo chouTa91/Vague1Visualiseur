@@ -1,0 +1,92 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:27:56 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/tmp/PA4F.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA4F.DR32.BR0.net
+  File processing option string: "fix 52"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/tmp/charge_PA4F320.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA4F, partition PA4F_DR_32_PART, loaded from every logical record.
+Insert option in effect for this partition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                    3:3     1           CHARACTER            
+  (FILLER FIELD)
+PA4A_CSTIE                            4:5     2           CHARACTER            
+PA4A_NSTI                            6:11     6           CHARACTER            
+PA4F_CSTIDT                         12:13     2           CHARACTER            
+PA4F_ISDIVT                         14:33    20           CHARACTER            
+PA4F_CSIDXT                         34:34     1           CHARACTER            
+PA4F_FILLER                         35:51    17           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA4F were processed:
+index RSOV0200.PA44 partition PA4F_DR_32_PART loaded successfully with 601087 keys
+index RSOV0200.PK_PA4F partition PA4F_DR_32_PART loaded successfully with 603561 keys
+
+Table PA4F, partition PA4F_DR_32_PART:
+  603561 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        603561
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      149
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Wed Jun 07 16:27:56 2023
+Run ended on Wed Jun 07 16:28:28 2023
+
+Elapsed time was:     00:00:32.06
+CPU time was:         00:00:00.82
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:27:56 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 603561.
+
+Table PA4F, partition PA4F_DR_32_PART:
+  603561 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/log/charge_PA4F320.log
+for more information about the load.
+
+ number of rows inserted not checked 

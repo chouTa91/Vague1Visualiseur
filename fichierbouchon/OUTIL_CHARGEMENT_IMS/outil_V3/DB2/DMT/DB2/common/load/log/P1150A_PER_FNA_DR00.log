@@ -1,0 +1,16 @@
+Reloading table DARPPP1.P1150A_PER_FNA ...
+
+Loading process of table P1150A_PER_FNA
+       using APPEND mode
+       
+- Loading: ... done
+----------------------------------------------------
+DATAWB-1222: Syntax Error or Oracle Error: 
+SQL*Loader-926: OCI error while executing delete/truncate (due to REPLACE/TRUNCATE keyword) for table P1150A_PER_FNA
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS'
+----------------------------------------------------
+ Oracle errors are listed bellow:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS'
+ABORT ---
+Elapsed Time: 2530 seconds
+DARPPP1.P1150A_PER_FNA;KO;80243713;

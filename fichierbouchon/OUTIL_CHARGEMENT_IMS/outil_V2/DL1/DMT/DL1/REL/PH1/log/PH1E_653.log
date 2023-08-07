@@ -1,0 +1,17 @@
+Processing PH1E ...
+Temp nettoyage : 2 seconds
+
+Loading process of table PH1E
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	55715 row(s) inserted
+
+
+PH1E;OK;55715;55715
+Temps chargement : 5 seconds
+Elapsed Time: 7 seconds

@@ -1,0 +1,17 @@
+Processing PJ1F ...
+Temp nettoyage : 2175 seconds
+
+Loading process of table PJ1F
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	1867372 row(s) inserted
+
+
+PJ1F;OK;1867372;1867372
+Temps chargement : 520 seconds
+Elapsed Time: 2695 seconds

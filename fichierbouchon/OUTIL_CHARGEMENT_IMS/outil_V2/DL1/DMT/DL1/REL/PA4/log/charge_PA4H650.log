@@ -1,0 +1,207 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 11:56:57 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/tmp/PA4H.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA4H.DR65.BR0.net
+  File processing option string: "fix 882"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/tmp/charge_PA4H650.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA4H, partition PA4H_DR_65_PART, loaded from every logical record.
+Insert option in effect for this partition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                    3:3     1           CHARACTER            
+  (FILLER FIELD)
+PA4A_CSTIE                            4:5     2           CHARACTER            
+PA4A_NSTI                            6:11     6           CHARACTER            
+PA4H_CSTAM1                         12:12     1           CHARACTER            
+PA4H_NSSAA                          13:16     4           CHARACTER            
+PA4H_QSNTR                          17:18     2           CHARACTER            
+PA4H_QMDOTA                         19:28    10           ZONED DECIMAL (10, 2)
+PA4H_QMRPD                          29:38    10           ZONED DECIMAL (10, 2)
+PA4H_QMDOTM_1                       39:47     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_1                        48:56     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_1                        57:65     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_1                        66:74     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_1                        75:83     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_1                        84:92     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_1                       93:93     1           CHARACTER            
+PA4H_QMDOTM_2                      94:102     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_2                      103:111     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_2                      112:120     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_2                      121:129     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_2                      130:138     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_2                      139:147     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_2                     148:148     1           CHARACTER            
+PA4H_QMDOTM_3                     149:157     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_3                      158:166     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_3                      167:175     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_3                      176:184     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_3                      185:193     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_3                      194:202     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_3                     203:203     1           CHARACTER            
+PA4H_QMDOTM_4                     204:212     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_4                      213:221     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_4                      222:230     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_4                      231:239     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_4                      240:248     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_4                      249:257     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_4                     258:258     1           CHARACTER            
+PA4H_QMDOTM_5                     259:267     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_5                      268:276     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_5                      277:285     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_5                      286:294     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_5                      295:303     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_5                      304:312     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_5                     313:313     1           CHARACTER            
+PA4H_QMDOTM_6                     314:322     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_6                      323:331     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_6                      332:340     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_6                      341:349     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_6                      350:358     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_6                      359:367     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_6                     368:368     1           CHARACTER            
+PA4H_QMDOTM_7                     369:377     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_7                      378:386     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_7                      387:395     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_7                      396:404     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_7                      405:413     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_7                      414:422     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_7                     423:423     1           CHARACTER            
+PA4H_QMDOTM_8                     424:432     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_8                      433:441     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_8                      442:450     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_8                      451:459     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_8                      460:468     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_8                      469:477     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_8                     478:478     1           CHARACTER            
+PA4H_QMDOTM_9                     479:487     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_9                      488:496     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_9                      497:505     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_9                      506:514     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_9                      515:523     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_9                      524:532     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_9                     533:533     1           CHARACTER            
+PA4H_QMDOTM_10                    534:542     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_10                     543:551     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_10                     552:560     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_10                     561:569     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_10                     570:578     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_10                     579:587     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_10                    588:588     1           CHARACTER            
+PA4H_QMDOTM_11                    589:597     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_11                     598:606     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_11                     607:615     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_11                     616:624     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_11                     625:633     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_11                     634:642     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_11                    643:643     1           CHARACTER            
+PA4H_QMDOTM_12                    644:652     9           ZONED DECIMAL (9, 2) 
+PA4H_QMATC_12                     653:661     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG1_12                     662:670     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG2_12                     671:679     9           ZONED DECIMAL (9, 2) 
+PA4H_QMDG3_12                     680:688     9           ZONED DECIMAL (9, 2) 
+PA4H_QMAPA_12                     689:697     9           ZONED DECIMAL (9, 2) 
+PA4H_FSCRPT_12                    698:698     1           CHARACTER            
+PA4H_CSTYDO                       699:699     1           CHARACTER            
+PA4H_QKAIV                        700:709    10           ZONED DECIMAL (10, 2)
+PA4H_QKIFC                        710:719    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 710:719 = 0Xf0f0f0f0f0f0c0f0f0f0(character '000000é000')
+PA4H_QKIFD                        720:729    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 720:729 = 0Xf0f0f0f0f0c0f0f0f0f0(character '00000é0000')
+PA4H_QKSTC                        730:739    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 730:739 = 0Xf0f0f0f0c0f0f0f0f0f0(character '0000é00000')
+PA4H_QKSTD                        740:749    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 740:749 = 0Xf0f0f0c0f0f0f0f0f0f0(character '000é000000')
+PA4H_QKSDC                        750:759    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 750:759 = 0Xf0f0c040f0f0f0f0f0f0(character '00é 000000')
+PA4H_QKSDD                        760:769    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 760:769 = 0Xf0f0c0f0f0f0f0f0f0f0(character '00é0000000')
+PA4H_QKRDC                        770:779    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 770:779 = 0Xf0c0f0f0f0f0f0f0f0f0(character '0é00000000')
+PA4H_QKRDD                        780:789    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 780:789 = 0Xc0f0f0f0f0f0f0f0f0c0(character 'é00000000é')
+PA4H_QKETC                        790:799    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 790:799 = 0Xf0f0f0f0f0f0f0f0c0f0(character '00000000é0')
+PA4H_QKETD                        800:809    10           ZONED DECIMAL (10, 2)
+    DEFAULT if 800:809 = 0Xf0f0f0f0f0f0f0c040c0(character '0000000é é')
+PA4H_QKEDC                        810:819    10           ZONED DECIMAL (10, 2)
+PA4H_QKEDD                        820:829    10           ZONED DECIMAL (10, 2)
+PA4H_QKPTC                        830:839    10           ZONED DECIMAL (10, 2)
+PA4H_QKPDD                        840:849    10           ZONED DECIMAL (10, 2)
+PA4H_QKPDC                        850:859    10           ZONED DECIMAL (10, 2)
+PA4H_TSAID                        860:864     5  WHT      CHARACTER            
+    SQL string for column : "TO_NUMBER(:PA4H_TSAID, '99999')/100"
+PA4H_FILLER                       865:871     7           CHARACTER            
+PA4H_FILLER_1                     872:881    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA4H were processed:
+index RSOV0200.PK_PA4H partition PA4H_DR_65_PART loaded successfully with 361 keys
+
+Table PA4H, partition PA4H_DR_65_PART:
+  361 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           361
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        1
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Wed Jun 07 11:56:57 2023
+Run ended on Wed Jun 07 11:56:58 2023
+
+Elapsed time was:     00:00:00.48
+CPU time was:         00:00:00.05
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 11:56:57 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 361.
+
+Table PA4H, partition PA4H_DR_65_PART:
+  361 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/log/charge_PA4H650.log
+for more information about the load.
+
+ number of rows inserted not checked 

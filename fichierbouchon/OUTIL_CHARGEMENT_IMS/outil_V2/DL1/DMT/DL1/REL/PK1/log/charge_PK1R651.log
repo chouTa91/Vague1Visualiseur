@@ -1,0 +1,124 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 15:16:49 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/PK1R.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PK1R.DR65.BR1.net
+  File processing option string: "fix 144"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/charge_PK1R651.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PK1R, subpartition PK1R_DR_65_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PK1A_RSIN                            4:11     8           CHARACTER            
+PK1Q_NSSAI                          12:13     2           CHARACTER            
+PK1R_NSENT                          14:15     2           CHARACTER            
+PK1R_DENTR                          16:23     8           CHARACTER            
+PK1R_DENTR1                         24:31     8           CHARACTER            
+PK1R_CSOSE4                         32:32     1           CHARACTER            
+PK1R_CDTYE                          33:33     1           CHARACTER            
+PK1R_RSWD2                          34:35     2           CHARACTER            
+PK1R_CDSEN                          36:37     2           CHARACTER            
+PK1R_CDCLE_1                        38:39     2           CHARACTER            
+PK1R_CDCLE_2                        40:41     2           CHARACTER            
+PK1R_CDCLE_3                        42:43     2           CHARACTER            
+PK1R_CDCLE_4                        44:45     2           CHARACTER            
+PK1R_CDCLE_5                        46:47     2           CHARACTER            
+PK1R_CDCLE_6                        48:49     2           CHARACTER            
+PK1R_CDCLE_7                        50:51     2           CHARACTER            
+PK1R_CDCLE_8                        52:53     2           CHARACTER            
+PK1R_CDCLE_9                        54:55     2           CHARACTER            
+PK1R_CDCLE_10                       56:57     2           CHARACTER            
+PK1R_CDCLE_11                       58:59     2           CHARACTER            
+PK1R_CDCLE_12                       60:61     2           CHARACTER            
+PK1R_CDCLE_13                       62:63     2           CHARACTER            
+PK1R_CDCLE_14                       64:65     2           CHARACTER            
+PK1R_CDCLE_15                       66:67     2           CHARACTER            
+PK1R_CDCLE_16                       68:69     2           CHARACTER            
+PK1R_CDCLE_17                       70:71     2           CHARACTER            
+PK1R_CDCLE_18                       72:73     2           CHARACTER            
+PK1R_CDCLE_19                       74:75     2           CHARACTER            
+PK1R_CDCLE_20                       76:77     2           CHARACTER            
+PK1R_CDCLE_21                       78:79     2           CHARACTER            
+PK1R_CDCLE_22                       80:81     2           CHARACTER            
+PK1R_CDCLE_23                       82:83     2           CHARACTER            
+PK1R_CDCLE_24                       84:85     2           CHARACTER            
+PK1R_FILLER                         86:93     8           CHARACTER            
+PK1R_FILLER_1                      94:103    10           CHARACTER            
+PK1R_FILLER_2                     104:113    10           CHARACTER            
+PK1R_FILLER_3                     114:123    10           CHARACTER            
+PK1R_FILLER_4                     124:133    10           CHARACTER            
+PK1R_FILLER_5                     134:143    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PK1R were processed:
+index RSOV0200.PK_PK1R partition PK1R_DR_65_BR1_PART loaded successfully with 2 keys
+
+Table PK1R, subpartition PK1R_DR_65_BR1_PART:
+  2 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             2
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        1
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Wed Jun 07 15:16:49 2023
+Run ended on Wed Jun 07 15:16:50 2023
+
+Elapsed time was:     00:00:00.35
+CPU time was:         00:00:00.04
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 15:16:49 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 2.
+
+Table PK1R, subpartition PK1R_DR_65_BR1_PART:
+  2 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/log/charge_PK1R651.log
+for more information about the load.
+
+ number of rows inserted not checked 

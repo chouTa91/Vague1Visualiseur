@@ -1,0 +1,17 @@
+Processing PE1C ...
+Temp nettoyage : 778 seconds
+
+Loading process of table PE1C
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	4771274 row(s) inserted
+
+
+PE1C;OK;4771274;4771274
+Temps chargement : 60 seconds
+Elapsed Time: 838 seconds

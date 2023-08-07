@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P0105A ...
+
+Loading process of table P0105A
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	70 row(s) inserted
+
+
+Elapsed Time: 1 seconds
+DARPPP1.P0105A;OK;70;70

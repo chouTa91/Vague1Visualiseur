@@ -1,0 +1,17 @@
+Processing PA2I ...
+Temp nettoyage : 32 seconds
+
+Loading process of table PA2I
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	267306 row(s) inserted
+
+
+PA2I;OK;267306;267306
+Temps chargement : 18 seconds
+Elapsed Time: 50 seconds

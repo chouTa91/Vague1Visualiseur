@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P0161A ...
+
+Loading process of table P0161A
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	8072905 row(s) inserted
+
+
+Elapsed Time: 301 seconds
+DARPPP1.P0161A;OK;8072905;8072905

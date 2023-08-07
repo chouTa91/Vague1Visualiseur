@@ -1,0 +1,128 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 23:16:34 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/PT3701_30108.ctl
+Data File:      Tab.U.PT3701.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_PT370100.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PT3701, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP701                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP701                               NEXT     *   ;  O(") CHARACTER            
+CTMSI                                NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NOP701                               NEXT     *   ;  O(") CHARACTER            
+CXFLUE                               NEXT     6   ;  O(") CHARACTER            
+CXAPE                                NEXT     6   ;  O(") CHARACTER            
+CTTEXE                               NEXT     2   ;  O(") CHARACTER            
+CXDOME                               NEXT     2   ;  O(") CHARACTER            
+LNSEA                                NEXT    32   ;  O(") CHARACTER            
+CDINSE                               NEXT     1   ;  O(") CHARACTER            
+CXVERS                               NEXT     6   ;  O(") CHARACTER            
+CCSES3                               NEXT     4   ;  O(") CHARACTER            
+CCBIB                                NEXT     3   ;  O(") CHARACTER            
+CSUTOL                               NEXT    30   ;  O(") CHARACTER            
+CSUTOC                               NEXT     8   ;  O(") CHARACTER            
+CSUTOM                               NEXT     8   ;  O(") CHARACTER            
+CSASA                                NEXT     2   ;  O(") CHARACTER            
+LSIGN                                NEXT    30   ;  O(") CHARACTER            
+CXPRF                                NEXT     8   ;  O(") CHARACTER            
+CXPTF                                NEXT    20   ;  O(") CHARACTER            
+CXTEE                                NEXT     8   ;  O(") CHARACTER            
+CSAS2                                NEXT     2   ;  O(") CHARACTER            
+CSAN                                 NEXT     3   ;  O(") CHARACTER            
+RSIN                                 NEXT     8   ;  O(") CHARACTER            
+RSIDS                                NEXT     8   ;  O(") CHARACTER            
+CXFLU                                NEXT     6   ;  O(") CHARACTER            
+CXAPD                                NEXT     6   ;  O(") CHARACTER            
+CTTEXD                               NEXT     2   ;  O(") CHARACTER            
+CDTIN                                NEXT     1   ;  O(") CHARACTER            
+CXDOMR                               NEXT     2   ;  O(") CHARACTER            
+CSPSA                                NEXT     8   ;  O(") CHARACTER            
+LNSEAR                               NEXT    32   ;  O(") CHARACTER            
+CDINSD                               NEXT     1   ;  O(") CHARACTER            
+CDMETG                               NEXT     4   ;  O(") CHARACTER            
+QSLNGI                               NEXT     *   ;  O(") CHARACTER            
+QSLNGO                               NEXT     *   ;  O(") CHARACTER            
+CXVTR                                NEXT     2   ;  O(") CHARACTER            
+CBDPF                                NEXT     2   ;  O(") CHARACTER            
+DCEXP                                NEXT     *   ;  O(") DATE YYYYMMDD        
+HCEXP2                               NEXT     *   ;  O(") DATE YYYYMMDDHH24MISS
+    SQL string for column : "CASE WHEN :HCEXP2 IS NULL THEN NULL WHEN SUBSTR(:HCEXP2,1,2) = '24' THEN '00010102000000' ELSE '00010101' || :HCEXP2 END "
+CDGRF                                NEXT     8   ;  O(") CHARACTER            
+CDVRF                                NEXT    10   ;  O(") CHARACTER            
+CXPER                                NEXT    21   ;  O(") CHARACTER            
+CDGFA                                NEXT     2   ;  O(") CHARACTER            
+QSCPTB                               NEXT     *   ;  O(") CHARACTER            
+QSCPTD                               NEXT     *   ;  O(") CHARACTER            
+QSLNGG                               NEXT     *   ;  O(") CHARACTER            
+TATFC                                NEXT     1   ;  O(") CHARACTER            
+CSLST                                NEXT     1   ;  O(") CHARACTER            
+N1LNG4                               NEXT     *   ;  O(") CHARACTER            
+QSLNG1                               NEXT     *   ;  O(") CHARACTER            
+CZTRI                                NEXT   200   ;  O(") CHARACTER            
+GSFLB5                               NEXT  3400   ;  O(") CHARACTER            
+
+
+Table PT3701:
+  0 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             0
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        0
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Wed May 31 23:16:34 2023
+Run ended on Wed May 31 23:16:34 2023
+
+Elapsed time was:     00:00:00.23
+CPU time was:         00:00:00.05
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 23:16:34 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 0.
+
+Table PT3701:
+  0 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_PT370100.log
+for more information about the load.
+
+ number of rows inserted not checked 

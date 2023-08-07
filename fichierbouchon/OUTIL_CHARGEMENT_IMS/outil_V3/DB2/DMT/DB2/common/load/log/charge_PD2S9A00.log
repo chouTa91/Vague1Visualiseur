@@ -1,0 +1,72 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 10:22:37 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/PD2S9A_30108.ctl
+Data File:      Tab.U.PD2S9A.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_PD2S9A00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PD2S9A, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+SH2S9A                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+CXAS3                                NEXT     3   ;  O(") CHARACTER            
+BTYOM                                NEXT    30   ;  O(") CHARACTER            
+BIDOM                                NEXT    30   ;  O(") CHARACTER            
+BTSOMC                               NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NZODE2                               NEXT     *   ;  O(") CHARACTER            
+BCOEM                                NEXT    30   ;  O(") CHARACTER            
+BTYOP                                NEXT     1   ;  O(") CHARACTER            
+BSTEM                                NEXT    10   ;  O(") CHARACTER            
+BTSOME                               NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+BTSOMR                               NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+BSTTR                                NEXT    10   ;  O(") CHARACTER            
+BTSOMT                               NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+BTYGE                                NEXT     2   ;  O(") CHARACTER            
+BMNAM1                               NEXT    40   ;  O(") CHARACTER            
+BMVAL1                               NEXT    30   ;  O(") CHARACTER            
+BMNAM2                               NEXT    40   ;  O(") CHARACTER            
+BMVAL2                               NEXT    30   ;  O(") CHARACTER            
+BMNAM3                               NEXT    40   ;  O(") CHARACTER            
+BMVAL3                               NEXT    30   ;  O(") CHARACTER            
+BMNAM4                               NEXT    40   ;  O(") CHARACTER            
+BMVAL4                               NEXT    30   ;  O(") CHARACTER            
+BMNAM5                               NEXT    40   ;  O(") CHARACTER            
+BMVAL5                               NEXT    30   ;  O(") CHARACTER            
+BVEOM                                NEXT    10   ;  O(") CHARACTER            
+NSFICN                               NEXT     *   ;  O(") CHARACTER            
+CXASAG                               NEXT     3   ;  O(") CHARACTER            
+CDFLX8                               NEXT     8   ;  O(") CHARACTER            
+LGZVA                                NEXT     *   ;  O(") CHARACTER            
+ZGOML                                NEXT  7000   ;  O(") CHARACTER            
+
+SQL*Loader-926: OCI error while executing delete/truncate (due to REPLACE/TRUNCATE keyword) for table PD2S9A
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS'
+
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 10:22:37 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct

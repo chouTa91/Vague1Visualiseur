@@ -1,0 +1,16 @@
+Processing PI1B ...
+
+Loading process of table PI1B
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	456106 row(s) inserted
+
+
+PI1B;KO;456109;456106
+Temps chargement : 20 seconds
+Elapsed Time: 19 seconds

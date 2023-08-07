@@ -1,0 +1,17 @@
+Processing PH1I ...
+Temp nettoyage : 1 seconds
+
+Loading process of table PH1I
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	4882 row(s) inserted
+
+
+PH1I;OK;4882;4882
+Temps chargement : 1 seconds
+Elapsed Time: 2 seconds

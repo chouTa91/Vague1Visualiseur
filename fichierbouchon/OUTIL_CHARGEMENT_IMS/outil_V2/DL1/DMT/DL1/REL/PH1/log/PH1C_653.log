@@ -1,0 +1,17 @@
+Processing PH1C ...
+Temp nettoyage : 0 seconds
+
+Loading process of table PH1C
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	463 row(s) inserted
+
+
+PH1C;OK;463;463
+Temps chargement : 1 seconds
+Elapsed Time: 1 seconds

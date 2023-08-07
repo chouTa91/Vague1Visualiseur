@@ -1,0 +1,17 @@
+Processing PE1I ...
+Temp nettoyage : 1 seconds
+
+Loading process of table PE1I
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	3147 row(s) inserted
+
+
+PE1I;OK;3147;3147
+Temps chargement : 2 seconds
+Elapsed Time: 3 seconds

@@ -1,0 +1,17 @@
+Processing PK3C ...
+Temp nettoyage : 0 seconds
+
+Loading process of table PK3C
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	1844 row(s) inserted
+
+
+PK3C;OK;1844;1844
+Temps chargement : 2 seconds
+Elapsed Time: 2 seconds

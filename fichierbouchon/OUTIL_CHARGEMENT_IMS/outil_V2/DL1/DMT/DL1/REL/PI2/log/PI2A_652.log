@@ -1,0 +1,17 @@
+Processing PI2A ...
+Temp nettoyage : 1 seconds
+
+Loading process of table PI2A
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	190725 row(s) inserted
+
+
+PI2A;OK;190725;190725
+Temps chargement : 2 seconds
+Elapsed Time: 3 seconds

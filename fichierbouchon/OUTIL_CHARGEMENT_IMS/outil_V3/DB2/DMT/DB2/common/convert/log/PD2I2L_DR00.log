@@ -1,0 +1,44 @@
+Convert PD2I2L default tools using conv table-297-to-P1
+Target DB set to 'ORACLE'
+NL_Protector set to '@%@!'
+directing outputs to /pdt/CAPGEMINI/COPY_FROM_NAS_V2/DB2_LINUXDATA/
+Data file format NAS !
+QUALIFICATION REPORT For Table PD2I2L:
+
+Reporting of interesting characters per categories:
+case  0: basic printable characters    : nb chars = 31573238865
+case  1: 00 Low value character        : nb chars = 1
+case  2: 25 (LF --> 0A on target)      : nb chars = 1392
+case  3: chars below 40, may be ok     : nb chars = 334
+case  4: chars below 40, problematic   : nb chars = 0
+case  5: Pb du High Value FF           : nb chars = 0
+case  6: 9F: Currency sign or Euro     : nb chars = 48
+case  7: Risque d'overpunch (C0 D0)    : nb chars = 821278
+
+Reporting per column, the number of interesting chars:
+Column_Name                   ;      case  0;      case  1;      case  2;      case  3;      case  4;      case  5;      case  6;      case  7
+LSLPD                         ;   1145563218;            1;            0;          318;            0;            0;            1;       424552
+LNPRE                         ;    764133107;            0;            0;            0;            0;            0;            0;         3633
+LLOFR                         ;   2292408015;            0;            0;            0;            0;            0;            0;         2205
+LLEXO                         ;   1375446126;            0;            0;            0;            0;            0;            0;            6
+LIBMP1                        ;   1719090952;            0;           37;            8;            0;            0;            0;       216668
+LIBMP2                        ;   1719180029;            0;          879;            1;            0;            0;            0;       126756
+LIBMP3                        ;   1719262508;            0;          348;            7;            0;            0;           47;        43135
+LIBMP4                        ;   1719302989;            0;          128;            0;            0;            0;            0;         4323
+
+Reporting the number of occurences of interesting char (table level):
+char <<0>> nb occurences: 1
+char <<0x5>> nb occurences: 333
+char <<0x24>> nb occurences: 1
+char <<0x25>> nb occurences: 1392
+char <<0x9f>> nb occurences: 48
+char <<0xc0>> nb occurences: 788176
+char <<0xd0>> nb occurences: 33102
+nb rec processed: 38206837
+END of QUALIFICATION REPORT
+nb recs read   : 38206837 
+nb recs written: 38206837 
+Max input rec Len: 1375 
+Max Output rec Len(including LF): 1479 
+Elapsed Time: 639 seconds
+DARPPP1.PD2I2L;OK;38206837;38206837

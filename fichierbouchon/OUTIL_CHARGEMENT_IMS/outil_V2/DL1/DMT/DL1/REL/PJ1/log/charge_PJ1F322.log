@@ -1,0 +1,361 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 8 22:52:51 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/tmp/PJ1F.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PJ1F.DR32.BR2.net
+  File processing option string: "fix 1124"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/tmp/charge_PJ1F322.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PJ1F, subpartition PJ1F_DR_32_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PJ1A_RSTINC                          4:11     8           CHARACTER            
+PJ1E_DIJUS                          12:19     8           CHARACTER            
+PJ1E_NSJUS                          20:23     4           ZONED DECIMAL (4, 0) 
+PJ1F_NSLJU                          24:27     4           ZONED DECIMAL (4, 0) 
+PJ1F_DERPT                          28:35     8           CHARACTER            
+PJ1F_CSTJU                          36:37     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSSMJ                          38:38     1           CHARACTER            
+PJ1F_DDPJU                          39:46     8           CHARACTER            
+PJ1F_DFPJU                          47:54     8           CHARACTER            
+PJ1F_PSNJU                          55:57     3           ZONED DECIMAL (3, 0) 
+PJ1F_CSAJU                          58:62     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMBJU                          63:71     9           ZONED DECIMAL (9, 2) 
+PJ1F_RLIP1                          72:82    11           CHARACTER            
+PJ1F_PSDEC4                         83:84     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSODP4                         85:85     1           CHARACTER            
+PJ1F_RSDS6                          86:96    11           CHARACTER            
+PJ1F_CSTIE5                         97:98     2           CHARACTER            
+PJ1F_NSTI5                         99:104     6           CHARACTER            
+PJ1F_CSDE3                        105:106     2           CHARACTER            
+PJ1F_RSAL3                        107:111     5           CHARACTER            
+PJ1F_RSCV3                        112:119     8           CHARACTER            
+PJ1F_FSDBAA                       120:120     1           CHARACTER            
+PJ1F_CSRD4A                       121:122     2           CHARACTER            
+PJ1F_CSQPP                        123:123     1           CHARACTER            
+PJ1F_CSDIV                        124:124     1           CHARACTER            
+PJ1F_CSNEU                        125:125     1           CHARACTER            
+PJ1F_CSTCH                        126:126     1           CHARACTER            
+PJ1F_CSMVP                        127:127     1           CHARACTER            
+PJ1F_CSNCH                        128:128     1           CHARACTER            
+PJ1F_CSMIE                        129:129     1           CHARACTER            
+PJ1F_CSASP                        130:130     1           CHARACTER            
+PJ1F_RSJUS7                       131:142    12           CHARACTER            
+PJ1F_CSMRT                        143:143     1           CHARACTER            
+PJ1F_CSTRT                        144:144     1           CHARACTER            
+PJ1F_CSMRA                        145:145     1           CHARACTER            
+PJ1F_TSPPA                        146:150     5           ZONED DECIMAL (5, 2) 
+PJ1F_CSPSR                        151:151     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSACN1                       152:153     2           CHARACTER            
+PJ1F_CSOD2                        154:155     2           CHARACTER            
+PJ1F_CEAI                         156:156     1           CHARACTER            
+PJ1F_CSTAV                        157:157     1           CHARACTER            
+PJ1F_CSTUV                        158:162     5           CHARACTER            
+PJ1F_CSTAP                        163:163     1           CHARACTER            
+PJ1F_CSTUP                        164:168     5           CHARACTER            
+PJ1F_CSSRI                        169:169     1           CHARACTER            
+PJ1F_CSIOP                        170:170     1           CHARACTER            
+PJ1F_CSCOC                        171:171     1           CHARACTER            
+PJ1F_CSMCC4                       172:173     2           CHARACTER            
+PJ1F_RSTIT                        174:181     8           CHARACTER            
+PJ1F_CSTFM                        182:182     1           CHARACTER            
+PJ1F_CSTME                        183:184     2           CHARACTER            
+PJ1F_CCINDB                       185:192     8           CHARACTER            
+PJ1F_CSTRTM                       193:193     1           CHARACTER            
+PJ1F_NSOPRT                       194:195     2           ZONED DECIMAL (2, 0) 
+PJ1F_FSPLF1                       196:196     1           CHARACTER            
+PJ1F_CSJFO1                       197:198     2           CHARACTER            
+PJ1F_CSJFO2                       199:200     2           CHARACTER            
+PJ1F_CSCOMT                       201:201     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSTAI                        202:203     2           CHARACTER            
+PJ1F_FSCHNF                       204:204     1           CHARACTER            
+PJ1F_CSOPJ1_1                     205:206     2           CHARACTER            
+PJ1F_CSOPJ1_2                     207:208     2           CHARACTER            
+PJ1F_CSOPJ1_3                     209:210     2           CHARACTER            
+PJ1F_CSOPJ1_4                     211:212     2           CHARACTER            
+PJ1F_CSOPJ1_5                     213:214     2           CHARACTER            
+PJ1F_CSOPJ1_6                     215:216     2           CHARACTER            
+PJ1F_CSOPJ1_7                     217:218     2           CHARACTER            
+PJ1F_CSOPJ1_8                     219:220     2           CHARACTER            
+PJ1F_CSOPJ1_9                     221:222     2           CHARACTER            
+PJ1F_CSOPJ1_10                    223:224     2           CHARACTER            
+PJ1F_CSNMV                        225:225     1           CHARACTER            
+PJ1F_QMTBJ                        226:234     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMTRC                        235:243     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMNAV                        244:252     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMNAP                        253:261     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSETG4                       262:262     1           CHARACTER            
+PJ1F_CSAS14                       263:264     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSIRP4                       265:265     1           CHARACTER            
+PJ1F_CSRS5                        266:267     2           CHARACTER            
+PJ1F_FSEAM4                       268:268     1           CHARACTER            
+PJ1F_CIJUS1                       269:269     1           CHARACTER            
+PJ1F_QSLJMT                       270:271     2           CHARACTER            
+PJ1F_CSPTJ_1                      272:273     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_1                      274:278     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_1                     279:285     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_1                      286:292     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_1                      293:295     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_1                      296:304     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_1                      305:313     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_1                      314:314     1           CHARACTER            
+PJ1F_CSJPA3_1                     315:316     2           CHARACTER            
+PJ1F_CSJPE3_1                     317:317     1           CHARACTER            
+PJ1F_CIPCP_1                      318:318     1           CHARACTER            
+PJ1F_CSPTJ_2                      319:320     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_2                      321:325     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_2                     326:332     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_2                      333:339     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_2                      340:342     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_2                      343:351     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_2                      352:360     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_2                      361:361     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_2                     362:363     2           CHARACTER            
+PJ1F_CSJPE3_2                     364:364     1           CHARACTER            
+PJ1F_CIPCP_2                      365:365     1           CHARACTER            
+PJ1F_CSPTJ_3                      366:367     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_3                      368:372     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_3                     373:379     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_3                      380:386     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_3                      387:389     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_3                      390:398     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_3                      399:407     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_3                      408:408     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_3                     409:410     2           CHARACTER            
+PJ1F_CSJPE3_3                     411:411     1           CHARACTER            
+PJ1F_CIPCP_3                      412:412     1           CHARACTER            
+PJ1F_CSPTJ_4                      413:414     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_4                      415:419     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_4                     420:426     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_4                      427:433     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_4                      434:436     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_4                      437:445     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_4                      446:454     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_4                      455:455     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_4                     456:457     2           CHARACTER            
+PJ1F_CSJPE3_4                     458:458     1           CHARACTER            
+PJ1F_CIPCP_4                      459:459     1           CHARACTER            
+PJ1F_CSPTJ_5                      460:461     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_5                      462:466     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_5                     467:473     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_5                      474:480     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_5                      481:483     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_5                      484:492     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_5                      493:501     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_5                      502:502     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_5                     503:504     2           CHARACTER            
+PJ1F_CSJPE3_5                     505:505     1           CHARACTER            
+PJ1F_CIPCP_5                      506:506     1           CHARACTER            
+PJ1F_CSPTJ_6                      507:508     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_6                      509:513     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_6                     514:520     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_6                      521:527     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_6                      528:530     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_6                      531:539     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_6                      540:548     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_6                      549:549     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_6                     550:551     2           CHARACTER            
+PJ1F_CSJPE3_6                     552:552     1           CHARACTER            
+PJ1F_CIPCP_6                      553:553     1           CHARACTER            
+PJ1F_CSPTJ_7                      554:555     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_7                      556:560     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_7                     561:567     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_7                      568:574     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_7                      575:577     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_7                      578:586     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_7                      587:595     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_7                      596:596     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_7                     597:598     2           CHARACTER            
+PJ1F_CSJPE3_7                     599:599     1           CHARACTER            
+PJ1F_CIPCP_7                      600:600     1           CHARACTER            
+PJ1F_CSPTJ_8                      601:602     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_8                      603:607     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_8                     608:614     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_8                      615:621     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_8                      622:624     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_8                      625:633     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_8                      634:642     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_8                      643:643     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_8                     644:645     2           CHARACTER            
+PJ1F_CSJPE3_8                     646:646     1           CHARACTER            
+PJ1F_CIPCP_8                      647:647     1           CHARACTER            
+PJ1F_CSPTJ_9                      648:649     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_9                      650:654     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_9                     655:661     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_9                      662:668     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_9                      669:671     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_9                      672:680     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_9                      681:689     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_9                      690:690     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_9                     691:692     2           CHARACTER            
+PJ1F_CSJPE3_9                     693:693     1           CHARACTER            
+PJ1F_CIPCP_9                      694:694     1           CHARACTER            
+PJ1F_CSPTJ_10                     695:696     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_10                     697:701     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_10                    702:708     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_10                     709:715     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_10                     716:718     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_10                     719:727     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_10                     728:736     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_10                     737:737     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_10                    738:739     2           CHARACTER            
+PJ1F_CSJPE3_10                    740:740     1           CHARACTER            
+PJ1F_CIPCP_10                     741:741     1           CHARACTER            
+PJ1F_CSPTJ_11                     742:743     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_11                     744:748     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_11                    749:755     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_11                     756:762     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_11                     763:765     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_11                     766:774     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_11                     775:783     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_11                     784:784     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_11                    785:786     2           CHARACTER            
+PJ1F_CSJPE3_11                    787:787     1           CHARACTER            
+PJ1F_CIPCP_11                     788:788     1           CHARACTER            
+PJ1F_CSPTJ_12                     789:790     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_12                     791:795     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_12                    796:802     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_12                     803:809     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_12                     810:812     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_12                     813:821     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_12                     822:830     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_12                     831:831     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_12                    832:833     2           CHARACTER            
+PJ1F_CSJPE3_12                    834:834     1           CHARACTER            
+PJ1F_CIPCP_12                     835:835     1           CHARACTER            
+PJ1F_CSPTJ_13                     836:837     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_13                     838:842     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_13                    843:849     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_13                     850:856     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_13                     857:859     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_13                     860:868     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_13                     869:877     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_13                     878:878     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_13                    879:880     2           CHARACTER            
+PJ1F_CSJPE3_13                    881:881     1           CHARACTER            
+PJ1F_CIPCP_13                     882:882     1           CHARACTER            
+PJ1F_CSPTJ_14                     883:884     2           ZONED DECIMAL (2, 0) 
+PJ1F_CSCOJ_14                     885:889     5           ZONED DECIMAL (5, 0) 
+PJ1F_QMASI3_14                    890:896     7           ZONED DECIMAL (7, 2) 
+PJ1F_QMBPJ_14                     897:903     7           ZONED DECIMAL (7, 2) 
+PJ1F_TSPCJ_14                     904:906     3           ZONED DECIMAL (3, 2) 
+PJ1F_QMJSS_14                     907:915     9           ZONED DECIMAL (9, 2) 
+PJ1F_QMVAG_14                     916:924     9           ZONED DECIMAL (9, 2) 
+PJ1F_CSRFI_14                     925:925     1           ZONED DECIMAL (1, 0) 
+PJ1F_CSJPA3_14                    926:927     2           CHARACTER            
+PJ1F_CSJPE3_14                    928:928     1           CHARACTER            
+PJ1F_CIPCP_14                     929:929     1           CHARACTER            
+PJ1F_CSMOT                        930:932     3           CHARACTER            
+PJ1F_CDPRA                        933:934     2           CHARACTER            
+PJ1F_CDFIA                        935:936     2           CHARACTER            
+PJ1F_CDNAA                        937:937     1           CHARACTER            
+PJ1F_CDFAA                        938:939     2           CHARACTER            
+PJ1F_CDSFA                        940:941     2           CHARACTER            
+PJ1F_RSALY                        942:946     5           CHARACTER            
+PJ1F_CSAN4                        947:949     3           CHARACTER            
+PJ1F_CDPAYS                       950:952     3           CHARACTER            
+PJ1F_CDPPP_1                      953:954     2           CHARACTER            
+PJ1F_CDPPP_2                      955:956     2           CHARACTER            
+PJ1F_CDPPP_3                      957:958     2           CHARACTER            
+PJ1F_CDPPP_4                      959:960     2           CHARACTER            
+PJ1F_CDPPP_5                      961:962     2           CHARACTER            
+PJ1F_CDSPP_1                      963:964     2           CHARACTER            
+PJ1F_CDSPP_2                      965:966     2           CHARACTER            
+PJ1F_CDSPP_3                      967:968     2           CHARACTER            
+PJ1F_CDSPP_4                      969:970     2           CHARACTER            
+PJ1F_CDSPP_5                      971:972     2           CHARACTER            
+PJ1F_CDSTP_1                      973:974     2           CHARACTER            
+PJ1F_CDSTP_2                      975:976     2           CHARACTER            
+PJ1F_CDSTP_3                      977:978     2           CHARACTER            
+PJ1F_CDSTP_4                      979:980     2           CHARACTER            
+PJ1F_CDSTP_5                      981:982     2           CHARACTER            
+PJ1F_NSCVP                        983:998    16           CHARACTER            
+PJ1F_NSCVQ                       999:1014    16           CHARACTER            
+PJ1F_CSTAS                      1015:1015     1           CHARACTER            
+PJ1F_DSAAP                      1016:1019     4           ZONED DECIMAL (4, 0) 
+PJ1F_CXSALA                     1020:1034    15           CHARACTER            
+PJ1F_TSPASF                     1035:1038     4           ZONED DECIMAL (4, 2) 
+PJ1F_CDTPSF                     1039:1040     2           CHARACTER            
+PJ1F_DFPASF                     1041:1048     8           CHARACTER            
+PJ1F_ISPASF                     1049:1054     6           CHARACTER            
+PJ1F_CDRTXF                     1055:1055     1           CHARACTER            
+PJ1F_FILLER                     1056:1063     8           CHARACTER            
+PJ1F_FILLER_1                   1064:1073    10           CHARACTER            
+PJ1F_FILLER_2                   1074:1083    10           CHARACTER            
+PJ1F_FILLER_3                   1084:1093    10           CHARACTER            
+PJ1F_FILLER_4                   1094:1108    15           CHARACTER            
+PJ1F_FILLER_5                   1109:1123    15           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PJ1F were processed:
+index RSOV0200.PK_PJ1F partition PJ1F_DR_32_BR2_PART loaded successfully with 16258322 keys
+
+Table PJ1F, subpartition PJ1F_DR_32_BR2_PART:
+  16258322 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      16258322
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:    17445
+Total stream buffers loaded by SQL*Loader load thread:    52079
+
+Run began on Thu Jun 08 22:52:51 2023
+Run ended on Fri Jun 09 00:10:26 2023
+
+Elapsed time was:     01:17:34.95
+CPU time was:         00:15:16.41
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 8 22:52:51 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 16258322.
+
+Table PJ1F, subpartition PJ1F_DR_32_BR2_PART:
+  16258322 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/log/charge_PJ1F322.log
+for more information about the load.
+
+ number of rows inserted not checked 

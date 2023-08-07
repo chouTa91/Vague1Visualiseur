@@ -1,0 +1,146 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 18:51:24 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/PE1A.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PE1A.DR65.BR3.net
+  File processing option string: "fix 294"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/charge_PE1A653.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PE1A, subpartition PE1A_DR_65_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PE1A_RSIN                            4:11     8           CHARACTER            
+PE1A_RSIA5                          12:18     7           CHARACTER            
+PE1A_RSOD7                          19:21     3           CHARACTER            
+PE1A_RSOD8                          22:24     3           CHARACTER            
+PE1A_PSTRR                          25:27     3           CHARACTER            
+PE1A_PSTRR1                         28:30     3           CHARACTER            
+PE1A_PSTRR2                         31:33     3           CHARACTER            
+PE1A_DERR                           34:41     8           CHARACTER            
+PE1A_DERR1                          42:49     8           CHARACTER            
+PE1A_DERR2                          50:57     8           CHARACTER            
+PE1A_DDREC                          58:65     8           CHARACTER            
+PE1A_DDREI                          66:73     8           CHARACTER            
+PE1A_RSIAD                          74:80     7           CHARACTER            
+PE1A_NSDECD                         81:81     1           CHARACTER            
+PE1A_RSRP4                          82:84     3           CHARACTER            
+PE1A_CSAPV                          85:85     1           CHARACTER            
+PE1A_CSJURE                         86:86     1           CHARACTER            
+PE1A_CSCS                           87:87     1           CHARACTER            
+PE1A_FSINV                          88:88     1           CHARACTER            
+PE1A_CSR1T                          89:90     2           CHARACTER            
+PE1A_CSR2T                          91:92     2           CHARACTER            
+PE1A_CSR3T                          93:94     2           CHARACTER            
+PE1A_DFCTE                         95:102     8           CHARACTER            
+PE1A_DEAPV                        103:110     8           CHARACTER            
+PE1A_DFAPV                        111:118     8           CHARACTER            
+PE1A_DFLIM1                       119:126     8           CHARACTER            
+PE1A_DFLIM2                       127:134     8           CHARACTER            
+PE1A_CSMLI                        135:136     2           CHARACTER            
+PE1A_RSCR7                        137:144     8           CHARACTER            
+PE1A_RSOD12                       145:147     3           CHARACTER            
+PE1A_QMCI2                        148:156     9           ZONED DECIMAL (9, 2) 
+PE1A_QMAPV                        157:163     7           ZONED DECIMAL (7, 2) 
+PE1A_FSREAD                       164:164     1           CHARACTER            
+PE1A_FSMB29                       165:165     1           CHARACTER            
+PE1A_FSNOTB                       166:166     1           CHARACTER            
+PE1A_CYAPV                        167:167     1           CHARACTER            
+PE1A_CYCI2                        168:168     1           CHARACTER            
+PE1A_CSNOEL                       169:169     1           CHARACTER            
+PE1A_DEARE                        170:177     8           CHARACTER            
+PE1A_DHDGS                        178:185     8           CHARACTER            
+PE1A_DDAER                        186:193     8           CHARACTER            
+PE1A_CSRTF                        194:194     1           CHARACTER            
+PE1A_FFAVO                        195:195     1           CHARACTER            
+PE1A_RSOD14                       196:198     3           CHARACTER            
+PE1A_7ETMIG                       199:199     1           CHARACTER            
+PE1A_RSODNC                       200:202     3           CHARACTER            
+PE1A_DDJIN                        203:210     8           CHARACTER            
+PE1A_DERR3                        211:218     8           CHARACTER            
+PE1A_CXALA                        219:228    10           CHARACTER            
+PE1A_RSIAMI                       229:235     7           CHARACTER            
+PE1A_RSODMI                       236:238     3           CHARACTER            
+PE1A_CXALAP                       239:248    10           CHARACTER            
+PE1A_DTRET                        249:256     8           CHARACTER            
+PE1A_DDPJDA                       257:264     8           CHARACTER            
+PE1A_RSODSI                       265:267     3           CHARACTER            
+PE1A_CDMSP                        268:268     1           CHARACTER            
+PE1A_DREAN                        269:276     8           CHARACTER            
+PE1A_CDREA                        277:279     3           CHARACTER            
+PE1A_CSAAH7                       280:280     1           CHARACTER            
+PE1A_FILLER                       281:283     3           CHARACTER            
+PE1A_FILLER_1                     284:293    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PE1A were processed:
+index RSOV0200.PK_PE1A partition PE1A_DR_65_BR3_PART loaded successfully with 39472 keys
+
+Table PE1A, subpartition PE1A_DR_65_BR3_PART:
+  39472 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         39472
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       12
+Total stream buffers loaded by SQL*Loader load thread:       44
+
+Run began on Fri Jun 09 18:51:24 2023
+Run ended on Fri Jun 09 18:51:26 2023
+
+Elapsed time was:     00:00:01.60
+CPU time was:         00:00:00.37
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 18:51:24 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 39472.
+
+Table PE1A, subpartition PE1A_DR_65_BR3_PART:
+  39472 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/log/charge_PE1A653.log
+for more information about the load.
+
+ number of rows inserted not checked 

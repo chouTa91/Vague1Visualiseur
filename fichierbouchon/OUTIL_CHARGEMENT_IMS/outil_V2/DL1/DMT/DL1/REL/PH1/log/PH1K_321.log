@@ -1,0 +1,17 @@
+Processing PH1K ...
+Temp nettoyage : 1 seconds
+
+Loading process of table PH1K
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	13269 row(s) inserted
+
+
+PH1K;OK;13269;13269
+Temps chargement : 1 seconds
+Elapsed Time: 2 seconds

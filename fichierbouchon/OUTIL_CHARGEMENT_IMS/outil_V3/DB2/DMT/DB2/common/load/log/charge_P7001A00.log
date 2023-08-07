@@ -1,0 +1,141 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 06:17:26 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P7001A_30108.ctl
+Data File:      Tab.U.P7001A.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P7001A00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P7001A, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP01A                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP01A                               NEXT     *   ;  O(") CHARACTER            
+CXAS3                                NEXT     3   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+NIPOR                                NEXT     *   ;  O(") CHARACTER            
+CIPOR                                NEXT     1   ;  O(") CHARACTER            
+CKORI                                NEXT     *   ;  O(") CHARACTER            
+DDPOR                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFPOR                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DIORI                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+
+The following index(es) on table P7001A were processed:
+index RSOV0200.IP7001A1 loaded successfully with 497414 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_01_PART loaded successfully with 3 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_13_PART loaded successfully with 6 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_16_PART loaded successfully with 5 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_17_PART loaded successfully with 81222 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_20_PART loaded successfully with 2 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_24_PART loaded successfully with 4 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_25_PART loaded successfully with 1 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_26_PART loaded successfully with 6 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_27_PART loaded successfully with 3 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_31_PART loaded successfully with 3 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_32_PART loaded successfully with 369757 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_34_PART loaded successfully with 23 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_35_PART loaded successfully with 5 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_39_PART loaded successfully with 3 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_40_PART loaded successfully with 2 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_46_PART loaded successfully with 3 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_49_PART loaded successfully with 9 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_50_PART loaded successfully with 2 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_51_PART loaded successfully with 35173 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_56_PART loaded successfully with 5 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_57_PART loaded successfully with 5 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_63_PART loaded successfully with 12 keys
+index RSOV0200.TP7001A1 partition P7001A_DR_65_PART loaded successfully with 11160 keys
+
+Table P7001A:
+  497414 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P7001A_DR_01_PART: 3 Rows loaded.
+  Partition P7001A_DR_13_PART: 6 Rows loaded.
+  Partition P7001A_DR_16_PART: 5 Rows loaded.
+  Partition P7001A_DR_17_PART: 81222 Rows loaded.
+  Partition P7001A_DR_20_PART: 2 Rows loaded.
+  Partition P7001A_DR_24_PART: 4 Rows loaded.
+  Partition P7001A_DR_25_PART: 1 Row loaded.
+  Partition P7001A_DR_26_PART: 6 Rows loaded.
+  Partition P7001A_DR_27_PART: 3 Rows loaded.
+  Partition P7001A_DR_31_PART: 3 Rows loaded.
+  Partition P7001A_DR_32_PART: 369757 Rows loaded.
+  Partition P7001A_DR_34_PART: 23 Rows loaded.
+  Partition P7001A_DR_35_PART: 5 Rows loaded.
+  Partition P7001A_DR_39_PART: 3 Rows loaded.
+  Partition P7001A_DR_40_PART: 2 Rows loaded.
+  Partition P7001A_DR_46_PART: 3 Rows loaded.
+  Partition P7001A_DR_49_PART: 9 Rows loaded.
+  Partition P7001A_DR_50_PART: 2 Rows loaded.
+  Partition P7001A_DR_51_PART: 35173 Rows loaded.
+  Partition P7001A_DR_56_PART: 5 Rows loaded.
+  Partition P7001A_DR_57_PART: 5 Rows loaded.
+  Partition P7001A_DR_63_PART: 12 Rows loaded.
+  Partition P7001A_DR_65_PART: 11160 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        497414
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      117
+Total stream buffers loaded by SQL*Loader load thread:      117
+
+Run began on Thu Jun 01 06:17:26 2023
+Run ended on Thu Jun 01 06:17:45 2023
+
+Elapsed time was:     00:00:18.76
+CPU time was:         00:00:01.33
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 06:17:26 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 497414.
+
+Table P7001A:
+  497414 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P7001A00.log
+for more information about the load.
+
+ number of rows inserted not checked 

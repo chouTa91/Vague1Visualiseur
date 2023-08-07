@@ -1,0 +1,13 @@
+Processing PA2C ...
+Temp nettoyage : 7 seconds
+
+Loading process of table PA2C
+       using APPEND mode
+       
+- Loading: ... done
+/pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh[249]: cat: /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/chargement_PA2C: No such file or directory
+DATAWB-1210: can not create log file
+ABORT ---
+PA2C;KO;215275;
+Temps chargement : 17 seconds
+Elapsed Time: 24 seconds

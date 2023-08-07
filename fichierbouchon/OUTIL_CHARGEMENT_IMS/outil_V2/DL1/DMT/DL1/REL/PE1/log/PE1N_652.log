@@ -1,0 +1,17 @@
+Processing PE1N ...
+Temp nettoyage : 4 seconds
+
+Loading process of table PE1N
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	53251 row(s) inserted
+
+
+PE1N;OK;53251;53251
+Temps chargement : 1 seconds
+Elapsed Time: 5 seconds

@@ -1,0 +1,100 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 22:55:20 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P0404N_30108.ctl
+Data File:      Tab.U.P0404N.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P0404N00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P0404N, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP04N                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP04N                               NEXT     *   ;  O(") CHARACTER            
+CSODB2                               NEXT     5   ;  O(") CHARACTER            
+CSRDB2                               NEXT     5   ;  O(") CHARACTER            
+CDBIC2                               NEXT    11   ;  O(") CHARACTER            
+CIETF                                NEXT     1   ;  O(") CHARACTER            
+CIGUI                                NEXT     1   ;  O(") CHARACTER            
+LLETB                                NEXT    40   ;  O(") CHARACTER            
+LLGUI                                NEXT    20   ;  O(") CHARACTER            
+LCDOM                                NEXT    24   ;  O(") CHARACTER            
+CNGUI                                NEXT     1   ;  O(") CHARACTER            
+DDGUI                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFGUI                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFDGU                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CDETB                                NEXT     5   ;  O(") CHARACTER            
+CDGUIR                               NEXT     5   ;  O(") CHARACTER            
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+
+The following index(es) on table P0404N were processed:
+index RSOV0200.IP0404N1 loaded successfully with 39248 keys
+
+Table P0404N:
+  39248 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         39248
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        9
+Total stream buffers loaded by SQL*Loader load thread:       24
+
+Run began on Wed May 31 22:55:20 2023
+Run ended on Wed May 31 22:55:22 2023
+
+Elapsed time was:     00:00:02.13
+CPU time was:         00:00:00.13
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 22:55:20 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 39248.
+
+Table P0404N:
+  39248 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P0404N00.log
+for more information about the load.
+
+ number of rows inserted not checked 

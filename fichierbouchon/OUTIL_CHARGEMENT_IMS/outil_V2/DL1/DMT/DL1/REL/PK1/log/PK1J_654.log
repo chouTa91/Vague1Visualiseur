@@ -1,0 +1,17 @@
+Processing PK1J ...
+Temp nettoyage : 7 seconds
+
+Loading process of table PK1J
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	204273 row(s) inserted
+
+
+PK1J;OK;204273;204273
+Temps chargement : 11 seconds
+Elapsed Time: 18 seconds

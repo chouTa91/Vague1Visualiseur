@@ -1,0 +1,28 @@
+Convert PT3701 default tools using conv table-297-to-P1
+Target DB set to 'ORACLE'
+NL_Protector set to '@%@!'
+directing outputs to /pdt/CAPGEMINI/COPY_FROM_NAS_V2/DB2_LINUXDATA/
+QUALIFICATION REPORT For Table PT3701:
+
+Reporting of interesting characters per categories:
+case  0: basic printable characters    : nb chars = 0
+case  1: 00 Low value character        : nb chars = 0
+case  2: 25 (LF --> 0A on target)      : nb chars = 0
+case  3: chars below 40, may be ok     : nb chars = 0
+case  4: chars below 40, problematic   : nb chars = 0
+case  5: Pb du High Value FF           : nb chars = 0
+case  6: 9F: Currency sign or Euro     : nb chars = 0
+case  7: Risque d'overpunch (C0 D0)    : nb chars = 0
+
+Reporting per column, the number of interesting chars:
+Column_Name                   ;      case  0;      case  1;      case  2;      case  3;      case  4;      case  5;      case  6;      case  7
+
+Reporting the number of occurences of interesting char (table level):
+nb rec processed: 0
+END of QUALIFICATION REPORT
+nb recs read   : 0 
+nb recs written: 0 
+Max input rec Len: 0 
+Max Output rec Len(including LF): 0 
+Elapsed Time: 0 seconds
+DARPPP1.PT3701;OK;0;0

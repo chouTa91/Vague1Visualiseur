@@ -1,0 +1,17 @@
+Processing PH1G ...
+Temp nettoyage : 11 seconds
+
+Loading process of table PH1G
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	202196 row(s) inserted
+
+
+PH1G;OK;202196;202196
+Temps chargement : 10 seconds
+Elapsed Time: 21 seconds

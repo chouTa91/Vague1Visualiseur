@@ -1,0 +1,120 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 19:01:15 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/PE1V.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PE1V.DR65.BR3.net
+  File processing option string: "fix 242"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/charge_PE1V653.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PE1V, subpartition PE1V_DR_65_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PE1A_RSIN                            4:11     8           CHARACTER            
+PE1V_RSE1V                          12:13     2           CHARACTER            
+PE1V_DDMAJV                         14:21     8           CHARACTER            
+PE1V_RSOD8V                         22:24     3           CHARACTER            
+PE1V_CSNDDV                         25:26     2           CHARACTER            
+PE1V_DSPODV                         27:34     8           CHARACTER            
+PE1V_CSRD4V                         35:36     2           CHARACTER            
+PE1V_DSFDTS                         37:44     8           CHARACTER            
+PE1V_DFCTRV                         45:52     8           CHARACTER            
+PE1V_QMRSJV                         53:59     7           ZONED DECIMAL (7, 2) 
+PE1V_QMASJV                         60:66     7           ZONED DECIMAL (7, 2) 
+PE1V_CSTRJV                         67:69     3           CHARACTER            
+PE1V_LSCRJ                          70:84    15           CHARACTER            
+PE1V_PSRACV                         85:88     4           CHARACTER            
+PE1V_PSHARN                         89:92     4           CHARACTER            
+PE1V_QSMARN                         93:94     2           CHARACTER            
+PE1V_LSALF1                        95:102     8           CHARACTER            
+PE1V_QMPJCV                       103:110     8           ZONED DECIMAL (8, 2) 
+PE1V_LZDEC                        111:125    15           CHARACTER            
+PE1V_LZREG                        126:135    10           CHARACTER            
+PE1V_CSRMI                        136:136     1           CHARACTER            
+PE1V_QMSARV                       137:145     9           ZONED DECIMAL (9, 2) 
+PE1V_DFATTV                       146:153     8           CHARACTER            
+PE1V_DACTUV                       154:161     8           CHARACTER            
+PE1V_PSASTV                       162:165     4           CHARACTER            
+PE1V_PSALFX                       166:169     4           CHARACTER            
+PE1V_QMGJUC                       170:178     9           ZONED DECIMAL (9, 2) 
+PE1V_DEJUSC                       179:186     8           CHARACTER            
+PE1V_DSPAIV                       187:194     8           CHARACTER            
+PE1V_RSOD7V                       195:197     3           CHARACTER            
+PE1V_DSEXAV                       198:205     8           CHARACTER            
+PE1V_RLIPV                        206:216    11           CHARACTER            
+PE1V_QMSIV                        217:225     9           ZONED DECIMAL (9, 2) 
+PE1V_DDPDPV                       226:233     8           CHARACTER            
+PE1V_DFPDPV                       234:241     8           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PE1V were processed:
+index RSOV0200.PK_PE1V partition PE1V_DR_65_BR3_PART loaded successfully with 19242 keys
+
+Table PE1V, subpartition PE1V_DR_65_BR3_PART:
+  19242 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         19242
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        5
+Total stream buffers loaded by SQL*Loader load thread:       17
+
+Run began on Fri Jun 09 19:01:15 2023
+Run ended on Fri Jun 09 19:01:16 2023
+
+Elapsed time was:     00:00:00.66
+CPU time was:         00:00:00.14
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 19:01:15 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 19242.
+
+Table PE1V, subpartition PE1V_DR_65_BR3_PART:
+  19242 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/log/charge_PE1V653.log
+for more information about the load.
+
+ number of rows inserted not checked 

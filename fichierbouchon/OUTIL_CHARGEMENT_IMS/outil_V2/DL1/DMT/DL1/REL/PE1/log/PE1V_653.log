@@ -1,0 +1,17 @@
+Processing PE1V ...
+Temp nettoyage : 2 seconds
+
+Loading process of table PE1V
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	19242 row(s) inserted
+
+
+PE1V;OK;19242;19242
+Temps chargement : 1 seconds
+Elapsed Time: 3 seconds

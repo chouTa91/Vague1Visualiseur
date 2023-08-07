@@ -1,0 +1,137 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 15:04:11 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2S.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2S.DR32.BR3.net
+  File processing option string: "fix 312"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2S323.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2S, subpartition PA2S_DR_32_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2S_RSA2S                          12:13     2           CHARACTER            
+PA2S_DEREN                          14:21     8           CHARACTER            
+PA2S_FSAPPA                         22:22     1           CHARACTER            
+PA2S_FIBMA                          23:23     1           CHARACTER            
+PA2S_NSAID2                         24:25     2           CHARACTER            
+PA2S_FSDBA                          26:26     1           CHARACTER            
+PA2S_FSTRF                          27:27     1           CHARACTER            
+PA2S_FSEPP                          28:28     1           CHARACTER            
+PA2S_FSABJ                          29:29     1           CHARACTER            
+PA2S_LSCNAG                         30:61    32           CHARACTER            
+PA2S_DDORKB                         62:69     8           CHARACTER            
+PA2S_DEMIGN                         70:77     8           CHARACTER            
+PA2S_HEKLIS                         78:83     6           CHARACTER            
+PA2S_FSBRR                          84:84     1           CHARACTER            
+PA2S_DEMNRS                         85:92     8           CHARACTER            
+PA2S_DDPPM                         93:100     8           CHARACTER            
+PA2S_RSPECF                       101:104     4           CHARACTER            
+PA2S_CSNAC                        105:107     3           CHARACTER            
+PA2S_DDPFM                        108:115     8           CHARACTER            
+PA2S_DEKLIS                       116:123     8           CHARACTER            
+PA2S_CSP1MA                       124:124     1           CHARACTER            
+PA2S_FFCTP                        125:125     1           CHARACTER            
+PA2S_DSTGA                        126:133     8           CHARACTER            
+PA2S_DDEMI1                       134:141     8           CHARACTER            
+PA2S_DEFLW1                       142:149     8           CHARACTER            
+PA2S_DSDRF1                       150:157     8           CHARACTER            
+PA2S_DEDCO                        158:165     8           CHARACTER            
+PA2S_FSINE                        166:166     1           CHARACTER            
+PA2S_FILLER                       167:168     2           CHARACTER            
+PA2S_QMBPNT                       169:175     7           ZONED DECIMAL (7, 2) 
+PA2S_DDDRV                        176:183     8           CHARACTER            
+PA2S_QMRSPV                       184:190     7           ZONED DECIMAL (7, 2) 
+PA2S_PSRELV                       191:194     4           CHARACTER            
+PA2S_DDVRLQ                       195:202     8           CHARACTER            
+PA2S_DFDEC3                       203:210     8           CHARACTER            
+PA2S_DDAID2                       211:218     8           CHARACTER            
+PA2S_DFAID2                       219:226     8           CHARACTER            
+PA2S_DSFDTV                       227:234     8           CHARACTER            
+PA2S_PSALFS                       235:238     4           CHARACTER            
+PA2S_DACTUS                       239:246     8           CHARACTER            
+PA2S_DDREP1                       247:254     8           CHARACTER            
+PA2S_QSNMQ1                       255:255     1           CHARACTER            
+PA2S_DDREP2                       256:263     8           CHARACTER            
+PA2S_QSNMQ2                       264:264     1           CHARACTER            
+PA2S_DDREP5                       265:272     8           CHARACTER            
+PA2S_QSNMQ5                       273:273     1           CHARACTER            
+PA2S_RSAGIN                       274:280     7           CHARACTER            
+PA2S_FILLER_1                     281:281     1           CHARACTER            
+PA2S_FILLER_2                     282:291    10           CHARACTER            
+PA2S_FILLER_3                     292:301    10           CHARACTER            
+PA2S_FILLER_4                     302:311    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2S were processed:
+index RSOV0200.PK_PA2S partition PA2S_DR_32_BR3_PART loaded successfully with 414822 keys
+
+Table PA2S, subpartition PA2S_DR_32_BR3_PART:
+  414822 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        414822
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      124
+Total stream buffers loaded by SQL*Loader load thread:      493
+
+Run began on Wed Jun 07 15:04:11 2023
+Run ended on Wed Jun 07 15:04:57 2023
+
+Elapsed time was:     00:00:46.15
+CPU time was:         00:00:03.40
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 15:04:11 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 414822.
+
+Table PA2S, subpartition PA2S_DR_32_BR3_PART:
+  414822 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2S323.log
+for more information about the load.
+
+ number of rows inserted not checked 

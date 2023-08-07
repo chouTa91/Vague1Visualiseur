@@ -1,0 +1,17 @@
+Processing PA4F ...
+Temp nettoyage : 18 seconds
+
+Loading process of table PA4F
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	603561 row(s) inserted
+
+
+PA4F;OK;603561;603561
+Temps chargement : 32 seconds
+Elapsed Time: 50 seconds

@@ -1,0 +1,517 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 19:48:05 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/PE1M.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PE1M.DR32.BR1.net
+  File processing option string: "fix 1475"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/charge_PE1M321.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PE1M, subpartition PE1M_DR_32_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PE1A_RSIN                            4:11     8           CHARACTER            
+PE1H_RSOD                           12:14     3           CHARACTER            
+PE1M_RSDJ                           15:15     1           CHARACTER            
+PE1M_DSSDJ                          16:23     8           CHARACTER            
+PE1M_RSRP6                          24:26     3           CHARACTER            
+PE1M_DDIND7                         27:34     8           CHARACTER            
+PE1M_CSMCC5                         35:36     2           CHARACTER            
+PE1M_DEPMA1                         37:44     8           CHARACTER            
+PE1M_DDCAL                          45:52     8           CHARACTER            
+PE1M_DFCAL                          53:60     8           CHARACTER            
+PE1M_CSNPJ1                         61:61     1           CHARACTER            
+PE1M_CSAPJ1                         62:62     1           CHARACTER            
+PE1M_CSNPJ3                         63:63     1           CHARACTER            
+PE1M_CSAPJ3                         64:64     1           CHARACTER            
+PE1M_DETRD                          65:72     8           CHARACTER            
+PE1M_NSCUM1                         73:73     1           CHARACTER            
+PE1M_FSNDUA                         74:74     1           CHARACTER            
+PE1M_CSAAJA                         75:79     5           CHARACTER            
+PE1M_PSDEBA                         80:83     4           CHARACTER            
+PE1M_PSFINA                         84:87     4           CHARACTER            
+PE1M_FSNDUK                         88:88     1           CHARACTER            
+PE1M_CSAAJK                         89:93     5           CHARACTER            
+PE1M_PSDEBK                         94:97     4           CHARACTER            
+PE1M_PSFINK                        98:101     4           CHARACTER            
+PE1M_FSNDUB                       102:102     1           CHARACTER            
+PE1M_CSSNDB                       103:103     1           CHARACTER            
+PE1M_CSAAJB                       104:108     5           CHARACTER            
+PE1M_NSOPRB                       109:110     2           CHARACTER            
+PE1M_PSDEBB                       111:114     4           CHARACTER            
+PE1M_PSFINB                       115:118     4           CHARACTER            
+PE1M_FSNDUC                       119:119     1           CHARACTER            
+PE1M_CSSNDC                       120:120     1           CHARACTER            
+PE1M_CSAAJC                       121:125     5           CHARACTER            
+PE1M_NSOPRC                       126:127     2           CHARACTER            
+PE1M_PSDEBC                       128:131     4           CHARACTER            
+PE1M_PSFINC                       132:135     4           CHARACTER            
+PE1M_CSFCA6                       136:138     3           CHARACTER            
+PE1M_RSBCA6                       139:140     2           CHARACTER            
+PE1M_CSJFO6                       141:142     2           CHARACTER            
+PE1M_CSFCA7                       143:145     3           CHARACTER            
+PE1M_RSBCA7                       146:147     2           CHARACTER            
+PE1M_CSJFO7                       148:149     2           CHARACTER            
+PE1M_FSNDUD                       150:150     1           CHARACTER            
+PE1M_CSSNDD                       151:151     1           CHARACTER            
+PE1M_CSAAJD                       152:156     5           CHARACTER            
+PE1M_PSDEBD                       157:160     4           CHARACTER            
+PE1M_PSFIND                       161:164     4           CHARACTER            
+PE1M_FSNDUE                       165:165     1           CHARACTER            
+PE1M_CSSNDE                       166:166     1           CHARACTER            
+PE1M_CSAAJE                       167:171     5           CHARACTER            
+PE1M_NSOPRE                       172:173     2           CHARACTER            
+PE1M_PSDEBE                       174:177     4           CHARACTER            
+PE1M_PSFINE                       178:181     4           CHARACTER            
+PE1M_FSNDUF                       182:182     1           CHARACTER            
+PE1M_CSSNDF                       183:183     1           CHARACTER            
+PE1M_CSAAJF                       184:188     5           CHARACTER            
+PE1M_NSOPRF                       189:190     2           CHARACTER            
+PE1M_PSDEBF                       191:194     4           CHARACTER            
+PE1M_PSFINF                       195:198     4           CHARACTER            
+PE1M_FSPLF                        199:199     1           CHARACTER            
+PE1M_QSDJMT                       200:201     2           CHARACTER            
+PE1M_CSPTJ2_1                     202:203     2           CHARACTER            
+PE1M_CSCOJ2_1                     204:208     5           CHARACTER            
+PE1M_QMASI2_1                     209:215     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_1                     216:222     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_1                     223:225     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_1                     226:234     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_1                     235:235     1           CHARACTER            
+PE1M_CSJPA2_1                     236:237     2           CHARACTER            
+PE1M_CSJPE2_1                     238:238     1           CHARACTER            
+PE1M_CIPCE2_1                     239:239     1           CHARACTER            
+PE1M_CSPTJ2_2                     240:241     2           CHARACTER            
+PE1M_CSCOJ2_2                     242:246     5           CHARACTER            
+PE1M_QMASI2_2                     247:253     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_2                     254:260     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_2                     261:263     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_2                     264:272     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_2                     273:273     1           CHARACTER            
+PE1M_CSJPA2_2                     274:275     2           CHARACTER            
+PE1M_CSJPE2_2                     276:276     1           CHARACTER            
+PE1M_CIPCE2_2                     277:277     1           CHARACTER            
+PE1M_CSPTJ2_3                     278:279     2           CHARACTER            
+PE1M_CSCOJ2_3                     280:284     5           CHARACTER            
+PE1M_QMASI2_3                     285:291     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_3                     292:298     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_3                     299:301     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_3                     302:310     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_3                     311:311     1           CHARACTER            
+PE1M_CSJPA2_3                     312:313     2           CHARACTER            
+PE1M_CSJPE2_3                     314:314     1           CHARACTER            
+PE1M_CIPCE2_3                     315:315     1           CHARACTER            
+PE1M_CSPTJ2_4                     316:317     2           CHARACTER            
+PE1M_CSCOJ2_4                     318:322     5           CHARACTER            
+PE1M_QMASI2_4                     323:329     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_4                     330:336     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_4                     337:339     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_4                     340:348     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_4                     349:349     1           CHARACTER            
+PE1M_CSJPA2_4                     350:351     2           CHARACTER            
+PE1M_CSJPE2_4                     352:352     1           CHARACTER            
+PE1M_CIPCE2_4                     353:353     1           CHARACTER            
+PE1M_CSPTJ2_5                     354:355     2           CHARACTER            
+PE1M_CSCOJ2_5                     356:360     5           CHARACTER            
+PE1M_QMASI2_5                     361:367     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_5                     368:374     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_5                     375:377     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_5                     378:386     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_5                     387:387     1           CHARACTER            
+PE1M_CSJPA2_5                     388:389     2           CHARACTER            
+PE1M_CSJPE2_5                     390:390     1           CHARACTER            
+PE1M_CIPCE2_5                     391:391     1           CHARACTER            
+PE1M_CSPTJ2_6                     392:393     2           CHARACTER            
+PE1M_CSCOJ2_6                     394:398     5           CHARACTER            
+PE1M_QMASI2_6                     399:405     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_6                     406:412     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_6                     413:415     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_6                     416:424     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_6                     425:425     1           CHARACTER            
+PE1M_CSJPA2_6                     426:427     2           CHARACTER            
+PE1M_CSJPE2_6                     428:428     1           CHARACTER            
+PE1M_CIPCE2_6                     429:429     1           CHARACTER            
+PE1M_CSPTJ2_7                     430:431     2           CHARACTER            
+PE1M_CSCOJ2_7                     432:436     5           CHARACTER            
+PE1M_QMASI2_7                     437:443     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_7                     444:450     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_7                     451:453     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_7                     454:462     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_7                     463:463     1           CHARACTER            
+PE1M_CSJPA2_7                     464:465     2           CHARACTER            
+PE1M_CSJPE2_7                     466:466     1           CHARACTER            
+PE1M_CIPCE2_7                     467:467     1           CHARACTER            
+PE1M_CSPTJ2_8                     468:469     2           CHARACTER            
+PE1M_CSCOJ2_8                     470:474     5           CHARACTER            
+PE1M_QMASI2_8                     475:481     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_8                     482:488     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_8                     489:491     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_8                     492:500     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_8                     501:501     1           CHARACTER            
+PE1M_CSJPA2_8                     502:503     2           CHARACTER            
+PE1M_CSJPE2_8                     504:504     1           CHARACTER            
+PE1M_CIPCE2_8                     505:505     1           CHARACTER            
+PE1M_CSPTJ2_9                     506:507     2           CHARACTER            
+PE1M_CSCOJ2_9                     508:512     5           CHARACTER            
+PE1M_QMASI2_9                     513:519     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_9                     520:526     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_9                     527:529     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_9                     530:538     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_9                     539:539     1           CHARACTER            
+PE1M_CSJPA2_9                     540:541     2           CHARACTER            
+PE1M_CSJPE2_9                     542:542     1           CHARACTER            
+PE1M_CIPCE2_9                     543:543     1           CHARACTER            
+PE1M_CSPTJ2_10                    544:545     2           CHARACTER            
+PE1M_CSCOJ2_10                    546:550     5           CHARACTER            
+PE1M_QMASI2_10                    551:557     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_10                    558:564     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_10                    565:567     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_10                    568:576     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_10                    577:577     1           CHARACTER            
+PE1M_CSJPA2_10                    578:579     2           CHARACTER            
+PE1M_CSJPE2_10                    580:580     1           CHARACTER            
+PE1M_CIPCE2_10                    581:581     1           CHARACTER            
+PE1M_CSPTJ2_11                    582:583     2           CHARACTER            
+PE1M_CSCOJ2_11                    584:588     5           CHARACTER            
+PE1M_QMASI2_11                    589:595     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_11                    596:602     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_11                    603:605     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_11                    606:614     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_11                    615:615     1           CHARACTER            
+PE1M_CSJPA2_11                    616:617     2           CHARACTER            
+PE1M_CSJPE2_11                    618:618     1           CHARACTER            
+PE1M_CIPCE2_11                    619:619     1           CHARACTER            
+PE1M_CSPTJ2_12                    620:621     2           CHARACTER            
+PE1M_CSCOJ2_12                    622:626     5           CHARACTER            
+PE1M_QMASI2_12                    627:633     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_12                    634:640     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_12                    641:643     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_12                    644:652     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_12                    653:653     1           CHARACTER            
+PE1M_CSJPA2_12                    654:655     2           CHARACTER            
+PE1M_CSJPE2_12                    656:656     1           CHARACTER            
+PE1M_CIPCE2_12                    657:657     1           CHARACTER            
+PE1M_CSPTJ2_13                    658:659     2           CHARACTER            
+PE1M_CSCOJ2_13                    660:664     5           CHARACTER            
+PE1M_QMASI2_13                    665:671     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_13                    672:678     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_13                    679:681     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_13                    682:690     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_13                    691:691     1           CHARACTER            
+PE1M_CSJPA2_13                    692:693     2           CHARACTER            
+PE1M_CSJPE2_13                    694:694     1           CHARACTER            
+PE1M_CIPCE2_13                    695:695     1           CHARACTER            
+PE1M_CSPTJ2_14                    696:697     2           CHARACTER            
+PE1M_CSCOJ2_14                    698:702     5           CHARACTER            
+PE1M_QMASI2_14                    703:709     7           ZONED DECIMAL (7, 2) 
+PE1M_QMBPJ2_14                    710:716     7           ZONED DECIMAL (7, 2) 
+PE1M_TSPCJ2_14                    717:719     3           ZONED DECIMAL (3, 2) 
+PE1M_QMJSS2_14                    720:728     9           ZONED DECIMAL (9, 2) 
+PE1M_CSRFI2_14                    729:729     1           CHARACTER            
+PE1M_CSJPA2_14                    730:731     2           CHARACTER            
+PE1M_CSJPE2_14                    732:732     1           CHARACTER            
+PE1M_CIPCE2_14                    733:733     1           CHARACTER            
+PE1M_DSCOM                        734:741     8           CHARACTER            
+PE1M_NSCUMX                       742:742     1           CHARACTER            
+PE1M_FSDSD                        743:743     1           CHARACTER            
+PE1M_NSOPR5                       744:745     2           CHARACTER            
+PE1M_PJJPR2                       746:748     3           CHARACTER            
+PE1M_FSDGA                        749:749     1           CHARACTER            
+PE1M_FSPJP                        750:750     1           CHARACTER            
+PE1M_FSCAR                        751:751     1           CHARACTER            
+PE1M_FSDJI                        752:753     2           CHARACTER            
+PE1M_FSADE                        754:754     1           CHARACTER            
+PE1M_CSDMA                        755:755     1           CHARACTER            
+PE1M_FSFDD                        756:756     1           CHARACTER            
+PE1M_CSDPC                        757:757     1           CHARACTER            
+PE1M_FSDMR                        758:758     1           CHARACTER            
+PE1M_FSDMC                        759:759     1           CHARACTER            
+PE1M_CSMDC_1                      760:760     1           CHARACTER            
+PE1M_CSMDC_2                      761:761     1           CHARACTER            
+PE1M_CSMDC_3                      762:762     1           CHARACTER            
+PE1M_CSMDC_4                      763:763     1           CHARACTER            
+PE1M_CSMDC_5                      764:764     1           CHARACTER            
+PE1M_CSFPR                        765:765     1           CHARACTER            
+PE1M_CSTEV1                       766:767     2           CHARACTER            
+PE1M_DEPRE                        768:775     8           CHARACTER            
+PE1M_CSNPE7                       776:777     2           CHARACTER            
+PE1M_CSOSP3                       778:778     1           CHARACTER            
+PE1M_DDPER5                       779:786     8           CHARACTER            
+PE1M_FSIIN                        787:787     1           CHARACTER            
+PE1M_FSICA                        788:788     1           CHARACTER            
+PE1M_CSTCA                        789:789     1           CHARACTER            
+PE1M_CSMCC3                       790:791     2           CHARACTER            
+PE1M_DECC1                        792:799     8           CHARACTER            
+PE1M_DFCC                         800:807     8           CHARACTER            
+PE1M_NSCUM2                       808:808     1           CHARACTER            
+PE1M_CSNPJ4                       809:809     1           CHARACTER            
+PE1M_DDPRS                        810:817     8           CHARACTER            
+PE1M_CSISU2                       818:818     1           CHARACTER            
+PE1M_DDSUS                        819:826     8           CHARACTER            
+PE1M_DDSTF1                       827:834     8           CHARACTER            
+PE1M_CSNSD                        835:835     1           CHARACTER            
+PE1M_DDSAN                        836:843     8           CHARACTER            
+PE1M_NSOPRM                       844:845     2           CHARACTER            
+PE1M_DDIAD                        846:853     8           CHARACTER            
+PE1M_FSPAR                        854:854     1           CHARACTER            
+PE1M_FSIAR                        855:855     1           CHARACTER            
+PE1M_PSDEC5                       856:857     2           CHARACTER            
+PE1M_PSSDE                        858:859     2           CHARACTER            
+PE1M_CSMMA                        860:860     1           CHARACTER            
+PE1M_QMBAR3                       861:867     7           ZONED DECIMAL (7, 2) 
+PE1M_PSHAR3                       868:870     3           CHARACTER            
+PE1M_PSJAR                        871:872     2           CHARACTER            
+PE1M_QNBAR                        873:879     7           ZONED DECIMAL (7, 2) 
+PE1M_PSHAR4                       880:883     4           CHARACTER            
+PE1M_PSHAF                        884:886     3           CHARACTER            
+PE1M_QMRS4                        887:893     7           ZONED DECIMAL (7, 2) 
+PE1M_CSMSF4                       894:894     1           CHARACTER            
+PE1M_FSIRE                        895:895     1           CHARACTER            
+PE1M_DDIRE                        896:903     8           CHARACTER            
+PE1M_FSDMJ                        904:904     1           CHARACTER            
+PE1M_CSART1                       905:905     1           CHARACTER            
+PE1M_CSPAR                        906:906     1           CHARACTER            
+PE1M_CSCAI                        907:907     1           CHARACTER            
+PE1M_FSDNM                        908:908     1           CHARACTER            
+PE1M_CSDC11                       909:909     1           CHARACTER            
+PE1M_NSRAL1                       910:911     2           CHARACTER            
+PE1M_CSALL1                       912:913     2           CHARACTER            
+PE1M_CSALD1                       914:914     1           CHARACTER            
+PE1M_QSMAI                        915:915     1           CHARACTER            
+PE1M_DEMAI                        916:923     8           CHARACTER            
+PE1M_DIMAI                        924:931     8           CHARACTER            
+PE1M_QSDFD                        932:932     1           CHARACTER            
+PE1M_DEDFD                        933:940     8           CHARACTER            
+PE1M_DIDFD                        941:948     8           CHARACTER            
+PE1M_FSAMJ                        949:949     1           CHARACTER            
+PE1M_FSAMA                        950:950     1           CHARACTER            
+PE1M_RSOD11                       951:953     3           CHARACTER            
+PE1M_CSRGCX                       954:954     1           CHARACTER            
+PE1M_QSAAM3                       955:956     2           CHARACTER            
+PE1M_CSFCA9                       957:959     3           CHARACTER            
+PE1M_CSFCAD                       960:962     3           CHARACTER            
+PE1M_RSBCA9                       963:964     2           CHARACTER            
+PE1M_RSBCAD                       965:966     2           CHARACTER            
+PE1M_DEVAV1                       967:974     8           CHARACTER            
+PE1M_NSRCA                        975:976     2           CHARACTER            
+PE1M_QMRSP                        977:983     7           ZONED DECIMAL (7, 2) 
+PE1M_PSCUM2                       984:987     4           CHARACTER            
+PE1M_FSMAC2                       988:988     1           CHARACTER            
+PE1M_DSAAS1                       989:992     4           CHARACTER            
+PE1M_DSMA2                        993:994     2           CHARACTER            
+PE1M_RSBCAI                       995:996     2           CHARACTER            
+PE1M_CSFCAI                       997:999     3           CHARACTER            
+PE1M_CSAPJ4                     1000:1000     1           CHARACTER            
+PE1M_CSTFR2                     1001:1001     1           CHARACTER            
+PE1M_PSJFR2                     1002:1004     3           CHARACTER            
+PE1M_PSCUM3                     1005:1008     4           CHARACTER            
+PE1M_PSCES                      1009:1009     1           CHARACTER            
+PE1M_QMARI1                     1010:1014     5           ZONED DECIMAL (5, 2) 
+PE1M_TSDEG3                     1015:1017     3           ZONED DECIMAL (3, 2) 
+PE1M_DEDAS                      1018:1025     8           CHARACTER            
+PE1M_FSMA1                      1026:1026     1           CHARACTER            
+PE1M_FSMA2                      1027:1027     1           CHARACTER            
+PE1M_CSODP1                     1028:1028     1           CHARACTER            
+PE1M_FSIMJ                      1029:1029     1           CHARACTER            
+PE1M_FSGMA                      1030:1030     1           CHARACTER            
+PE1M_FSIMA                      1031:1031     1           CHARACTER            
+PE1M_FSCPM                      1032:1032     1           CHARACTER            
+PE1M_FSGMJ                      1033:1033     1           CHARACTER            
+PE1M_CSSND3                     1034:1034     1           CHARACTER            
+PE1M_NSARSI                     1035:1038     4           CHARACTER            
+PE1M_FSPFRE                     1039:1039     1           CHARACTER            
+PE1M_CSDTD1_1                   1040:1041     2           CHARACTER            
+PE1M_DSCOM1_1                   1042:1049     8           CHARACTER            
+PE1M_CSDTD1_2                   1050:1051     2           CHARACTER            
+PE1M_DSCOM1_2                   1052:1059     8           CHARACTER            
+PE1M_CSDTD1_3                   1060:1061     2           CHARACTER            
+PE1M_DSCOM1_3                   1062:1069     8           CHARACTER            
+PE1M_CSDTD1_4                   1070:1071     2           CHARACTER            
+PE1M_DSCOM1_4                   1072:1079     8           CHARACTER            
+PE1M_CSETG1                     1080:1080     1           CHARACTER            
+PE1M_CSAPJ5                     1081:1081     1           CHARACTER            
+PE1M_TSRAV2                     1082:1086     5           ZONED DECIMAL (5, 4) 
+PE1M_NSOPR6                     1087:1088     2           CHARACTER            
+PE1M_PJJPR4                     1089:1091     3           CHARACTER            
+PE1M_FSDME                      1092:1092     1           CHARACTER            
+PE1M_FSENT                      1093:1093     1           CHARACTER            
+PE1M_CSSRP1                     1094:1094     1           CHARACTER            
+PE1M_PSHFR2                     1095:1096     2           CHARACTER            
+PE1M_CSAAJM                     1097:1101     5           CHARACTER            
+PE1M_NSOPRJ                     1102:1103     2           CHARACTER            
+PE1M_FSRPAB                     1104:1104     1           CHARACTER            
+PE1M_CSITH1                     1105:1106     2           CHARACTER            
+PE1M_PSITH1                     1107:1110     4           CHARACTER            
+PE1M_QMITH1                     1111:1117     7           ZONED DECIMAL (7, 2) 
+PE1M_DDITH1                     1118:1125     8           CHARACTER            
+PE1M_QMFRP1                     1126:1132     7           ZONED DECIMAL (7, 2) 
+PE1M_QMIT1                      1133:1139     7           ZONED DECIMAL (7, 2) 
+PE1M_QMIH1                      1140:1146     7           ZONED DECIMAL (7, 2) 
+PE1M_CSRGCA                     1147:1147     1           CHARACTER            
+PE1M_PSTFRA                     1148:1151     4           CHARACTER            
+PE1M_FSA55                      1152:1152     1           CHARACTER            
+PE1M_FSA57                      1153:1153     1           CHARACTER            
+PE1M_FSANR                      1154:1154     1           CHARACTER            
+PE1M_QSMAR1                     1155:1156     2           CHARACTER            
+PE1M_FSARB                      1157:1157     1           CHARACTER            
+PE1M_FSARR1                     1158:1158     1           CHARACTER            
+PE1M_PSASS1                     1159:1160     2           CHARACTER            
+PE1M_QMAVC1                     1161:1167     7           ZONED DECIMAL (7, 2) 
+PE1M_CSTME1                     1168:1169     2           CHARACTER            
+PE1M_CSTFM1                     1170:1170     1           CHARACTER            
+PE1M_CSDSPD                     1171:1171     1           CHARACTER            
+PE1M_QSNJS                      1172:1175     4           CHARACTER            
+PE1M_PSJSUC                     1176:1178     3           CHARACTER            
+PE1M_DDDIF                      1179:1186     8           CHARACTER            
+PE1M_DFDIF                      1187:1194     8           CHARACTER            
+PE1M_NSCUM9                     1195:1195     1           CHARACTER            
+PE1M_CSENQ                      1196:1196     1           CHARACTER            
+PE1M_CSNSU                      1197:1197     1           CHARACTER            
+PE1M_CSTFR4                     1198:1198     1           CHARACTER            
+PE1M_NSOPRL                     1199:1200     2           CHARACTER            
+PE1M_DIB92                      1201:1208     8           CHARACTER            
+PE1M_DEB92                      1209:1216     8           CHARACTER            
+PE1M_CSARGG                     1217:1219     3           CHARACTER            
+PE1M_NSFILG                     1220:1220     1           CHARACTER            
+PE1M_TSDGAM                     1221:1225     5           ZONED DECIMAL (5, 4) 
+PE1M_TSDGRM                     1226:1230     5           ZONED DECIMAL (5, 4) 
+PE1M_CSOCB                      1231:1231     1           CHARACTER            
+PE1M_FSMMJ                      1232:1232     1           CHARACTER            
+PE1M_PSABFD                     1233:1236     4           CHARACTER            
+PE1M_DFSUSM                     1237:1244     8           CHARACTER            
+PE1M_CSTSUM                     1245:1246     2           CHARACTER            
+PE1M_TSRAV3                     1247:1251     5           ZONED DECIMAL (5, 4) 
+PE1M_TSRAV4                     1252:1256     5           ZONED DECIMAL (5, 4) 
+PE1M_CSTPCE                     1257:1257     1           CHARACTER            
+PE1M_PSIMPA                     1258:1261     4           CHARACTER            
+PE1M_FSAFR1                     1262:1262     1           CHARACTER            
+PE1M_FSAFS1                     1263:1263     1           CHARACTER            
+PE1M_FSTEN                      1264:1264     1           CHARACTER            
+PE1M_NSCUMA                     1265:1265     1           CHARACTER            
+PE1M_RSF3M                      1266:1267     2           CHARACTER            
+PE1M_NSSTAM                     1268:1269     2           CHARACTER            
+PE1M_CSDUB                      1270:1270     1           CHARACTER            
+PE1M_CSAPJ7                     1271:1271     1           CHARACTER            
+PE1M_CSNPJ7                     1272:1272     1           CHARACTER            
+PE1M_DEB93                      1273:1280     8           CHARACTER            
+PE1M_DIB93                      1281:1288     8           CHARACTER            
+PE1M_PSAUDT                     1289:1292     4           CHARACTER            
+PE1M_RSRPM                      1293:1295     3           CHARACTER            
+PE1M_CSQAVM                     1296:1296     1           CHARACTER            
+PE1M_CSPNDM                     1297:1297     1           CHARACTER            
+PE1M_QSFARM                     1298:1298     1           CHARACTER            
+PE1M_QSNARM                     1299:1300     2           CHARACTER            
+PE1M_CSACUM                     1301:1301     1           CHARACTER            
+PE1M_QMRAVM                     1302:1308     7           ZONED DECIMAL (7, 2) 
+PE1M_QMPIM                      1309:1315     7           ZONED DECIMAL (7, 2) 
+PE1M_CSPIM                      1316:1316     1           CHARACTER            
+PE1M_CS33M                      1317:1318     2           RAW                  
+PE1M_CSOB7M                     1319:1319     1           CHARACTER            
+PE1M_CSRB7M                     1320:1320     1           CHARACTER            
+PE1M_PSAUDM                     1321:1324     4           CHARACTER            
+PE1M_DEB97                      1325:1332     8           CHARACTER            
+PE1M_DSMASA                     1333:1338     6           CHARACTER            
+PE1M_QSMARN                     1339:1340     2           CHARACTER            
+PE1M_PSHARN                     1341:1344     4           CHARACTER            
+PE1M_TSKJM                      1345:1349     5           ZONED DECIMAL (5, 4) 
+PE1M_TSKMNM                     1350:1354     5           ZONED DECIMAL (5, 4) 
+PE1M_DEB01M                     1355:1362     8           CHARACTER            
+PE1M_DIB01M                     1363:1370     8           CHARACTER            
+PE1M_CSOB1M                     1371:1371     1           CHARACTER            
+PE1M_CSRB1M                     1372:1372     1           CHARACTER            
+PE1M_PSPARM                     1373:1376     4           CHARACTER            
+PE1M_CSCRA                      1377:1377     1           CHARACTER            
+PE1M_FSAERM                     1378:1378     1           CHARACTER            
+PE1M_FSACVM                     1379:1379     1           CHARACTER            
+PE1M_CSOB3M                     1380:1380     1           CHARACTER            
+PE1M_CSRB3M                     1381:1381     1           CHARACTER            
+PE1M_DEB03M                     1382:1389     8           CHARACTER            
+PE1M_CSIRPI                     1390:1390     1           CHARACTER            
+PE1M_QSMPP                      1391:1392     2           CHARACTER            
+PE1M_PSCUMM                     1393:1396     4           CHARACTER            
+PE1M_PSDURA                     1397:1400     4           CHARACTER            
+PE1M_TSSRMM                     1401:1403     3           CHARACTER            
+PE1M_QSDSF4                     1404:1405     2           CHARACTER            
+PE1M_NSCUMM                     1406:1406     1           CHARACTER            
+PE1M_FSMPI                      1407:1407     1           CHARACTER            
+PE1M_QMPCA2                     1408:1416     9           ZONED DECIMAL (9, 2) 
+PE1M_TSRCA2                     1417:1421     5           ZONED DECIMAL (5, 4) 
+PE1M_PSALFX                     1422:1425     4           CHARACTER            
+PE1M_FILLER                     1426:1434     9           CHARACTER            
+PE1M_FILLER_1                   1435:1444    10           CHARACTER            
+PE1M_FILLER_2                   1445:1454    10           CHARACTER            
+PE1M_FILLER_3                   1455:1464    10           CHARACTER            
+PE1M_FILLER_4                   1465:1474    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PE1M were processed:
+index RSOV0200.PK_PE1M partition PE1M_DR_32_BR1_PART loaded successfully with 306022 keys
+
+Table PE1M, subpartition PE1M_DR_32_BR1_PART:
+  306022 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        306022
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      432
+Total stream buffers loaded by SQL*Loader load thread:     1293
+
+Run began on Fri Jun 09 19:48:05 2023
+Run ended on Fri Jun 09 19:48:38 2023
+
+Elapsed time was:     00:00:33.49
+CPU time was:         00:00:21.06
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 19:48:05 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 306022.
+
+Table PE1M, subpartition PE1M_DR_32_BR1_PART:
+  306022 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/log/charge_PE1M321.log
+for more information about the load.
+
+ number of rows inserted not checked 

@@ -1,0 +1,149 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 06:51:08 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P7101B_30108.ctl
+Data File:      Tab.U.P7101B.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P7101B00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P7101B, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP01B                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP01B                               NEXT     *   ;  O(") CHARACTER            
+CXAS3                                NEXT     3   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CXASS                                NEXT     3   ;  O(") CHARACTER            
+CXIN                                 NEXT     8   ;  O(") CHARACTER            
+CTOFFD                               NEXT     7   ;  O(") CHARACTER            
+NIMER1                               NEXT     6   ;  O(") CHARACTER            
+CSOSMA                               NEXT    10   ;  O(") CHARACTER            
+RSAL                                 NEXT     5   ;  O(") CHARACTER            
+CDCDC                                NEXT     1   ;  O(") CHARACTER            
+DMJMEC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+FSCOT6                               NEXT     1   ;  O(") CHARACTER            
+FSCOT2                               NEXT     3   ;  O(") CHARACTER            
+LLTRA1                               NEXT    34   ;  O(") CHARACTER            
+CCSAMC                               NEXT     1   ;  O(") CHARACTER            
+QRSMI1                               NEXT     *   ;  O(") CHARACTER            
+QRSMA1                               NEXT     *   ;  O(") CHARACTER            
+QKNMS1                               NEXT     *   ;  O(") CHARACTER            
+LLSAL1                               NEXT    36   ;  O(") CHARACTER            
+FSTHO                                NEXT     3   ;  O(") CHARACTER            
+PHWSE                                NEXT     *   ;  O(") CHARACTER            
+PNWSE                                NEXT     *   ;  O(") CHARACTER            
+LLHOR1                               NEXT    36   ;  O(") CHARACTER            
+CSQLFM                               NEXT     *   ;  O(") CHARACTER            
+CSVINC                               NEXT     1   ;  O(") CHARACTER            
+CSMOCT                               NEXT     3   ;  O(") CHARACTER            
+DCRSMC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DDMSMC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DDMJMC                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+
+The following index(es) on table P7101B were processed:
+index RSOV0200.IP7101B1 loaded successfully with 24278382 keys
+
+Table P7101B:
+  24278382 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P7101B_DR_01_PART: 5044 Rows loaded.
+  Partition P7101B_DR_12_PART: 702 Rows loaded.
+  Partition P7101B_DR_13_PART: 4873 Rows loaded.
+  Partition P7101B_DR_16_PART: 15423 Rows loaded.
+  Partition P7101B_DR_17_PART: 6756098 Rows loaded.
+  Partition P7101B_DR_20_PART: 3428 Rows loaded.
+  Partition P7101B_DR_24_PART: 8671 Rows loaded.
+  Partition P7101B_DR_25_PART: 6807 Rows loaded.
+  Partition P7101B_DR_26_PART: 2066 Rows loaded.
+  Partition P7101B_DR_27_PART: 3330 Rows loaded.
+  Partition P7101B_DR_31_PART: 10440 Rows loaded.
+  Partition P7101B_DR_32_PART: 11305379 Rows loaded.
+  Partition P7101B_DR_34_PART: 26130 Rows loaded.
+  Partition P7101B_DR_35_PART: 3783 Rows loaded.
+  Partition P7101B_DR_39_PART: 1103 Rows loaded.
+  Partition P7101B_DR_40_PART: 1796 Rows loaded.
+  Partition P7101B_DR_41_PART: 1932 Rows loaded.
+  Partition P7101B_DR_44_PART: 2854 Rows loaded.
+  Partition P7101B_DR_46_PART: 15628 Rows loaded.
+  Partition P7101B_DR_48_PART: 8409 Rows loaded.
+  Partition P7101B_DR_49_PART: 12241 Rows loaded.
+  Partition P7101B_DR_50_PART: 4382 Rows loaded.
+  Partition P7101B_DR_51_PART: 4928930 Rows loaded.
+  Partition P7101B_DR_56_PART: 5263 Rows loaded.
+  Partition P7101B_DR_57_PART: 13411 Rows loaded.
+  Partition P7101B_DR_61_PART: 22020 Rows loaded.
+  Partition P7101B_DR_63_PART: 14476 Rows loaded.
+  Partition P7101B_DR_65_PART: 1089997 Rows loaded.
+  Partition P7101B_DR_66_PART: 476 Rows loaded.
+  Partition P7101B_DR_67_PART: 327 Rows loaded.
+  Partition P7101B_DR_68_PART: 2151 Rows loaded.
+  Partition P7101B_DR_69_PART: 641 Rows loaded.
+  Partition P7101B_DR_70_PART: 46 Rows loaded.
+  Partition P7101B_DR_71_PART: 125 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      24278382
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     6969
+Total stream buffers loaded by SQL*Loader load thread:    20904
+
+Run began on Thu Jun 01 06:51:08 2023
+Run ended on Thu Jun 01 07:09:10 2023
+
+Elapsed time was:     00:18:02.30
+CPU time was:         00:01:55.32
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 06:51:08 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 24278382.
+
+Table P7101B:
+  24278382 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P7101B00.log
+for more information about the load.
+
+ number of rows inserted not checked 

@@ -1,0 +1,17 @@
+Processing PA2W ...
+Temp nettoyage : 1 seconds
+
+Loading process of table PA2W
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	1830 row(s) inserted
+
+
+PA2W;OK;1830;1830
+Temps chargement : 1 seconds
+Elapsed Time: 2 seconds

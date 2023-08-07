@@ -1,0 +1,12 @@
+/** Taille du champs de séléction du nombre d'entité affichées par page de tableau. */
+div.dataTables_length select {
+	width: 60px !important;
+}
+
+.table-danger {
+	background-color: #f8d7da !important;
+}
+
+div.dt-buttons {
+	padding-bottom: .25rem!important;
+}

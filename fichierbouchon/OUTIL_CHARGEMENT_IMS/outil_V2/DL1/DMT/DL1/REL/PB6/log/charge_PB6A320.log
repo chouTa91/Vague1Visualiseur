@@ -1,0 +1,232 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:23:08 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/tmp/PB6A.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PB6A.DR32.BR0.net
+  File processing option string: "fix 774"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/tmp/charge_PB6A320.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PB6A, partition PB6A_DR_32_PART, loaded from every logical record.
+Insert option in effect for this partition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                    3:3     1           CHARACTER            
+  (FILLER FIELD)
+PB6A_RSCV                            4:11     8           CHARACTER            
+PB6A_NSCV                           12:27    16           CHARACTER            
+PB6A_RSEN                           28:35     8           CHARACTER            
+PB6A_RSEN4                          36:43     8           CHARACTER            
+PB6A_QSEFR                          44:48     5           CHARACTER            
+PB6A_NSCOM                          49:53     5           CHARACTER            
+PB6A_CSSUB                          54:54     1           CHARACTER            
+PB6A_LNCOR                          55:74    20           CHARACTER            
+PB6A_RSTIC                          75:82     8           CHARACTER            
+PB6A_CSAFP                          83:83     1           CHARACTER            
+PB6A_QSVAD                          84:88     5           ZONED DECIMAL (5, 0) 
+PB6A_QSVADA                         89:93     5           ZONED DECIMAL (5, 0) 
+PB6A_QSVADB                         94:98     5           ZONED DECIMAL (5, 0) 
+PB6A_QSVAD1                        99:103     5           ZONED DECIMAL (5, 0) 
+PB6A_QSVAD2                       104:108     5           ZONED DECIMAL (5, 0) 
+PB6A_QSVAD3                       109:113     5           ZONED DECIMAL (5, 0) 
+PB6A_QSADA                        114:119     6           ZONED DECIMAL (6, 0) 
+PB6A_QSEXC                        120:122     3           ZONED DECIMAL (3, 0) 
+PB6A_DSSIG                        123:130     8           CHARACTER            
+PB6A_DSSE                         131:138     8           CHARACTER            
+PB6A_DSDCC                        139:146     8           CHARACTER            
+PB6A_DFCAC                        147:154     8           CHARACTER            
+PB6A_DFPRD                        155:162     8           CHARACTER            
+PB6A_QSLEC                        163:168     6           ZONED DECIMAL (6, 0) 
+PB6A_DDPRD                        169:176     8           CHARACTER            
+PB6A_CSRLJ                        177:177     1           CHARACTER            
+PB6A_DDRLJ                        178:185     8           CHARACTER            
+PB6A_RSTIJ                        186:193     8           CHARACTER            
+PB6A_CSA4C                        194:194     1           CHARACTER            
+PB6A_CSA5F                        195:195     1           CHARACTER            
+PB6A_DICF                         196:203     8           CHARACTER            
+PB6A_DDCF                         204:211     8           CHARACTER            
+PB6A_DFCF                         212:219     8           CHARACTER            
+PB6A_DSSCF                        220:227     8           CHARACTER            
+PB6A_DMSEG                        228:235     8           CHARACTER            
+PB6A_CSVCV                        236:236     1           CHARACTER            
+PB6A_DSREMB                       237:244     8           CHARACTER            
+PB6A_RSTIS                        245:252     8           CHARACTER            
+PB6A_QSADB                        253:258     6           ZONED DECIMAL (6, 0) 
+PB6A_DEUL7                        259:266     8           CHARACTER            
+PB6A_DDNOT                        267:274     8           CHARACTER            
+PB6A_CSCVN                        275:275     1           CHARACTER            
+PB6A_DEVCC                        276:283     8           CHARACTER            
+PB6A_RSTILC                       284:291     8           CHARACTER            
+PB6A_HCONV                        292:295     4           CHARACTER            
+PB6A_CDTOF                        296:296     1           CHARACTER            
+PB6A_CYETL                        297:297     1           CHARACTER            
+PB6A_QHIST                        298:302     5           ZONED DECIMAL (5, 2) 
+PB6A_CSMDES                       303:303     1           CHARACTER            
+PB6A_CSFOP                        304:305     2           CHARACTER            
+PB6A_RSTII                        306:313     8           CHARACTER            
+PB6A_RSTIO                        314:321     8           CHARACTER            
+PB6A_LSSTA1                       322:351    30           CHARACTER            
+PB6A_CSTMCF                       352:352     1           CHARACTER            
+PB6A_DDSTF                        353:360     8           CHARACTER            
+PB6A_DFSTF                        361:368     8           CHARACTER            
+PB6A_PSTFR                        369:372     4           ZONED DECIMAL (4, 0) 
+PB6A_QMSTA                        373:377     5           ZONED DECIMAL (5, 0) 
+PB6A_QMECF                        378:386     9           ZONED DECIMAL (9, 2) 
+PB6A_QMPA                         387:395     9           ZONED DECIMAL (9, 2) 
+PB6A_DFPAY                        396:403     8           CHARACTER            
+PB6A_CSVCF                        404:404     1           CHARACTER            
+PB6A_CSCORF                       405:405     1           CHARACTER            
+PB6A_CSCFF1                       406:407     2           ZONED DECIMAL (2, 0) 
+PB6A_QMSFR                        408:414     7           ZONED DECIMAL (7, 2) 
+PB6A_QMECFT                       415:423     9           ZONED DECIMAL (9, 2) 
+PB6A_QSADAT                       424:429     6           ZONED DECIMAL (6, 0) 
+PB6A_LSTPJ                        430:457    28           CHARACTER            
+PB6A_QMTPR                        458:468    11           ZONED DECIMAL (11, 2)
+PB6A_QMTCH                        469:477     9           ZONED DECIMAL (9, 2) 
+PB6A_QMT14                        478:488    11           ZONED DECIMAL (11, 2)
+PB6A_QM14C                        489:497     9           ZONED DECIMAL (9, 2) 
+PB6A_CSVEL                        498:498     1           CHARACTER            
+PB6A_FSCEM                        499:499     1           CHARACTER            
+PB6A_FSCQE                        500:500     1           CHARACTER            
+PB6A_FSSDE                        501:501     1           CHARACTER            
+PB6A_QSPGEL                       502:503     2           ZONED DECIMAL (2, 0) 
+PB6A_QSLIEL                       504:505     2           ZONED DECIMAL (2, 0) 
+PB6A_FSCVA                        506:506     1           CHARACTER            
+PB6A_QSPRP                        507:511     5           ZONED DECIMAL (5, 0) 
+PB6A_QSVAP                        512:516     5           ZONED DECIMAL (5, 0) 
+PB6A_CSMRJC                       517:518     2           CHARACTER            
+PB6A_CSPREC                       519:519     1           CHARACTER            
+PB6A_CSPREI                       520:520     1           CHARACTER            
+PB6A_CSALRD                       521:521     1           CHARACTER            
+PB6A_CSALR1                       522:522     1           CHARACTER            
+PB6A_CSALR2                       523:523     1           CHARACTER            
+PB6A_CSALRS                       524:524     1           CHARACTER            
+PB6A_CSNROG                       525:529     5           CHARACTER            
+PB6A_CSOFG                        530:530     1           CHARACTER            
+PB6A_DSSIGU                       531:538     8           CHARACTER            
+PB6A_FSA18A                       539:539     1           CHARACTER            
+PB6A_DSVEL                        540:547     8           CHARACTER            
+PB6A_DSVELP                       548:555     8           CHARACTER            
+PB6A_QSADSS                       556:560     5           ZONED DECIMAL (5, 0) 
+PB6A_QSADV                        561:565     5           ZONED DECIMAL (5, 0) 
+PB6A_QMFOHO                       566:578    13           ZONED DECIMAL (13, 2)
+PB6A_CYFOHO                       579:579     1           CHARACTER            
+PB6A_CYPA                         580:580     1           CHARACTER            
+PB6A_CYSFR                        581:581     1           CHARACTER            
+PB6A_CDCAC                        582:582     1           CHARACTER            
+PB6A_QMHFS1                       583:588     6           ZONED DECIMAL (6, 2) 
+PB6A_CYHFS1                       589:589     1           CHARACTER            
+PB6A_QSVADF                       590:594     5           ZONED DECIMAL (5, 0) 
+PB6A_QSVADG                       595:599     5           ZONED DECIMAL (5, 0) 
+PB6A_CSNVFD                       600:600     1           ZONED DECIMAL (1, 0) 
+PB6A_CSVATD                       601:601     1           CHARACTER            
+PB6A_FSSEND                       602:602     1           CHARACTER            
+PB6A_QSPLR                        603:607     5           ZONED DECIMAL (5, 0) 
+PB6A_QSPMN                        608:612     5           ZONED DECIMAL (5, 0) 
+PB6A_QKAIPD                       613:621     9           ZONED DECIMAL (9, 2) 
+PB6A_DSDBU                        622:629     8           CHARACTER            
+PB6A_DSAAD                        630:633     4           ZONED DECIMAL (4, 0) 
+PB6A_CSEDB                        634:634     1           CHARACTER            
+PB6A_DSSDB                        635:642     8           CHARACTER            
+PB6A_CDPAI                        643:643     1           ZONED DECIMAL (1, 0) 
+PB6A_QMAAO                        644:652     9           ZONED DECIMAL (9, 2) 
+PB6A_QMVER                        653:661     9           ZONED DECIMAL (9, 2) 
+PB6A_QSNBEO                       662:663     2           ZONED DECIMAL (2, 0) 
+PB6A_PJVER                        664:666     3           ZONED DECIMAL (3, 0) 
+PB6A_FIFOR                        667:667     1           CHARACTER            
+PB6A_TSAIP                        668:672     5           ZONED DECIMAL (5, 2) 
+PB6A_LIFORD                       673:702    30           CHARACTER            
+PB6A_PJFHP                        703:705     3           ZONED DECIMAL (3, 0) 
+PB6A_CSFFN2                       706:707     2           ZONED DECIMAL (2, 0) 
+PB6A_CSPUE                        708:708     1           CHARACTER            
+PB6A_TASBK                        709:711     3           ZONED DECIMAL (3, 0) 
+PB6A_QMPFPA                       712:720     9           ZONED DECIMAL (9, 2) 
+PB6A_TAPFH                        721:723     3           ZONED DECIMAL (3, 0) 
+PB6A_PSTFR1                       724:727     4           ZONED DECIMAL (4, 0) 
+PB6A_QMHFS2                       728:733     6           ZONED DECIMAL (6, 2) 
+PB6A_FFPOE                        734:734     1           CHARACTER            
+PB6A_QMOPCA                       735:743     9           ZONED DECIMAL (9, 2) 
+PB6A_PSTFR3                       744:747     4           ZONED DECIMAL (4, 0) 
+PB6A_QMHFS3                       748:753     6           ZONED DECIMAL (6, 2) 
+PB6A_FIBDC                        754:754     1           CHARACTER            
+PB6A_CMSOL                        755:756     2           CHARACTER            
+PB6A_CDTPM                        757:761     5           CHARACTER            
+PB6A_FIFTE                        762:762     1           CHARACTER            
+PB6A_FIARP                        763:763     1           CHARACTER            
+PB6A_CDIPO                        764:764     1           CHARACTER            
+PB6A_FFCPF                        765:765     1           CHARACTER            
+PB6A_PHCPFA                       766:770     5           ZONED DECIMAL (5, 0) 
+PB6A_FSEXP                        771:771     1           CHARACTER            
+PB6A_FICPC                        772:772     1           CHARACTER            
+PB6A_FILLER                       773:773     1           ZONED DECIMAL (1, 0) 
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PB6A were processed:
+index RSOV0200.PB61 partition PB6A_DR_32_PART loaded successfully with 124658 keys
+index RSOV0200.PK_PB6A partition PB6A_DR_32_PART loaded successfully with 124658 keys
+
+Table PB6A, partition PB6A_DR_32_PART:
+  124658 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        124658
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       93
+Total stream buffers loaded by SQL*Loader load thread:      276
+
+Run began on Wed Jun 07 16:23:08 2023
+Run ended on Wed Jun 07 16:23:32 2023
+
+Elapsed time was:     00:00:23.63
+CPU time was:         00:00:03.62
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:23:08 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 124658.
+
+Table PB6A, partition PB6A_DR_32_PART:
+  124658 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/log/charge_PB6A320.log
+for more information about the load.
+
+ number of rows inserted not checked 

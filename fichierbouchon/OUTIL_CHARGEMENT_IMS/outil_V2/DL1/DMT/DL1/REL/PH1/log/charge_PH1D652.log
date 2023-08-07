@@ -1,0 +1,186 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 13:13:09 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/tmp/PH1D.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PH1D.DR65.BR2.net
+  File processing option string: "fix 482"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/tmp/charge_PH1D652.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PH1D, subpartition PH1D_DR_65_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PH1A_RSTIN                           4:11     8           CHARACTER            
+PH1D_DSCI                           12:19     8           CHARACTER            
+PH1D_CSTCR                          20:20     1           CHARACTER            
+PH1D_NSCRE                          21:22     2           ZONED DECIMAL (2, 0) 
+PH1D_CSIE                           23:23     1           CHARACTER            
+PH1D_CSOIE                          24:24     1           CHARACTER            
+PH1D_CSCI                           25:25     1           CHARACTER            
+PH1D_DIIE                           26:33     8           CHARACTER            
+PH1D_RSJUS2                         34:45    12           CHARACTER            
+PH1D_NSACT9                         46:47     2           ZONED DECIMAL (2, 0) 
+PH1D_RSEQ7                          48:50     3           ZONED DECIMAL (3, 0) 
+PH1D_CSDE7                          51:52     2           CHARACTER            
+PH1D_FSCIP                          53:54     2           CHARACTER            
+PH1D_CSECX                          55:55     1           CHARACTER            
+PH1D_CSTFM                          56:56     1           CHARACTER            
+PH1D_QMCI                           57:65     9           ZONED DECIMAL (9, 2) 
+PH1D_QMSI                           66:74     9           ZONED DECIMAL (9, 2) 
+PH1D_DFSIN                          75:82     8           CHARACTER            
+PH1D_DERPA1                         83:88     6           CHARACTER            
+PH1D_QMSMO1                         89:95     7           ZONED DECIMAL (7, 2) 
+PH1D_DDPRI                         96:103     8           CHARACTER            
+PH1D_FSCI                         104:105     2           CHARACTER            
+PH1D_DDARB                        106:113     8           CHARACTER            
+PH1D_CSTAR                        114:114     1           CHARACTER            
+PH1D_CSMAR                        115:115     1           CHARACTER            
+PH1D_TSRCP                        116:120     5           ZONED DECIMAL (5, 2) 
+PH1D_QMMFI                        121:127     7           ZONED DECIMAL (7, 2) 
+PH1D_QSNEC                        128:129     2           ZONED DECIMAL (2, 0) 
+PH1D_DSJUG                        130:137     8           CHARACTER            
+PH1D_QMPRC                        138:146     9           ZONED DECIMAL (9, 2) 
+PH1D_QMILC                        147:155     9           ZONED DECIMAL (9, 2) 
+PH1D_QMFJC                        156:164     9           ZONED DECIMAL (9, 2) 
+PH1D_QMIC                         165:173     9           ZONED DECIMAL (9, 2) 
+PH1D_CSLDI                        174:175     2           CHARACTER            
+PH1D_CSAN1                        176:178     3           CHARACTER            
+PH1D_CSPPR                        179:179     1           CHARACTER            
+PH1D_CSPIN                        180:180     1           CHARACTER            
+PH1D_CSPFJ                        181:181     1           CHARACTER            
+PH1D_CSPIJ                        182:182     1           CHARACTER            
+PH1D_CSRRG                        183:187     5           CHARACTER            
+PH1D_CSSTE                        188:188     1           CHARACTER            
+PH1D_RSFA1                        189:190     2           ZONED DECIMAL (2, 0) 
+PH1D_RSEQ3                        191:193     3           ZONED DECIMAL (3, 0) 
+PH1D_RSAA1                        194:202     9           CHARACTER            
+PH1D_RSCV2                        203:210     8           CHARACTER            
+PH1D_FSDBAB                       211:211     1           CHARACTER            
+PH1D_CSRD4B                       212:213     2           CHARACTER            
+PH1D_CSMOT                        214:216     3           CHARACTER            
+PH1D_QMSIC                        217:225     9           ZONED DECIMAL (9, 2) 
+PH1D_QMSFJ                        226:234     9           ZONED DECIMAL (9, 2) 
+PH1D_QMSIL                        235:243     9           ZONED DECIMAL (9, 2) 
+PH1D_CSTME                        244:245     2           CHARACTER            
+PH1D_QMSIT                        246:254     9           ZONED DECIMAL (9, 2) 
+PH1D_QMSIH                        255:263     9           ZONED DECIMAL (9, 2) 
+PH1D_CSMVF                        264:264     1           CHARACTER            
+PH1D_CSMPI                        265:265     1           CHARACTER            
+PH1D_CSODI                        266:266     1           CHARACTER            
+PH1D_CSMRI                        267:267     1           CHARACTER            
+PH1D_CSTYI                        268:268     1           CHARACTER            
+PH1D_CSFRA                        269:269     1           CHARACTER            
+PH1D_CSIRR                        270:270     1           CHARACTER            
+PH1D_DSCIJ                        271:278     8           CHARACTER            
+PH1D_CSACEX                       279:279     1           CHARACTER            
+PH1D_CSVOEX                       280:280     1           CHARACTER            
+PH1D_FSRNA                        281:281     1           CHARACTER            
+PH1D_CSWIN                        282:282     1           CHARACTER            
+PH1D_CSLDW                        283:284     2           CHARACTER            
+PH1D_CSANW                        285:285     1           CHARACTER            
+PH1D_ISDCX                        286:296    11           CHARACTER            
+PH1D_FILLER                       297:309    13           CHARACTER            
+PH1D_CSND9                        310:311     2           CHARACTER            
+PH1D_RSALZ                        312:316     5           CHARACTER            
+PH1D_CSAN4V                       317:319     3           CHARACTER            
+PH1D_CDPAYU                       320:322     3           CHARACTER            
+PH1D_CDPPPD_1                     323:324     2           CHARACTER            
+PH1D_CDPPPD_2                     325:326     2           CHARACTER            
+PH1D_CDPPPD_3                     327:328     2           CHARACTER            
+PH1D_CDPPPD_4                     329:330     2           CHARACTER            
+PH1D_CDPPPD_5                     331:332     2           CHARACTER            
+PH1D_CDSPPD_1                     333:334     2           CHARACTER            
+PH1D_CDSPPD_2                     335:336     2           CHARACTER            
+PH1D_CDSPPD_3                     337:338     2           CHARACTER            
+PH1D_CDSPPD_4                     339:340     2           CHARACTER            
+PH1D_CDSPPD_5                     341:342     2           CHARACTER            
+PH1D_CDSTPD_1                     343:344     2           CHARACTER            
+PH1D_CDSTPD_2                     345:346     2           CHARACTER            
+PH1D_CDSTPD_3                     347:348     2           CHARACTER            
+PH1D_CDSTPD_4                     349:350     2           CHARACTER            
+PH1D_CDSTPD_5                     351:352     2           CHARACTER            
+PH1D_NSCVP                        353:368    16           CHARACTER            
+PH1D_CXSALB                       369:383    15           CHARACTER            
+PH1D_CIRGP                        384:384     1           CHARACTER            
+PH1D_FSLRA                        385:385     1           CHARACTER            
+PH1D_QMSIRA                       386:394     9           ZONED DECIMAL (9, 2) 
+PH1D_QMPSD                        395:403     9           ZONED DECIMAL (9, 2) 
+PH1D_CXRUM                        404:438    35           CHARACTER            
+PH1D_QMCIN                        439:447     9           ZONED DECIMAL (9, 2) 
+PH1D_FILLER_1                     448:451     4           ZONED DECIMAL (4, 0) 
+PH1D_FILLER_2                     452:461    10           ZONED DECIMAL (10, 0)
+PH1D_FILLER_3                     462:471    10           ZONED DECIMAL (10, 0)
+PH1D_FILLER_4                     472:481    10           ZONED DECIMAL (10, 0)
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PH1D were processed:
+index RSOV0200.PK_PH1D partition PH1D_DR_65_BR2_PART loaded successfully with 45879 keys
+
+Table PH1D, subpartition PH1D_DR_65_BR2_PART:
+  45879 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         45879
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       22
+Total stream buffers loaded by SQL*Loader load thread:       63
+
+Run began on Wed Jun 07 13:13:09 2023
+Run ended on Wed Jun 07 13:13:16 2023
+
+Elapsed time was:     00:00:07.10
+CPU time was:         00:00:00.84
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 13:13:09 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 45879.
+
+Table PH1D, subpartition PH1D_DR_65_BR2_PART:
+  45879 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PH1/log/charge_PH1D652.log
+for more information about the load.
+
+ number of rows inserted not checked 

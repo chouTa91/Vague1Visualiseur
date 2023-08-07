@@ -1,0 +1,16 @@
+Processing PI2B ...
+
+Loading process of table PI2B
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	613702 row(s) inserted
+
+
+PI2B;OK;613702;613702
+Temps chargement : 29 seconds
+Elapsed Time: 27 seconds

@@ -1,0 +1,111 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:23:50 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/tmp/PB6D.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PB6D.DR32.BR0.net
+  File processing option string: "fix 182"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/tmp/charge_PB6D320.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PB6D, partition PB6D_DR_32_PART, loaded from every logical record.
+Insert option in effect for this partition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                    3:3     1           CHARACTER            
+  (FILLER FIELD)
+PB6A_RSCV                            4:11     8           CHARACTER            
+PB6D_NSRGF                          12:13     2           ZONED DECIMAL (2, 0) 
+PB6D_DSBAP                          14:21     8           CHARACTER            
+PB6D_DSRCF                          22:29     8           CHARACTER            
+PB6D_DEDPC                          30:37     8           CHARACTER            
+PB6D_CSFAC                          38:38     1           CHARACTER            
+PB6D_IFACT                          39:50    12           CHARACTER            
+PB6D_QMFAC                          51:59     9           ZONED DECIMAL (9, 2) 
+PB6D_RSTIT                          60:67     8           CHARACTER            
+PB6D_FFCOF                          68:68     1           CHARACTER            
+PB6D_FFSFC                          69:69     1           CHARACTER            
+PB6D_FFBAP                          70:70     1           CHARACTER            
+PB6D_FFADH                          71:71     1           CHARACTER            
+PB6D_CDCMO                          72:72     1           CHARACTER            
+PB6D_CSECD                          73:73     1           CHARACTER            
+PB6D_LDPAI                          74:76     3           CHARACTER            
+PB6D_DDPER                          77:84     8           CHARACTER            
+PB6D_DFPER                          85:92     8           CHARACTER            
+PB6D_CDSRT                         93:106    14           CHARACTER            
+PB6D_PSTFRR                       107:112     6           ZONED DECIMAL (6, 0) 
+PB6D_QMCEP                        113:121     9           ZONED DECIMAL (9, 2) 
+PB6D_CXCPP                        122:156    35           CHARACTER            
+PB6D_CMRJF                        157:158     2           CHARACTER            
+PB6D_FILLER                       159:161     3           ZONED DECIMAL (3, 0) 
+PB6D_FILLER_1                     162:171    10           ZONED DECIMAL (10, 0)
+PB6D_FILLER_2                     172:181    10           ZONED DECIMAL (10, 0)
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PB6D were processed:
+index RSOV0200.PK_PB6D partition PB6D_DR_32_PART loaded successfully with 27791 keys
+
+Table PB6D, partition PB6D_DR_32_PART:
+  27791 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         27791
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        9
+Total stream buffers loaded by SQL*Loader load thread:       15
+
+Run began on Wed Jun 07 16:23:50 2023
+Run ended on Wed Jun 07 16:23:52 2023
+
+Elapsed time was:     00:00:02.10
+CPU time was:         00:00:00.16
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:23:50 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 27791.
+
+Table PB6D, partition PB6D_DR_32_PART:
+  27791 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PB6/log/charge_PB6D320.log
+for more information about the load.
+
+ number of rows inserted not checked 

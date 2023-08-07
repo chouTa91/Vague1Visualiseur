@@ -1,0 +1,123 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:06:07 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2X.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2X.DR65.BR2.net
+  File processing option string: "fix 704"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2X652.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2X, subpartition PA2X_DR_65_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2H_CXPSE                          12:13     2           CHARACTER            
+PA2X_CDCPL                          14:16     3           CHARACTER            
+PA2X_CXPIE                          17:18     2           CHARACTER            
+PA2X_CMPIE                          19:20     2           CHARACTER            
+PA2X_DEENP                          21:28     8           CHARACTER            
+PA2X_FSHOD                          29:29     1           CHARACTER            
+PA2X_DRECP                          30:37     8           CHARACTER            
+PA2X_DNREP                          38:45     8           CHARACTER            
+PA2X_DREFP                          46:53     8           CHARACTER            
+PA2X_CMREP                          54:55     2           CHARACTER            
+PA2X_DVALP                          56:63     8           CHARACTER            
+PA2X_RSAGRP                         64:71     8           CHARACTER            
+PA2X_RSAGVP                         72:79     8           CHARACTER            
+PA2X_DRBILA                         80:87     8           CHARACTER            
+PA2X_QSACR1                         88:90     3           CHARACTER            
+PA2X_QSACRA                         91:93     3           CHARACTER            
+PA2X_QSACRE                         94:96     3           CHARACTER            
+PA2X_QSMRR1                         97:99     3           CHARACTER            
+PA2X_QSJRI1                       100:102     3           CHARACTER            
+PA2X_QSJRI2                       103:105     3           CHARACTER            
+PA2X_QSJRI3                       106:108     3           CHARACTER            
+PA2X_LSCMT1                       109:187    79           CHARACTER            
+PA2X_LSCMT2                       188:266    79           CHARACTER            
+PA2X_LSCMT3                       267:345    79           CHARACTER            
+PA2X_LSCMT4                       346:424    79           CHARACTER            
+PA2X_LSCMT5                       425:503    79           CHARACTER            
+PA2X_LSCMT6                       504:582    79           CHARACTER            
+PA2X_FILLER                       583:583     1           CHARACTER            
+PA2X_FILLER_1                     584:593    10           CHARACTER            
+PA2X_FILLER_2                     594:603    10           CHARACTER            
+PA2X_FILLER_3                     604:613    10           CHARACTER            
+PA2X_FILLER_4                     614:628    15           CHARACTER            
+PA2X_FILLER_5                     629:643    15           CHARACTER            
+PA2X_FILLER_6                     644:658    15           CHARACTER            
+PA2X_FILLER_7                     659:673    15           CHARACTER            
+PA2X_FILLER_8                     674:688    15           CHARACTER            
+PA2X_FILLER_9                     689:703    15           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2X were processed:
+index RSOV0200.PK_PA2X partition PA2X_DR_65_BR2_PART loaded successfully with 4736 keys
+
+Table PA2X, subpartition PA2X_DR_65_BR2_PART:
+  4736 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:          4736
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        4
+Total stream buffers loaded by SQL*Loader load thread:        9
+
+Run began on Wed Jun 07 12:06:07 2023
+Run ended on Wed Jun 07 12:06:08 2023
+
+Elapsed time was:     00:00:00.98
+CPU time was:         00:00:00.06
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:06:07 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 4736.
+
+Table PA2X, subpartition PA2X_DR_65_BR2_PART:
+  4736 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2X652.log
+for more information about the load.
+
+ number of rows inserted not checked 

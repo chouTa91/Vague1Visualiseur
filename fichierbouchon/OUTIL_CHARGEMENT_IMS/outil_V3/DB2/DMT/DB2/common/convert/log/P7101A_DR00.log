@@ -1,0 +1,36 @@
+Convert P7101A default tools using conv table-297-to-P1
+Target DB set to 'ORACLE'
+NL_Protector set to '@%@!'
+directing outputs to /pdt/CAPGEMINI/COPY_FROM_NAS_V2/DB2_LINUXDATA/
+Data file format NAS !
+QUALIFICATION REPORT For Table P7101A:
+
+Reporting of interesting characters per categories:
+case  0: basic printable characters    : nb chars = 6939577266
+case  1: 00 Low value character        : nb chars = 0
+case  2: 25 (LF --> 0A on target)      : nb chars = 0
+case  3: chars below 40, may be ok     : nb chars = 19
+case  4: chars below 40, problematic   : nb chars = 0
+case  5: Pb du High Value FF           : nb chars = 0
+case  6: 9F: Currency sign or Euro     : nb chars = 0
+case  7: Risque d'overpunch (C0 D0)    : nb chars = 8074135
+
+Reporting per column, the number of interesting chars:
+Column_Name                   ;      case  0;      case  1;      case  2;      case  3;      case  4;      case  5;      case  6;      case  7
+LNENTP                        ;    985230643;            0;            0;           17;            0;            0;            0;       210180
+LLPERS                        ;   3444206643;            0;            0;            2;            0;            0;            0;      7863955
+
+Reporting the number of occurences of interesting char (table level):
+char <<0x7>> nb occurences: 2
+char <<0x15>> nb occurences: 2
+char <<0x1a>> nb occurences: 15
+char <<0xc0>> nb occurences: 6676820
+char <<0xd0>> nb occurences: 1397315
+nb rec processed: 24637617
+END of QUALIFICATION REPORT
+nb recs read   : 24637617 
+nb recs written: 24637617 
+Max input rec Len: 549 
+Max Output rec Len(including LF): 600 
+Elapsed Time: 108 seconds
+DARPPP1.P7101A;OK;24637617;24637617

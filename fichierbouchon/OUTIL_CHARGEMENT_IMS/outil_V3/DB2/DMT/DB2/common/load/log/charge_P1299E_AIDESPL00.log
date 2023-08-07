@@ -1,0 +1,109 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 01:51:07 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P1299E_30108.ctl
+Data File:      Tab.U.P1299E.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P1299E_AIDESPL00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P1299E_AIDESPL, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CXASS                               FIRST     3   ;  O(") CHARACTER            
+CXALAF                               NEXT     *   ;  O(") CHARACTER            
+CXNUM                                NEXT     *   ;  O(") CHARACTER            
+CXNUMA                               NEXT     *   ;  O(") CHARACTER            
+LSFON                                NEXT    80   ;  O(") CHARACTER            
+PJPFN                                NEXT     *   ;  O(") CHARACTER            
+QSCUR                                NEXT     *   ;  O(") CHARACTER            
+QSCUN                                NEXT     *   ;  O(") CHARACTER            
+CDTHN                                NEXT     2   ;  O(") CHARACTER            
+CXAFN                                NEXT     *   ;  O(") CHARACTER            
+DDPLN                                NEXT     *   ;  O(") DATE YYYYMMDD        
+TSP                                  NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+DFPLN                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXFPN                                NEXT     *   ;  O(") CHARACTER            
+FIPLN                                NEXT     1   ;  O(") CHARACTER            
+QSJRN                                NEXT     *   ;  O(") CHARACTER            
+QKARN                                NEXT     *   ;  O(") CHARACTER            
+PUNUN                                NEXT     *   ;  O(") CHARACTER            
+QSCUT                                NEXT     *   ;  O(") CHARACTER            
+FIHCD                                NEXT     *   ;  O(") CHARACTER            
+QRNUI                                NEXT     *   ;  O(") CHARACTER            
+QSKAN                                NEXT     *   ;  O(") CHARACTER            
+CPROD                                NEXT    12   ;  O(") CHARACTER            
+
+The following index(es) on table P1299E_AIDESPL were processed:
+index RSOV0200.IP1299E1 partition P1299E_AIDESPL_DR_17_PART loaded successfully with 52363 keys
+index RSOV0200.IP1299E1 partition P1299E_AIDESPL_DR_32_PART loaded successfully with 51925 keys
+index RSOV0200.IP1299E1 partition P1299E_AIDESPL_DR_51_PART loaded successfully with 66004 keys
+index RSOV0200.IP1299E1 partition P1299E_AIDESPL_DR_65_PART loaded successfully with 4198 keys
+
+Table P1299E_AIDESPL:
+  174490 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P1299E_AIDESPL_DR_17_PART: 52363 Rows loaded.
+  Partition P1299E_AIDESPL_DR_32_PART: 51925 Rows loaded.
+  Partition P1299E_AIDESPL_DR_51_PART: 66004 Rows loaded.
+  Partition P1299E_AIDESPL_DR_65_PART: 4198 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        174490
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       47
+Total stream buffers loaded by SQL*Loader load thread:       93
+
+Run began on Thu Jun 01 01:51:07 2023
+Run ended on Thu Jun 01 01:51:10 2023
+
+Elapsed time was:     00:00:03.30
+CPU time was:         00:00:00.74
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 01:51:07 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 174490.
+
+Table P1299E_AIDESPL:
+  174490 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P1299E_AIDESPL00.log
+for more information about the load.
+
+ number of rows inserted not checked 

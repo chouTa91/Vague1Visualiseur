@@ -1,0 +1,161 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:58:13 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PF1/tmp/PF1B.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PF1B.DR65.BR4.net
+  File processing option string: "fix 502"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PF1/tmp/charge_PF1B654.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PF1B, subpartition PF1B_DR_65_BR4_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '4'
+PF1A_CCINDT                          4:11     8           CHARACTER            
+PF1B_NSPMT                          12:23    12           CHARACTER            
+PF1B_CNETAT                         24:24     1           ZONED DECIMAL (1, 0) 
+PF1B_DIJUSA                         25:32     8           CHARACTER            
+PF1B_DATIT                          33:40     8           CHARACTER            
+PF1B_DEDAP                          41:48     8           CHARACTER            
+PF1B_QMPRR                          49:57     9           ZONED DECIMAL (9, 2) 
+PF1B_QMPAI                          58:66     9           ZONED DECIMAL (9, 2) 
+PF1B_QMPAU                          67:75     9           ZONED DECIMAL (9, 2) 
+PF1B_QMPPR                          76:84     9           ZONED DECIMAL (9, 2) 
+PF1B_QMPTP                          85:93     9           ZONED DECIMAL (9, 2) 
+PF1B_RSTIB                         94:101     8           CHARACTER            
+PF1B_DEDAO1                       102:109     8           CHARACTER            
+PF1B_CSNTPP                       110:110     1           CHARACTER            
+PF1B_CCIND3                       111:118     8           CHARACTER            
+PF1B_DAVIR                        119:126     8           CHARACTER            
+PF1B_LSDOBP                       127:150    24           CHARACTER            
+PF1B_CSODBP                       151:155     5           CHARACTER            
+PF1B_CSRDBP                       156:160     5           CHARACTER            
+PF1B_NSCOIP                       161:188    28           CHARACTER            
+PF1B_CSRIBP                       189:190     2           CHARACTER            
+PF1B_DFCALP                       191:198     8           CHARACTER            
+PF1B_CSAAJX                       199:203     5           ZONED DECIMAL (5, 0) 
+PF1B_DSPODP                       204:211     8           CHARACTER            
+PF1B_DDRECP                       212:219     8           CHARACTER            
+PF1B_QSJCD                        220:223     4           ZONED DECIMAL (4, 0) 
+PF1B_QSJRD                        224:227     4           ZONED DECIMAL (4, 0) 
+PF1B_DFLIMP                       228:235     8           CHARACTER            
+PF1B_QMRSPP                       236:242     7           ZONED DECIMAL (7, 2) 
+PF1B_QMJBP                        243:251     9           ZONED DECIMAL (9, 2) 
+PF1B_FSCSP                        252:252     1           CHARACTER            
+PF1B_TSPRCP                       253:259     7           ZONED DECIMAL (7, 5) 
+PF1B_TSPSSP                       260:266     7           ZONED DECIMAL (7, 5) 
+PF1B_TSCSGP                       267:273     7           ZONED DECIMAL (7, 5) 
+PF1B_TSRDSP                       274:280     7           ZONED DECIMAL (7, 5) 
+PF1B_TSALMP                       281:287     7           ZONED DECIMAL (7, 5) 
+PF1B_TSCASP                       288:290     3           ZONED DECIMAL (3, 2) 
+PF1B_QMRSMP                       291:297     7           ZONED DECIMAL (7, 2) 
+PF1B_FSFAP                        298:298     1           CHARACTER            
+PF1B_QMAVP                        299:305     7           ZONED DECIMAL (7, 2) 
+PF1B_QMPIP                        306:312     7           ZONED DECIMAL (7, 2) 
+PF1B_TSRCA4                       313:317     5           ZONED DECIMAL (5, 4) 
+PF1B_TSRSAP                       318:320     3           ZONED DECIMAL (3, 2) 
+PF1B_PSHARP                       321:324     4           ZONED DECIMAL (4, 0) 
+PF1B_PSMAR                        325:327     3           ZONED DECIMAL (3, 0) 
+PF1B_PSHARR                       328:330     3           ZONED DECIMAL (3, 0) 
+PF1B_PSMARR                       331:333     3           ZONED DECIMAL (3, 0) 
+PF1B_FSP50                        334:334     1           CHARACTER            
+PF1B_CSTIT                        335:336     2           CHARACTER            
+PF1B_RSTIPT                       337:344     8           CHARACTER            
+PF1B_CSEAP                        345:345     1           CHARACTER            
+PF1B_NSPMTR                       346:357    12           CHARACTER            
+PF1B_CSTCH3                       358:358     1           CHARACTER            
+PF1B_CSTCH4                       359:359     1           CHARACTER            
+PF1B_CSTCH5                       360:360     1           CHARACTER            
+PF1B_CSTCH6                       361:361     1           CHARACTER            
+PF1B_CSTCH7                       362:362     1           CHARACTER            
+PF1B_CDPIBB                       363:364     2           CHARACTER            
+PF1B_CDCIBB                       365:366     2           ZONED DECIMAL (2, 0) 
+PF1B_NSCIBB                       367:396    30           CHARACTER            
+PF1B_CDBICB                       397:407    11           CHARACTER            
+PF1B_CDRBIB                       408:410     3           CHARACTER            
+PF1B_RSDB3                        411:412     2           ZONED DECIMAL (2, 0) 
+PF1B_TSAFPN                       413:417     5           ZONED DECIMAL (5, 4) 
+PF1B_DSFDTP                       418:425     8           CHARACTER            
+PF1B_QSJRA                        426:429     4           ZONED DECIMAL (4, 0) 
+PF1B_CSTCH8                       430:430     1           CHARACTER            
+PF1B_QMPPS                        431:439     9           ZONED DECIMAL (9, 2) 
+PF1B_TSPASB                       440:443     4           ZONED DECIMAL (4, 2) 
+PF1B_CDTPSB                       444:445     2           CHARACTER            
+PF1B_FILLER                       446:451     6           ZONED DECIMAL (6, 0) 
+PF1B_FILLER_1                     452:461    10           ZONED DECIMAL (10, 0)
+PF1B_FILLER_2                     462:471    10           ZONED DECIMAL (10, 0)
+PF1B_FILLER_3                     472:481    10           ZONED DECIMAL (10, 0)
+PF1B_FILLER_4                     482:491    10           ZONED DECIMAL (10, 0)
+PF1B_FILLER_5                     492:501    10           ZONED DECIMAL (10, 0)
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PF1B were processed:
+index RSOV0200.PK_PF1B partition PF1B_DR_65_BR4_PART loaded successfully with 1052450 keys
+
+Table PF1B, subpartition PF1B_DR_65_BR4_PART:
+  1052450 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       1052450
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      505
+Total stream buffers loaded by SQL*Loader load thread:     1512
+
+Run began on Wed Jun 07 12:58:13 2023
+Run ended on Wed Jun 07 13:00:55 2023
+
+Elapsed time was:     00:02:42.73
+CPU time was:         00:00:17.54
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:58:13 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 1052450.
+
+Table PF1B, subpartition PF1B_DR_65_BR4_PART:
+  1052450 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PF1/log/charge_PF1B654.log
+for more information about the load.
+
+ number of rows inserted not checked 

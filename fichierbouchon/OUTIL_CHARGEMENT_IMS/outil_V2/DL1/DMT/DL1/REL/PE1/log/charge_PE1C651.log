@@ -1,0 +1,117 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 18:30:31 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/PE1C.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PE1C.DR65.BR1.net
+  File processing option string: "fix 193"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/charge_PE1C651.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PE1C, subpartition PE1C_DR_65_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PE1A_RSIN                            4:11     8           CHARACTER            
+PE1B_CSTPP                          12:12     1           CHARACTER            
+PE1B_NSFPE                          13:20     8           CHARACTER            
+PE1B_NSPER                          21:22     2           CHARACTER            
+PE1C_NSDRM                          23:30     8           CHARACTER            
+PE1C_CSNRM                          31:32     2           CHARACTER            
+PE1C_DFRM                           33:40     8           CHARACTER            
+PE1C_DSPRM                          41:48     8           CHARACTER            
+PE1C_CSJRM                          49:49     1           CHARACTER            
+PE1C_CSAPP                          50:50     1           CHARACTER            
+PE1C_CSATN                          51:51     1           CHARACTER            
+PE1C_CSNJH                          52:52     1           CHARACTER            
+PE1C_CSRNO                          53:53     1           CHARACTER            
+PE1C_LSPRM                          54:63    10           CHARACTER            
+PE1C_PINBJ                          64:66     3           ZONED DECIMAL (3, 1) 
+PE1C_PINBH                          67:71     5           ZONED DECIMAL (5, 2) 
+PE1C_PSHIN                          72:75     4           ZONED DECIMAL (4, 2) 
+PE1C_PSHEN                          76:79     4           ZONED DECIMAL (4, 2) 
+PE1C_TSAFP                          80:81     2           CHARACTER            
+PE1C_QMBRM                          82:91    10           ZONED DECIMAL (10, 2)
+PE1C_QMNRM                         92:101    10           ZONED DECIMAL (10, 2)
+PE1C_QMCSS                        102:108     7           ZONED DECIMAL (7, 2) 
+PE1C_QMPEM                        109:115     7           ZONED DECIMAL (7, 2) 
+PE1C_DDRM                         116:123     8           CHARACTER            
+PE1C_PINHT                        124:127     4           ZONED DECIMAL (4, 1) 
+PE1C_PINJC                        128:130     3           ZONED DECIMAL (3, 1) 
+PE1C_CYBRM                        131:131     1           CHARACTER            
+PE1C_CSFRSA                       132:132     1           CHARACTER            
+PE1C_FILLER                       133:146    14           CHARACTER            
+PE1C_FILLER_1                     147:163    17           CHARACTER            
+PE1C_FILLER_2                     164:180    17           CHARACTER            
+PE1C_FILLER_3                     181:192    12           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PE1C were processed:
+index RSOV0200.PK_PE1C partition PE1C_DR_65_BR1_PART loaded successfully with 391106 keys
+
+Table PE1C, subpartition PE1C_DR_65_BR1_PART:
+  391106 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        391106
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      144
+Total stream buffers loaded by SQL*Loader load thread:      144
+
+Run began on Fri Jun 09 18:30:31 2023
+Run ended on Fri Jun 09 18:30:37 2023
+
+Elapsed time was:     00:00:05.49
+CPU time was:         00:00:02.19
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 18:30:31 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 391106.
+
+Table PE1C, subpartition PE1C_DR_65_BR1_PART:
+  391106 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/log/charge_PE1C651.log
+for more information about the load.
+
+ number of rows inserted not checked 

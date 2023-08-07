@@ -1,0 +1,120 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 20:47:56 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P0101C_30108.ctl
+Data File:      Tab.U.P0101C.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P0101C00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P0101C, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP01C                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP01C                               NEXT     *   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CXADR                                NEXT     *   ;  O(") CHARACTER            
+AZTYP                                NEXT     1   ;  O(") CHARACTER            
+DEADR                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DFADR                                NEXT     *   ;  O(") DATE YYYYMMDD        
+AMDST                                NEXT    40   ;  O(") CHARACTER            
+AMCPL                                NEXT    40   ;  O(") CHARACTER            
+AHNRU                                NEXT     5   ;  O(") CHARACTER            
+AVRUE                                NEXT    32   ;  O(") CHARACTER            
+CXVOI                                NEXT     8   ;  O(") CHARACTER            
+AIDIS                                NEXT    40   ;  O(") CHARACTER            
+AOPOS                                NEXT     5   ;  O(") CHARACTER            
+AOPOX                                NEXT     5   ;  O(") CHARACTER            
+CDDPTA                               NEXT     3   ;  O(") CHARACTER            
+CDCMN                                NEXT     5   ;  O(") CHARACTER            
+ADBDIS                               NEXT    40   ;  O(") CHARACTER            
+CDMSD                                NEXT     5   ;  O(") CHARACTER            
+CDPAY                                NEXT     3   ;  O(") CHARACTER            
+CDNPAI                               NEXT     1   ;  O(") CHARACTER            
+CDTEL1                               NEXT    10   ;  O(") CHARACTER            
+CDTEL2                               NEXT    10   ;  O(") CHARACTER            
+CDFAX                                NEXT    10   ;  O(") CHARACTER            
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+CXADRC                               NEXT     *   ;  O(") CHARACTER            
+CXASSG                               NEXT     3   ;  O(") CHARACTER            
+FICMA                                NEXT     1   ;  O(") CHARACTER            
+DECST                                NEXT     *   ;  O(") DATE YYYYMMDD        
+HECST                                NEXT     *   ;  O(") DATE YYYYMMDDHH24MISS
+    SQL string for column : "CASE WHEN :HECST IS NULL THEN NULL WHEN SUBSTR(:HECST,1,2) = '24' THEN '00010102000000' ELSE '00010101' || :HECST END "
+CDCPY                                NEXT     2   ;  O(") CHARACTER            
+CXEMA                                NEXT     *   ;  O(") CHARACTER            
+DIEMA                                NEXT     *   ;  O(") DATE YYYYMMDD        
+HIEMA                                NEXT     *   ;  O(") DATE YYYYMMDDHH24MISS
+    SQL string for column : "CASE WHEN :HIEMA IS NULL THEN NULL WHEN SUBSTR(:HIEMA,1,2) = '24' THEN '00010102000000' ELSE '00010101' || :HIEMA END "
+CZORIC                               NEXT     2   ;  O(") CHARACTER            
+
+The following index(es) on table P0101C were processed:
+index RSOV0200.IP0101C1 loaded successfully with 15000926 keys
+
+Table P0101C:
+  15000926 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      15000926
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     4894
+Total stream buffers loaded by SQL*Loader load thread:    14819
+
+Run began on Wed May 31 20:47:56 2023
+Run ended on Wed May 31 21:03:38 2023
+
+Elapsed time was:     00:15:41.85
+CPU time was:         00:01:28.50
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed May 31 20:47:56 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 15000926.
+
+Table P0101C:
+  15000926 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P0101C00.log
+for more information about the load.
+
+ number of rows inserted not checked 

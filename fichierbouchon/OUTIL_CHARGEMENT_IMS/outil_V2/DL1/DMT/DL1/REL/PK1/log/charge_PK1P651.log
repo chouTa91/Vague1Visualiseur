@@ -1,0 +1,115 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 15:16:39 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/PK1P.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PK1P.DR65.BR1.net
+  File processing option string: "fix 1101"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/charge_PK1P651.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PK1P, subpartition PK1P_DR_65_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PK1A_RSIN                            4:11     8           CHARACTER            
+PK1M_CXSRE                          12:13     2           CHARACTER            
+PK1N_CXPRC                          14:15     2           CHARACTER            
+PK1O_CSTIEP                         16:17     2           CHARACTER            
+PK1O_CXCTC                          18:20     3           CHARACTER            
+PK1P_NSCRD                          21:22     2           CHARACTER            
+PK1P_DEDPDK                         23:30     8           CHARACTER            
+PK1P_CSVCR                          31:32     2           CHARACTER            
+PK1P_LSCRB_1                        33:99    67           CHARACTER            
+PK1P_LSCRB_2                      100:166    67           CHARACTER            
+PK1P_LSCRB_3                      167:233    67           CHARACTER            
+PK1P_LSCRB_4                      234:300    67           CHARACTER            
+PK1P_LSCRB_5                      301:367    67           CHARACTER            
+PK1P_LSCRB_6                      368:434    67           CHARACTER            
+PK1P_LSCRB_7                      435:501    67           CHARACTER            
+PK1P_LSCRB_8                      502:568    67           CHARACTER            
+PK1P_LSCRB_9                      569:635    67           CHARACTER            
+PK1P_LSCRB_10                     636:702    67           CHARACTER            
+PK1P_LSCRB_11                     703:769    67           CHARACTER            
+PK1P_LSCRB_12                     770:836    67           CHARACTER            
+PK1P_LSCRB_13                     837:903    67           CHARACTER            
+PK1P_LSCRB_14                     904:970    67           CHARACTER            
+PK1P_LSCRB_15                    971:1037    67           CHARACTER            
+PK1P_FILLER                     1038:1040     3           CHARACTER            
+PK1P_FILLER_1                   1041:1050    10           CHARACTER            
+PK1P_FILLER_2                   1051:1060    10           CHARACTER            
+PK1P_FILLER_3                   1061:1070    10           CHARACTER            
+PK1P_FILLER_4                   1071:1080    10           CHARACTER            
+PK1P_FILLER_5                   1081:1090    10           CHARACTER            
+PK1P_FILLER_6                   1091:1100    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PK1P were processed:
+index RSOV0200.PK_PK1P partition PK1P_DR_65_BR1_PART loaded successfully with 17897 keys
+
+Table PK1P, subpartition PK1P_DR_65_BR1_PART:
+  17897 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         17897
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       19
+Total stream buffers loaded by SQL*Loader load thread:       75
+
+Run began on Wed Jun 07 15:16:39 2023
+Run ended on Wed Jun 07 15:16:45 2023
+
+Elapsed time was:     00:00:05.81
+CPU time was:         00:00:00.15
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 15:16:39 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 17897.
+
+Table PK1P, subpartition PK1P_DR_65_BR1_PART:
+  17897 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/log/charge_PK1P651.log
+for more information about the load.
+
+ number of rows inserted not checked 

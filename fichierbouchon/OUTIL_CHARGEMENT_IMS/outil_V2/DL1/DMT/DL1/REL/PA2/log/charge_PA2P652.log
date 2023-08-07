@@ -1,0 +1,148 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:05:14 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2P.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2P.DR65.BR2.net
+  File processing option string: "fix 232"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2P652.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2P, subpartition PA2P_DR_65_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2P_RSF3                           12:13     2           CHARACTER            
+PA2P_CSTFR                          14:14     1           CHARACTER            
+PA2P_CSCFR                          15:15     1           CHARACTER            
+PA2P_CSROF                          16:20     5           CHARACTER            
+PA2P_CSNVF                          21:21     1           CHARACTER            
+PA2P_CSCFF                          22:23     2           CHARACTER            
+PA2P_FSFSE                          24:24     1           CHARACTER            
+PA2P_QSTAG                          25:26     2           CHARACTER            
+PA2P_CSOF4                          27:27     1           CHARACTER            
+PA2P_CSVAF                          28:28     1           CHARACTER            
+PA2P_CSVAT                          29:29     1           CHARACTER            
+PA2P_CSZAF                          30:32     3           CHARACTER            
+PA2P_CSTFM                          33:33     1           CHARACTER            
+PA2P_DDPLA                          34:41     8           CHARACTER            
+PA2P_DFPLA                          42:49     8           CHARACTER            
+PA2P_DMPLA                          50:57     8           CHARACTER            
+PA2P_LNCOR                          58:77    20           CHARACTER            
+PA2P_NSTL7                          78:88    11           CHARACTER            
+PA2P_RSEQ6                          89:91     3           CHARACTER            
+PA2P_CSNDD4                         92:93     2           CHARACTER            
+PA2P_QSTAR                          94:95     2           CHARACTER            
+PA2P_CSSTS1_1                       96:96     1           CHARACTER            
+PA2P_CSSTS1_2                       97:97     1           CHARACTER            
+PA2P_CSSTS1_3                       98:98     1           CHARACTER            
+PA2P_CSSTS1_4                       99:99     1           CHARACTER            
+PA2P_CSSTS1_5                     100:100     1           CHARACTER            
+PA2P_CSSTS1_6                     101:101     1           CHARACTER            
+PA2P_CSSTS1_7                     102:102     1           CHARACTER            
+PA2P_CSSTS1_8                     103:103     1           CHARACTER            
+PA2P_CSSTS1_9                     104:104     1           CHARACTER            
+PA2P_CSSTS1_10                    105:105     1           CHARACTER            
+PA2P_CSOSF1                       106:106     1           CHARACTER            
+PA2P_NSSTA7                       107:108     2           CHARACTER            
+PA2P_NSSTA8                       109:110     2           CHARACTER            
+PA2P_QLA2P                        111:112     2           CHARACTER            
+PA2P_NSCV                         113:128    16           CHARACTER            
+PA2P_CIAIS                        129:129     1           CHARACTER            
+PA2P_CIFTH                        130:130     1           CHARACTER            
+PA2P_FFAFF                        131:131     1           CHARACTER            
+PA2P_DEDPDI                       132:139     8           CHARACTER            
+PA2P_CSRPDA                       140:142     3           CHARACTER            
+PA2P_RLOBPA                       143:143     1           CHARACTER            
+PA2P_FSSUE                        144:144     1           CHARACTER            
+PA2P_DSEFA                        145:152     8           CHARACTER            
+PA2P_CSAIS                        153:154     2           CHARACTER            
+PA2P_DSAIS                        155:162     8           CHARACTER            
+PA2P_CSOROF                       163:163     1           CHARACTER            
+PA2P_CSORMC                       164:164     1           CHARACTER            
+PA2P_CDPFO                        165:167     3           CHARACTER            
+PA2P_FILLER                       168:184    17           CHARACTER            
+PA2P_FFRSA                        185:185     1           CHARACTER            
+PA2P_DSAADP                       186:189     4           CHARACTER            
+PA2P_FFPOEP                       190:190     1           CHARACTER            
+PA2P_DIAIS                        191:198     8           CHARACTER            
+PA2P_FICPF                        199:199     1           CHARACTER            
+PA2P_DICPF                        200:207     8           CHARACTER            
+PA2P_CXCPF                        208:217    10           CHARACTER            
+PA2P_PHCPF1                       218:220     3           CHARACTER            
+PA2P_PHCPF2                       221:223     3           CHARACTER            
+PA2P_FSDRP                        224:224     1           CHARACTER            
+PA2P_CDDRP                        225:225     1           CHARACTER            
+PA2P_FILLER_1                     226:231     6           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2P were processed:
+index RSOV0200.PK_PA2P partition PA2P_DR_65_BR2_PART loaded successfully with 15563 keys
+
+Table PA2P, subpartition PA2P_DR_65_BR2_PART:
+  15563 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         15563
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        4
+Total stream buffers loaded by SQL*Loader load thread:       14
+
+Run began on Wed Jun 07 12:05:14 2023
+Run ended on Wed Jun 07 12:05:16 2023
+
+Elapsed time was:     00:00:02.14
+CPU time was:         00:00:00.17
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 12:05:14 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 15563.
+
+Table PA2P, subpartition PA2P_DR_65_BR2_PART:
+  15563 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2P652.log
+for more information about the load.
+
+ number of rows inserted not checked 

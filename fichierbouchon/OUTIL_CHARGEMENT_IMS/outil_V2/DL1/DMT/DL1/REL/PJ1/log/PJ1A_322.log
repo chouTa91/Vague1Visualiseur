@@ -1,0 +1,17 @@
+Processing PJ1A ...
+Temp nettoyage : 9 seconds
+
+Loading process of table PJ1A
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	310039 row(s) inserted
+
+
+PJ1A;OK;310039;310039
+Temps chargement : 17 seconds
+Elapsed Time: 26 seconds

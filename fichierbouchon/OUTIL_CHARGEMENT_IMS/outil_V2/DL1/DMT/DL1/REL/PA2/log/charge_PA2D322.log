@@ -1,0 +1,124 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 13:11:22 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2D.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2D.DR32.BR2.net
+  File processing option string: "fix 162"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2D322.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2D, subpartition PA2D_DR_32_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2D_RSPEC                          12:15     4           CHARACTER            
+PA2D_CSTPC                          16:16     1           CHARACTER            
+PA2D_DSINS                          17:24     8           CHARACTER            
+PA2D_DSAN                           25:32     8           CHARACTER            
+PA2D_CSMAN                          33:34     2           CHARACTER            
+PA2D_DIINS                          35:42     8           CHARACTER            
+PA2D_DIANN                          43:50     8           CHARACTER            
+PA2D_DFPTD                          51:58     8           CHARACTER            
+PA2D_CSPTD                          59:59     1           CHARACTER            
+PA2D_FSHA2D                         60:60     1           CHARACTER            
+PA2D_CSANC                          61:63     3           CHARACTER            
+PA2D_RSF32                          64:65     2           CHARACTER            
+PA2D_NSSTA2                         66:67     2           CHARACTER            
+PA2D_CSSPH                          68:68     1           CHARACTER            
+PA2D_CSAFV                          69:69     1           CHARACTER            
+PA2D_RSPEC4                         70:73     4           CHARACTER            
+PA2D_DIRAD                          74:81     8           CHARACTER            
+PA2D_RSAL                           82:86     5           CHARACTER            
+PA2D_CSCAT                          87:87     1           CHARACTER            
+PA2D_CSEMP                          88:90     3           CHARACTER            
+PA2D_CSMTI                          91:92     2           CHARACTER            
+PA2D_NSINS                          93:99     7           CHARACTER            
+PA2D_CSMIN                        100:100     1           CHARACTER            
+PA2D_CSSTA                        101:103     3           CHARACTER            
+PA2D_RSEN6                        104:111     8           CHARACTER            
+PA2D_DSRDU                        112:119     8           CHARACTER            
+PA2D_QSCVT                        120:121     2           CHARACTER            
+PA2D_QLA2D                        122:123     2           CHARACTER            
+PA2D_FSINR                        124:124     1           CHARACTER            
+PA2D_CSCDT                        125:125     1           CHARACTER            
+PA2D_DSICE                        126:133     8           CHARACTER            
+PA2D_DSIPA                        134:141     8           CHARACTER            
+PA2D_CSPLDC                       142:145     4           CHARACTER            
+PA2D_CSPEE                        146:148     3           CHARACTER            
+PA2D_CCEES                        149:149     1           CHARACTER            
+PA2D_CCNIN                        150:150     1           CHARACTER            
+PA2D_DSIRE                        151:158     8           CHARACTER            
+PA2D_FILLER                       159:161     3           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2D were processed:
+index RSOV0200.PK_PA2D partition PA2D_DR_32_BR2_PART loaded successfully with 1741068 keys
+
+Table PA2D, subpartition PA2D_DR_32_BR2_PART:
+  1741068 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       1741068
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      539
+Total stream buffers loaded by SQL*Loader load thread:     1076
+
+Run began on Wed Jun 07 13:11:22 2023
+Run ended on Wed Jun 07 13:13:39 2023
+
+Elapsed time was:     00:02:16.43
+CPU time was:         00:00:10.04
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 13:11:22 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 1741068.
+
+Table PA2D, subpartition PA2D_DR_32_BR2_PART:
+  1741068 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2D322.log
+for more information about the load.
+
+ number of rows inserted not checked 

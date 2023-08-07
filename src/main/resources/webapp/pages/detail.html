@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{/fragments/layout/head :: head}"></head>
+<body>
+
+	<header th:replace="~{/fragments/layout/header :: header('detail')}"></header>
+
+	<div class="container-fluid" id="content-container">
+		<div class="row">
+
+			<nav th:replace="~{/fragments/layout/sidebar :: sidebar('detail')}"></nav>
+
+			<main class="col-md-9 ms-sm-auto col-lg-10 pt-4" style="margin-top: 50px" th:each="tir :${tirList.tirs}">
+
+				<div th:replace="~{/fragments/tables/errors :: errors(${tirList})}"></div>
+
+				<div>
+					<div th:replace="~{/fragments/layout/body-dl1 :: body-dl1(${tir})}"></div>
+
+					<div th:replace="~{/fragments/layout/body-db2 :: body-db2(${tir})}"></div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<footer th:replace="~{/fragments/layout/footer :: footer}"></footer>
+
+</body>
+</html>

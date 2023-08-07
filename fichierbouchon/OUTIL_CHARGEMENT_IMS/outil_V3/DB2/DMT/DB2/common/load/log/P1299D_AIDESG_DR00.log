@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P1299D_AIDESG ...
+
+Loading process of table P1299D_AIDESG
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	589909 row(s) inserted
+
+
+Elapsed Time: 15 seconds
+DARPPP1.P1299D_AIDESG;OK;589909;589909

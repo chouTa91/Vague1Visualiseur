@@ -1,0 +1,15 @@
+Reloading table DARPPP1.P1299B_ATTRIB ...
+
+Loading process of table P1299B_ATTRIB
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	6194549 row(s) inserted
+
+
+Elapsed Time: 360 seconds
+DARPPP1.P1299B_ATTRIB;OK;6194549;6194549

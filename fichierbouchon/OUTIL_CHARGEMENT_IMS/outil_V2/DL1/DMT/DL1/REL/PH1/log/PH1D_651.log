@@ -1,0 +1,17 @@
+Processing PH1D ...
+Temp nettoyage : 14 seconds
+
+Loading process of table PH1D
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	45040 row(s) inserted
+
+
+PH1D;OK;45040;45040
+Temps chargement : 8 seconds
+Elapsed Time: 22 seconds

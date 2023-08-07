@@ -1,0 +1,206 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 07:18:07 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/PD2I2L_30108.ctl
+Data File:      Tab.U.PD2I2L.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_PD2I2L00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PD2I2L, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+SH2I2L                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+CSORGS                               NEXT     *   ;  O(") CHARACTER            
+NSFICN                               NEXT     *   ;  O(") CHARACTER            
+RSIN                                 NEXT     8   ;  O(") CHARACTER            
+DEDPDG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CSTPI                                NEXT     3   ;  O(") CHARACTER            
+CSRPD                                NEXT     3   ;  O(") CHARACTER            
+RLOBP                                NEXT     1   ;  O(") CHARACTER            
+CSTPD                                NEXT     1   ;  O(") CHARACTER            
+CSPPN2                               NEXT     *   ;  O(") CHARACTER            
+CSUPD2                               NEXT     *   ;  O(") CHARACTER            
+CSOPN2                               NEXT     *   ;  O(") CHARACTER            
+RSAL8                                NEXT     5   ;  O(") CHARACTER            
+DMPANG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+FSHA2L                               NEXT     1   ;  O(") CHARACTER            
+LSLPD                                NEXT    30   ;  O(") CHARACTER            
+CSOSE                                NEXT     1   ;  O(") CHARACTER            
+CSOSE1                               NEXT     1   ;  O(") CHARACTER            
+CSAPD                                NEXT     1   ;  O(") CHARACTER            
+RSBNA                                NEXT     2   ;  O(") CHARACTER            
+DDPRTG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DFPRTG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+QMPRS2                               NEXT     *   ;  O(") CHARACTER            
+RSAGE                                NEXT     8   ;  O(") CHARACTER            
+CSOFS                                NEXT     2   ;  O(") CHARACTER            
+CSNROE                               NEXT     5   ;  O(") CHARACTER            
+RSBNK                                NEXT     1   ;  O(") CHARACTER            
+RSBNH                                NEXT     1   ;  O(") CHARACTER            
+DEDPDT                               NEXT     *   ;  O(") DATE YYYYMMDD        
+RSTIR                                NEXT     8   ;  O(") CHARACTER            
+CSTIEA                               NEXT     1   ;  O(") CHARACTER            
+CSPLD                                NEXT     5   ;  O(") CHARACTER            
+CYPRS                                NEXT     1   ;  O(") CHARACTER            
+CSPAP                                NEXT     1   ;  O(") CHARACTER            
+NSPRE                                NEXT     5   ;  O(") CHARACTER            
+DEPRT9                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DEPRP9                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DANNUG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DASUP9                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DDINSG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DDMAJ9                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DEPRCG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CSOFS1                               NEXT     2   ;  O(") CHARACTER            
+FSCOT1                               NEXT     3   ;  O(") CHARACTER            
+DSDRD9                               NEXT     *   ;  O(") DATE YYYYMMDD        
+LNPRE                                NEXT    20   ;  O(") CHARACTER            
+LNENTL                               NEXT    19   ;  O(") CHARACTER            
+PSHPR2                               NEXT     *   ;  O(") CHARACTER            
+CTOFFD                               NEXT     7   ;  O(") CHARACTER            
+CTOFFE                               NEXT     7   ;  O(") CHARACTER            
+ISSEN4                               NEXT     *   ;  O(") CHARACTER            
+NSAIS2                               NEXT     *   ;  O(") CHARACTER            
+RSF3B2                               NEXT     *   ;  O(") CHARACTER            
+CSOF                                 NEXT     1   ;  O(") CHARACTER            
+CSOSM                                NEXT     1   ;  O(") CHARACTER            
+CMSIG                                NEXT     2   ;  O(") CHARACTER            
+FSCOT4                               NEXT     3   ;  O(") CHARACTER            
+FSTCB                                NEXT     1   ;  O(") CHARACTER            
+CSROMV                               NEXT     5   ;  O(") CHARACTER            
+DDRDVG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HDRDVA                               NEXT     *   ;  O(") CHARACTER            
+MDRDV3                               NEXT     *   ;  O(") CHARACTER            
+CSOBA                                NEXT     2   ;  O(") CHARACTER            
+CDRLT                                NEXT     2   ;  O(") CHARACTER            
+CSROMR                               NEXT     5   ;  O(") CHARACTER            
+CSNROR                               NEXT     5   ;  O(") CHARACTER            
+NSCVO                                NEXT    16   ;  O(") CHARACTER            
+CSMORO                               NEXT     2   ;  O(") CHARACTER            
+CSCRFO                               NEXT     2   ;  O(") CHARACTER            
+DARFOO                               NEXT     *   ;  O(") DATE YYYYMMDD        
+NSCVO1                               NEXT    16   ;  O(") CHARACTER            
+CSMORP                               NEXT     2   ;  O(") CHARACTER            
+CSCRFP                               NEXT     2   ;  O(") CHARACTER            
+DARFOP                               NEXT     *   ;  O(") DATE YYYYMMDD        
+NSCVO2                               NEXT    16   ;  O(") CHARACTER            
+CSMORQ                               NEXT     2   ;  O(") CHARACTER            
+CSCRFQ                               NEXT     2   ;  O(") CHARACTER            
+DARFOQ                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CDRM3V                               NEXT     5   ;  O(") CHARACTER            
+CDRM3R                               NEXT     5   ;  O(") CHARACTER            
+CDQR3V                               NEXT     1   ;  O(") CHARACTER            
+DERM39                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CDTPV                                NEXT     5   ;  O(") CHARACTER            
+CDTPR                                NEXT     5   ;  O(") CHARACTER            
+QSCCP2                               NEXT     *   ;  O(") CHARACTER            
+QSCCP3                               NEXT     *   ;  O(") CHARACTER            
+CSCEA                                NEXT     5   ;  O(") CHARACTER            
+CSCEAR                               NEXT     5   ;  O(") CHARACTER            
+DDPCTG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DSRECG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DFVAEG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+FFPPS                                NEXT     1   ;  O(") CHARACTER            
+LLTRA                                NEXT    34   ;  O(") CHARACTER            
+LLOFR                                NEXT    60   ;  O(") CHARACTER            
+CSQLFI                               NEXT     *   ;  O(") CHARACTER            
+FFECE                                NEXT     1   ;  O(") CHARACTER            
+FFEPA                                NEXT     1   ;  O(") CHARACTER            
+LLEXO                                NEXT    36   ;  O(") CHARACTER            
+LSCOW                                NEXT     3   ;  O(") CHARACTER            
+CSSAMC                               NEXT     1   ;  O(") CHARACTER            
+QRSMI1                               NEXT     *   ;  O(") CHARACTER            
+QRSMA1                               NEXT     *   ;  O(") CHARACTER            
+PMORE2                               NEXT     *   ;  O(") CHARACTER            
+LCOMS                                NEXT    36   ;  O(") CHARACTER            
+CTZGE                                NEXT     3   ;  O(") CHARACTER            
+CDORE                                NEXT     1   ;  O(") CHARACTER            
+FFEAP                                NEXT     1   ;  O(") CHARACTER            
+PHWSE2                               NEXT     *   ;  O(") CHARACTER            
+PNWSE2                               NEXT     *   ;  O(") CHARACTER            
+FFCTI                                NEXT     1   ;  O(") CHARACTER            
+CDMOCA                               NEXT     1   ;  O(") CHARACTER            
+RSALEO                               NEXT     5   ;  O(") CHARACTER            
+RSAGB                                NEXT     8   ;  O(") CHARACTER            
+CDPSC                                NEXT     2   ;  O(") CHARACTER            
+RSAGC                                NEXT     8   ;  O(") CHARACTER            
+CSOFC                                NEXT     1   ;  O(") CHARACTER            
+CSOFD                                NEXT     1   ;  O(") CHARACTER            
+CSOFH                                NEXT     1   ;  O(") CHARACTER            
+CSNROS                               NEXT     5   ;  O(") CHARACTER            
+CSNROT                               NEXT     5   ;  O(") CHARACTER            
+CSNROU                               NEXT     5   ;  O(") CHARACTER            
+LIBMP1                               NEXT    45   ;  O(") CHARACTER            
+LIBMP2                               NEXT    45   ;  O(") CHARACTER            
+LIBMP3                               NEXT    45   ;  O(") CHARACTER            
+LIBMP4                               NEXT    45   ;  O(") CHARACTER            
+CDDCP1                               NEXT     2   ;  O(") CHARACTER            
+CDAPM1                               NEXT     2   ;  O(") CHARACTER            
+CDTPU1                               NEXT     2   ;  O(") CHARACTER            
+HDPRT                                NEXT     4   ;  O(") CHARACTER            
+FIMPT                                NEXT     1   ;  O(") CHARACTER            
+ISGUP                                NEXT    10   ;  O(") CHARACTER            
+FIRIC                                NEXT     1   ;  O(") CHARACTER            
+DMGUP                                NEXT    12   ;  O(") CHARACTER            
+NIMER4                               NEXT     *   ;  O(") CHARACTER            
+CXRCE3                               NEXT     *   ;  O(") CHARACTER            
+FSDEGA                               NEXT     1   ;  O(") CHARACTER            
+FSEFO                                NEXT     1   ;  O(") CHARACTER            
+DICCFG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+FICMAP                               NEXT     1   ;  O(") CHARACTER            
+CDORIS                               NEXT     1   ;  O(") CHARACTER            
+CDRM3M                               NEXT     5   ;  O(") CHARACTER            
+CDAR3M                               NEXT     6   ;  O(") CHARACTER            
+LSBAXN                               NEXT    90   ;  O(") CHARACTER            
+CSOBM1                               NEXT     1   ;  O(") CHARACTER            
+CSNCV1                               NEXT    14   ;  O(") CHARACTER            
+DDCVMG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DFCVMG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+RSAGM                                NEXT     8   ;  O(") CHARACTER            
+CICCF                                NEXT     1   ;  O(") CHARACTER            
+RSOCP                                NEXT     8   ;  O(") CHARACTER            
+CSCEP                                NEXT     2   ;  O(") CHARACTER            
+CMSAF                                NEXT     2   ;  O(") CHARACTER            
+CDROM1                               NEXT     5   ;  O(") CHARACTER            
+NSMRC1                               NEXT     5   ;  O(") CHARACTER            
+NSDLT1                               NEXT     4   ;  O(") CHARACTER            
+CDECC1                               NEXT     1   ;  O(") CHARACTER            
+IDOFE1                               NEXT     7   ;  O(") CHARACTER            
+NSCAN1                               NEXT    10   ;  O(") CHARACTER            
+FSPATN                               NEXT     1   ;  O(") CHARACTER            
+FSATMP                               NEXT     1   ;  O(") CHARACTER            
+PHCVMC                               NEXT     *   ;  O(") CHARACTER            
+FFCSP                                NEXT     1   ;  O(") CHARACTER            
+CMRVAE                               NEXT     2   ;  O(") CHARACTER            
+CMSVAE                               NEXT     2   ;  O(") CHARACTER            
+
+SQL*Loader-926: OCI error while executing delete/truncate (due to REPLACE/TRUNCATE keyword) for table PD2I2L
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS'
+
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 07:18:07 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct

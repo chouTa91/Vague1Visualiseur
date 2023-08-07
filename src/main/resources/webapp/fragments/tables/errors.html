@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="errors (tirList)" id="errors" class="container-md">
+
+	<!-- Affiche seulement les erreurs du dernier tir. -->
+	<div class="alert alert-danger" role="alert"
+		th:if="${!tir.errors.isEmpty}"
+		th:with="tir=${tirList.lastTir}">
+		<div th:each="error : ${tir.errors}">
+			<a th:text="${error.message}"
+				th:href="${'#tir' + tir.id + '-' + error.code + '-heading'}"></a>
+		</div>
+	</div>
+
+</div>
+
+</html>

@@ -1,0 +1,271 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 22:36:32 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/PE1D.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PE1D.DR32.BR3.net
+  File processing option string: "fix 512"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/charge_PE1D323.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PE1D, subpartition PE1D_DR_32_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PE1A_RSIN                            4:11     8           CHARACTER            
+PE1D_RSPEC2                         12:15     4           CHARACTER            
+PE1D_NSDAL                          16:18     3           CHARACTER            
+PE1D_CSRIA                          19:20     2           CHARACTER            
+PE1D_CSOIA                          21:21     1           CHARACTER            
+PE1D_CSDAL                          22:23     2           CHARACTER            
+PE1D_NSVDA                          24:25     2           CHARACTER            
+PE1D_RSEQ2                          26:28     3           CHARACTER            
+PE1D_RSOD1                          29:31     3           CHARACTER            
+PE1D_RSOD2                          32:34     3           CHARACTER            
+PE1D_RSRP1                          35:37     3           CHARACTER            
+PE1D_RSIA1                          38:44     7           CHARACTER            
+PE1D_RSRS1                          45:50     6           CHARACTER            
+PE1D_DEPOTS                         51:58     8           CHARACTER            
+PE1D_DIIA                           59:66     8           CHARACTER            
+PE1D_DMIA                           67:74     8           CHARACTER            
+PE1D_DDIAA                          75:82     8           CHARACTER            
+PE1D_DFIAA                          83:90     8           CHARACTER            
+PE1D_DDIAO                          91:98     8           CHARACTER            
+PE1D_DFIAO                         99:106     8           CHARACTER            
+PE1D_FSCC                         107:107     1           CHARACTER            
+PE1D_CSPDO                        108:108     1           CHARACTER            
+PE1D_FSFNE                        109:109     1           CHARACTER            
+PE1D_CSDPL                        110:111     2           CHARACTER            
+PE1D_CSDPL2                       112:113     2           CHARACTER            
+PE1D_CSRFD_1                      114:117     4           ZONED DECIMAL (4, 0) 
+PE1D_CSRFD_2                      118:121     4           CHARACTER            
+PE1D_CSRFD_3                      122:125     4           CHARACTER            
+PE1D_CSRFD_4                      126:129     4           CHARACTER            
+PE1D_CSRFD_5                      130:133     4           CHARACTER            
+PE1D_CSRFD_6                      134:137     4           CHARACTER            
+PE1D_CSRFD_7                      138:141     4           CHARACTER            
+PE1D_CSRFD_8                      142:145     4           CHARACTER            
+PE1D_CSRFD_9                      146:149     4           CHARACTER            
+PE1D_CSRFD_10                     150:153     4           CHARACTER            
+PE1D_CSRFD_11                     154:157     4           CHARACTER            
+PE1D_CSRFD_12                     158:161     4           CHARACTER            
+PE1D_CSRFD_13                     162:165     4           CHARACTER            
+PE1D_CSRFD_14                     166:169     4           CHARACTER            
+PE1D_CSRFD_15                     170:173     4           CHARACTER            
+PE1D_CSRFD_16                     174:177     4           CHARACTER            
+PE1D_CSRFD_17                     178:181     4           CHARACTER            
+PE1D_CSRFD_18                     182:185     4           CHARACTER            
+PE1D_CSRFD_19                     186:189     4           CHARACTER            
+PE1D_CSRFD_20                     190:193     4           CHARACTER            
+PE1D_CSRFD_21                     194:197     4           CHARACTER            
+PE1D_CSRFD_22                     198:201     4           CHARACTER            
+PE1D_CSRFD_23                     202:205     4           CHARACTER            
+PE1D_CSRFD_24                     206:209     4           CHARACTER            
+PE1D_CSRFD_25                     210:213     4           CHARACTER            
+PE1D_CSRFD_26                     214:217     4           CHARACTER            
+PE1D_CSRFD_27                     218:221     4           CHARACTER            
+PE1D_CSRFD_28                     222:225     4           CHARACTER            
+PE1D_CSRFD_29                     226:229     4           CHARACTER            
+PE1D_CSRFD_30                     230:233     4           CHARACTER            
+    DEFAULT if 230:233 = 0X00000000(character '')
+PE1D_CSRFD_31                     234:237     4           CHARACTER            
+    DEFAULT if 234:237 = 0X00000000(character '')
+PE1D_CSRFD_32                     238:241     4           CHARACTER            
+    DEFAULT if 238:241 = 0X00000000(character '')
+PE1D_CSRFD_33                     242:245     4           CHARACTER            
+    DEFAULT if 242:245 = 0X00000000(character '')
+PE1D_CSRFD_34                     246:249     4           CHARACTER            
+    DEFAULT if 246:249 = 0X00000000(character '')
+PE1D_CSRFD_35                     250:253     4           CHARACTER            
+    DEFAULT if 250:253 = 0X00000000(character '')
+PE1D_CSRFD_36                     254:257     4           CHARACTER            
+    DEFAULT if 254:257 = 0X00000000(character '')
+PE1D_CSRFD_37                     258:261     4           CHARACTER            
+    DEFAULT if 258:261 = 0X00000000(character '')
+PE1D_CSRFD_38                     262:265     4           CHARACTER            
+    DEFAULT if 262:265 = 0X00000000(character '')
+PE1D_CSRFD_39                     266:269     4           CHARACTER            
+    DEFAULT if 266:269 = 0X00000000(character '')
+PE1D_CSRFD_40                     270:273     4           CHARACTER            
+    DEFAULT if 270:273 = 0X00000000(character '')
+PE1D_CSRFD_41                     274:277     4           CHARACTER            
+    DEFAULT if 274:277 = 0X00000000(character '')
+PE1D_CSRFD_42                     278:281     4           CHARACTER            
+    DEFAULT if 278:281 = 0X00000000(character '')
+PE1D_CSRFD_43                     282:285     4           CHARACTER            
+    DEFAULT if 282:285 = 0X00000000(character '')
+PE1D_CSRFD_44                     286:289     4           CHARACTER            
+    DEFAULT if 286:289 = 0X00000000(character '')
+PE1D_CSRFD_45                     290:293     4           CHARACTER            
+    DEFAULT if 290:293 = 0X00000000(character '')
+PE1D_CSRFD_46                     294:297     4           CHARACTER            
+    DEFAULT if 294:297 = 0X00000000(character '')
+PE1D_CSRFD_47                     298:301     4           CHARACTER            
+    DEFAULT if 298:301 = 0X00000000(character '')
+PE1D_CSRFD_48                     302:305     4           CHARACTER            
+    DEFAULT if 302:305 = 0X00000000(character '')
+PE1D_CSRFD_49                     306:309     4           CHARACTER            
+    DEFAULT if 306:309 = 0X00000000(character '')
+PE1D_CSRFD_50                     310:313     4           CHARACTER            
+    DEFAULT if 310:313 = 0X00000000(character '')
+PE1D_CSRPQ_1                      314:314     1           CHARACTER            
+PE1D_CSRPQ_2                      315:315     1           CHARACTER            
+PE1D_CSRPQ_3                      316:316     1           CHARACTER            
+PE1D_CSRPQ_4                      317:317     1           CHARACTER            
+PE1D_CSRPQ_5                      318:318     1           CHARACTER            
+PE1D_CSRPQ_6                      319:319     1           CHARACTER            
+PE1D_CSRPQ_7                      320:320     1           CHARACTER            
+PE1D_CSRPQ_8                      321:321     1           CHARACTER            
+PE1D_CSRPQ_9                      322:322     1           CHARACTER            
+PE1D_CSRPQ_10                     323:323     1           CHARACTER            
+PE1D_CSRPQ_11                     324:324     1           CHARACTER            
+PE1D_CSRPQ_12                     325:325     1           CHARACTER            
+PE1D_CSRPQ_13                     326:326     1           CHARACTER            
+PE1D_CSRPQ_14                     327:327     1           CHARACTER            
+PE1D_CSRPQ_15                     328:328     1           CHARACTER            
+PE1D_CSRPQ_16                     329:329     1           CHARACTER            
+PE1D_CSRPQ_17                     330:330     1           CHARACTER            
+PE1D_CSRPQ_18                     331:331     1           CHARACTER            
+PE1D_CSRPQ_19                     332:332     1           CHARACTER            
+PE1D_CSRPQ_20                     333:333     1           CHARACTER            
+PE1D_CSRPQ_21                     334:334     1           CHARACTER            
+PE1D_CSRPQ_22                     335:335     1           CHARACTER            
+PE1D_CSRPQ_23                     336:336     1           CHARACTER            
+PE1D_CSRPQ_24                     337:337     1           CHARACTER            
+PE1D_CSRPQ_25                     338:338     1           CHARACTER            
+PE1D_CSRPQ_26                     339:339     1           CHARACTER            
+PE1D_CSRPQ_27                     340:340     1           CHARACTER            
+PE1D_CSRPQ_28                     341:341     1           CHARACTER            
+PE1D_CSRPQ_29                     342:342     1           CHARACTER            
+PE1D_CSRPQ_30                     343:343     1           CHARACTER            
+PE1D_CSRPQ_31                     344:344     1           CHARACTER            
+PE1D_CSRPQ_32                     345:345     1           CHARACTER            
+PE1D_CSRPQ_33                     346:346     1           CHARACTER            
+PE1D_CSRPQ_34                     347:347     1           CHARACTER            
+PE1D_CSRPQ_35                     348:348     1           CHARACTER            
+PE1D_CSRPQ_36                     349:349     1           CHARACTER            
+PE1D_CSRPQ_37                     350:350     1           CHARACTER            
+PE1D_CSRPQ_38                     351:351     1           CHARACTER            
+PE1D_CSRPQ_39                     352:352     1           CHARACTER            
+PE1D_CSRPQ_40                     353:353     1           CHARACTER            
+PE1D_CSRPQ_41                     354:354     1           CHARACTER            
+PE1D_CSRPQ_42                     355:355     1           CHARACTER            
+PE1D_CSRPQ_43                     356:356     1           CHARACTER            
+PE1D_CSRPQ_44                     357:357     1           CHARACTER            
+PE1D_CSRPQ_45                     358:358     1           CHARACTER            
+PE1D_CSRPQ_46                     359:359     1           CHARACTER            
+PE1D_CSRPQ_47                     360:360     1           CHARACTER            
+PE1D_CSRPQ_48                     361:361     1           CHARACTER            
+PE1D_CSRPQ_49                     362:362     1           CHARACTER            
+PE1D_CSRPQ_50                     363:363     1           CHARACTER            
+PE1D_QSELE                        364:365     2           CHARACTER            
+PE1D_RSF33                        366:367     2           CHARACTER            
+PE1D_DEATH                        368:375     8           CHARACTER            
+PE1D_DEPMA                        376:383     8           CHARACTER            
+PE1D_NSSTA6                       384:385     2           CHARACTER            
+    DEFAULT if 384:385 = 0Xf2fd(character '2Ù')
+PE1D_FSSO                         386:386     1           CHARACTER            
+PE1D_DETF                         387:394     8           CHARACTER            
+PE1D_FSTF                         395:395     1           CHARACTER            
+PE1D_FSCTS                        396:396     1           CHARACTER            
+PE1D_FSCTF                        397:397     1           CHARACTER            
+PE1D_FSCTP                        398:398     1           CHARACTER            
+PE1D_FSCTE                        399:399     1           CHARACTER            
+PE1D_CSEXO                        400:401     2           CHARACTER            
+PE1D_CSASR                        402:403     2           CHARACTER            
+PE1D_CSANR                        404:406     3           CHARACTER            
+PE1D_DERDA                        407:414     8           CHARACTER            
+PE1D_CSODA                        415:418     4           CHARACTER            
+PE1D_FSCTT                        419:419     1           CHARACTER            
+PE1D_CSDPI                        420:421     2           CHARACTER            
+PE1D_DFDAS                        422:429     8           CHARACTER            
+PE1D_CSTDA                        430:430     1           CHARACTER            
+PE1D_FSCTA                        431:431     1           CHARACTER            
+PE1D_FSANT                        432:432     1           CHARACTER            
+PE1D_FSCPA                        433:433     1           CHARACTER            
+PE1D_FSCRS                        434:434     1           CHARACTER            
+PE1D_PSRELD                       435:438     4           CHARACTER            
+PE1D_FSPAE                        439:439     1           CHARACTER            
+PE1D_CDPMI                        440:440     1           CHARACTER            
+PE1D_FSODD                        441:441     1           CHARACTER            
+PE1D_CSOIA1                       442:443     2           CHARACTER            
+PE1D_RSEQV                        444:446     3           CHARACTER            
+PE1D_FSCDAL                       447:447     1           CHARACTER            
+PE1D_RSAGRI                       448:455     8           CHARACTER            
+PE1D_DDMJRI                       456:463     8           CHARACTER            
+PE1D_FSDAM                        464:464     1           CHARACTER            
+PE1D_FILLER                       465:466     2           CHARACTER            
+PE1D_FILLER_1                     467:481    15           CHARACTER            
+PE1D_FILLER_2                     482:496    15           CHARACTER            
+PE1D_FILLER_3                     497:511    15           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PE1D were processed:
+index RSOV0200.PK_PE1D partition PE1D_DR_32_BR3_PART loaded successfully with 2099126 keys
+
+Table PE1D, subpartition PE1D_DR_32_BR3_PART:
+  2099126 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       2099126
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     1025
+Total stream buffers loaded by SQL*Loader load thread:     3075
+
+Run began on Fri Jun 09 22:36:32 2023
+Run ended on Fri Jun 09 22:37:47 2023
+
+Elapsed time was:     00:01:15.39
+CPU time was:         00:00:42.68
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 22:36:32 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 2099126.
+
+Table PE1D, subpartition PE1D_DR_32_BR3_PART:
+  2099126 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/log/charge_PE1D323.log
+for more information about the load.
+
+ number of rows inserted not checked 

@@ -1,0 +1,99 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sat Jun 10 14:01:58 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PI2/tmp/PI2C.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PI2C.DR32.BR4.net
+  File processing option string: "fix 238"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PI2/tmp/charge_PI2C324.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PI2C, subpartition PI2C_DR_32_BR4_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '4'
+PI2A_CCIND                           4:11     8           CHARACTER            
+PI2B_CCMES                          12:15     4           CHARACTER            
+PI2B_DSTRTS                         16:23     8           CHARACTER            
+PI2B_HSTRTS                         24:31     8           ZONED DECIMAL (8, 0) 
+PI2C_CCCRA                          32:33     2           ZONED DECIMAL (2, 0) 
+PI2C_CCTYMB                         34:36     3           CHARACTER            
+PI2C_CCMESB                         37:40     4           CHARACTER            
+PI2C_GCCRI                         41:117    77           CHARACTER            
+PI2C_CCINDX                       118:125     8           CHARACTER            
+PI2C_CCMESX                       126:129     4           CHARACTER            
+PI2C_DSTRTX                       130:137     8           CHARACTER            
+PI2C_HSTRTX                       138:145     8           ZONED DECIMAL (8, 0) 
+PI2C_FILLER                       146:237    92           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PI2C were processed:
+index RSOV0200.PI21 partition PI2C_DR_32_BR4_PART loaded successfully with 23572837 keys
+index RSOV0200.PK_PI2C partition PI2C_DR_32_BR4_PART loaded successfully with 23572837 keys
+
+Table PI2C, subpartition PI2C_DR_32_BR4_PART:
+  23572837 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      23572837
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     5352
+Total stream buffers loaded by SQL*Loader load thread:    21405
+
+Run began on Sat Jun 10 14:01:58 2023
+Run ended on Sat Jun 10 14:08:13 2023
+
+Elapsed time was:     00:06:15.38
+CPU time was:         00:01:07.10
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sat Jun 10 14:01:58 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 23572837.
+
+Table PI2C, subpartition PI2C_DR_32_BR4_PART:
+  23572837 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PI2/log/charge_PI2C324.log
+for more information about the load.
+
+ number of rows inserted not checked 

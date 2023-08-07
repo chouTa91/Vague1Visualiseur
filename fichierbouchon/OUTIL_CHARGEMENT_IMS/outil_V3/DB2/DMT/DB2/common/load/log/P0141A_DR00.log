@@ -1,0 +1,12 @@
+Reloading table DARPPP1.P0141A ...
+
+Loading process of table P0141A
+       using APPEND mode
+       
+- Loading: ... done
+----------------------------------------------------
+DATAWB-1222: Syntax Error or Oracle Error: 
+----------------------------------------------------
+ABORT ---
+Elapsed Time: 67 seconds
+DARPPP1.P0141A;KO;2781504;

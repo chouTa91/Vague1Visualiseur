@@ -1,0 +1,123 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 14:21:43 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/PA2G.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA2G.DR32.BR3.net
+  File processing option string: "fix 176"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/tmp/charge_PA2G323.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA2G, subpartition PA2G_DR_32_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PA2A_RSIN                            4:11     8           CHARACTER            
+PA2D_RSPEC                          12:15     4           CHARACTER            
+PA2G_RSAH                           16:16     1           CHARACTER            
+PA2G_RSCV                           17:24     8           CHARACTER            
+PA2G_DSVADH                         25:32     8           CHARACTER            
+PA2G_FSHA2G                         33:33     1           CHARACTER            
+PA2G_QMTVI                          34:42     9           ZONED DECIMAL (9, 2) 
+PA2G_QMTCH                          43:51     9           ZONED DECIMAL (9, 2) 
+PA2G_QM14J                          52:60     9           ZONED DECIMAL (9, 2) 
+PA2G_QM14C                          61:69     9           ZONED DECIMAL (9, 2) 
+PA2G_QSPGEL                         70:71     2           CHARACTER            
+PA2G_QSLIEL                         72:73     2           CHARACTER            
+PA2G_FSEXCL                         74:74     1           CHARACTER            
+PA2G_PSTFOR                         75:78     4           CHARACTER            
+PA2G_QMTFOR                         79:87     9           ZONED DECIMAL (9, 2) 
+PA2G_FSA18                          88:88     1           CHARACTER            
+PA2G_CSTAID                         89:89     1           CHARACTER            
+PA2G_CSALRH                         90:90     1           CHARACTER            
+PA2G_CSALRM                         91:91     1           CHARACTER            
+PA2G_NSCVD                         92:101    10           CHARACTER            
+PA2G_CSEXC                        102:103     2           CHARACTER            
+PA2G_QSHTR                        104:107     4           CHARACTER            
+PA2G_PSUARA                       108:111     4           CHARACTER            
+PA2G_CSAPEK                       112:112     1           CHARACTER            
+PA2G_CSCGP                        113:113     1           CHARACTER            
+PA2G_PSCGP                        114:114     1           CHARACTER            
+PA2G_DFCGP                        115:122     8           CHARACTER            
+PA2G_CYTFOR                       123:123     1           CHARACTER            
+PA2G_CYTVI                        124:124     1           CHARACTER            
+PA2G_CYTCH                        125:125     1           CHARACTER            
+PA2G_CY14C                        126:126     1           CHARACTER            
+PA2G_CY14J                        127:127     1           CHARACTER            
+PA2G_QMTPRS                       128:136     9           ZONED DECIMAL (9, 2) 
+PA2G_FILLER                       137:144     8           CHARACTER            
+PA2G_FILLER_1                     145:145     1           CHARACTER            
+PA2G_FILLER_2                     146:155    10           CHARACTER            
+PA2G_FILLER_3                     156:165    10           CHARACTER            
+PA2G_FILLER_4                     166:175    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA2G were processed:
+index RSOV0200.PK_PA2G partition PA2G_DR_32_BR3_PART loaded successfully with 11286 keys
+
+Table PA2G, subpartition PA2G_DR_32_BR3_PART:
+  11286 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         11286
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        4
+Total stream buffers loaded by SQL*Loader load thread:        4
+
+Run began on Wed Jun 07 14:21:43 2023
+Run ended on Wed Jun 07 14:21:44 2023
+
+Elapsed time was:     00:00:00.91
+CPU time was:         00:00:00.14
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 14:21:43 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 11286.
+
+Table PA2G, subpartition PA2G_DR_32_BR3_PART:
+  11286 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA2/log/charge_PA2G323.log
+for more information about the load.
+
+ number of rows inserted not checked 

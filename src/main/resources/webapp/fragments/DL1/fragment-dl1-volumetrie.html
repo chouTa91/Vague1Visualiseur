@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:span th:fragment="fragment-dl1-volumetrie (dl1TablesDetailsContainer)"
+	id="fragment-dl1-volumetrie">
+		
+		
+		
+		<th:block th:each="dr, drStats : ${dl1TablesDetailsContainer.dl1Details}">
+		
+			<h5><a data-bs-toggle="collapse" th:href="${'#collapse-' + dr.code + '-volumetrie'}" role="button" aria-expanded="false" aria-controls="collapseExample">
+	    		Volumétrie détaillées pour <span th:text="${dr.code}"></span>
+	  		</a></h5>
+	  		
+	  		<div class="collapse" th:id="${'collapse-' + dr.code + '-volumetrie'}">
+			
+				<div class="text-primary">
+					<span>Dernier rafraichissement des données : </span>
+					<span th:text="${dl1TablesDetailsContainer.refreshDate}"></span>
+				</div>
+				
+				<table 
+					th:id="${'tir1-dl1-' + dr.code + '-volumetrie'}" class="display cell-border" style="width:100%">
+					<thead>
+						<tr>
+							<th scope="col">Table</th>
+							<th scope="col">Nombre d'entrées</th>
+						</tr>
+					</thead>
+					<tbody id="controle-fichier-tbody">
+						<tr th:each="logInfos, logInfosStats : ${dr.logInfos}">
+							<td th:text="${logInfos.key}"></td>
+							<td th:text="${#numbers.formatDecimal(logInfos.value.volume, 0, 'WHITESPACE', 0, 'COMMA')}"></td>
+						</tr>
+					</tbody>
+				</table>
+			
+			</div>
+		</th:block>
+
+		<script type="text/javascript" th:inline="javascript">
+			// Initialisation du JS du fragment.
+			
+			let drDetails = [[${dl1TablesDetailsContainer.dl1Details}]];
+			
+			drDetails.forEach(async (dr) => {
+				suivi.datatable.initDataTable("#tir1-dl1-" + dr.code + "-volumetrie");
+			});
+		
+		</script>
+</th:span>
+
+</html>

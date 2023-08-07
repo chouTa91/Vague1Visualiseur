@@ -1,0 +1,17 @@
+Processing PA2R ...
+Temp nettoyage : 2 seconds
+
+Loading process of table PA2R
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	11274 row(s) inserted
+
+
+PA2R;OK;11274;11274
+Temps chargement : 1 seconds
+Elapsed Time: 3 seconds

@@ -1,0 +1,154 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 00:55:01 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/PK1I.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PK1I.DR32.BR4.net
+  File processing option string: "fix 245"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/charge_PK1I324.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PK1I, subpartition PK1I_DR_32_BR4_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '4'
+PK1A_RSIN                            4:11     8           CHARACTER            
+PK1B_RSEQ                           12:14     3           CHARACTER            
+PK1I_NSACT                          15:16     2           CHARACTER            
+PK1I_CSTAC                          17:17     1           CHARACTER            
+PK1I_CSSTC                          18:20     3           CHARACTER            
+PK1I_DDACT                          21:28     8           CHARACTER            
+PK1I_CSSMS                          29:29     1           CHARACTER            
+PK1I_CSMACT                         30:31     2           CHARACTER            
+PK1I_CSEAC                          32:35     4           CHARACTER            
+PK1I_DFRE4                          36:43     8           CHARACTER            
+PK1I_CSAAS                          44:44     1           CHARACTER            
+PK1I_NSACT5                         45:46     2           CHARACTER            
+PK1I_QSRLE                          47:47     1           CHARACTER            
+PK1I_DFACS                          48:55     8           CHARACTER            
+PK1I_DFDO1                          56:63     8           CHARACTER            
+PK1I_DEMS                           64:71     8           CHARACTER            
+PK1I_CSTIE6                         72:73     2           CHARACTER            
+PK1I_NSTI6                          74:79     6           CHARACTER            
+PK1I_CSISU                          80:80     1           CHARACTER            
+PK1I_CSTPM                          81:81     1           CHARACTER            
+PK1I_NSRAL6                         82:83     2           CHARACTER            
+PK1I_CSMAL6                         84:86     3           CHARACTER            
+PK1I_RSDECA                         87:95     9           CHARACTER            
+PK1I_RSMV1                          96:97     2           CHARACTER            
+PK1I_PJJPR                         98:100     3           CHARACTER            
+PK1I_QMENG                        101:107     7           ZONED DECIMAL (7, 2) 
+PK1I_QMRPA                        108:114     7           ZONED DECIMAL (7, 2) 
+PK1I_CSCEF                        115:115     1           CHARACTER            
+PK1I_NSACT4                       116:117     2           CHARACTER            
+PK1I_NSOPR                        118:119     2           CHARACTER            
+PK1I_CST1D                        120:121     2           CHARACTER            
+PK1I_CST1E                        122:125     4           CHARACTER            
+PK1I_NSRAN2                       126:127     2           CHARACTER            
+PK1I_CSTEQ1                       128:129     2           CHARACTER            
+PK1I_DDMS                         130:137     8           CHARACTER            
+PK1I_NSCRE1                       138:139     2           CHARACTER            
+PK1I_CSTYAT                       140:141     2           CHARACTER            
+PK1I_HCDEM                        142:145     4           CHARACTER            
+PK1I_CSTCR1                       146:146     1           CHARACTER            
+PK1I_DESIT                        147:154     8           CHARACTER            
+PK1I_CSRAD4                       155:155     1           CHARACTER            
+PK1I_RSUR1                        156:163     8           CHARACTER            
+PK1I_CSIPI                        164:164     1           CHARACTER            
+PK1I_CSESD6                       165:166     2           CHARACTER            
+PK1I_CSESD7                       167:168     2           CHARACTER            
+PK1I_CYRPA                        169:169     1           CHARACTER            
+PK1I_CSSMV                        170:172     3           CHARACTER            
+PK1I_HFATT                        173:180     8           CHARACTER            
+PK1I_CSEAL                        181:181     1           CHARACTER            
+PK1I_CSCDZ                        182:183     2           CHARACTER            
+PK1I_CSDC                         184:184     1           CHARACTER            
+PK1I_CDCOS                        185:185     1           CHARACTER            
+PK1I_CSMVA1                       186:187     2           CHARACTER            
+PK1I_CSSMV1                       188:190     3           CHARACTER            
+PK1I_CSMVA2                       191:192     2           CHARACTER            
+PK1I_CSSMV2                       193:195     3           CHARACTER            
+PK1I_CSRRC                        196:200     5           CHARACTER            
+PK1I_CSRRC1                       201:205     5           CHARACTER            
+PK1I_CSRRC2                       206:210     5           CHARACTER            
+PK1I_CXPRC2                       211:212     2           CHARACTER            
+PK1I_CXCTC2                       213:215     3           CHARACTER            
+PK1I_CDTYC                        216:216     1           CHARACTER            
+PK1I_RECLT                        217:217     1           CHARACTER            
+PK1I_RECLJ                        218:218     1           CHARACTER            
+PK1I_CXSAF                        219:223     5           CHARACTER            
+PK1I_CNTRM                        224:224     1           CHARACTER            
+PK1I_CNRPS                        225:225     1           CHARACTER            
+PK1I_FILLER                       226:234     9           CHARACTER            
+PK1I_FILLER_1                     235:244    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PK1I were processed:
+index RSOV0200.PK_PK1I partition PK1I_DR_32_BR4_PART loaded successfully with 45583532 keys
+
+Table PK1I, subpartition PK1I_DR_32_BR4_PART:
+  45583532 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      45583532
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:    10653
+Total stream buffers loaded by SQL*Loader load thread:    42611
+
+Run began on Fri Jun 09 00:55:01 2023
+Run ended on Fri Jun 09 01:58:45 2023
+
+Elapsed time was:     01:03:43.96
+CPU time was:         00:07:29.50
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 00:55:01 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 45583532.
+
+Table PK1I, subpartition PK1I_DR_32_BR4_PART:
+  45583532 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/log/charge_PK1I324.log
+for more information about the load.
+
+ number of rows inserted not checked 

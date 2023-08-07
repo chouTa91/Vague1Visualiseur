@@ -1,0 +1,144 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sat Jun 10 00:14:13 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/PE1E.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PE1E.DR32.BR4.net
+  File processing option string: "fix 279"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/charge_PE1E324.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PE1E, subpartition PE1E_DR_32_BR4_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '4'
+PE1A_RSIN                            4:11     8           CHARACTER            
+PE1D_RSPEC2                         12:15     4           CHARACTER            
+PE1D_NSDAL                          16:18     3           CHARACTER            
+PE1E_NSCA                           19:20     2           CHARACTER            
+PE1E_CSDLT                          21:22     2           CHARACTER            
+PE1E_CSCLT                          23:25     3           CHARACTER            
+PE1E_CSQCA                          26:26     1           CHARACTER            
+PE1E_CSMET                          27:28     2           CHARACTER            
+PE1E_CSROM6                         29:33     5           CHARACTER            
+PE1E_CSRET                          34:34     1           CHARACTER            
+    DEFAULT if 34:34 = 0Xfc(character 'Ü')
+PE1E_CSSCA                          35:36     2           CHARACTER            
+PE1E_CSTEN                          37:37     1           CHARACTER            
+    DEFAULT if 37:37 = 0Xfc(character 'Ü')
+PE1E_CSTAI                          38:39     2           CHARACTER            
+PE1E_CSICP                          40:40     1           CHARACTER            
+PE1E_CSITP                          41:41     1           CHARACTER            
+PE1E_CSIPE                          42:42     1           CHARACTER            
+PE1E_FSAEN                          43:43     1           CHARACTER            
+PE1E_FSCFN                          44:44     1           CHARACTER            
+PE1E_RSCR1                          45:52     8           CHARACTER            
+PE1E_RSCR2                          53:60     8           CHARACTER            
+PE1E_RSEN4                          61:68     8           CHARACTER            
+PE1E_DDNPV                          69:76     8           CHARACTER            
+PE1E_DFNPV                          77:84     8           CHARACTER            
+PE1E_DDPPV                          85:92     8           CHARACTER            
+PE1E_DFPPV                         93:100     8           CHARACTER            
+PE1E_CSEPA2                       101:104     4           CHARACTER            
+PE1E_FSRCT                        105:105     1           CHARACTER            
+PE1E_FSFNE2                       106:106     1           CHARACTER            
+PE1E_DIRCT                        107:114     8           CHARACTER            
+PE1E_DIREP                        115:122     8           CHARACTER            
+PE1E_DDBOR                        123:130     8           CHARACTER            
+PE1E_DFBOR                        131:138     8           CHARACTER            
+PE1E_CSCAG                        139:139     1           CHARACTER            
+PE1E_FSEAM                        140:140     1           CHARACTER            
+PE1E_NSAFC                        141:147     7           CHARACTER            
+PE1E_FSTRI                        148:148     1           CHARACTER            
+PE1E_PSTRI                        149:153     5           ZONED DECIMAL (5, 2) 
+PE1E_DFTRI                        154:161     8           CHARACTER            
+PE1E_DSFCT                        162:169     8           CHARACTER            
+PE1E_PIHOR1                       170:174     5           ZONED DECIMAL (5, 2) 
+PE1E_RSCV6                        175:182     8           CHARACTER            
+PE1E_FSENA                        183:183     1           CHARACTER            
+PE1E_TSARA                        184:190     7           ZONED DECIMAL (7, 5) 
+PE1E_TSARB                        191:197     7           ZONED DECIMAL (7, 5) 
+PE1E_NSOAE                        198:205     8           CHARACTER            
+PE1E_NSSAE                        206:207     2           CHARACTER            
+PE1E_FSPLIE                       208:208     1           CHARACTER            
+PE1E_TSACC                        209:210     2           CHARACTER            
+PE1E_QMPCC                        211:220    10           ZONED DECIMAL (10, 2)
+PE1E_QMPDF                        221:230    10           ZONED DECIMAL (10, 2)
+PE1E_CMABS                        231:231     1           CHARACTER            
+PE1E_QMPCB0                       232:238     7           ZONED DECIMAL (7, 2) 
+PE1E_CZNAE2                       239:243     5           CHARACTER            
+PE1E_FILLER                       244:248     5           CHARACTER            
+PE1E_FILLER_1                     249:258    10           CHARACTER            
+PE1E_FILLER_2                     259:268    10           CHARACTER            
+PE1E_FILLER_3                     269:278    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PE1E were processed:
+index RSOV0200.PK_PE1E partition PE1E_DR_32_BR4_PART loaded successfully with 330370 keys
+
+Table PE1E, subpartition PE1E_DR_32_BR4_PART:
+  330370 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        330370
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       88
+Total stream buffers loaded by SQL*Loader load thread:      264
+
+Run began on Sat Jun 10 00:14:13 2023
+Run ended on Sat Jun 10 00:14:19 2023
+
+Elapsed time was:     00:00:06.23
+CPU time was:         00:00:03.16
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sat Jun 10 00:14:13 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 330370.
+
+Table PE1E, subpartition PE1E_DR_32_BR4_PART:
+  330370 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/log/charge_PE1E324.log
+for more information about the load.
+
+ number of rows inserted not checked 

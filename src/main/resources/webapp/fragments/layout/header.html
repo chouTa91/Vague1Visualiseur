@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<header th:fragment="header (active)" id="header">
+
+<script th:src="@{/js/common/subscriberEnabler.js}"></script>
+	
+<nav class="navbar navbar-expand-lg  fixed-top" style="background-color: #12376e ; margin-bottom: 15px">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: #a1e094">Suivi Migration
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-server" viewBox="0 0 16 16">
+	  <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z"/>
+	  <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z"/>
+	  <path d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z"/>
+	</svg>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="background-color: #a1e094" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="background-color: #a1e094"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a th:href="@{/}" class="nav-link px-2 text-white"
+         	 th:classappend="${active == 'synthese' ? 'nav-active' : ''}">Synthèse</a>
+        </li>
+      <!-- <li class="nav-item">
+          <a th:href="@{/detail}" class="nav-link px-2 text-white">Détails</a>
+        </li> -->  
+
+        <li class="nav-item">
+          <a th:href="@{/detailDL1}" class="nav-link px-2 text-white" id="detailDL1"
+         	 th:classappend="${active == 'detailDL1' ? 'nav-active' : ''}">DL1</a>
+        </li>
+        
+        <li class="nav-item">
+          <a th:href="@{/detailDB2}" class="nav-link px-2 text-white"  id="detailDB2"
+          	th:classappend="${active == 'detailDB2' ? 'nav-active' : ''}">DB2</a>
+        </li>
+        <li class="nav-item">
+          <a th:href="@{/detailFichierPermanent}" class="nav-link px-2 text-white"  id="detailFichierPermanent"
+          	th:classappend="${active == 'detailFichierPermanent' ? 'nav-active' : ''}">Fichiers permanents</a>
+        </li>
+        <li class="nav-item">
+          <a th:href="@{/detailFichierTechnique}" class="nav-link px-2 text-white"  id="detailFichierTechnique"
+          	th:classappend="${active == 'detailFichierTechnique' ? 'nav-active' : ''}">Fichiers techniques</a>
+        </li>
+        <li class="nav-item">
+          <a th:href="@{/detailPactable}" class="nav-link px-2 text-white"  id="detailPactable"
+          	th:classappend="${active == 'detailPactable' ? 'nav-active' : ''}">Pactables</a>
+        </li>
+        
+      </ul>
+      <div class="d-flex" style="color: white; ">
+	    	<span class="text-end" th:if="${cible} == 'CadreQ'">Cadre Q</span>
+			<span class="text-end" th:if="${cible} == 'CadreR'">Cadre R</span>
+			<span class="text-end" th:if="${cible} == 'Prod'">Prod</span><br>
+			<span class="text-end" th:text="${versionOutil}" style="padding-left: 8px;"></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+</html>

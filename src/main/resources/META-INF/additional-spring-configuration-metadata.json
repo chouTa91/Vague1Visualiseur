@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "pe.visualiser.cadre.cible",
+    "type": "java.lang.String",
+    "description": "Le cadre sur lequel le programme est lancé."
+  },
+  {
+    "name": "pe.suivi.log.root.folder",
+    "type": "java.lang.String",
+    "description": "Le dossier racine des fichiers de la migration"
+  }
+]}

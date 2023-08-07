@@ -1,0 +1,17 @@
+Processing PB6A ...
+Temp nettoyage : 6 seconds
+
+Loading process of table PB6A
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	11917 row(s) inserted
+
+
+PB6A;OK;11917;11917
+Temps chargement : 3 seconds
+Elapsed Time: 9 seconds

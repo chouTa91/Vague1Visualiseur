@@ -1,0 +1,222 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 00:00:56 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P0151E_30108.ctl
+Data File:      Tab.U.P0151E.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P0151E00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P0151E, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TSP51E                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+NUP51E                               NEXT     *   ;  O(") CHARACTER            
+CXAS3                                NEXT     3   ;  O(") CHARACTER            
+CXALA                                NEXT     *   ;  O(") CHARACTER            
+CXIN                                 NEXT     8   ;  O(") CHARACTER            
+CXASS                                NEXT     3   ;  O(") CHARACTER            
+RSDB1                                NEXT     *   ;  O(") CHARACTER            
+CSMDB1                               NEXT     *   ;  O(") CHARACTER            
+CDUDO1                               NEXT     1   ;  O(") CHARACTER            
+DDVDB2                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DFVDB2                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CDCLC1                               NEXT     4   ;  O(") CHARACTER            
+CDRBI1                               NEXT     3   ;  O(") CHARACTER            
+CDBIC2                               NEXT    11   ;  O(") CHARACTER            
+CDIBN1                               NEXT    34   ;  O(") CHARACTER            
+CSODB2                               NEXT     5   ;  O(") CHARACTER            
+CSRDB2                               NEXT     5   ;  O(") CHARACTER            
+NSCDB3                               NEXT    11   ;  O(") CHARACTER            
+CSRIB2                               NEXT     2   ;  O(") CHARACTER            
+NSCOI1                               NEXT    28   ;  O(") CHARACTER            
+CSPAI1                               NEXT     3   ;  O(") CHARACTER            
+LSBAI1                               NEXT    64   ;  O(") CHARACTER            
+ACADR6                               NEXT    32   ;  O(") CHARACTER            
+ACADR7                               NEXT    32   ;  O(") CHARACTER            
+ACADR8                               NEXT    32   ;  O(") CHARACTER            
+ACADR9                               NEXT    32   ;  O(") CHARACTER            
+RSTIE                                NEXT     8   ;  O(") CHARACTER            
+LNTTC1                               NEXT    24   ;  O(") CHARACTER            
+CSNUS1                               NEXT     *   ;  O(") CHARACTER            
+FSPRIB                               NEXT     1   ;  O(") CHARACTER            
+FSTPP1                               NEXT     1   ;  O(") CHARACTER            
+DSSPRO                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DSDCNF                               NEXT     *   ;  O(") DATE YYYYMMDD        
+FSHIS1                               NEXT     1   ;  O(") CHARACTER            
+RSAGN                                NEXT     8   ;  O(") CHARACTER            
+DICRE                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CXAGC                                NEXT    10   ;  O(") CHARACTER            
+CDACR                                NEXT     3   ;  O(") CHARACTER            
+DIMAJ                                NEXT     *   ;  O(") DATE YYYYMMDD        
+HEDMF1                               NEXT     4   ;  O(") CHARACTER            
+CXAGM                                NEXT    10   ;  O(") CHARACTER            
+CDAMJ                                NEXT     3   ;  O(") CHARACTER            
+FSEPA                                NEXT     1   ;  O(") CHARACTER            
+FTELE                                NEXT     1   ;  O(") CHARACTER            
+
+Record 5332295: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332296: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332297: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332298: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332299: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332300: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332301: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332302: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332303: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332304: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Record 5332305: Rejected - Error on table P0151E.
+ORA-14400: inserted partition key does not map to any partition
+
+Specify SKIP=5332305 when continuing the load.
+The following index(es) on table P0151E were processed:
+index RSOV0200.IP0151E1 loaded successfully with 5332294 keys
+index RSOV0200.XP0151EA partition P0151E_DR_01_PART loaded successfully with 16 keys
+index RSOV0200.XP0151EA partition P0151E_DR_12_PART loaded successfully with 4 keys
+index RSOV0200.XP0151EA partition P0151E_DR_13_PART loaded successfully with 24 keys
+index RSOV0200.XP0151EA partition P0151E_DR_16_PART loaded successfully with 26 keys
+index RSOV0200.XP0151EA partition P0151E_DR_17_PART loaded successfully with 990276 keys
+index RSOV0200.XP0151EA partition P0151E_DR_20_PART loaded successfully with 20 keys
+index RSOV0200.XP0151EA partition P0151E_DR_24_PART loaded successfully with 50 keys
+index RSOV0200.XP0151EA partition P0151E_DR_25_PART loaded successfully with 47 keys
+index RSOV0200.XP0151EA partition P0151E_DR_26_PART loaded successfully with 9 keys
+index RSOV0200.XP0151EA partition P0151E_DR_27_PART loaded successfully with 18 keys
+index RSOV0200.XP0151EA partition P0151E_DR_31_PART loaded successfully with 22 keys
+index RSOV0200.XP0151EA partition P0151E_DR_32_PART loaded successfully with 1243746 keys
+index RSOV0200.XP0151EA partition P0151E_DR_34_PART loaded successfully with 74 keys
+index RSOV0200.XP0151EA partition P0151E_DR_35_PART loaded successfully with 21 keys
+index RSOV0200.XP0151EA partition P0151E_DR_39_PART loaded successfully with 9 keys
+index RSOV0200.XP0151EA partition P0151E_DR_40_PART loaded successfully with 13 keys
+index RSOV0200.XP0151EA partition P0151E_DR_41_PART loaded successfully with 4 keys
+index RSOV0200.XP0151EA partition P0151E_DR_44_PART loaded successfully with 6 keys
+index RSOV0200.XP0151EA partition P0151E_DR_46_PART loaded successfully with 40 keys
+index RSOV0200.XP0151EA partition P0151E_DR_48_PART loaded successfully with 19 keys
+index RSOV0200.XP0151EA partition P0151E_DR_49_PART loaded successfully with 23 keys
+index RSOV0200.XP0151EA partition P0151E_DR_50_PART loaded successfully with 14 keys
+index RSOV0200.XP0151EA partition P0151E_DR_51_PART loaded successfully with 609751 keys
+index RSOV0200.XP0151EA partition P0151E_DR_56_PART loaded successfully with 26 keys
+index RSOV0200.XP0151EA partition P0151E_DR_57_PART loaded successfully with 23 keys
+index RSOV0200.XP0151EA partition P0151E_DR_61_PART loaded successfully with 37 keys
+index RSOV0200.XP0151EA partition P0151E_DR_63_PART loaded successfully with 69 keys
+index RSOV0200.XP0151EA partition P0151E_DR_65_PART loaded successfully with 155245 keys
+index RSOV0200.XP0151EA partition P0151E_DR_66_PART loaded successfully with 12 keys
+index RSOV0200.XP0151EA partition P0151E_DR_67_PART loaded successfully with 18 keys
+index RSOV0200.XP0151EA partition P0151E_DR_68_PART loaded successfully with 10 keys
+index RSOV0200.XP0151EA partition P0151E_DR_69_PART loaded successfully with 5 keys
+index RSOV0200.XP0151EA partition P0151E_DR_71_PART loaded successfully with 1 keys
+
+MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
+
+Table P0151E:
+  5332294 Rows successfully loaded.
+  11 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition P0151E_DR_01_PART: 23 Rows loaded.
+  Partition P0151E_DR_12_PART: 4 Rows loaded.
+  Partition P0151E_DR_13_PART: 30 Rows loaded.
+  Partition P0151E_DR_16_PART: 35 Rows loaded.
+  Partition P0151E_DR_17_PART: 1800342 Rows loaded.
+  Partition P0151E_DR_20_PART: 28 Rows loaded.
+  Partition P0151E_DR_24_PART: 73 Rows loaded.
+  Partition P0151E_DR_25_PART: 50 Rows loaded.
+  Partition P0151E_DR_26_PART: 13 Rows loaded.
+  Partition P0151E_DR_27_PART: 22 Rows loaded.
+  Partition P0151E_DR_31_PART: 26 Rows loaded.
+  Partition P0151E_DR_32_PART: 2181043 Rows loaded.
+  Partition P0151E_DR_34_PART: 113 Rows loaded.
+  Partition P0151E_DR_35_PART: 28 Rows loaded.
+  Partition P0151E_DR_39_PART: 15 Rows loaded.
+  Partition P0151E_DR_40_PART: 16 Rows loaded.
+  Partition P0151E_DR_41_PART: 6 Rows loaded.
+  Partition P0151E_DR_44_PART: 6 Rows loaded.
+  Partition P0151E_DR_46_PART: 59 Rows loaded.
+  Partition P0151E_DR_48_PART: 29 Rows loaded.
+  Partition P0151E_DR_49_PART: 34 Rows loaded.
+  Partition P0151E_DR_50_PART: 25 Rows loaded.
+  Partition P0151E_DR_51_PART: 1100587 Rows loaded.
+  Partition P0151E_DR_56_PART: 30 Rows loaded.
+  Partition P0151E_DR_57_PART: 26 Rows loaded.
+  Partition P0151E_DR_61_PART: 59 Rows loaded.
+  Partition P0151E_DR_63_PART: 107 Rows loaded.
+  Partition P0151E_DR_65_PART: 249412 Rows loaded.
+  Partition P0151E_DR_66_PART: 13 Rows loaded.
+  Partition P0151E_DR_67_PART: 20 Rows loaded.
+  Partition P0151E_DR_68_PART: 10 Rows loaded.
+  Partition P0151E_DR_69_PART: 9 Rows loaded.
+  Partition P0151E_DR_71_PART: 1 Row loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records rejected:        11
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     1374
+Total stream buffers loaded by SQL*Loader load thread:     4089
+
+Run began on Thu Jun 01 00:00:56 2023
+Run ended on Thu Jun 01 00:12:23 2023
+
+Elapsed time was:     00:11:26.78
+CPU time was:         00:00:25.05
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 00:00:56 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 5333172.
+
+Table P0151E:
+  5332294 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_P0151E00.log
+for more information about the load.

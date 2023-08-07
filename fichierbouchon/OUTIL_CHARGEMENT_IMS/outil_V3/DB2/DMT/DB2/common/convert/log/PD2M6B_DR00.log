@@ -1,0 +1,42 @@
+Convert PD2M6B default tools using conv table-297-to-P1
+Target DB set to 'ORACLE'
+NL_Protector set to '@%@!'
+directing outputs to /pdt/CAPGEMINI/COPY_FROM_NAS_V2/DB2_LINUXDATA/
+Data file format NAS !
+QUALIFICATION REPORT For Table PD2M6B:
+
+Reporting of interesting characters per categories:
+case  0: basic printable characters    : nb chars = 11497271
+case  1: 00 Low value character        : nb chars = 0
+case  2: 25 (LF --> 0A on target)      : nb chars = 0
+case  3: chars below 40, may be ok     : nb chars = 31
+case  4: chars below 40, problematic   : nb chars = 0
+case  5: Pb du High Value FF           : nb chars = 0
+case  6: 9F: Currency sign or Euro     : nb chars = 0
+case  7: Risque d'overpunch (C0 D0)    : nb chars = 3304
+
+Reporting per column, the number of interesting chars:
+Column_Name                   ;      case  0;      case  1;      case  2;      case  3;      case  4;      case  5;      case  6;      case  7
+LLMAN1                        ;       727441;            0;            0;            0;            0;            0;            0;         1599
+LLMAN2                        ;       728021;            0;            0;            0;            0;            0;            0;         1019
+LLMAN3                        ;       728660;            0;            0;            0;            0;            0;            0;          380
+LSDSC                         ;       683372;            0;            0;            0;            0;            0;            0;          103
+LSDSD                         ;       683388;            0;            0;            0;            0;            0;            0;           87
+LSDSE                         ;       683443;            0;            0;            0;            0;            0;            0;           32
+LSDSF                         ;       683463;            0;            0;            0;            0;            0;            0;           12
+LLMANA                        ;       728984;            0;            0;            5;            0;            0;            0;           51
+LLMANB                        ;       728998;            0;            0;           26;            0;            0;            0;           16
+LLMANC                        ;       729035;            0;            0;            0;            0;            0;            0;            5
+
+Reporting the number of occurences of interesting char (table level):
+char <<0x5>> nb occurences: 31
+char <<0xc0>> nb occurences: 3273
+char <<0xd0>> nb occurences: 31
+nb rec processed: 9113
+END of QUALIFICATION REPORT
+nb recs read   : 9113 
+nb recs written: 9113 
+Max input rec Len: 1658 
+Max Output rec Len(including LF): 1733 
+Elapsed Time: 0 seconds
+DARPPP1.PD2M6B;OK;9113;9113

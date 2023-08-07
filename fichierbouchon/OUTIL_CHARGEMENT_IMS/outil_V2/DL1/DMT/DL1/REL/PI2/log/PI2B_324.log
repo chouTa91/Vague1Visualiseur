@@ -1,0 +1,13 @@
+Processing PI2B ...
+
+Loading process of table PI2B
+       using APPEND mode
+       
+- Loading: ... done
+----------------------------------------------------
+DATAWB-1222: Syntax Error or Oracle Error: 
+----------------------------------------------------
+ABORT ---
+PI2B;KO;4870245;
+Temps chargement : 6 seconds
+Elapsed Time: 1 seconds

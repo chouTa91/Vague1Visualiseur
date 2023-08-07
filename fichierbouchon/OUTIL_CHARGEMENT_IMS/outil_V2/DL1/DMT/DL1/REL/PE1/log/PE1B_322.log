@@ -1,0 +1,17 @@
+Processing PE1B ...
+Temp nettoyage : 728 seconds
+
+Loading process of table PE1B
+       using APPEND mode
+       
+- Loading: ... done
+
+
+ Terminated OK
+
+	3008329 row(s) inserted
+
+
+PE1B;OK;3008329;3008329
+Temps chargement : 67 seconds
+Elapsed Time: 795 seconds

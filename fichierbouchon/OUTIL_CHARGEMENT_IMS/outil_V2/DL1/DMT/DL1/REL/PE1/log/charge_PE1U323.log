@@ -1,0 +1,96 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 23:05:28 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/PE1U.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PE1U.DR32.BR3.net
+  File processing option string: "fix 95"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/tmp/charge_PE1U323.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PE1U, subpartition PE1U_DR_32_BR3_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '3'
+PE1A_RSIN                            4:11     8           CHARACTER            
+PE1H_RSOD                           12:14     3           CHARACTER            
+PE1U_NSCUM                          15:15     1           CHARACTER            
+PE1U_CSTCU                          16:16     1           CHARACTER            
+PE1U_PSCUM                          17:20     4           CHARACTER            
+PE1U_DEAC1                          21:28     8           CHARACTER            
+PE1U_DEDC1                          29:36     8           CHARACTER            
+PE1U_FILLER                         37:49    13           CHARACTER            
+PE1U_FILLER_1                       50:66    17           CHARACTER            
+PE1U_FILLER_2                       67:80    14           CHARACTER            
+PE1U_FILLER_3                       81:94    14           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PE1U were processed:
+index RSOV0200.PK_PE1U partition PE1U_DR_32_BR3_PART loaded successfully with 468102 keys
+
+Table PE1U, subpartition PE1U_DR_32_BR3_PART:
+  468102 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        468102
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      127
+Total stream buffers loaded by SQL*Loader load thread:       85
+
+Run began on Fri Jun 09 23:05:28 2023
+Run ended on Fri Jun 09 23:05:32 2023
+
+Elapsed time was:     00:00:04.04
+CPU time was:         00:00:00.89
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Jun 9 23:05:28 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 468102.
+
+Table PE1U, subpartition PE1U_DR_32_BR3_PART:
+  468102 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PE1/log/charge_PE1U323.log
+for more information about the load.
+
+ number of rows inserted not checked 

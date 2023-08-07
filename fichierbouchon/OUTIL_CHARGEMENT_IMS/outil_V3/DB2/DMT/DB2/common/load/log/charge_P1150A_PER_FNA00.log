@@ -1,0 +1,101 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 00:56:02 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/P1150A_30108.ctl
+Data File:      Tab.U.P1150A.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_P1150A_PER_FNA00.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table P1150A_PER_FNA, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CXASS                               FIRST     3   ;  O(") CHARACTER            
+CXALAF                               NEXT     *   ;  O(") CHARACTER            
+CXNUM                                NEXT     *   ;  O(") CHARACTER            
+CSMEG                                NEXT     *   ;  O(") CHARACTER            
+CDCTP                                NEXT     *   ;  O(") CHARACTER            
+NSCGG                                NEXT    10   ;  O(") CHARACTER            
+CSTGA                                NEXT     *   ;  O(") CHARACTER            
+CSOIG                                NEXT     *   ;  O(") CHARACTER            
+CDQAL                                NEXT     2   ;  O(") CHARACTER            
+CXALA4                               NEXT     *   ;  O(") CHARACTER            
+CSCHG                                NEXT     *   ;  O(") CHARACTER            
+TSP                                  NEXT     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+CXNUMB                               NEXT     *   ;  O(") CHARACTER            
+ISCRG                                NEXT    10   ;  O(") CHARACTER            
+PUACT                                NEXT     *   ;  O(") CHARACTER            
+CDCEP                                NEXT     *   ;  O(") CHARACTER            
+PHHEB                                NEXT     *   ;  O(") CHARACTER            
+CMRPT                                NEXT     2   ;  O(") CHARACTER            
+QMBAF                                NEXT     *   ;  O(") CHARACTER            
+DDPGA                                NEXT     *   ;  O(") DATE YYYYMMDD        
+ISCRA                                NEXT    10   ;  O(") CHARACTER            
+DFPGA                                NEXT     *   ;  O(") DATE YYYYMMDD        
+DIPGA                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CUACT                                NEXT     *   ;  O(") CHARACTER            
+QSEFE2                               NEXT     *   ;  O(") CHARACTER            
+DDNPVG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CSSCA2                               NEXT     *   ;  O(") CHARACTER            
+CSNEP1                               NEXT     *   ;  O(") CHARACTER            
+PSHEN3                               NEXT     *   ;  O(") CHARACTER            
+DDPPV2                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DFPPV2                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DFNPVG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+DNPRE1                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CZNAE2                               NEXT     5   ;  O(") CHARACTER            
+PSCACA                               NEXT     *   ;  O(") CHARACTER            
+ISNAE1                               NEXT    11   ;  O(") CHARACTER            
+CDGUS1                               NEXT    10   ;  O(") CHARACTER            
+NSOBJ                                NEXT    12   ;  O(") CHARACTER            
+CDNAB2                               NEXT     6   ;  O(") CHARACTER            
+CDTCV                                NEXT     1   ;  O(") CHARACTER            
+PMPRE                                NEXT     *   ;  O(") CHARACTER            
+CSPAA1                               NEXT     3   ;  O(") CHARACTER            
+DSENP                                NEXT     *   ;  O(") DATE YYYYMMDD        
+FFPBS                                NEXT     1   ;  O(") CHARACTER            
+IDEXT                                NEXT    25   ;  O(") CHARACTER            
+CDAPS                                NEXT     1   ;  O(") CHARACTER            
+QTRCT                                NEXT     *   ;  O(") CHARACTER            
+CDSCA                                NEXT     1   ;  O(") CHARACTER            
+CNACP                                NEXT     3   ;  O(") CHARACTER            
+DTSIC                                NEXT     *   ;  O(") DATE YYYYMMDD        
+CDSAE                                NEXT     1   ;  O(") CHARACTER            
+CCDEM                                NEXT     3   ;  O(") CHARACTER            
+CDABSQ                               NEXT     2   ;  O(") CHARACTER            
+CDSRTK                               NEXT    14   ;  O(") CHARACTER            
+CDCTB2                               NEXT    20   ;  O(") CHARACTER            
+DFICD2                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CDBOE2                               NEXT     2   ;  O(") CHARACTER            
+CDSRTM                               NEXT    14   ;  O(") CHARACTER            
+CDPGA2                               NEXT     1   ;  O(") CHARACTER            
+
+SQL*Loader-926: OCI error while executing delete/truncate (due to REPLACE/TRUNCATE keyword) for table P1150A_PER_FNA
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS'
+
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 00:56:02 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct

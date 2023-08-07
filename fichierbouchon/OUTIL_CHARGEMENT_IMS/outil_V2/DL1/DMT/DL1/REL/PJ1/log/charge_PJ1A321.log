@@ -1,0 +1,90 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 8 10:37:33 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/tmp/PJ1A.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PJ1A.DR32.BR1.net
+  File processing option string: "fix 44"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/tmp/charge_PJ1A321.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PJ1A, subpartition PJ1A_DR_32_BR1_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '1'
+PJ1A_RSTINC                          4:11     8           CHARACTER            
+PJ1A_DSEPJ                          12:19     8           CHARACTER            
+PJ1A_FFSAP                          20:20     1           CHARACTER            
+PJ1A_FILLER                         21:27     7           CHARACTER            
+PJ1A_FILLER_1                       28:43    16           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PJ1A were processed:
+index RSOV0200.PK_PJ1A partition PJ1A_DR_32_BR1_PART loaded successfully with 308156 keys
+
+Table PJ1A, subpartition PJ1A_DR_32_BR1_PART:
+  308156 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        308156
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       65
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Thu Jun 08 10:37:33 2023
+Run ended on Thu Jun 08 10:37:43 2023
+
+Elapsed time was:     00:00:09.39
+CPU time was:         00:00:00.38
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 8 10:37:33 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 308156.
+
+Table PJ1A, subpartition PJ1A_DR_32_BR1_PART:
+  308156 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PJ1/log/charge_PJ1A321.log
+for more information about the load.
+
+ number of rows inserted not checked 

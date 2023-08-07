@@ -1,0 +1,123 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:27:31 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/tmp/PA4D.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PA4D.DR32.BR0.net
+  File processing option string: "fix 452"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/tmp/charge_PA4D320.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PA4D, partition PA4D_DR_32_PART, loaded from every logical record.
+Insert option in effect for this partition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                    3:3     1           CHARACTER            
+  (FILLER FIELD)
+PA4A_CSTIE                            4:5     2           CHARACTER            
+PA4A_NSTI                            6:11     6           CHARACTER            
+PA4D_CMPAI                          12:14     3           CHARACTER            
+PA4D_RSDB2                          15:16     2           CHARACTER            
+PA4D_DDVDT                          17:24     8           CHARACTER            
+PA4D_DFVDT                          25:32     8           CHARACTER            
+PA4D_CSMDB2                         33:33     1           CHARACTER            
+PA4D_CSODB2                         34:38     5           CHARACTER            
+PA4D_CSRDB2                         39:43     5           CHARACTER            
+PA4D_NSCDB2                         44:54    11           CHARACTER            
+PA4D_CSRIB2                         55:56     2           CHARACTER            
+PA4D_NSCOI2                         57:84    28           CHARACTER            
+PA4D_CSPAY2                         85:87     3           CHARACTER            
+PA4D_LSBAI2                        88:151    64           CHARACTER            
+PA4D_ACADR6_1                     152:183    32           CHARACTER            
+PA4D_ACADR6_2                     184:215    32           CHARACTER            
+PA4D_ACADR6_3                     216:247    32           CHARACTER            
+PA4D_ACADR6_4                     248:279    32           CHARACTER            
+PA4D_RSTIF                        280:287     8           CHARACTER            
+PA4D_LNTIC                        288:311    24           CHARACTER            
+PA4D_FSPRIT                       312:312     1           CHARACTER            
+PA4D_FSPPRT                       313:313     1           CHARACTER            
+PA4D_DSSPRT                       314:321     8           CHARACTER            
+PA4D_DSDCNT                       322:329     8           CHARACTER            
+PA4D_RSAGT                        330:337     8           CHARACTER            
+PA4D_DSDMF1                       338:345     8           CHARACTER            
+PA4D_HSDMO1                       346:349     4           CHARACTER            
+PA4D_CDPIB2                       350:351     2           CHARACTER            
+PA4D_CDCIB2                       352:353     2           CHARACTER            
+PA4D_NSCIB2                       354:383    30           CHARACTER            
+PA4D_CDBIC2                       384:394    11           CHARACTER            
+PA4D_CDRBI2                       395:397     3           CHARACTER            
+PA4D_FILLER                       398:407    10           CHARACTER            
+PA4D_FILLER_1                     408:417    10           CHARACTER            
+PA4D_FILLER_2                     418:427    10           CHARACTER            
+PA4D_FILLER_3                     428:437    10           CHARACTER            
+PA4D_FILLER_4                     438:447    10           CHARACTER            
+PA4D_FILLER_5                     448:451     4           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PA4D were processed:
+index RSOV0200.PK_PA4D partition PA4D_DR_32_PART loaded successfully with 57494 keys
+
+Table PA4D, partition PA4D_DR_32_PART:
+  57494 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         57494
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       25
+Total stream buffers loaded by SQL*Loader load thread:       99
+
+Run began on Wed Jun 07 16:27:31 2023
+Run ended on Wed Jun 07 16:27:37 2023
+
+Elapsed time was:     00:00:06.49
+CPU time was:         00:00:00.37
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Wed Jun 7 16:27:31 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 57494.
+
+Table PA4D, partition PA4D_DR_32_PART:
+  57494 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PA4/log/charge_PA4D320.log
+for more information about the load.
+
+ number of rows inserted not checked 

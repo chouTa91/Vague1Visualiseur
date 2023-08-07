@@ -1,0 +1,203 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 8 15:00:45 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/PK1C.ctl
+Character Set F8EBCDIC297 specified for all input.
+
+Data File:      PK1C.DR32.BR2.net
+  File processing option string: "fix 815"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/tmp/charge_PK1C322.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PK1C, subpartition PK1C_DR_32_BR2_PART, loaded from every logical record.
+Insert option in effect for this subpartition: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DR                                    1:2     2           CHARACTER            
+BR                                                        CONSTANT
+    Value is '2'
+PK1A_RSIN                            4:11     8           CHARACTER            
+PK1B_RSEQ                           12:14     3           CHARACTER            
+PK1C_RSFS                           15:15     1           CHARACTER            
+PK1C_CSORI                          16:17     2           CHARACTER            
+PK1C_CSDOR                          18:18     1           CHARACTER            
+PK1C_CSNAD                          19:19     1           CHARACTER            
+PK1C_CSQAL                          20:20     1           CHARACTER            
+PK1C_CSDIP                          21:22     2           CHARACTER            
+PK1C_CSNIV                          23:24     2           CHARACTER            
+PK1C_CSTUT                          25:25     1           CHARACTER            
+PK1C_CSLIP                          26:26     1           CHARACTER            
+PK1C_CSFI                           27:27     1           CHARACTER            
+PK1C_CSFAM                          28:28     1           CHARACTER            
+PK1C_DDSIT                          29:36     8           CHARACTER            
+PK1C_CSSIC                          37:37     1           CHARACTER            
+PK1C_NSCVI                          38:53    16           CHARACTER            
+PK1C_CXSALI                         54:68    15           CHARACTER            
+PK1C_MX009D                         69:77     9           CHARACTER            
+PK1C_LSAUT                         78:117    40           CHARACTER            
+PK1C_LSRFS                        118:187    70           CHARACTER            
+PK1C_LSSAN                        188:252    65           CHARACTER            
+PK1C_QSENF                        253:254     2           CHARACTER            
+PK1C_QSAGE_1                      255:256     2           CHARACTER            
+PK1C_QSAGE_2                      257:258     2           CHARACTER            
+PK1C_QSECF                        259:260     2           CHARACTER            
+PK1C_QSEFS                        261:262     2           CHARACTER            
+PK1C_QSASC                        263:263     1           CHARACTER            
+PK1C_QSCOL                        264:264     1           CHARACTER            
+PK1C_QMQOF                        265:271     7           ZONED DECIMAL (7, 2) 
+PK1C_QSPAR                        272:274     3           ZONED DECIMAL (3, 2) 
+PK1C_CSFAY                        275:275     1           CHARACTER            
+PK1C_DSFRAS                       276:279     4           CHARACTER            
+PK1C_DEFAY                        280:287     8           CHARACTER            
+PK1C_DSREP                        288:295     8           CHARACTER            
+PK1C_DDFER                        296:303     8           CHARACTER            
+PK1C_DFFER                        304:311     8           CHARACTER            
+PK1C_DDREF                        312:319     8           CHARACTER            
+PK1C_DFREF                        320:327     8           CHARACTER            
+PK1C_DSCNP                        328:335     8           CHARACTER            
+PK1C_QSCPE                        336:337     2           CHARACTER            
+PK1C_QMPAY                        338:344     7           ZONED DECIMAL (7, 2) 
+PK1C_QMRMP                        345:351     7           ZONED DECIMAL (7, 2) 
+PK1C_QMDDT                        352:358     7           ZONED DECIMAL (7, 2) 
+PK1C_QSDDT                        359:361     3           CHARACTER            
+PK1C_RSEN1                        362:369     8           CHARACTER            
+PK1C_RSF31                        370:371     2           CHARACTER            
+PK1C_NSSTA1                       372:373     2           CHARACTER            
+PK1C_QSREM                        374:380     7           ZONED DECIMAL (7, 2) 
+PK1C_CSREM                        381:381     1           CHARACTER            
+PK1C_CSFOR                        382:382     1           CHARACTER            
+PK1C_CSINI                        383:383     1           CHARACTER            
+PK1C_CSPRO                        384:385     2           CHARACTER            
+PK1C_CSRST                        386:386     1           CHARACTER            
+PK1C_CSERE                        387:387     1           CHARACTER            
+PK1C_CSDEM                        388:388     1           CHARACTER            
+PK1C_DDTRA                        389:396     8           CHARACTER            
+PK1C_CSAFO                        397:397     1           CHARACTER            
+PK1C_CSECF                        398:398     1           CHARACTER            
+PK1C_CSFCO                        399:399     1           CHARACTER            
+PK1C_CSMEM                        400:400     1           CHARACTER            
+PK1C_QMFRA                        401:407     7           ZONED DECIMAL (7, 2) 
+PK1C_QMBIL                        408:414     7           ZONED DECIMAL (7, 2) 
+PK1C_QMPAR                        415:421     7           ZONED DECIMAL (7, 2) 
+PK1C_QSHEB1                       422:428     7           ZONED DECIMAL (7, 2) 
+PK1C_QSTRA1                       429:435     7           ZONED DECIMAL (7, 2) 
+PK1C_QMDIV_1                      436:442     7           ZONED DECIMAL (7, 2) 
+PK1C_QMDIV_2                      443:449     7           ZONED DECIMAL (7, 2) 
+PK1C_LSDIV_1                      450:464    15           CHARACTER            
+PK1C_LSDIV_2                      465:479    15           CHARACTER            
+PK1C_CSGEN                        480:480     1           CHARACTER            
+PK1C_QMFIN                        481:487     7           ZONED DECIMAL (7, 2) 
+PK1C_QMPFS                        488:494     7           ZONED DECIMAL (7, 2) 
+PK1C_CSCDD                        495:495     1           CHARACTER            
+PK1C_CSCOMT                       496:496     1           CHARACTER            
+PK1C_FSMD31                       497:497     1           CHARACTER            
+PK1C_CYBIL                        498:498     1           CHARACTER            
+PK1C_CYDDT                        499:499     1           CHARACTER            
+PK1C_CYDIV                        500:500     1           CHARACTER            
+PK1C_CYFIN                        501:501     1           CHARACTER            
+PK1C_CYFRA                        502:502     1           CHARACTER            
+PK1C_CYHEB1                       503:503     1           CHARACTER            
+PK1C_CYPAR                        504:504     1           CHARACTER            
+PK1C_CYPAY                        505:505     1           CHARACTER            
+PK1C_CYPFS                        506:506     1           CHARACTER            
+PK1C_CYQOF                        507:507     1           CHARACTER            
+PK1C_CYREM                        508:508     1           CHARACTER            
+PK1C_CYRMP                        509:509     1           CHARACTER            
+PK1C_CYTRA1                       510:510     1           CHARACTER            
+PK1C_QMABO                        511:517     7           ZONED DECIMAL (7, 2) 
+PK1C_QMDEM                        518:524     7           ZONED DECIMAL (7, 2) 
+PK1C_QMDEP                        525:531     7           ZONED DECIMAL (7, 2) 
+PK1C_QMDEP1                       532:538     7           ZONED DECIMAL (7, 2) 
+PK1C_QMEQU                        539:545     7           ZONED DECIMAL (7, 2) 
+PK1C_QMFIN1                       546:552     7           ZONED DECIMAL (7, 2) 
+PK1C_QMFRF                        553:559     7           ZONED DECIMAL (7, 2) 
+PK1C_QMFRF1                       560:566     7           ZONED DECIMAL (7, 2) 
+PK1C_QMGEN                        567:573     7           ZONED DECIMAL (7, 2) 
+PK1C_QMGEN1                       574:580     7           ZONED DECIMAL (7, 2) 
+PK1C_QSHEB2                       581:587     7           ZONED DECIMAL (7, 2) 
+PK1C_CYABO                        588:588     1           CHARACTER            
+PK1C_CYDEM                        589:589     1           CHARACTER            
+PK1C_CYDEP                        590:590     1           CHARACTER            
+PK1C_CYDEP1                       591:591     1           CHARACTER            
+PK1C_CYEQU                        592:592     1           CHARACTER            
+PK1C_CYFIN1                       593:593     1           CHARACTER            
+PK1C_CYFRF                        594:594     1           CHARACTER            
+PK1C_CYFRF1                       595:595     1           CHARACTER            
+PK1C_CYGEN                        596:596     1           CHARACTER            
+PK1C_CYGEN1                       597:597     1           CHARACTER            
+PK1C_CYHEB2                       598:598     1           CHARACTER            
+PK1C_LEXPP_1                      599:676    78           CHARACTER            
+PK1C_LEXPP_2                      677:754    78           CHARACTER            
+PK1C_QSPEF                        755:756     2           CHARACTER            
+PK1C_DDPERP                       757:764     8           CHARACTER            
+PK1C_DFPERP                       765:772     8           CHARACTER            
+PK1C_LNENTP                       773:799    27           CHARACTER            
+PK1C_FILLER                       800:804     5           CHARACTER            
+PK1C_FILLER_1                     805:814    10           CHARACTER            
+TMST_SOURCE                          NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+TMST_CIBLE                           NEXT     1           CHARACTER            
+    SQL string for column : "CURRENT_TIMESTAMP"
+
+The following index(es) on table PK1C were processed:
+index RSOV0200.PK_PK1C partition PK1C_DR_32_BR2_PART loaded successfully with 51928 keys
+
+Table PK1C, subpartition PK1C_DR_32_BR2_PART:
+  51928 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         51928
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       41
+Total stream buffers loaded by SQL*Loader load thread:      121
+
+Run began on Thu Jun 08 15:00:45 2023
+Run ended on Thu Jun 08 15:00:54 2023
+
+Elapsed time was:     00:00:09.22
+CPU time was:         00:00:01.11
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/bin/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 8 15:00:45 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 51928.
+
+Table PK1C, subpartition PK1C_DR_32_BR2_PART:
+  51928 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DL1/DMT/DL1/REL/PK1/log/charge_PK1C322.log
+for more information about the load.
+
+ number of rows inserted not checked 

@@ -1,0 +1,117 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 07:50:25 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/PD2M11_30108.ctl
+Data File:      Tab.U.PD2M11.DR00.del
+  File processing option string: "str '@%@!
+'"
+  Bad File:     /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/tmp/charge_PD2M1100.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10
+Continuation:    none specified
+Path used:      Direct
+
+Table PD2M11, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+SH2M11                              FIRST     *   ;  O(") DATETIME YYYYMMDDHH24MISSFF6
+CSORG9                               NEXT     *   ;  O(") CHARACTER            
+CCIND                                NEXT     8   ;  O(") CHARACTER            
+CCMES                                NEXT     4   ;  O(") CHARACTER            
+DSTRTG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+HSTRT9                               NEXT     8   ;  O(") CHARACTER            
+NSFICN                               NEXT     *   ;  O(") CHARACTER            
+CXALAF                               NEXT     *   ;  O(") CHARACTER            
+QSMES9                               NEXT     *   ;  O(") CHARACTER            
+CCBAL9                               NEXT     *   ;  O(") CHARACTER            
+CCTYM                                NEXT     3   ;  O(") CHARACTER            
+CSDTAD                               NEXT     1   ;  O(") CHARACTER            
+CSDTAA                               NEXT     1   ;  O(") CHARACTER            
+CSXM                                 NEXT     5   ;  O(") CHARACTER            
+RSUT                                 NEXT     8   ;  O(") CHARACTER            
+RSUR                                 NEXT     8   ;  O(") CHARACTER            
+RSAG                                 NEXT     8   ;  O(") CHARACTER            
+DSTATW                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CCTEX                                NEXT     2   ;  O(") CHARACTER            
+CCMDL                                NEXT     8   ;  O(") CHARACTER            
+CCUTIS                               NEXT     8   ;  O(") CHARACTER            
+DFECGG                               NEXT     *   ;  O(") DATE YYYYMMDD        
+CSANA                                NEXT     3   ;  O(") CHARACTER            
+RSAL1                                NEXT     5   ;  O(") CHARACTER            
+CSCHA                                NEXT     5   ;  O(") CHARACTER            
+LGZVA                                NEXT     *   ;  O(") CHARACTER            
+GCMS1                                NEXT  3000   ;  O(") CHARACTER            
+
+The following index(es) on table PD2M11 were processed:
+index RSOV0200.IPD2M111 partition PD2M11_DR_17_PART loaded successfully with 3064394 keys
+index RSOV0200.IPD2M111 partition PD2M11_DR_32_PART loaded successfully with 4135860 keys
+index RSOV0200.IPD2M111 partition PD2M11_DR_51_PART loaded successfully with 2316274 keys
+index RSOV0200.IPD2M111 partition PD2M11_DR_65_PART loaded successfully with 514214 keys
+index RSOV0200.XPD2M11A partition PD2M11_DR_17_PART loaded successfully with 3064394 keys
+index RSOV0200.XPD2M11A partition PD2M11_DR_32_PART loaded successfully with 4135860 keys
+index RSOV0200.XPD2M11A partition PD2M11_DR_51_PART loaded successfully with 2316274 keys
+index RSOV0200.XPD2M11A partition PD2M11_DR_65_PART loaded successfully with 514214 keys
+
+Table PD2M11:
+  10030742 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition PD2M11_DR_17_PART: 3064394 Rows loaded.
+  Partition PD2M11_DR_32_PART: 4135860 Rows loaded.
+  Partition PD2M11_DR_51_PART: 2316274 Rows loaded.
+  Partition PD2M11_DR_65_PART: 514214 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      10030742
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:     7080
+Total stream buffers loaded by SQL*Loader load thread:    21238
+
+Run began on Thu Jun 01 07:50:25 2023
+Run ended on Thu Jun 01 08:02:12 2023
+
+Elapsed time was:     00:11:47.24
+CPU time was:         00:00:56.93
+----------------------------------------------------
+
+   Execution report of /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/RunSqlLoader.sh
+
+----------------------------------------------------
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu Jun 1 07:50:25 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Direct
+
+Load completed - logical record count 10030742.
+
+Table PD2M11:
+  10030742 Rows successfully loaded.
+
+Check the log file:
+  /pdt/CAPGEMINI/OUTIL_CHARGEMENT_IMS/outil_V2/DB2/DMT/DB2/common/load/log/charge_PD2M1100.log
+for more information about the load.
+
+ number of rows inserted not checked 
