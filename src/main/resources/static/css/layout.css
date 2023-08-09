@@ -1,6 +1,8 @@
 
 .nav-active {
-	background-color : red;
+  background-color: #636e72;
+  border-radius: 14px;
+  font-weight: 700;
 }
 
 .vertical-divider {

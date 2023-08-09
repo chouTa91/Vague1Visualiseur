@@ -1,16 +1,31 @@
 var suivi = suivi || {};
 suivi.datatable = suivi.datatable || {};
+suivi.storeId = suivi.storeId || [];
+
+
+/**
+ * Destory un tableau DataTable.
+ * 
+ * @param	tableId l'identifiant html du tableau à magnifier.
+ */
+
+suivi.datatable.destroyDataTable = function (tableId) {
+	$(tableId).destroy();
+}
+
 
 /**
  * Initialisation d'un tableau DataTable.
  * 
  * @param	tableId l'identifiant html du tableau à magnifier.
  */
-suivi.datatable.initDataTable = function(tableId) {
-
+suivi.datatable.initDataTable = function (tableId) {
+	if (suivi.storeId.indexOf(tableId) === -1) {
+		suivi.storeId.push(tableId);
+	}
 	console.debug("[DATATABLE] Initialisation du tableau " + tableId);
 
-	window[tableId] = $(tableId).DataTable({
+	$(tableId).DataTable({
 		lengthMenu: [10, 25, 50, 100], //https://datatables.net/reference/option/lengthMenu
 		"dom": 'Blfrtip',
 		"ordering": true,
@@ -35,7 +50,7 @@ suivi.datatable.initDataTable = function(tableId) {
 	});
 }
 
-suivi.datatable.initDataTableSingleRow = function(tableId) {
+suivi.datatable.initDataTableSingleRow = function (tableId) {
 
 	console.debug("[DATATABLE] Initialisation du tableau " + tableId);
 

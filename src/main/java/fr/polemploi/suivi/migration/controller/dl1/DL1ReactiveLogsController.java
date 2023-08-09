@@ -34,7 +34,7 @@ public class DL1ReactiveLogsController implements ApplicationListener<FolderChan
 
 	@PostConstruct
 	void init() {
-		this.pEFileSystemListenerDl1.start(this.pathDispenser.getDL1NasFolder());
+		//this.pEFileSystemListenerDl1.start(this.pathDispenser.getDL1NasFolder());
 	}
 
 	@Override

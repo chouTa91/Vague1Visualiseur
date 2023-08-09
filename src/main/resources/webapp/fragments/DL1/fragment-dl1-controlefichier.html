@@ -1,7 +1,11 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 
+
+
 <th:span th:fragment="fragment-dl1-controlefichier (dl1ControleFilesContainer)" id="fragment-dl1-controlefichier">
+
+
 
 	<div class="text-primary">
 		<span>Dernier rafraichissement des données : </span>
@@ -49,12 +53,37 @@
 		</tbody>
 	</table>
 
+	<table id="dl1FilesID" class="table table-striped" style="width:100%">
+		<thead>
+		<tr>
+			<th scope="col">Direction</th>
+			<th scope="col">Nombre de fichiers</th>
+			<th scope="col">Fichiers manquants</th>
+			<th scope="col">Précisions</th>
+		</tr>
+		</thead>
+	</table>
+
 	<script type="text/javascript" th:inline="javascript">
 		// Initialisation du JS du fragment.
 		//suivi.dl1.subscriber.initSubscribe();
 
 		suivi.datatable.initDataTable("#tir1-dl1-controle-fichier-table");
-
+		$('#dl1FilesID').DataTable( {
+			dom: "Bfrltip",
+			"ajax": "/ajax/datable/dl1Files",
+			columns: [
+				{   data: "code" },
+				{   data: "count" },
+				{   data: "missingFiles" },
+				{   data: "alertsMessages" },
+			],
+			buttons: [
+				{ extend: 'excelHtml5', className: 'btn btn-secondary btn-sm' },
+				{ extend: 'csvHtml5', className: 'btn btn-secondary btn-sm' },
+				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
+			],
+		} );
 	</script>
 </th:span>
 

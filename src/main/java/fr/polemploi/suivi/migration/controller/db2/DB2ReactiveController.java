@@ -34,7 +34,7 @@ public class DB2ReactiveController implements ApplicationListener<FolderChangeEv
 
 	@PostConstruct
 	void init() {
-		this.pEFileSystemListenerDl1.start(this.pathDispenser.getDB2RootFolder());
+		//this.pEFileSystemListenerDl1.start(this.pathDispenser.getDB2RootFolder());
 	}
 
 	@GetMapping(path = "/controle", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
