@@ -69,7 +69,7 @@
 		//suivi.dl1.subscriber.initSubscribe();
 
 		suivi.datatable.initDataTable("#tir1-dl1-controle-fichier-table");
-		$('#dl1FilesID').DataTable( {
+		const table = $('#dl1FilesID').DataTable( {
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/dl1Files",
 			columns: [
@@ -84,6 +84,12 @@
 				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
 			],
 		} );
+		if(window.EventSource != null){
+			 const eventSource = new EventSource('/flux/reactor/changements');
+			 eventSource.onmessage = function (event) {
+				table.ajax.reload();
+			 };
+		}
 	</script>
 </th:span>
 
