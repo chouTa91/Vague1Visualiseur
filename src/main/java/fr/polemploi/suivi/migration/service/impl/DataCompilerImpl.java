@@ -76,7 +76,7 @@ public class DataCompilerImpl implements DataCompiler {
 
 		tir.setDL1TablesDetailsContainer(this.fileReader.retrieveDL1LogFiles(this.pathDispenser.getDL1NasFolder()));
 
-		tir.setDL1TablesVolumeContainer(
+		tir.setdL1TablesVolumeContainer(
 				this.fileReader.retrieveDL1VolumeFile(this.pathDispenser.getDL1VolumetrieOracle()));
 
 		tir.addAllErrors(this.validator.getErrorsDL1(tir));
@@ -100,7 +100,7 @@ public class DataCompilerImpl implements DataCompiler {
 			this.alertValidator.dl1CheckMissingFileVague1(fileInfos);
 		}
 
-		for (Entry<String, Dl1Volumes> fileInfos : tir.getDL1TablesVolumeContainer().getVolume().entrySet()) {
+		for (Entry<String, Dl1Volumes> fileInfos : tir.getdL1TablesVolumeContainer().getVolume().entrySet()) {
 			this.alertValidator.dl1CheckVolumetrieVague1(fileInfos.getValue());
 		}
 	}

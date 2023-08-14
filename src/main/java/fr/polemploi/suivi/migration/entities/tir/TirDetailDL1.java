@@ -20,9 +20,9 @@ public class TirDetailDL1 extends Tir {
 
 	private DL1DirectionRegionaleTablesFilesContainer dl1ControleLogsContainer;
 
-	private DL1DirectionRegionaleTablesDetailsContainer Dl1TablesDetailsContainer;
+	private DL1DirectionRegionaleTablesDetailsContainer dl1TablesDetailsContainer;
 
-	private DL1DirectionRegionaleTablesVolumeContainer DL1TablesVolumeContainer;
+	private DL1DirectionRegionaleTablesVolumeContainer dL1TablesVolumeContainer;
 
 	public TirDetailDL1() {
 		super();
@@ -45,30 +45,30 @@ public class TirDetailDL1 extends Tir {
 	}
 
 	public DL1DirectionRegionaleTablesDetailsContainer getDl1TablesDetailsContainer() {
-		return this.Dl1TablesDetailsContainer;
+		return this.dl1TablesDetailsContainer;
 	}
 
 	public void setDL1TablesDetailsContainer(DL1DirectionRegionaleTablesDetailsContainer dL1TablesDetailsContainer) {
-		this.Dl1TablesDetailsContainer = dL1TablesDetailsContainer;
+		this.dl1TablesDetailsContainer = dL1TablesDetailsContainer;
 	}
 
-	public DL1DirectionRegionaleTablesVolumeContainer getDL1TablesVolumeContainer() {
-		return this.DL1TablesVolumeContainer;
+	public DL1DirectionRegionaleTablesVolumeContainer getdL1TablesVolumeContainer() {
+		return this.dL1TablesVolumeContainer;
 	}
 
-	public void setDL1TablesVolumeContainer(DL1DirectionRegionaleTablesVolumeContainer dL1TablesVolumeContainer) {
-		this.DL1TablesVolumeContainer = dL1TablesVolumeContainer;
+	public void setdL1TablesVolumeContainer(DL1DirectionRegionaleTablesVolumeContainer dL1TablesVolumeContainer) {
+		this.dL1TablesVolumeContainer = dL1TablesVolumeContainer;
 	}
 
 	public void setDl1TablesDetailsContainer(DL1DirectionRegionaleTablesDetailsContainer dl1TablesDetailsContainer) {
-		this.Dl1TablesDetailsContainer = dl1TablesDetailsContainer;
+		this.dl1TablesDetailsContainer = dl1TablesDetailsContainer;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
-		result = prime * result + Objects.hash(this.DL1TablesVolumeContainer, this.Dl1TablesDetailsContainer,
+		result = prime * result + Objects.hash(this.dL1TablesVolumeContainer, this.dl1TablesDetailsContainer,
 				this.dl1ControleFilesContainer, this.dl1ControleLogsContainer);
 		return result;
 	}
@@ -81,8 +81,8 @@ public class TirDetailDL1 extends Tir {
 		if (!super.equals(obj) || !(obj instanceof TirDetailDL1 other)) {
 			return false;
 		}
-		return Objects.equals(this.DL1TablesVolumeContainer, other.DL1TablesVolumeContainer)
-				&& Objects.equals(this.Dl1TablesDetailsContainer, other.Dl1TablesDetailsContainer)
+		return Objects.equals(this.dL1TablesVolumeContainer, other.dL1TablesVolumeContainer)
+				&& Objects.equals(this.dl1TablesDetailsContainer, other.dl1TablesDetailsContainer)
 				&& Objects.equals(this.dl1ControleFilesContainer, other.dl1ControleFilesContainer)
 				&& Objects.equals(this.dl1ControleLogsContainer, other.dl1ControleLogsContainer);
 	}
@@ -91,7 +91,7 @@ public class TirDetailDL1 extends Tir {
 	public String toString() {
 		return "TirDetailDL1 [dl1ControleFilesContainer=" + this.dl1ControleFilesContainer
 				+ ", dl1ControleLogsContainer=" + this.dl1ControleLogsContainer + ", Dl1TablesDetailsContainer="
-				+ this.Dl1TablesDetailsContainer + ", DL1TablesVolumeContainer=" + this.DL1TablesVolumeContainer + "]";
+				+ this.dl1TablesDetailsContainer + ", DL1TablesVolumeContainer=" + this.dL1TablesVolumeContainer + "]";
 	}
 
 }
