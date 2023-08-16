@@ -1,5 +1,7 @@
 package fr.polemploi.suivi.migration.monitor;
 
+import java.io.File;
+import java.io.FileFilter;
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
@@ -8,8 +10,7 @@ import java.nio.file.StandardWatchEventKinds;
 import java.nio.file.WatchEvent;
 import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -97,40 +98,47 @@ public class PEFileSystemListener {
 	// 	});
 	// }
 
+	List<File> getSubdirs(File file) {
+		List<File> subdirs = Arrays.asList(Objects.requireNonNull(file.listFiles(new FileFilter() {
+			public boolean accept(File f) {
+				return f.isDirectory();
+			}
+		})));
+		subdirs = new ArrayList<>(subdirs);
+
+		List<File> deepSubdirs = new ArrayList<File>();
+		for(File subdir : subdirs) {
+			deepSubdirs.addAll(getSubdirs(subdir));
+		}
+		subdirs.addAll(deepSubdirs);
+		return subdirs;
+	}
+
 	@PostConstruct
 	public void init1() throws IOException {
 		System.out.println("create watchService of newWatchService");
 		PEFileSystemListener.logger.info("create watchService of newWatchService");
 		WatchService watchService = FileSystems.getDefault().newWatchService();
 		System.out.println("create keymap of wathkey");
+
+		watchDirectory(watchService, this.pathDispenser.getRootFolder()+"\\fichierbouchon\\");
+	}
+
+	private void watchDirectory(WatchService watchService, String parentDirPathString) throws IOException {
 		Map<WatchKey,Path> keyMap = new HashMap<>();
-		Path logsFolderRoot = Paths.get(this.pathDispenser.getRootFolder()+"\\fichierbouchon\\");
-		Path logsFolderDL1 = Paths.get(this.pathDispenser.getDL1NasFolder());
-		Path logsFolderDB2 = Paths.get(this.pathDispenser.getDB2RootFolder());
-		Path logFolderConversion = Paths.get(this.pathDispenser.getDB2ConvertOracle());
-		System.out.println("create registre of wathkey");
-		keyMap.put(logsFolderRoot.register(watchService,
-				StandardWatchEventKinds.ENTRY_MODIFY,
-				StandardWatchEventKinds.ENTRY_DELETE,
-				StandardWatchEventKinds.ENTRY_CREATE),logsFolderRoot
-		);
-		keyMap.put(logsFolderDL1.register(watchService,
-				StandardWatchEventKinds.ENTRY_MODIFY,
-				StandardWatchEventKinds.ENTRY_DELETE,
-				StandardWatchEventKinds.ENTRY_CREATE),logsFolderDL1
-		);
-		keyMap.put(logsFolderDB2.register(watchService,
-				StandardWatchEventKinds.ENTRY_MODIFY,
-				StandardWatchEventKinds.ENTRY_DELETE,
-				StandardWatchEventKinds.ENTRY_CREATE),logsFolderDB2
-		);
 
-		keyMap.put(logFolderConversion.register(watchService,
-				StandardWatchEventKinds.ENTRY_MODIFY,
-				StandardWatchEventKinds.ENTRY_DELETE,
-				StandardWatchEventKinds.ENTRY_CREATE),logFolderConversion
-		);
-
+		File parentDir = new File(parentDirPathString);
+		List<File> subDirectories = getSubdirs(parentDir);
+		subDirectories.add(parentDir);
+		for(File dir:subDirectories){
+			System.out.println(dir);
+			Path dirPath = Paths.get(dir.getPath());
+			keyMap.put(dirPath.register(watchService,
+					StandardWatchEventKinds.ENTRY_MODIFY,
+					StandardWatchEventKinds.ENTRY_DELETE,
+					StandardWatchEventKinds.ENTRY_CREATE), dirPath
+			);
+		}
 		new Thread(() -> {
 			WatchKey watchKey;
 			try {
@@ -153,10 +161,12 @@ public class PEFileSystemListener {
 				eventSink.tryEmitComplete();
 			} catch (IOException e) {
 				PEFileSystemListener.logger.error("Folder watch service failed", e);
-                throw new RuntimeException(e);
-            }
-        }).start();
+				throw new RuntimeException(e);
+			}
+		}).start();
+
 	}
+
 	public Flux<String> getEventFlux() {
 		return eventSink.asFlux();
 	}
