@@ -40,5 +40,5 @@ public interface FilesRetriever {
 	 * @param tableName
 	 * @return
 	 */
-	List<RawFile> getDB2RawLogFile(String tableName);
+	RawFile getDB2ConvertLogFile(String tableName);
 }

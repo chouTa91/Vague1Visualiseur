@@ -39,14 +39,11 @@ public class DB2Controller {
 
 	}
 
-	@GetMapping("/logs/{tableName}")
+	@GetMapping("/log/{tableName}")
 	public ModelAndView getLogs(@PathVariable String tableName) {
 
 		ModelAndView mv = new ModelAndView("/fragments/DB2/fragment-db2-log");
-
-		mv.addObject("tableName", tableName);
-		mv.addObject("logs", this.filesRetriever.getDB2RawLogFile(tableName));
-
+		mv.addObject("logFile", this.filesRetriever.getDB2ConvertLogFile(tableName));
 		return mv;
 	}
 

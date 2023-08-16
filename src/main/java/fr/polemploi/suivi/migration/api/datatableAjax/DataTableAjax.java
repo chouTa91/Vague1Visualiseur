@@ -39,8 +39,8 @@ public class DataTableAjax {
     }
 
     @GetMapping(value = "/db2ConversionTablesLines",produces = MediaType.APPLICATION_JSON_VALUE)
-    public DatatableDL2ConversionResponse getdb2ConversionTableLines() throws IOException {
-        DatatableDL2ConversionResponse d = new DatatableDL2ConversionResponse();
+    public DatatableDB2ConversionResponse getdb2ConversionTableLines() throws IOException {
+        DatatableDB2ConversionResponse d = new DatatableDB2ConversionResponse();
         TirDetailDB2 tirDetailDB2 = this.dataCompiler.gatherTirDB2AllInfos();
         d.data = tirDetailDB2.getDb2conversion();
         return d;

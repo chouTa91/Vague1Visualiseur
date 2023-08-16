@@ -25,6 +25,12 @@
 	margin: 10px;
 	width: 75%;
 }
+
+.code__wrap__side_convert{
+	margin: 10px;
+	width: 100%;
+}
+
 .menu__item{
 	cursor: pointer;
 }

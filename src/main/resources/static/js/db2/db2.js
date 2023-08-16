@@ -7,7 +7,7 @@ suivi.db2.logs = suivi.db2.logs || {};
 suivi.db2.logs.initModal = function() {
     const elm = document.querySelector('#tir1-db2-conversion-logs-modal .active');
     const textArea = document.getElementById('codemirrorElemt');
-    textArea.textContent = elm.dataset.content;
+    /*textArea.textContent = elm.dataset.content;*/
     suiviScript = CodeMirror.fromTextArea(textArea, {
         readOnly: true,
         mode: "shell",
@@ -21,7 +21,7 @@ suivi.db2.logs.initModal = function() {
 suivi.db2.logs.openModal = function(logTabName) {
     console.debug("[DB2][LOGS][MODAL] Ouverture de la modale pour : ", logTabName);
 
-    let endpoint = `/db2/logs/` + logTabName;
+    let endpoint = `/db2/log/` + logTabName;
     fetch(endpoint)
         .then((response) => {
             return response.text();
