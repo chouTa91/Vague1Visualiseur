@@ -25,7 +25,7 @@
 
 	<br />
 
-	<table id="tir1-dl1-controle-fichier-table" class="table table-striped" style="width:100%">
+	<!-- <table id="tir1-dl1-controle-fichier-table" class="table table-striped" style="width:100%">
 		<thead>
 			<tr>
 				<th scope="col">Direction</th>
@@ -51,16 +51,16 @@
 				</td>
 			</tr>
 		</tbody>
-	</table>
+	</table> -->
 
 	<table id="dl1FilesID" class="table table-striped" style="width:100%">
 		<thead>
-		<tr>
-			<th scope="col">Direction</th>
-			<th scope="col">Nombre de fichiers</th>
-			<th scope="col">Fichiers manquants</th>
-			<th scope="col">Précisions</th>
-		</tr>
+			<tr>
+				<th scope="col">Direction</th>
+				<th scope="col">Nombre de fichiers</th>
+				<th scope="col">Fichiers manquants</th>
+				<th scope="col">Précisions</th>
+			</tr>
 		</thead>
 	</table>
 
@@ -70,26 +70,26 @@
 
 		suivi.datatable.initDataTable("#tir1-dl1-controle-fichier-table");
 
-		const table = $('#dl1FilesID').DataTable( {
+		const table = $('#dl1FilesID').DataTable({
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/dl1Files",
 			columns: [
-				{   data: "code" },
-				{   data: "count" },
-				{   data: "missingFiles" },
-				{   data: "alertsMessages" },
+				{ data: "code" },
+				{ data: "count" },
+				{ data: "missingFiles" },
+				{ data: "alertsMessages" },
 			],
 			buttons: [
 				{ extend: 'excelHtml5', className: 'btn btn-secondary btn-sm' },
 				{ extend: 'csvHtml5', className: 'btn btn-secondary btn-sm' },
 				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
 			],
-		} );
-		if(window.EventSource != null){
-			 const eventSource = new EventSource('/flux/reactor/changements');
-			 eventSource.onmessage = function (event) {
+		});
+		if (window.EventSource != null) {
+			const eventSource = new EventSource('/flux/reactor/changements');
+			eventSource.onmessage = function (event) {
 				table.ajax.reload();
-			 };
+			};
 		}
 	</script>
 </span>

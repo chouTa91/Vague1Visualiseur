@@ -107,6 +107,7 @@ public class PEFileSystemListener {
 		Path logsFolderRoot = Paths.get(this.pathDispenser.getRootFolder()+"\\fichierbouchon\\");
 		Path logsFolderDL1 = Paths.get(this.pathDispenser.getDL1NasFolder());
 		Path logsFolderDB2 = Paths.get(this.pathDispenser.getDB2RootFolder());
+		Path logFolderConversion = Paths.get(this.pathDispenser.getDB2ConvertOracle());
 		System.out.println("create registre of wathkey");
 		keyMap.put(logsFolderRoot.register(watchService,
 				StandardWatchEventKinds.ENTRY_MODIFY,
@@ -122,6 +123,12 @@ public class PEFileSystemListener {
 				StandardWatchEventKinds.ENTRY_MODIFY,
 				StandardWatchEventKinds.ENTRY_DELETE,
 				StandardWatchEventKinds.ENTRY_CREATE),logsFolderDB2
+		);
+
+		keyMap.put(logFolderConversion.register(watchService,
+				StandardWatchEventKinds.ENTRY_MODIFY,
+				StandardWatchEventKinds.ENTRY_DELETE,
+				StandardWatchEventKinds.ENTRY_CREATE),logFolderConversion
 		);
 
 		new Thread(() -> {

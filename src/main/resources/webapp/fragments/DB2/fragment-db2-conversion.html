@@ -3,7 +3,7 @@
 
 <div th:fragment="fragment-db2-conversion (tirId, tableLines, typeTraitement)" id="fragment-db2-conversion">
 
-<!--
+	<!--
 	<table th:id="${'tir' + tirId + '-' + typeTraitement + '-table'}" class="table table-striped" style="width:100%">
 		<thead>
 			<tr>
@@ -36,17 +36,17 @@
 
 	<table th:id="tab0" class="table table-striped" style="width:100%">
 		<thead>
-		<tr>
-			<th scope="col">Table</th>
-			<th scope="col">Nombre d'entrée calculées</th>
-			<th scope="col">Nombre d'entrée lues</th>
-			<th scope="col">Nombre d'entrée écrites</th>
-			<th scope="col">Taille maximale d'entrée</th>
-			<th scope="col">Taille maximale d'entrée (LF)</th>
-			<th scope="col">Temps de conversion</th>
-			<th scope="col">Status</th>
-			<th></th>
-		</tr>
+			<tr>
+				<th scope="col">Table</th>
+				<th scope="col">Nombre d'entrée calculées</th>
+				<th scope="col">Nombre d'entrée lues</th>
+				<th scope="col">Nombre d'entrée écrites</th>
+				<th scope="col">Taille maximale d'entrée</th>
+				<th scope="col">Taille maximale d'entrée (LF)</th>
+				<th scope="col">Temps de conversion</th>
+				<th scope="col">Status</th>
+				<th></th>
+			</tr>
 		</thead>
 	</table>
 
@@ -55,26 +55,27 @@
 		// Initialisation du JS du fragment.
 
 		suivi.datatable.initDataTable("#tir" + [[${ tirId }]] + '-' + [[${ typeTraitement }]] + '-table');
-		const table = $('#tab0').DataTable( {
+		const table = $('#tab0').DataTable({
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/db2ConversionTablesLines",
 			columns: [
-				{   data: "tableName" },
-				{   data: "nbRecProcessed" },
-				{   data: "nbRecsRead" },
-				{   data: "nbRecsWritten" },
-				{   data: "maxInputRecLength" },
-				{   data: "maxInputRecLengthLF" },
-				{   data: "elapsedTime" },
-				{   data: "status" },
-				{	data: "tableName",
+				{ data: "tableName" },
+				{ data: "nbRecProcessed" },
+				{ data: "nbRecsRead" },
+				{ data: "nbRecsWritten" },
+				{ data: "maxInputRecLength" },
+				{ data: "maxInputRecLengthLF" },
+				{ data: "elapsedTime" },
+				{ data: "status" },
+				{
+					data: "tableName",
 					render: function (data, type, row) {
-						return '<button style="border: none;color: #069;background: none;" onclick="suivi.db2.logs.openModal(\''+data+'\')" class="openModalButton"><i class="far fa-eye"></i></button>';
+						return '<button style="border: none;color: #069;background: none;" onclick="suivi.db2.logs.openModal(\'' + data + '\')" class="openModalButton"><i class="far fa-eye"></i></button>';
 					}
 				}
 			],
-			rowCallback: function(row, data, index){
-				if( data['status'] ===  'KO'){
+			rowCallback: function (row, data, index) {
+				if (data['status'] === 'KO') {
 					$(row).addClass('table-danger');
 				}
 			},
@@ -83,8 +84,13 @@
 				{ extend: 'csvHtml5', className: 'btn btn-secondary btn-sm' },
 				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
 			],
-		} );
-
+		});
+		if (window.EventSource != null) {
+			const eventSource = new EventSource('/flux/reactor/changements');
+			eventSource.onmessage = function (event) {
+				table.ajax.reload();
+			};
+		}
 	</script>
 
 </div>
