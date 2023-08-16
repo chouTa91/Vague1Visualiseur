@@ -73,6 +73,11 @@
 					}
 				}
 			],
+			rowCallback: function(row, data, index){
+				if( data['status'] ==  'KO'){
+					$(row).addClass('table-danger');
+				}
+			},
 			buttons: [
 				{ extend: 'excelHtml5', className: 'btn btn-secondary btn-sm' },
 				{ extend: 'csvHtml5', className: 'btn btn-secondary btn-sm' },
