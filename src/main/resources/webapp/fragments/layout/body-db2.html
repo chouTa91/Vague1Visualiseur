@@ -5,7 +5,12 @@
 
 	<script th:src="@{/js/subscribers/db2controlefile/db2subscriber.js}"></script>
 
+	<script th:src="@{/js/db2/db2.js}"></script>
+
 	<h1 th:text="${'Tir ' + tir.id + ' - DB2'}"></h1>
+
+	<div class="modal fade" id="tir1-db2-conversion-logs-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+		 data-backdrop="static" aria-hidden="true"></div>
 
 	<h4 id="tir1-db2-controle-fichier-heading">Contrôle des fichiers</h4>
 	<div th:replace="~{/fragments/DB2/fragment-db2-controlefichier :: fragment-db2-controlefichier(${tir.db2ControleFiles})}">Contrôle de fichiers</div>

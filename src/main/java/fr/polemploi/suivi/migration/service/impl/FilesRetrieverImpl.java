@@ -13,6 +13,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import fr.polemploi.suivi.migration.entities.enums.db2.DB2TableEnum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -191,6 +192,30 @@ public class FilesRetrieverImpl implements FilesRetriever {
 		}
 
 		return results;
+	}
+
+	public Map<String, Path> getDb2PathsMap(String fileName){
+		Map<String, Path> map = new HashMap<>();
+		for(String file : Objects.requireNonNull(DB2TableEnum.getFilesByTableName(fileName))){
+			map.put(file, Paths.get(this.pathDispenser.getDB2RootFolder() + file));
+		}
+		return map;
+	}
+
+	@Override
+	public List<RawFile> getDB2RawLogFile(String fileName) {
+		List<RawFile> result = new ArrayList<>();
+
+		for (Entry<String, Path> fileEntry : getDb2PathsMap(fileName).entrySet()) {
+			try {
+				RawFile rawFile = new RawFile(fileEntry.getKey(), this.filesRetrieverApi.retrieveFile(fileEntry.getValue()));
+				result.add(rawFile);
+			} catch (IOException e) {
+				FilesRetrieverImpl.logger.error("Retrieving file from FS error : ", e);
+			}
+		}
+
+		return result;
 	}
 
 }

@@ -2,9 +2,11 @@ package fr.polemploi.suivi.migration.controller.db2;
 
 import java.io.IOException;
 
+import fr.polemploi.suivi.migration.service.FilesRetriever;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -16,6 +18,9 @@ public class DB2Controller {
 
 	@Autowired
 	private DataCompiler dataCompiler;
+
+	@Autowired
+	private FilesRetriever filesRetriever;
 
 	/**
 	 * Controller de l'index par défaut.
@@ -32,6 +37,17 @@ public class DB2Controller {
 
 		return mv;
 
+	}
+
+	@GetMapping("/logs/{tableName}")
+	public ModelAndView getLogs(@PathVariable String tableName) {
+
+		ModelAndView mv = new ModelAndView("/fragments/DB2/fragment-db2-log");
+
+		mv.addObject("tableName", tableName);
+		mv.addObject("logs", this.filesRetriever.getDB2RawLogFile(tableName));
+
+		return mv;
 	}
 
 }

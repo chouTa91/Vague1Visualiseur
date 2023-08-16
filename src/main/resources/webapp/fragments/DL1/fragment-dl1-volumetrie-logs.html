@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <!-- Modal d'affichage des logs. -->
-<th:span th:fragment="fragment-dl1-volumetrie-logs" id="fragment-dl1-volumetrie-logs">
+<span th:fragment="fragment-dl1-volumetrie-logs" id="fragment-dl1-volumetrie-logs">
 
 	<div class="modal fade" id="tir1-dl1-volumetrie-oracle-logs-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
 		 data-backdrop="static" aria-hidden="true">
@@ -42,7 +42,7 @@
 	</div>
 
 	<script type="text/javascript" th:inline="javascript">
-		var suiviScript;
+		let suiviScript;
 		function activeLi(me){
 			document.querySelectorAll(".menu__item").forEach(e=>{
 				e.classList.remove('active');
@@ -69,6 +69,6 @@
 		});
 
 	</script>
-</th:span>
+</span>
 
 </html>

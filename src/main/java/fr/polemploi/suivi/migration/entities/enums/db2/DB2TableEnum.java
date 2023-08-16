@@ -1,5 +1,7 @@
 package fr.polemploi.suivi.migration.entities.enums.db2;
 
+import fr.polemploi.suivi.migration.entities.enums.dl1.DL1LogEnum;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -418,6 +420,22 @@ public enum DB2TableEnum {
 
 		return new ArrayList<DB2TableEnum>(results.values());
 
+	}
+
+	public static List<String> getFilesByTableName(String tableName) {
+
+		List<String> files = new ArrayList<>();
+		for (DB2TableEnum value : DB2TableEnum.values()) {
+			if (tableName.contains(value.getTableName())) {
+				files.add(guessDb2LogFileName(value));
+			}
+		}
+
+		return files;
+	}
+
+	public static String guessDb2LogFileName(DB2TableEnum db2Tab) {
+		return "TAB."+db2Tab.getBranchName()+"."+db2Tab.getTableName()+".DR00";
 	}
 
 }

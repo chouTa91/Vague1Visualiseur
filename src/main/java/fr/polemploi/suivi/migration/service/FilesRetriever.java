@@ -33,4 +33,12 @@ public interface FilesRetriever {
 	 * @throws IOException
 	 */
 	List<RawFile> getDL1RawLogsFilesTable(String tableName) throws IOException;
+
+	/**
+	 * Donne les logs de DL2 sans traitement (raw).
+	 *
+	 * @param tableName
+	 * @return
+	 */
+	List<RawFile> getDB2RawLogFile(String tableName);
 }

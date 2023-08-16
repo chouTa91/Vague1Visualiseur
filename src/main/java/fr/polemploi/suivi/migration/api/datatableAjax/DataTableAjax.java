@@ -1,6 +1,7 @@
 package fr.polemploi.suivi.migration.api.datatableAjax;
 
 import fr.polemploi.suivi.migration.entities.tir.DRSynthesis;
+import fr.polemploi.suivi.migration.entities.tir.TirDetailDB2;
 import fr.polemploi.suivi.migration.entities.tir.TirDetailDL1;
 import fr.polemploi.suivi.migration.service.DataCompiler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,14 @@ public class DataTableAjax {
         DatatableDL1FilesResponse d = new DatatableDL1FilesResponse();
         TirDetailDL1 tirDetailDL1 = this.dataCompiler.gatherTirDL1AllInfos();
         d.data = tirDetailDL1.getDl1ControleFilesContainer().getDl1Files();
+        return d;
+    }
+
+    @GetMapping(value = "/db2ConversionTablesLines",produces = MediaType.APPLICATION_JSON_VALUE)
+    public DatatableDL2ConversionResponse getdb2ConversionTableLines() throws IOException {
+        DatatableDL2ConversionResponse d = new DatatableDL2ConversionResponse();
+        TirDetailDB2 tirDetailDB2 = this.dataCompiler.gatherTirDB2AllInfos();
+        d.data = tirDetailDB2.getDb2conversion();
         return d;
     }
 }
