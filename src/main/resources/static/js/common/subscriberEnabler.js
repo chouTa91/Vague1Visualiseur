@@ -7,10 +7,3 @@ isSSEEnabled = function () {
 		return true;
 	}
 }
-if (isSSEEnabled) {
-	// const eventSource = new EventSource('/flux/reactor/changements');
-	// var max = 1, cmp = 0;
-	// eventSource.onmessage = function (event) {
-	// 	console.log(event.data)
-	// };
-}

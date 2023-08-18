@@ -8,18 +8,13 @@
 		<span th:text="${dL1TablesVolumeContainer.refreshDate}"></span>
 	</div>
 
-	<br />
-
-
-
-	<table id="tir1-dl1-volumetrie-oracle" class="table table-striped" style="width:100%">
+	<table id="tir1-dl1-volumetrie-oracle" class="table table-striped mt-2" style="width:100%">
 		<thead>
 			<tr>
 				<th scope="col">Table</th>
 				<th scope="col">Nombre d'entrées attendues</th>
 				<th scope="col">Nombre d'entrées Oracle</th>
 				<th scope="col">Écart</th>
-				<th scope="col">Précision</th>
 				<th scope="col">Temps de chargement total</th>
 				<th scope="col">Statut</th>
 				<th scope="col" class="no-sort"></th>
@@ -47,7 +42,16 @@
 	<script type="text/javascript" th:inline="javascript">
 		// Initialisation du JS du fragment.
 		//suivi.datatable.initDataTable("#tir1-dl1-volumetrie-oracle");
-		const table2 = $('#tir1-dl1-volumetrie-oracle').DataTable({
+		const table2 = $('#tir1-dl1-volumetrie-oracle')
+			.on( 'page.dt', function (){
+				setTimeout(()=>{
+					[...document.querySelectorAll('[data-bs-toggle="tooltip"]')].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+				},1000)
+			})
+			.DataTable({
+			"initComplete": function(settings, json) {
+				[...document.querySelectorAll('[data-bs-toggle="tooltip"]')].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+			},
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/dl1FilesVolumetrieOracle",
 			columns: [
@@ -59,13 +63,12 @@
 						return row.volumeLog - row.volumeOracle
 					}
 				},
-				{ "data": "alertsMessages" },
 				{
 					"data": "totalelapsedTime"
 				},
 				{
 					render: function (data, type, row) {
-						return row.volumeLog == row.volumeOracle ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : '<span class="badge bg-danger rounded-pill d-inline">KO</span>'
+						return row.volumeLog == row.volumeOracle ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline"   data-bs-toggle="tooltip" data-bs-placement="top" title="${row.alertsMessages}">KO</span>`;
 					}
 				},
 				{

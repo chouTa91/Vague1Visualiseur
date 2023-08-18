@@ -52,3 +52,7 @@
 .no-sort::before { display: none!important; }
 
 .no-sort { pointer-events: none!important; cursor: default!important; }
+
+#tir1-dl1-volumetrie-oracle > tbody tr {
+	vertical-align: baseline;
+}
