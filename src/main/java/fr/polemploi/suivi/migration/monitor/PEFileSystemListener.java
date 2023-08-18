@@ -120,7 +120,6 @@ public class PEFileSystemListener {
 		PEFileSystemListener.logger.info("create watchService of newWatchService");
 		WatchService watchService = FileSystems.getDefault().newWatchService();
 		System.out.println("create keymap of wathkey");
-
 		watchDirectory(watchService, this.pathDispenser.getRootFolder()+"\\fichierbouchon\\");
 	}
 
@@ -131,7 +130,6 @@ public class PEFileSystemListener {
 		List<File> subDirectories = getSubdirs(parentDir);
 		subDirectories.add(parentDir);
 		for(File dir:subDirectories){
-			System.out.println(dir);
 			Path dirPath = Paths.get(dir.getPath());
 			keyMap.put(dirPath.register(watchService,
 					StandardWatchEventKinds.ENTRY_MODIFY,

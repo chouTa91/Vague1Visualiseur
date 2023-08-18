@@ -28,3 +28,21 @@
 .menu__item{
 	cursor: pointer;
 }
+.btn-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+}
+.btn-wrap button{
+	cursor: pointer;
+}
+.btn-wrap button i{
+	font-size: 1.5em;
+	color: #7f8c8d;
+}
+
+.no-sort::after { display: none!important; }
+.no-sort::before { display: none!important; }
+
+.no-sort { pointer-events: none!important; cursor: default!important; }

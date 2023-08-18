@@ -2,6 +2,7 @@ package fr.polemploi.suivi.migration.entities.dl1;
 
 import java.util.Objects;
 
+import fr.polemploi.suivi.migration.api.utils.TimeUtils;
 import fr.polemploi.suivi.migration.entities.alert.Alert;
 
 /**
@@ -13,6 +14,10 @@ import fr.polemploi.suivi.migration.entities.alert.Alert;
  */
 public class Dl1Volumes extends Alert {
 
+	private String totalelapsedTime;
+
+	private String tableName;
+	
 	private Integer volumeOracle;
 
 	private Integer volumeLog;
@@ -50,6 +55,22 @@ public class Dl1Volumes extends Alert {
 		this.isVague1 = isVague1;
 	}
 
+	public String getTableName() {
+		return tableName;
+	}
+
+	public void setTableName(String tableName) {
+		this.tableName = tableName;
+	}
+
+	public String getTotalelapsedTime() {
+		return totalelapsedTime;
+	}
+
+	public void setTotalelapsedTime(String totalelapsedTime) {
+		this.totalelapsedTime = totalelapsedTime;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(this.isVague1, this.volumeLog, this.volumeOracle);
@@ -63,14 +84,14 @@ public class Dl1Volumes extends Alert {
 		if (!(obj instanceof Dl1Volumes other)) {
 			return false;
 		}
-		return this.isVague1 == other.isVague1 && Objects.equals(this.volumeLog, other.volumeLog)
+		return Objects.equals(this.totalelapsedTime, other.totalelapsedTime) && this.isVague1 == other.isVague1 && Objects.equals(this.volumeLog, other.volumeLog)
 				&& Objects.equals(this.volumeOracle, other.volumeOracle);
 	}
 
 	@Override
 	public String toString() {
-		return "Dl1Volumes [volumeOracle=" + this.volumeOracle + ", volumeLog=" + this.volumeLog + ", isVague1="
-				+ this.isVague1 + "]";
+		return "Dl1Volumes [tableName="+this.tableName+" volumeOracle=" + this.volumeOracle + ", volumeLog=" + this.volumeLog + ", isVague1="
+				+ this.isVague1 + ", totalelapsedTime= "+this.totalelapsedTime+"]";
 	}
 
 }
