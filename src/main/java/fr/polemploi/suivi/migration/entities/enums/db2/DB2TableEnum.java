@@ -422,20 +422,17 @@ public enum DB2TableEnum {
 
 	}
 
-	public static List<String> getFilesByTableName(String tableName) {
-
-		List<String> files = new ArrayList<>();
+	public static String getConvertLogFileNameByTableName(String tableName) {
 		for (DB2TableEnum value : DB2TableEnum.values()) {
 			if (tableName.contains(value.getTableName())) {
-				files.add(guessDb2LogFileName(value));
+				return guessDb2LogFileName(value);
 			}
 		}
-
-		return files;
+		return null;
 	}
 
 	public static String guessDb2LogFileName(DB2TableEnum db2Tab) {
-		return "TAB."+db2Tab.getBranchName()+"."+db2Tab.getTableName()+".DR00";
+		return db2Tab.getTableName()+"_DR00.log";
 	}
 
 }

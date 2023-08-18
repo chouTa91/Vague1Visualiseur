@@ -85,6 +85,14 @@
 				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
 			],
 		});
+
+		// Ajoutez l'événement click pour les lignes cliquables
+		$('#tab0 tbody').on('click', 'tr', function() {
+			let rowData = $('#tab0').DataTable().row(this).data(); // Obtenir les données de la ligne
+			suivi.db2.logs.openModal(rowData.tableName);
+		});
+
+
 		if (window.EventSource != null) {
 			const eventSource = new EventSource('/flux/reactor/changements');
 			eventSource.onmessage = function (event) {

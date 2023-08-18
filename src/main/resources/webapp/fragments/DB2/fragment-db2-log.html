@@ -3,27 +3,15 @@
     <div class="modal-content">
         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">
-                Affichage des logs pour <span th:if="${tableName != null}" th:text="${tableName}"></span>
+                Affichage des logs pour <span th:if="${logFile.fileName != null}" th:text="${logFile.fileName}"></span>
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <div class="code__wrap">
-                <div class="code__wrap__side1">
-                    <ul class="list-group">
-                        <li th:each="log, logStats : ${logs}"
-                            class="list-group-item list-group-item-action menu__item"
-                            onclick="suivi.db2.logs.activeLi(this)"
-                            th:data-content="${log.content}"
-                            th:data-index="${logStats.index}"
-                            th:classappend="${logStats.index == 0 ? 'active' : ''}"
-                            th:attrappend="aria-current=${logStats.index == 0 ? 'true' : 'false'}">
-                            <span th:text="${log.fileName}" ></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="code__wrap__side2">
-                    <textarea id="codemirrorElemt"></textarea>
+                <div class="code__wrap__side_convert">
+                    <textarea id="codemirrorElemt" th:text="${logFile.content}">
+                    </textarea>
                 </div>
             </div>
         </div>
