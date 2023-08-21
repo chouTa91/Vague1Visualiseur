@@ -1,13 +1,19 @@
 package fr.polemploi.suivi.migration.api.datatableAjax;
 
 import fr.polemploi.suivi.migration.api.beans.DatatableResponse;
+import fr.polemploi.suivi.migration.entities.alert.Alert;
+import fr.polemploi.suivi.migration.entities.alert.Tuple;
+import fr.polemploi.suivi.migration.entities.dl1.DL1DirectionRegionaleTablesFiles;
 import fr.polemploi.suivi.migration.entities.dl1.Dl1Volumes;
+import fr.polemploi.suivi.migration.entities.enums.error.ErrorsEnum;
+import fr.polemploi.suivi.migration.entities.exception.TirErrors;
 import fr.polemploi.suivi.migration.entities.message.logs.RawFile;
 import fr.polemploi.suivi.migration.entities.tir.DRSynthesis;
 import fr.polemploi.suivi.migration.entities.tir.TirDetailDB2;
 import fr.polemploi.suivi.migration.entities.tir.TirDetailDL1;
 import fr.polemploi.suivi.migration.service.DataCompiler;
 import fr.polemploi.suivi.migration.service.impl.FilesRetrieverImpl;
+import fr.polemploi.suivi.migration.service.validator.predicate.PredicateSuiviMigration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +27,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.function.Predicate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -33,6 +40,12 @@ public class DataTableAjax {
 
     @Autowired
     private FilesRetrieverImpl fileImp;
+
+    @Autowired
+    private PredicateSuiviMigration prediMigration;
+
+
+
     @GetMapping(value = "/directionSynthesis",produces = MediaType.APPLICATION_JSON_VALUE)
     public List<DRSynthesis> getDirectionSynthese() throws IOException {
         List<DRSynthesis> Li = this.dataCompiler.gatherTirSynthesis().getDirectionSynthesis();
@@ -42,6 +55,20 @@ public class DataTableAjax {
         ).toList();
         return Li;
     }
+    @GetMapping(value = "/controlelogs",produces = MediaType.APPLICATION_JSON_VALUE)
+    public DatatableDL1FilesResponse getControlelogs() throws IOException {
+        DatatableDL1FilesResponse d = new DatatableDL1FilesResponse();
+        d.data = this.dataCompiler.getDl1ControleLogs().getDl1Files().stream().map(elm -> {
+            if(elm.hasMissingFiles()){
+                List<Tuple<String, Predicate<Alert>>> li = new ArrayList<>();
+                li.add(this.prediMigration.dl1CheckMissingFileVague1(elm));
+                elm.setAlertsMessages(li);
+            }
+            return elm;
+        }).toList();
+        return d;
+    }
+
     @GetMapping(value = "/dl1FilesVolumetrieOracle",produces = MediaType.APPLICATION_JSON_VALUE)
     public DatatableResponse getDl1VolumetrieOracle() throws IOException {
         List<Dl1Volumes> Li = new ArrayList<>();
@@ -88,8 +115,14 @@ public class DataTableAjax {
     @GetMapping(value = "/dl1Files",produces = MediaType.APPLICATION_JSON_VALUE)
     public DatatableDL1FilesResponse getDl1Files() throws IOException {
         DatatableDL1FilesResponse d = new DatatableDL1FilesResponse();
-        TirDetailDL1 tirDetailDL1 = this.dataCompiler.gatherTirDL1AllInfos();
-        d.data = tirDetailDL1.getDl1ControleFilesContainer().getDl1Files();
+        d.data = this.dataCompiler.getDl1ControleFiles().getDl1Files().stream().map(elm -> {
+            if(elm.hasMissingFiles()){
+                List<Tuple<String, Predicate<Alert>>> li = new ArrayList<>();
+                li.add(this.prediMigration.dl1CheckMissingFileVague1(elm));
+                elm.setAlertsMessages(li);
+            }
+            return elm;
+        }).toList();
         return d;
     }
 

@@ -29,30 +29,37 @@
 				<th scope="col">Précisions</th>
 			</tr>
 		</thead>
-		<tbody id="controle-fichier-tbody">
-			<tr th:each="directionRegionale, drStats : ${dl1ControleLogsContainer.dl1Files}"
-				th:classappend="${directionRegionale.hasMissingFile ? 'table-danger' : ''}">
-				<td th:text="${directionRegionale.code}"></td>
-				<td th:text="${directionRegionale.count}"></td>
-				<td>
-					<div th:each="fichierManquant : ${directionRegionale.missingFiles}">
-						<span class="" th:text="${fichierManquant}"></span>
-					</div>
-				</td>
-				<td>
-					<div th:each="alert : ${directionRegionale.alertsMessages}">
-						<span class="" th:text="${alert}"></span>
-					</div>
-				</td>
-			</tr>
-		</tbody>
+
 	</table>
 
 	<script type="text/javascript" th:inline="javascript">
 		// Initialisation du JS du fragment.
 		//suivi.dl1.subscriber.initSubscribe();
 
-		suivi.datatable.initDataTable("#tir1-dl1-controle-fichier-logs-table");
+		const tableLogs = $('#tir1-dl1-controle-fichier-logs-table').DataTable({
+			dom: "Bfrltip",
+			"ajax": "/ajax/datable/controlelogs",
+			columns: [
+				{ data: "code" },
+				{ data: "count" },
+				{ data: "missingFiles" },
+				{ data: "alertsMessages" },
+			],
+			buttons: [
+				{ extend: 'excelHtml5', className: 'btn btn-secondary btn-sm' },
+				{ extend: 'csvHtml5', className: 'btn btn-secondary btn-sm' },
+				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
+			],
+		});
+		if (window.EventSource != null) {
+			const eventSource = new EventSource('/flux/reactor/changements');
+			eventSource.onmessage = function (event) {
+				if (!event)
+					eventSource.close();
+				else
+					tableLogs.ajax.reload();
+			};
+		}
 	</script>
 </th:span>
 
