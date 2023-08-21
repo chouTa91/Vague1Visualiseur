@@ -34,7 +34,7 @@
 -->
 
 
-	<table th:id="tab0" class="table table-striped" style="width:100%">
+	<table th:id="conversionTable" class="table table-striped" style="width:100%">
 		<thead>
 			<tr>
 				<th scope="col">Table</th>
@@ -54,8 +54,9 @@
 
 		// Initialisation du JS du fragment.
 
-		suivi.datatable.initDataTable("#tir" + [[${ tirId }]] + '-' + [[${ typeTraitement }]] + '-table');
-		const table = $('#tab0').DataTable({
+		/*suivi.datatable.initDataTable("#tir" + [[${ tirId }]] + '-' + [[${ typeTraitement }]] + '-table');*/
+
+		const table = $('#conversionTable').DataTable({
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/db2ConversionTablesLines",
 			columns: [
@@ -66,11 +67,15 @@
 				{ data: "maxInputRecLength" },
 				{ data: "maxInputRecLengthLF" },
 				{ data: "elapsedTime" },
-				{ data: "status" },
+				{
+					render: function (data, type, row) {
+						return row.status == 'OK' ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline"   data-bs-toggle="tooltip" data-bs-placement="top" title="${row.alertsMessages}">KO</span>`;
+					}
+				},
 				{
 					data: "tableName",
 					render: function (data, type, row) {
-						return '<button style="border: none;color: #069;background: none;" onclick="suivi.db2.logs.openModal(\'' + data + '\')" class="openModalButton"><i class="far fa-eye"></i></button>';
+						return `<div class="btn-wrap"><button title="Voir les logs de Conversion" style="border: none;color: #069;background: none;" onclick="suivi.db2.logs.openModal('${data}')" class="openModalButton "><i class="fa-regular fa-file-code"></i></button></div>`;
 					}
 				}
 			],
@@ -87,10 +92,10 @@
 		});
 
 		// Ajoutez l'événement click pour les lignes cliquables
-		$('#tab0 tbody').on('click', 'tr', function() {
-			let rowData = $('#tab0').DataTable().row(this).data(); // Obtenir les données de la ligne
+/*		$('#conversionTable tbody').on('click', 'tr', function() {
+			let rowData = $('#conversionTable').DataTable().row(this).data(); // Obtenir les données de la ligne
 			suivi.db2.logs.openModal(rowData.tableName);
-		});
+		});*/
 
 
 		if (window.EventSource != null) {
