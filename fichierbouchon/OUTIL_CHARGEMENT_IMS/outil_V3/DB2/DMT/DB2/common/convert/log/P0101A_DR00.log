@@ -37,7 +37,7 @@ char <<0xc0>> nb occurences: 2275
 char <<0xd0>> nb occurences: 320
 nb rec processed: 8222626
 END of QUALIFICATION REPORT
-nb recs read   : 8222626 
+nb recs read   : 8222626
 nb recs written: 8222626
 Max input rec Len: 401 
 Max Output rec Len(including LF): 410 

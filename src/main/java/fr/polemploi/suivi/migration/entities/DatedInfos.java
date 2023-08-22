@@ -11,7 +11,27 @@ import java.time.format.DateTimeFormatter;
  */
 public class DatedInfos {
 
-	private String refreshDate;
+	private final String refreshDate;
+
+	private Integer count;
+
+	private Integer total;
+
+	public Integer getCount() {
+		return this.count;
+	}
+
+	public void setCount(Integer count) {
+		this.count = count;
+	}
+
+	public Integer getTotal() {
+		return total;
+	}
+
+	public void setTotal(Integer total) {
+		this.total = total;
+	}
 
 	public DatedInfos() {
 		LocalDateTime localDateTime = LocalDateTime.now();

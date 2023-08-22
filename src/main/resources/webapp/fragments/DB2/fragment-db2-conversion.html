@@ -44,7 +44,7 @@
 
 		const converTable = $('#conversionTable').DataTable({
 			dom: "Bfrltip",
-			"ajax": "/ajax/datable/db2ConversionTablesLines",
+			"ajax": "/ajax/datable/db2ConversionTable",
 			columns: [
 				{ data: "tableName", title: "Table"},
 				{ data: "nbRecProcessed", title: "Nombre d'entrée calculées" },
@@ -56,7 +56,7 @@
 				{
 					title: "Status",
 					render: function (data, type, row) {
-						return row.status == 'OK' ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline"   data-bs-toggle="tooltip" data-bs-placement="top" title="${row.alertsMessages}">KO</span>`;
+						return row.status === 'OK' ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline">KO</span>`;
 					}
 				},
 				{

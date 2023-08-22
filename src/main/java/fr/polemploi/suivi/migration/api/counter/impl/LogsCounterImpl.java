@@ -20,7 +20,7 @@ import fr.polemploi.suivi.migration.entities.enums.dl1.DL1TableEnum;
 public class LogsCounterImpl implements LogsCounter {
 
 	private static final String DOT_SEPARATOR = ".";
-	private static final String TAB_PREFIX_STR = "Tab";
+	private static final String TAB_PREFIX_STR = "TAB";
 
 	@Autowired
 	private AppContext appContext;
@@ -117,7 +117,7 @@ public class LogsCounterImpl implements LogsCounter {
 			}
 
 		}
-
+		db2TablesFiles.setTotal(DB2TableEnum.values().length);
 		db2TablesFiles.setCount(count);
 
 		return db2TablesFiles;

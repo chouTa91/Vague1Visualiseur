@@ -40,7 +40,7 @@
 
 		const loadTable = $('#loadTable').DataTable({
 			dom: "Bfrltip",
-			"ajax": "/ajax/datable/db2LoadTablesLines",
+			"ajax": "/ajax/datable/db2LoadTable",
 			columns: [
 				{ data: "table", title: "Table"},
 				{ data: "nbPreTraitement", title: "Nombre pré-traitement" },
@@ -49,7 +49,7 @@
 				{
 					title: "Status",
 					render: function (data, type, row) {
-						return row.status == 'OK' ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline"   data-bs-toggle="tooltip" data-bs-placement="top" title="${row.alertsMessages}">KO</span>`;
+						return row.status === 'OK' ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline">KO</span>`;
 					}
 				},
 				{

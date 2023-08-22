@@ -1,21 +1,24 @@
 package fr.polemploi.suivi.migration.api.datatableAjax;
 
-import fr.polemploi.suivi.migration.api.beans.DatatableResponse;
+import fr.polemploi.suivi.migration.api.counter.LogsCounter;
+import fr.polemploi.suivi.migration.api.path.PathDispenser;
 import fr.polemploi.suivi.migration.entities.alert.Alert;
 import fr.polemploi.suivi.migration.entities.alert.Tuple;
+import fr.polemploi.suivi.migration.entities.db2.DB2TablesFiles;
 import fr.polemploi.suivi.migration.entities.dl1.DL1DirectionRegionaleTablesFiles;
 import fr.polemploi.suivi.migration.entities.dl1.Dl1Volumes;
-import fr.polemploi.suivi.migration.entities.enums.error.ErrorsEnum;
-import fr.polemploi.suivi.migration.entities.exception.TirErrors;
+import fr.polemploi.suivi.migration.entities.message.logs.DB2ConvertMessage;
+import fr.polemploi.suivi.migration.entities.message.logs.DB2LoadMessage;
 import fr.polemploi.suivi.migration.entities.message.logs.RawFile;
 import fr.polemploi.suivi.migration.entities.tir.DRSynthesis;
-import fr.polemploi.suivi.migration.entities.tir.TirDetailDB2;
-import fr.polemploi.suivi.migration.entities.tir.TirDetailDL1;
 import fr.polemploi.suivi.migration.service.DataCompiler;
 import fr.polemploi.suivi.migration.service.impl.FilesRetrieverImpl;
+import fr.polemploi.suivi.migration.service.reader.LogsReader;
 import fr.polemploi.suivi.migration.service.validator.predicate.PredicateSuiviMigration;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,6 +47,15 @@ public class DataTableAjax {
     @Autowired
     private PredicateSuiviMigration prediMigration;
 
+    @Autowired
+    private LogsReader fileReader;
+
+    @Autowired
+    private PathDispenser pathDispenser;
+
+    @Autowired
+    private LogsCounter logsCounter;
+
 
 
     @GetMapping(value = "/directionSynthesis",produces = MediaType.APPLICATION_JSON_VALUE)
@@ -56,21 +68,20 @@ public class DataTableAjax {
         return Li;
     }
     @GetMapping(value = "/controlelogs",produces = MediaType.APPLICATION_JSON_VALUE)
-    public DatatableDL1FilesResponse getControlelogs() throws IOException {
-        DatatableDL1FilesResponse d = new DatatableDL1FilesResponse();
-        d.data = this.dataCompiler.getDl1ControleLogs().getDl1Files().stream().map(elm -> {
+    public DatatableResponse<DL1DirectionRegionaleTablesFiles> getControlelogs() throws IOException {
+        DatatableResponse<DL1DirectionRegionaleTablesFiles> d = new DatatableResponse<>();
+        d.data = this.dataCompiler.getDl1ControleLogs().getDl1Files().stream().peek(elm -> {
             if(elm.hasMissingFiles()){
                 List<Tuple<String, Predicate<Alert>>> li = new ArrayList<>();
                 li.add(this.prediMigration.dl1CheckMissingFileVague1(elm));
                 elm.setAlertsMessages(li);
             }
-            return elm;
         }).toList();
         return d;
     }
 
     @GetMapping(value = "/dl1FilesVolumetrieOracle",produces = MediaType.APPLICATION_JSON_VALUE)
-    public DatatableResponse getDl1VolumetrieOracle() throws IOException {
+    public DatatableResponse<Dl1Volumes> getDl1VolumetrieOracle() throws IOException {
         List<Dl1Volumes> Li = new ArrayList<>();
         AtomicReference<Matcher> matcherElapsedTime = new AtomicReference<>();
         Pattern patternTime = Pattern.compile("Elapsed time was:(.*)");
@@ -88,9 +99,7 @@ public class DataTableAjax {
                 value.setTotalelapsedTime(getSumTime(timeAllOfKey));
                 value.setTableName(key);
                 Li.add(value);
-            } catch (IOException e) {
-                System.out.println(e.toString());
-            } catch (ParseException e) {
+            } catch (IOException | ParseException e) {
                 System.out.println(e.toString());
             }
         });
@@ -113,32 +122,45 @@ public class DataTableAjax {
         else return "" + s;
     }
     @GetMapping(value = "/dl1Files",produces = MediaType.APPLICATION_JSON_VALUE)
-    public DatatableDL1FilesResponse getDl1Files() throws IOException {
-        DatatableDL1FilesResponse d = new DatatableDL1FilesResponse();
-        d.data = this.dataCompiler.getDl1ControleFiles().getDl1Files().stream().map(elm -> {
+    public DatatableResponse<DL1DirectionRegionaleTablesFiles> getDl1Files() throws IOException {
+        DatatableResponse<DL1DirectionRegionaleTablesFiles> d = new DatatableResponse<>();
+        d.data = this.dataCompiler.getDl1ControleFiles().getDl1Files().stream().peek(elm -> {
             if(elm.hasMissingFiles()){
                 List<Tuple<String, Predicate<Alert>>> li = new ArrayList<>();
                 li.add(this.prediMigration.dl1CheckMissingFileVague1(elm));
                 elm.setAlertsMessages(li);
             }
-            return elm;
         }).toList();
         return d;
     }
 
-    @GetMapping(value = "/db2ConversionTablesLines",produces = MediaType.APPLICATION_JSON_VALUE)
-    public DatatableDB2Response getDb2ConversionTableLines() throws IOException {
-        DatatableDB2Response d = new DatatableDB2Response();
-        TirDetailDB2 tirDetailDB2 = this.dataCompiler.gatherTirDB2AllInfos();
-        d.data = tirDetailDB2.getDb2conversion();
+    @GetMapping(value = "/db2ControlInfo",produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Map<String, String>> getDb2ControlInfo() {
+        Map<String, String> d = new HashMap<>();
+        DB2TablesFiles db2TablesFiles = this.logsCounter.getDB2MissingFilesFromDirectory();
+        d.put("count", db2TablesFiles.getCount().toString());
+        d.put("total", db2TablesFiles.getTotal().toString());
+        return new ResponseEntity<>(d, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/db2ControlTable",produces = MediaType.APPLICATION_JSON_VALUE)
+    public DatatableResponse<DB2TablesFiles> getDb2ControlTable() {
+        DatatableResponse<DB2TablesFiles> d = new DatatableResponse<>();
+        d.data = Collections.singletonList(this.logsCounter.getDB2MissingFilesFromDirectory());
         return d;
     }
 
-    @GetMapping(value = "/db2LoadTablesLines",produces = MediaType.APPLICATION_JSON_VALUE)
-    public DatatableDB2Response getDb2LoadTableLines() throws IOException {
-        DatatableDB2Response d = new DatatableDB2Response();
-        TirDetailDB2 tirDetailDB2 = this.dataCompiler.gatherTirDB2AllInfos();
-        d.data = tirDetailDB2.getDb2chargement();
+    @GetMapping(value = "/db2ConversionTable",produces = MediaType.APPLICATION_JSON_VALUE)
+    public DatatableResponse<DB2ConvertMessage> getDb2ConversionTable() throws IOException {
+        DatatableResponse<DB2ConvertMessage> d = new DatatableResponse<>();
+        d.data = this.fileReader.retrieveDB2ConvertInfos(this.pathDispenser.getDB2ConvertOracle());
+        return d;
+    }
+
+    @GetMapping(value = "/db2LoadTable",produces = MediaType.APPLICATION_JSON_VALUE)
+    public DatatableResponse<DB2LoadMessage> getDb2LoadTable() throws IOException {
+        DatatableResponse<DB2LoadMessage> d = new DatatableResponse<>();
+        d.data = this.fileReader.retrieveDB2LoadInfos(this.pathDispenser.getDB2LoadOracle());
         return d;
     }
 

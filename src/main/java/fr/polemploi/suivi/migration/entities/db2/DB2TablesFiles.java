@@ -14,21 +14,11 @@ import fr.polemploi.suivi.migration.entities.DatedInfos;
  */
 public class DB2TablesFiles extends DatedInfos {
 
-	private Integer count;
-
-	private List<String> missingFiles;
+	private final List<String> missingFiles;
 
 	public DB2TablesFiles() {
 		super();
 		this.missingFiles = new ArrayList<>();
-	}
-
-	public Integer getCount() {
-		return this.count;
-	}
-
-	public void setCount(Integer count) {
-		this.count = count;
 	}
 
 	public List<String> getMissingFiles() {
@@ -45,7 +35,7 @@ public class DB2TablesFiles extends DatedInfos {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(this.count, this.missingFiles);
+		return Objects.hash(this.getCount(), this.missingFiles);
 	}
 
 	@Override
@@ -56,12 +46,12 @@ public class DB2TablesFiles extends DatedInfos {
 		if (!(obj instanceof DB2TablesFiles other)) {
 			return false;
 		}
-		return Objects.equals(this.count, other.count) && Objects.equals(this.missingFiles, other.missingFiles);
+		return Objects.equals(this.getCount(), other.getCount()) && Objects.equals(this.missingFiles, other.missingFiles);
 	}
 
 	@Override
 	public String toString() {
-		return "DB2TablesFiles [count=" + this.count + ", missingFiles=" + this.missingFiles + "]";
+		return "DB2TablesFiles [count=" + this.getCount() + ", missingFiles=" + this.missingFiles + "]";
 	}
 
 }
