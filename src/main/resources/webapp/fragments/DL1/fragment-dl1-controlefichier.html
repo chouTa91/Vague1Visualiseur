@@ -88,7 +88,10 @@
 		if (window.EventSource != null) {
 			const eventSource = new EventSource('/flux/reactor/changements');
 			eventSource.onmessage = function (event) {
-				table.ajax.reload();
+				if (!event)
+					eventSource.close();
+				else
+					table.ajax.reload();
 			};
 		}
 	</script>
