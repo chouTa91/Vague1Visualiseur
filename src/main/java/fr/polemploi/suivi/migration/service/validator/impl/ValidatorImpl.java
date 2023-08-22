@@ -75,7 +75,7 @@ public class ValidatorImpl implements Validator {
 
 		List<TirErrors> errors = new ArrayList<>();
 
-		for (DB2LoadMessage logMessage : tir.getDr2chargement()) {
+		for (DB2LoadMessage logMessage : tir.getDb2chargement()) {
 			if (logMessage.getStatus().equals(StatusEnum.KO)) {
 				errors.add(new TirErrors(ErrorsEnum.DB2_CHARGEMENT, logMessage.getTable()));
 

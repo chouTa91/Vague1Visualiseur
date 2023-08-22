@@ -33,21 +33,7 @@
 	</table>
 -->
 
-
-	<table th:id="conversionTable" class="table table-striped" style="width:100%">
-		<thead>
-			<tr>
-				<th scope="col">Table</th>
-				<th scope="col">Nombre d'entrée calculées</th>
-				<th scope="col">Nombre d'entrée lues</th>
-				<th scope="col">Nombre d'entrée écrites</th>
-				<th scope="col">Taille maximale d'entrée</th>
-				<th scope="col">Taille maximale d'entrée (LF)</th>
-				<th scope="col">Temps de conversion</th>
-				<th scope="col">Status</th>
-				<th></th>
-			</tr>
-		</thead>
+	<table th:id="conversionTable" class="table table-striped">
 	</table>
 
 	<script type="text/javascript" th:inline="javascript">
@@ -56,26 +42,26 @@
 
 		/*suivi.datatable.initDataTable("#tir" + [[${ tirId }]] + '-' + [[${ typeTraitement }]] + '-table');*/
 
-		const table = $('#conversionTable').DataTable({
+		const converTable = $('#conversionTable').DataTable({
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/db2ConversionTablesLines",
 			columns: [
-				{ data: "tableName" },
-				{ data: "nbRecProcessed" },
-				{ data: "nbRecsRead" },
-				{ data: "nbRecsWritten" },
-				{ data: "maxInputRecLength" },
-				{ data: "maxInputRecLengthLF" },
-				{ data: "elapsedTime" },
+				{ data: "tableName", title: "Table"},
+				{ data: "nbRecProcessed", title: "Nombre d'entrée calculées" },
+				{ data: "nbRecsRead", title: "Nombre d'entrée lues" },
+				{ data: "nbRecsWritten", title: "Nombre d'entrée écrites" },
+				{ data: "maxInputRecLength", title: "Taille maximale d'entrée" },
+				{ data: "maxInputRecLengthLF", title: "Taille maximale d'entrée (LF)" },
+				{ data: "elapsedTime", title: "Temps de conversion" },
 				{
+					title: "Status",
 					render: function (data, type, row) {
 						return row.status == 'OK' ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline"   data-bs-toggle="tooltip" data-bs-placement="top" title="${row.alertsMessages}">KO</span>`;
 					}
 				},
 				{
-					data: "tableName",
 					render: function (data, type, row) {
-						return `<div class="btn-wrap"><button title="Voir les logs de Conversion" style="border: none;color: #069;background: none;" onclick="suivi.db2.logs.openModal('${data}')" class="openModalButton "><i class="fa-regular fa-file-code"></i></button></div>`;
+						return `<div class="btn-wrap"><button title="Voir les logs de Conversion" style="border: none;color: #069;background: none;" onclick="suivi.db2.logs.openModal('${row.tableName}', 'conversion')" class="openModalButton "><i class="fa-regular fa-file-code"></i></button></div>`;
 					}
 				}
 			],
@@ -101,7 +87,7 @@
 		if (window.EventSource != null) {
 			const eventSource = new EventSource('/flux/reactor/changements');
 			eventSource.onmessage = function (event) {
-				table.ajax.reload();
+				converTable.ajax.reload();
 			};
 		}
 	</script>

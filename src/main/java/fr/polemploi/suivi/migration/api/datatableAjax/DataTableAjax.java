@@ -94,10 +94,19 @@ public class DataTableAjax {
     }
 
     @GetMapping(value = "/db2ConversionTablesLines",produces = MediaType.APPLICATION_JSON_VALUE)
-    public DatatableDB2ConversionResponse getdb2ConversionTableLines() throws IOException {
-        DatatableDB2ConversionResponse d = new DatatableDB2ConversionResponse();
+    public DatatableDB2Response getDb2ConversionTableLines() throws IOException {
+        DatatableDB2Response d = new DatatableDB2Response();
         TirDetailDB2 tirDetailDB2 = this.dataCompiler.gatherTirDB2AllInfos();
         d.data = tirDetailDB2.getDb2conversion();
         return d;
     }
+
+    @GetMapping(value = "/db2LoadTablesLines",produces = MediaType.APPLICATION_JSON_VALUE)
+    public DatatableDB2Response getDb2LoadTableLines() throws IOException {
+        DatatableDB2Response d = new DatatableDB2Response();
+        TirDetailDB2 tirDetailDB2 = this.dataCompiler.gatherTirDB2AllInfos();
+        d.data = tirDetailDB2.getDb2chargement();
+        return d;
+    }
+
 }

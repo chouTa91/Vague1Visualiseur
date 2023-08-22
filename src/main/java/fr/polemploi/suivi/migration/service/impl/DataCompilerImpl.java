@@ -54,7 +54,7 @@ public class DataCompilerImpl implements DataCompiler {
 
 		tir.setDb2ControleFiles(this.logsCounter.getDB2MissingFilesFromDirectory());
 
-		tir.addAllDr2chargement(this.fileReader.retrieveDB2LoadInfos(this.pathDispenser.getDB2LoadOracle()));
+		tir.addAllDb2chargement(this.fileReader.retrieveDB2LoadInfos(this.pathDispenser.getDB2LoadOracle()));
 
 		tir.addAllDb2conversion(this.fileReader.retrieveDB2ConvertInfos(this.pathDispenser.getDB2ConvertOracle()));
 

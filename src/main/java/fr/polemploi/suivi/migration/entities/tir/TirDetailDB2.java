@@ -20,13 +20,13 @@ public class TirDetailDB2 extends Tir {
 
 	private DB2TablesFiles db2ControleFiles;
 
-	private List<DB2LoadMessage> dr2chargement;
+	private List<DB2LoadMessage> db2chargement;
 
 	private List<DB2ConvertMessage> db2conversion;
 
 	public TirDetailDB2() {
 		super();
-		this.dr2chargement = new ArrayList<>();
+		this.db2chargement = new ArrayList<>();
 		this.db2conversion = new ArrayList<>();
 	}
 
@@ -38,12 +38,12 @@ public class TirDetailDB2 extends Tir {
 		this.db2ControleFiles = db2ControleFiles;
 	}
 
-	public List<DB2LoadMessage> getDr2chargement() {
-		return this.dr2chargement;
+	public List<DB2LoadMessage> getDb2chargement() {
+		return this.db2chargement;
 	}
 
-	public void addAllDr2chargement(List<DB2LoadMessage> dr2chargement) {
-		this.dr2chargement.addAll(dr2chargement);
+	public void addAllDb2chargement(List<DB2LoadMessage> db2chargement) {
+		this.db2chargement.addAll(db2chargement);
 	}
 
 	public List<DB2ConvertMessage> getDb2conversion() {
@@ -58,7 +58,7 @@ public class TirDetailDB2 extends Tir {
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
-		result = prime * result + Objects.hash(this.db2ControleFiles, this.db2conversion, this.dr2chargement);
+		result = prime * result + Objects.hash(this.db2ControleFiles, this.db2conversion, this.db2chargement);
 		return result;
 	}
 
@@ -72,12 +72,12 @@ public class TirDetailDB2 extends Tir {
 		}
 		return Objects.equals(this.db2ControleFiles, other.db2ControleFiles)
 				&& Objects.equals(this.db2conversion, other.db2conversion)
-				&& Objects.equals(this.dr2chargement, other.dr2chargement);
+				&& Objects.equals(this.db2chargement, other.db2chargement);
 	}
 
 	@Override
 	public String toString() {
-		return "TirDetailDB2 [db2ControleFiles=" + this.db2ControleFiles + ", dr2chargement=" + this.dr2chargement
+		return "TirDetailDB2 [db2ControleFiles=" + this.db2ControleFiles + ", db2chargement=" + this.db2chargement
 				+ ", db2conversion=" + this.db2conversion + "]";
 	}
 

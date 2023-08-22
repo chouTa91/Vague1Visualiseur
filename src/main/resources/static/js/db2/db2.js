@@ -1,13 +1,12 @@
 
-let suiviScript;
+var suiviScript;
 var suivi = suivi || {};
 suivi.db2 = suivi.db2 || {};
 suivi.db2.logs = suivi.db2.logs || {};
 
+
 suivi.db2.logs.initModal = function() {
-    const elm = document.querySelector('#tir1-db2-conversion-logs-modal .active');
     const textArea = document.getElementById('codemirrorElemt');
-    /*textArea.textContent = elm.dataset.content;*/
     suiviScript = CodeMirror.fromTextArea(textArea, {
         readOnly: true,
         mode: "shell",
@@ -18,16 +17,15 @@ suivi.db2.logs.initModal = function() {
     });
 }
 
-suivi.db2.logs.openModal = function(logTabName) {
+suivi.db2.logs.openModal = function(logTabName, operationType) {
     console.debug("[DB2][LOGS][MODAL] Ouverture de la modale pour : ", logTabName);
-
-    let endpoint = `/db2/log/` + logTabName;
+    let endpoint = `/db2/log/${operationType}/${logTabName}`;
     fetch(endpoint)
         .then((response) => {
             return response.text();
         }).then((body) => {
-        document.querySelector("#tir1-db2-conversion-logs-modal").innerHTML = body;
-        $("#tir1-db2-conversion-logs-modal").modal('toggle');
+        document.querySelector("#db2-logs-modal").innerHTML = body;
+        $("#db2-logs-modal").modal('toggle');
         suivi.db2.logs.initModal();
     }).catch((e) => {
         console.error("[DB2][LOGS][MODAL] Erreur de récupération des données. Détail : " + e);

@@ -200,10 +200,32 @@ public class FilesRetrieverImpl implements FilesRetriever {
 	}
 
 	@Override
-	public RawFile getDB2ConvertLogFile(String tableName) {
+	public RawFile getDB2ConversionLogFile(String tableName) {
 		RawFile result = new RawFile();
 		Path filePath = getDb2ConvertFilePath(tableName);
 		try {
+			if(tableName.contains("."))
+				tableName = tableName.split("\\.")[1];
+			result = new RawFile(tableName, this.filesRetrieverApi.retrieveFile(filePath));
+		} catch (IOException e) {
+			FilesRetrieverImpl.logger.error("Retrieving file from FS error : ", e);
+		}
+
+		return result;
+	}
+
+	public Path getDb2LoadFilePath(String tabName){
+		String fileName = Objects.requireNonNull(DB2TableEnum.getConvertLogFileNameByTableName(tabName));
+		return Paths.get(this.pathDispenser.getDB2LoadOracle() + fileName);
+	}
+
+	@Override
+	public RawFile getDB2LoadLogFile(String tableName) {
+		RawFile result = new RawFile();
+		Path filePath = getDb2LoadFilePath(tableName);
+		try {
+			if(tableName.contains("."))
+				tableName = tableName.split("\\.")[1];
 			result = new RawFile(tableName, this.filesRetrieverApi.retrieveFile(filePath));
 		} catch (IOException e) {
 			FilesRetrieverImpl.logger.error("Retrieving file from FS error : ", e);

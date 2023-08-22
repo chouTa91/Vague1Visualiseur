@@ -9,7 +9,7 @@
 
 	<h1 th:text="${'Tir ' + tir.id + ' - DB2'}"></h1>
 
-	<div class="modal fade" id="tir1-db2-conversion-logs-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+	<div class="modal fade" id="db2-logs-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
 		 data-backdrop="static" aria-hidden="true"></div>
 
 	<h4 id="tir1-db2-controle-fichier-heading">Contrôle des fichiers</h4>
@@ -24,7 +24,7 @@
 	<div class="border-top my-3"></div>
 	
 	<h4 id="tir1-db2-chargement-heading">Chargement</h4>
-	<div class="content-report"th:replace="~{/fragments/DB2/fragment-db2-chargement :: fragment-db2-chargement(${tir.id}, ${tir.dr2chargement}, 'db2-chargement')}"></div>
+	<div class="content-report"th:replace="~{/fragments/DB2/fragment-db2-chargement :: fragment-db2-chargement(${tir.id}, ${tir.db2chargement}, 'db2-chargement')}"></div>
 	<div class="border-top my-3"></div>
 	
 	<h4 id="tir1-db2-poids-tables-heading">Poids des tables</h4>

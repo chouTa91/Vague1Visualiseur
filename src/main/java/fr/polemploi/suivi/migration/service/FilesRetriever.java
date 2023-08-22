@@ -40,5 +40,13 @@ public interface FilesRetriever {
 	 * @param tableName
 	 * @return
 	 */
-	RawFile getDB2ConvertLogFile(String tableName);
+	RawFile getDB2ConversionLogFile(String tableName);
+
+	/**
+	 * Donne les logs de DL2 sans traitement (raw).
+	 *
+	 * @param tableName
+	 * @return
+	 */
+	RawFile getDB2LoadLogFile(String tableName);
 }

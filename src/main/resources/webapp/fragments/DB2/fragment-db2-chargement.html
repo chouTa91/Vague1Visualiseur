@@ -3,7 +3,7 @@
 
 <div th:fragment="fragment-db2-chargement (tirId, tableLines, typeTraitement)" id="fragment-db2-chargement">
 
-	<table th:id="${'tir' + tirId + '-' + typeTraitement + '-table'}" class="table table-striped" style="width:100%">
+<!--	<table th:id="${'tir' + tirId + '-' + typeTraitement + '-table'}" class="table table-striped" style="width:100%">
 		<thead>
 			<tr>
 				<th scope="col">Table</th>
@@ -23,12 +23,60 @@
 				<td th:text="${line.status}"></td>
 			</tr>
 		</tbody>
+	</table>-->
+
+
+	<table th:id="loadTable" class="table table-striped">
+	</table>
+
+	<table>
+
 	</table>
 
 	<script type="text/javascript" th:inline="javascript">
 		// Initialisation du JS du fragment.
 
 		suivi.datatable.initDataTable("#tir" + [[${ tirId }]] + '-' + [[${ typeTraitement }]] + '-table');
+
+		const loadTable = $('#loadTable').DataTable({
+			dom: "Bfrltip",
+			"ajax": "/ajax/datable/db2LoadTablesLines",
+			columns: [
+				{ data: "table", title: "Table"},
+				{ data: "nbPreTraitement", title: "Nombre pré-traitement" },
+				{ data: "nbPostTraitement", title: "Nombre post-traitement" },
+				{ data: "elapsedTime", title: "Temps de chargement" },
+				{
+					title: "Status",
+					render: function (data, type, row) {
+						return row.status == 'OK' ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline"   data-bs-toggle="tooltip" data-bs-placement="top" title="${row.alertsMessages}">KO</span>`;
+					}
+				},
+				{
+					render: function (data, type, row) {
+						return `<div class="btn-wrap"><button title="Voir les logs de Conversion" style="border: none;color: #069;background: none;" onclick="suivi.db2.logs.openModal('${row.table}', 'load')" class="openModalButton"><i class="fa-regular fa-file-code"></i></button></div>`;
+					}
+				}
+			],
+			rowCallback: function (row, data, index) {
+				if (data['status'] === 'KO') {
+					$(row).addClass('table-danger');
+				}
+			},
+			buttons: [
+				{ extend: 'excelHtml5', className: 'btn btn-secondary btn-sm' },
+				{ extend: 'csvHtml5', className: 'btn btn-secondary btn-sm' },
+				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
+			],
+		});
+
+
+		if (window.EventSource != null) {
+			const eventSource = new EventSource('/flux/reactor/changements');
+			eventSource.onmessage = function (event) {
+				loadTable.ajax.reload();
+			};
+		}
 
 	</script>
 
