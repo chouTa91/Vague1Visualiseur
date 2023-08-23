@@ -1,33 +1,40 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<nav th:span th:fragment="sidebar (active)" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-
-	<div class="position-sticky pt-3" style="top: 75px;">
-		<ul class="nav flex-column">
-		
-			<li class="mb-1" th:each="tir : ${tirList.tirs}">
-				<button class="btn btn-toggle align-items-center rounded fs-2"
-					data-bs-toggle="collapse" th:data-bs-target="${'#tir' + tir.id}"
-					aria-expanded="true" th:text="${'Tir ' + tir.id}"></button>
-				<div class="collapse show" th:id="${'tir'  + tir.id}">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li th:if="${active == 'detailDL1'}">
-							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-								<li><a th:href="${'#tir' + tir.id + '-dl1-controle-fichier-heading'}" class="ms-5" ><button data-bs-toggle="collapse" class="btn btn-sm fw-light">Contrôle des fichiers</button></a></li>
-								<li><a href="#fragment-dl1-volumetrie-oracle" class="ms-5" ><button data-bs-toggle="collapse" class="btn btn-sm fw-light">Volumétrie</button></a></li>
-							</ul>
-						</li>
-						<li th:if="${active == 'detailDB2'}">
-							<ul class="list-unstyled fw-normal pb-1 small">
-								<li><a th:href="${'#tir' + tir.id + '-db2-controle-fichier-heading'}" class="link-dark rounded prevent-default ms-5" ><button data-bs-toggle="collapse" class="btn btn-sm fw-light">Contrôle des fichiers</button></a></li>
-								<li><a th:href="${'#tir' + tir.id + '-db2-qualification-heading'}" class="link-dark rounded prevent-default ms-5" ><button data-bs-toggle="collapse" class="btn btn-sm fw-light">Qualification</button></a></li>
-								<li><a th:href="${'#tir' + tir.id + '-db2-conversion-heading'}" class="link-dark rounded prevent-default ms-5" ><button data-bs-toggle="collapse" class="btn btn-sm fw-light">Conversion</button></a></li>
-								<li><a th:href="${'#tir' + tir.id + '-db2-chargement-heading'}" class="link-dark rounded prevent-default ms-5" ><button data-bs-toggle="collapse" class="btn btn-sm fw-light">Chargement</button></a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+<nav th:span th:fragment="sidebar (active)">
+	<div class="t__navigation">
+		<ul>
+			<li>
+				<a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-gauge"></i>
+                        </span>
+					<span class="title">Suivi Migration</span>
+				</a>
+			</li>
+			<li th:classappend="${active == 'synthese' ? 'hovered' : ''}">
+				<a th:href="@{/}" >
+              <span class="icon">
+                  <i class="fa-solid fa-house"></i>
+              </span>
+					<span class="title">Synthèse</span>
+				</a>
+			</li>
+			<li th:classappend="${active == 'detailDL1' ? 'hovered' : ''}">
+				<a th:href="@{/detailDL1}" class="">
+              <span class="icon">
+                  <i class="fa-solid fa-database"></i>
+              </span>
+					<span class="title">DL1</span>
+				</a>
+			</li>
+			<li th:classappend="${active == 'detailDB2' ? 'hovered' : ''}">
+				<a th:href="@{/detailDB2}" class="">
+              <span class="icon">
+                  <i class="fa-solid fa-table"></i>
+              </span>
+					<span class="title">DB2</span>
+				</a>
 			</li>
 		</ul>
 	</div>

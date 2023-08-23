@@ -4,29 +4,18 @@
 <head th:replace="~{/fragments/layout/head :: head}"></head>
 <body>
 
-	<header th:replace="~{/fragments/layout/header :: header('detailDL1')}"></header>
-
-	<div class="container-fluid" id="content-container">
-		<div class="row">
-
-			<nav th:replace="~{/fragments/layout/sidebar :: sidebar('detailDL1')}"></nav>
-
-			<main class="col-md-9 ms-sm-auto col-lg-10 pt-4" style="margin-top: 50px" th:each="tir :${tirList.tirs}">
-
-				<div th:replace="~{/fragments/tables/errors :: errors(${tirList})}"></div>
-
-				<div>
-					<div th:replace="~{/fragments/layout/body-dl1 :: body-dl1(${tir})}"></div>
-				</div>
-			</main>
-		</div>
+<div class="t__container">
+	<nav th:replace="~{/fragments/layout/sidebar :: sidebar('detailDL1')}"></nav>
+	<div class="main">
+		<header th:replace="~{/fragments/layout/header :: header('detailDL1')}"></header>
+		<main  th:each="tir :${tirList.tirs}">
+			<div th:replace="~{/fragments/tables/errors :: errors(${tirList})}"></div>
+			<div>
+				<div th:replace="~{/fragments/layout/body-dl1 :: body-dl1(${tir})}"></div>
+			</div>
+		</main>
 	</div>
-
-	<footer th:replace="~{/fragments/layout/footer :: footer}"></footer>
-
+</div>
 </body>
 
-	<script type="text/javascript" th:inline="javascript">
-		// Initialisation du JS du fragment.
-	</script>
 </html>

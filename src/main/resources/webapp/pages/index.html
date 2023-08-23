@@ -4,215 +4,127 @@
 <head th:replace="~{/fragments/layout/head :: head}">
 </head>
 
-<style>
-  h1 {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .progression-bar-container {
-    max-width: 100%;
-    margin: 10px auto;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-  }
-
-  .progression-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f2f2f2;
-    height: 40px;
-    border-radius: 20px;
-    padding: 5px;
-  }
-
-  .progression-bar__stepProgression {
-    position: relative;
-    flex: 1;
-    height: 100%;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .progression-bar__stepProgression.completed {
-    background-color: #b9f6ca;
-  }
-
-  .progression-bar__stepProgression.current {
-    background-color: #D8C8FA;
-  }
-
-  .progression-bar__stepProgression.current .stepProgression-icon {
-    background-color: #9c27b0;
-  }
-
-  .progression-bar__stepProgression span {
-    text-align: center;
-    width: 100px;
-    font-size: 12px;
-    white-space: nowrap;
-    color: #777;
-  }
-
-  .stepProgression-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 24px;
-    width: 24px;
-    font-size: 16px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #9e9e9e;
-  }
-
-  .stepProgression-icon.completed {
-    background-color: #4caf50;
-  }
-
-  .progression-bar__arrow {
-    position: relative;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #9e9e9e;
-  }
-
-  .progression-bar__stepProgression:last-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  @media (max-width: 600px) {
-    .progression-bar-container {
-      padding: 10px;
-    }
-
-    .progression-bar {
-      height: 30px;
-    }
-
-    .progression-bar__stepProgression span {
-      font-size: 10px;
-    }
-
-    .stepProgression-icon {
-      height: 16px;
-      width: 16px;
-      font-size: 12px;
-    }
-  }
-</style>
-
 <body>
+<div class="t__container">
+  <nav th:replace="~{/fragments/layout/sidebar :: sidebar('synthese')}"></nav>
+  <!-- ========================= Main ==================== -->
+  <div class="main">
+    <header th:replace="~{/fragments/layout/header :: header('detailDL1')}"></header>
+    <!-- ======================= Cards ================== -->
+    <div class="cardBox">
 
-  <header th:replace="~{/fragments/layout/header :: header('synthese')}"></header>
-
-
-
-  <div class="container-md" id="content-container">
-
-    <div class="progression-bar-container" style="margin-top: 70px">
-      <h1>Frise de progression en cours de developpement ...</h1>
-      <div class="progression-bar">
-        <div class="progression-bar__stepProgression">
-          <div class="stepProgression-icon completed">&#10003;</div>
-          <span>Étape 1 - Terminée</span>
+      <div class="t__card">
+        <div>
+          <div class="numbers">84</div>
+          <div class="cardName">Cadre cible</div>
         </div>
-        <div class="progression-bar__stepProgression current">
-          <div class="stepProgression-icon">&#9675;</div>
-          <span>Étape 2 - En cours</span>
+
+        <div class="iconBx">
+          <i class="fa-solid fa-hashtag"></i>
         </div>
-        <div class="progression-bar__stepProgression">
-          <div class="stepProgression-icon">&#9675;</div>
-          <span>Étape 3 - À venir</span>
+      </div>
+
+      <div class="t__card">
+        <div>
+          <div class="numbers">80</div>
+          <div class="cardName">DL1</div>
         </div>
-        <div class="progression-bar__arrow"></div>
+
+        <div class="iconBx">
+          <i class="fa-solid fa-hashtag"></i>
+        </div>
+      </div>
+
+      <div class="t__card">
+        <div>
+          <div class="numbers">284</div>
+          <div class="cardName">DB2</div>
+        </div>
+
+        <div class="iconBx">
+          <i class="fa-solid fa-hashtag"></i>
+        </div>
+      </div>
+
+      <div class="t__card">
+        <div>
+          <div class="numbers"> 42</div>
+          <div class="cardName">Autres</div>
+        </div>
+
+        <div class="iconBx">
+          <i class="fa-solid fa-hashtag"></i>
+        </div>
       </div>
     </div>
-    <div class="row">
-
-      <main class="pt-4">
-
-        <h4>DR du cadre cible</h4>
-
-        <!-- Tableau des DR du cadre cible -->
-        <table th:id="${'tir' + tirSynthesis.id + '-synthese-table'}" class="table table-striped table-bordered" style="width: 100%">
+    <div class="details">
+      <div class="wrap__table">
+        <div class="cardHeader">
+          <h2>DR du cadre cible</h2>
+        </div>
+        <table th:id="${'tir' + tirSynthesis.id + '-synthese-table'}" class="table table-striped" style="width: 100%">
           <thead>
-            <tr>
-              <th scope="col">Direction</th>
-              <th scope="col">Libellé</th>
-              <th scope="col">Statut</th>
-            </tr>
+          <tr>
+            <th scope="col">Direction</th>
+            <th scope="col">Libellé</th>
+            <th scope="col">Statut</th>
+          </tr>
           </thead>
           <tbody>
-            <tr th:each="drSynthesis :${tirSynthesis.directionSynthesis}"
+          <tr th:each="drSynthesis :${tirSynthesis.directionSynthesis}"
               th:classappend="${drSynthesis.status.name() == 'KO' ? 'table-danger' : ''}"
               th:if="${drSynthesis.direction.code == 'DR32' || drSynthesis.direction.code == 'DR65'}">
-              <td th:text=${drSynthesis.direction.code}></td>
-              <td th:text=${drSynthesis.direction.libelle}></td>
-              <td th:text=${drSynthesis.status}></td>
-            </tr>
+            <td th:text=${drSynthesis.direction.code}></td>
+            <td th:text=${drSynthesis.direction.libelle}></td>
+            <td th:text=${drSynthesis.status}></td>
+          </tr>
           </tbody>
         </table>
-
-
-        <h4>DR autre cadre</h4>
-        <!-- Tableau des DR à venir -->
-        <table th:id="${'tir' + tirSynthesis.id + '-synthese-table-avenir'}" class="table table-striped table-bordered"
-          style="width: 100%">
+      </div>
+      <div class="wrap__table">
+        <div class="cardHeader">
+          <h2>DR autre cadre</h2>
+        </div>
+        <table th:id="${'tir' + tirSynthesis.id + '-synthese-table-avenir'}" class="table table-striped"
+               style="width: 100%">
           <thead>
-            <tr>
-              <th scope="col">Direction</th>
-              <th scope="col">Libellé</th>
-            </tr>
+          <tr>
+            <th scope="col">Direction</th>
+            <th scope="col">Libellé</th>
+          </tr>
           </thead>
           <tbody>
-            <tr th:each="drSynthesis :${tirSynthesis.directionSynthesis}"
+          <tr th:each="drSynthesis :${tirSynthesis.directionSynthesis}"
               th:unless="${drSynthesis.direction.code == 'DR32' || drSynthesis.direction.code == 'DR65'}">
-              <td th:text=${drSynthesis.direction.code}></td>
-              <td th:text=${drSynthesis.direction.libelle}></td>
-            </tr>
+            <td th:text=${drSynthesis.direction.code}></td>
+            <td th:text=${drSynthesis.direction.libelle}></td>
+          </tr>
           </tbody>
         </table>
 
-      </main>
+      </div>
     </div>
   </div>
+</div>
+<script>
+  suivi.datatable.initDataTable("#tir" + [[${ tirSynthesis.id }]] + '-synthese-table');
+  suivi.datatable.initDataTable("#tir" + [[${ tirSynthesis.id }]] + '-synthese-table-avenir');
+  // Remplacez 0, 1 et 2 par les étapes réelles pour mettre a jours l'icone
+  const currentstepProgression = 1;
+  const stepProgressions = document.getElementsByClassName('progression-bar__stepProgression');
 
-  <script type="text/javascript" th:inline="javascript">
-    // Initialisation du JS du fragment.
+  for (let i = 0; i < stepProgressions.length; i++) {
+    const stepProgressionIcon = stepProgressions[i].querySelector('.stepProgression-icon');
 
-    suivi.datatable.initDataTable("#tir" + [[${ tirSynthesis.id }]] + '-synthese-table');
-    suivi.datatable.initDataTable("#tir" + [[${ tirSynthesis.id }]] + '-synthese-table-avenir');
-
-
-    // Remplacez 0, 1 et 2 par les étapes réelles pour mettre a jours l'icone
-    const currentstepProgression = 1;
-    const stepProgressions = document.getElementsByClassName('progression-bar__stepProgression');
-
-    for (let i = 0; i < stepProgressions.length; i++) {
-      const stepProgressionIcon = stepProgressions[i].querySelector('.stepProgression-icon');
-
-      if (i < currentstepProgression) {
-        stepProgressions[i].classList.add('completed');
-        stepProgressionIcon.innerHTML = '&#10003;';
-      } else if (i === currentstepProgression) {
-        stepProgressions[i].classList.add('current');
-        stepProgressionIcon.innerHTML = '&#9679;';
-      }
+    if (i < currentstepProgression) {
+      stepProgressions[i].classList.add('completed');
+      stepProgressionIcon.innerHTML = '&#10003;';
+    } else if (i === currentstepProgression) {
+      stepProgressions[i].classList.add('current');
+      stepProgressionIcon.innerHTML = '&#9679;';
     }
-
-  </script>
-
-  <footer th:replace="~{/fragments/layout/footer :: footer}"></footer>
+  }
+</script>
 
 </body>
 
