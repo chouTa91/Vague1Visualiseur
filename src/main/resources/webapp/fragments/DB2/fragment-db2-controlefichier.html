@@ -1,25 +1,25 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<div th:fragment="fragment-db2-controlefichier (db2ControleFiles)" id="fragment-db2-controlefichier">
+<div th:fragment="fragment-db2-controlefichier" id="fragment-db2-controlefichier">
 
 	<div class="text-primary">
 		<span>Dernier rafraichissement des données : </span>
-		<span th:text="${db2ControleFiles.refreshDate}"></span>
+		<span class="refreshDate"></span>
 	</div>
 
 	<div>
-		<span th:classappend="${db2ControleFiles.count != 368 ? 'suivi-migration-error' : 'suivi-migration-succes'}">
+		<span id="blockInfo">
 			<span>Total des fichiers trouvés pour DB2 :</span>
 			<span class="fw-bold count"></span>
 			<span class="fw-bold"> / </span>
 			<span class="fw-bold total"></span>
 		</span>
-	</div>z
+	</div>
 
 	<br />
 
-<!--	<table id="tir1-db2-controle-fichier-table" class="table table-striped" style="width:100%">
+<!--	<table id="tir1-db2-controle-fichier-table" class="table table-striped table-bordered" style="width:100%">
 		<thead>
 			<tr>
 				<th scope="col">Nombre de fichiers</th>
@@ -38,7 +38,7 @@
 		</tbody>
 	</table>-->
 
-	<table id="controlTable" class="table table-striped" >
+	<table id="controlTable" class="table table-striped table-bordered" >
 
 	</table>
 
@@ -76,24 +76,28 @@
 			],
 		});
 
-		function fillControlInfo(){
+		function updateControlInfo(){
 			$.ajax({
 				url: 'ajax/datable/db2ControlInfo',
 				success: function(data) {
 					$('.count').html(data.count);
 					$('.total').html(data.total);
+					$('.refreshDate').html(data.refreshDate);
+					if(data.count === data.total)
+						$('#blockInfo').removeClass('suivi-migration-error').addClass('suivi-migration-succes');
+					else
+						$('#blockInfo').removeClass('suivi-migration-succes').addClass('suivi-migration-error');
 				}
-				/* manque l'effet erreur */
 			});
 		}
 
-		fillControlInfo()
+		updateControlInfo();
 
 		if (window.EventSource != null) {
 			const eventSource = new EventSource('/flux/reactor/changements');
 			eventSource.onmessage = function (event) {
 				controlTable.ajax.reload();
-				fillControlInfo()
+				updateControlInfo()
 			};
 		}
 	</script>

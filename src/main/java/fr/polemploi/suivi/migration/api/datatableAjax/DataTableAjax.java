@@ -155,6 +155,7 @@ public class DataTableAjax {
         DB2TablesFiles db2TablesFiles = this.logsCounter.getDB2MissingFilesFromDirectory();
         d.put("count", db2TablesFiles.getCount().toString());
         d.put("total", db2TablesFiles.getTotal().toString());
+        d.put("refreshDate", db2TablesFiles.getRefreshDate());
         return new ResponseEntity<>(d, HttpStatus.OK);
     }
 
