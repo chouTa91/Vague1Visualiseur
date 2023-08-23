@@ -12,9 +12,7 @@
 		<span
 			th:classappend="${dl1ControleLogsContainer.hasMissingFile ? 'suivi-migration-error' : 'suivi-migration-succes'}">
 			<span>Total des fichiers de logs trouvés pour DL1 :</span>
-			<span class="fw-bold" th:text="${dl1ControleLogsContainer.total}"></span>
-			<span class="fw-bold"> / </span>
-			<span class="fw-bold" th:text="${dl1ControleLogsContainer.dl1Files.size * 62}"></span>
+			<span class="fw-bold" id="dl1LogsNombre"></span>
 		</span>
 	</div>
 

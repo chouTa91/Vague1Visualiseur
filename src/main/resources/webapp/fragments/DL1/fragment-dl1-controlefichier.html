@@ -5,25 +5,18 @@
 
 <span th:fragment="fragment-dl1-controlefichier (dl1ControleFilesContainer)" id="fragment-dl1-controlefichier">
 
-
-
 	<div class="text-primary">
 		<span>Dernier rafraichissement des données : </span>
 		<span th:text="${dl1ControleFilesContainer.refreshDate}"></span>
 	</div>
-
 	<div>
-
 		<span
 			th:classappend="${dl1ControleFilesContainer.hasMissingFile ? 'suivi-migration-error' : 'suivi-migration-succes'}">
 			<span>Total des fichiers trouvés pour DL1 :</span>
-			<span class="fw-bold" th:text="${dl1ControleFilesContainer.total}"></span>
-			<span class="fw-bold"> / </span>
-			<span class="fw-bold" th:text="${dl1ControleFilesContainer.dl1Files.size * 438}"></span>
+			<span class="fw-bold" id="dl1FilesNombre"></span>
 		</span>
 	</div>
 
-	<br />
 
 	<!-- <table id="tir1-dl1-controle-fichier-table" class="table table-striped" style="width:100%">
 		<thead>
@@ -52,8 +45,8 @@
 			</tr>
 		</tbody>
 	</table> -->
-
-	<table id="dl1FilesID" class="table table-striped" style="width:100%">
+	<br/>
+	<table id="dl1FilesID" class="table table-striped " style="width:100%;margin-top: 10px;">
 		<thead>
 			<tr>
 				<th scope="col">Direction</th>
@@ -69,7 +62,7 @@
 		//suivi.dl1.subscriber.initSubscribe();
 
 		suivi.datatable.initDataTable("#tir1-dl1-controle-fichier-table");
-
+		getDl1InfosFiles();
 		const table = $('#dl1FilesID').DataTable({
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/dl1Files",
@@ -90,9 +83,23 @@
 			eventSource.onmessage = function (event) {
 				if (!event)
 					eventSource.close();
-				else
+				else{
+					getDl1InfosFiles();
 					table.ajax.reload();
+				}
 			};
+		}
+		function getDl1InfosFiles(){
+			$.ajax({
+				url: 'ajax/datable/dl1ControlInfo',
+				success: function(data) {
+					const renderFiles = `${data.filesCount} / ${data.filesTotal}`;
+					const renderLogs = `${data.logCount} / ${data.logTotal}`;
+					$('#dl1FilesNombre').html(renderFiles);
+					// pour faire un seul call ajax on va changé le contenu du fragment-dl1-controlelogs.html
+					$('#dl1LogsNombre').html(renderLogs);
+				}
+			});
 		}
 	</script>
 </span>

@@ -18,6 +18,8 @@ public class DL1DirectionRegionaleTablesFiles extends Alert {
 
 	private Integer count;
 
+	private Integer total;
+
 	private List<String> missingFiles;
 
 	private boolean hasMissingFile = false;
@@ -71,6 +73,14 @@ public class DL1DirectionRegionaleTablesFiles extends Alert {
 
 	public void setHasMissingFileChefDeFile(boolean hasMissingFileChefDeFile) {
 		this.hasMissingFileChefDeFile = hasMissingFileChefDeFile;
+	}
+
+	public void setTotal(Integer total) {
+		this.total = total;
+	}
+
+	public Integer getTotal() {
+		return total;
 	}
 
 	@Override

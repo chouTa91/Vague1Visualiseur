@@ -32,23 +32,21 @@ public class LogsCounterImpl implements LogsCounter {
 	public DL1DirectionRegionaleTablesFilesContainer getDL1MissingFilesFromDirectory() {
 
 		DL1DirectionRegionaleTablesFilesContainer dl1DirectionRegionaleFilesList = new DL1DirectionRegionaleTablesFilesContainer();
-
+		int count = 0;
+		int total = 0;
 		// On va vérifier pour chaque DR que leurs fichiers de données de DL1 sont
 		// présents, s'il ne le sont pas, on veut le savoir !
-
-		for (DirectionRegionaleEnum directionRegionale : DirectionRegionaleEnum
-				.getDRByCible(this.appContext.getCible())) {
-
+		for (DirectionRegionaleEnum directionRegionale : DirectionRegionaleEnum.getDRByCible(this.appContext.getCible())) {
 			// On ne traite pas la DR00 ici.
 			if (!directionRegionale.equals(DirectionRegionaleEnum.DR00)) {
-
-				DL1DirectionRegionaleTablesFiles dl1DirectionRegionaleFiles = this
-						.getDL1MissingFilesForDirection(directionRegionale);
-
+				DL1DirectionRegionaleTablesFiles dl1DirectionRegionaleFiles = this.getDL1MissingFilesForDirection(directionRegionale);
+				count+= dl1DirectionRegionaleFiles.getCount();
+				total+= dl1DirectionRegionaleFiles.getTotal();
 				dl1DirectionRegionaleFilesList.addDl1Files(dl1DirectionRegionaleFiles);
 			}
 		}
-
+		dl1DirectionRegionaleFilesList.total = total;
+		dl1DirectionRegionaleFilesList.count = count;
 		return dl1DirectionRegionaleFilesList;
 	}
 
@@ -83,6 +81,7 @@ public class LogsCounterImpl implements LogsCounter {
 		}
 
 		dl1DirectionRegionaleFiles.setCount(count);
+		dl1DirectionRegionaleFiles.setTotal(DL1TableEnum.values().length);
 		return dl1DirectionRegionaleFiles;
 
 	}
@@ -130,7 +129,8 @@ public class LogsCounterImpl implements LogsCounter {
 
 		// On va vérifier pour chaque DR que leurs fichiers de données de DL1 sont
 		// présents, s'il ne le sont pas, on veut le savoir !
-
+		int count_g = 0;
+		int total = 0;
 		for (DirectionRegionaleEnum directionRegionale : DirectionRegionaleEnum
 				.getDRByCible(this.appContext.getCible())) {
 
@@ -167,12 +167,14 @@ public class LogsCounterImpl implements LogsCounter {
 					}
 
 				}
-
+				count_g +=  count;
+				total += DL1LogEnum.values().length;
 				dl1DirectionRegionaleFiles.setCount(count);
 				dl1DirectionRegionaleFilesList.addDl1Files(dl1DirectionRegionaleFiles);
 			}
 		}
-
+		dl1DirectionRegionaleFilesList.setCount(count_g);
+		dl1DirectionRegionaleFilesList.setTotal(total);
 		return dl1DirectionRegionaleFilesList;
 	}
 

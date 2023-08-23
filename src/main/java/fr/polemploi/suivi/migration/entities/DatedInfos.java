@@ -13,9 +13,9 @@ public class DatedInfos {
 
 	private final String refreshDate;
 
-	private Integer count;
+	public Integer count;
 
-	private Integer total;
+	public Integer total;
 
 	public Integer getCount() {
 		return this.count;

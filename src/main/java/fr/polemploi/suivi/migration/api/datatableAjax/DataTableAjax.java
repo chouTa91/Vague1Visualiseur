@@ -2,10 +2,12 @@ package fr.polemploi.suivi.migration.api.datatableAjax;
 
 import fr.polemploi.suivi.migration.api.counter.LogsCounter;
 import fr.polemploi.suivi.migration.api.path.PathDispenser;
+import fr.polemploi.suivi.migration.entities.DatedInfos;
 import fr.polemploi.suivi.migration.entities.alert.Alert;
 import fr.polemploi.suivi.migration.entities.alert.Tuple;
 import fr.polemploi.suivi.migration.entities.db2.DB2TablesFiles;
 import fr.polemploi.suivi.migration.entities.dl1.DL1DirectionRegionaleTablesFiles;
+import fr.polemploi.suivi.migration.entities.dl1.DL1DirectionRegionaleTablesFilesContainer;
 import fr.polemploi.suivi.migration.entities.dl1.Dl1Volumes;
 import fr.polemploi.suivi.migration.entities.message.logs.DB2ConvertMessage;
 import fr.polemploi.suivi.migration.entities.message.logs.DB2LoadMessage;
@@ -134,6 +136,19 @@ public class DataTableAjax {
         return d;
     }
 
+    @GetMapping(value = "/dl1ControlInfo",produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Map<String, String>> getDl1ControlInfo() {
+        Map<String, String> d = new HashMap<>();
+        DatedInfos infosFiles = this.logsCounter.getDL1MissingFilesFromDirectory();
+        DatedInfos infosLogs = this.logsCounter.getDL1MissingLogsFromDirectory();
+        System.out.println(infosLogs.total);
+        System.out.println(infosLogs.count);
+        d.put("filesCount", infosFiles.count.toString());
+        d.put("filesTotal", infosFiles.total.toString());
+        d.put("logCount", infosLogs.getCount().toString());
+        d.put("logTotal", String.valueOf(infosLogs.total));
+        return new ResponseEntity<>(d, HttpStatus.OK);
+    }
     @GetMapping(value = "/db2ControlInfo",produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, String>> getDb2ControlInfo() {
         Map<String, String> d = new HashMap<>();
