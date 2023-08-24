@@ -38,7 +38,7 @@
 		</tbody>
 	</table>-->
 
-	<table id="controlTable" class="table table-striped table-bordered" >
+	<table id="controlTable" class="table table-striped table-bordered" style="width: 100%;" >
 
 	</table>
 
@@ -51,6 +51,7 @@
 		const controlTable = $('#controlTable').DataTable({
 			dom: "B",
 			"ajax": "/ajax/datable/db2ControlTable",
+			"language": suivi.datatable.i18nMessages(),
 			columns: [
 				{ data: "count", title: "Nombre de fichiers"},
 				{

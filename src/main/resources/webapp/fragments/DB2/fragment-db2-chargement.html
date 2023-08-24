@@ -26,21 +26,18 @@
 	</table>-->
 
 
-	<table th:id="loadTable" class="table table-striped table-bordered">
-	</table>
-
-	<table>
-
+	<table th:id="loadTable" class="table table-striped table-bordered" style="width: 100%;">
 	</table>
 
 	<script type="text/javascript" th:inline="javascript">
 		// Initialisation du JS du fragment.
 
-		suivi.datatable.initDataTable("#tir" + [[${ tirId }]] + '-' + [[${ typeTraitement }]] + '-table');
+		/*suivi.datatable.initDataTable("#tir" + [[${ tirId }]] + '-' + [[${ typeTraitement }]] + '-table');*/
 
 		const loadTable = $('#loadTable').DataTable({
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/db2LoadTable",
+			"language": suivi.datatable.i18nMessages(),
 			columns: [
 				{ data: "table", title: "Table"},
 				{ data: "nbPreTraitement", title: "Nombre pré-traitement" },

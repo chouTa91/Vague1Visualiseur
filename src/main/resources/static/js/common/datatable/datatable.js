@@ -3,6 +3,20 @@ suivi.datatable = suivi.datatable || {};
 suivi.storeId = suivi.storeId || [];
 
 
+suivi.datatable.i18nMessages = function() {
+	return {
+		"lengthMenu": "Afficher _MENU_ lignes par page",
+		"search": "Recherche:",
+		"zeroRecords": "Aucune correspondance",
+		"emptyTable": "Aucune donnée dans ce tableau",
+		"info": "Visualisation de la page _PAGE_ sur _PAGES_",
+		"paginate": {
+			"next": "Suivant",
+			"previous": "Précédent"
+		}
+	}
+}
+
 /**
  * Destory un tableau DataTable.
  * 
@@ -39,7 +53,7 @@ suivi.datatable.initDataTable = function (tableId) {
 			"info": "Visualisation de la page _PAGE_ sur _PAGES_",
 			"paginate": {
 				"next": "Suivant",
-				"previous": "Précédant"
+				"previous": "Précédent"
 			}
 		}, buttons: [
 			{ extend: 'excelHtml5', className: 'btn btn-secondary btn-sm' },

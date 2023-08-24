@@ -156,7 +156,7 @@ body {
 
 .toggle {
 	position: relative;
-	width: 60px;
+	width: 15%;
 	height: 60px;
 	display: flex;
 	justify-content: center;
@@ -165,13 +165,16 @@ body {
 	cursor: pointer;
 }
 
-
+.toggle i {
+	left: 0;
+	position: absolute;
+}
 
 
 
 .environement {
 	position: relative;
-	width: 30%;
+	width: 20%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -286,7 +289,7 @@ h1 {
 }
 
 .progression-bar-container {
-	width: 50%;
+	width: 65%;
 }
 .progression-bar {
 	display: flex;
@@ -427,6 +430,10 @@ h1 {
 	.cardBox {
 		grid-template-columns: repeat(2, 1fr);
 	}
+}
+
+.detailsOneLine {
+	grid-template-columns: 1fr;
 }
 
 @media (max-width: 768px) {

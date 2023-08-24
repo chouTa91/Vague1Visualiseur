@@ -31,18 +31,14 @@ public class DB2Controller {
 	@GetMapping("/controle")
 	public ModelAndView controleFichier() {
 
-		ModelAndView mv = new ModelAndView("/fragments/DB2/fragment-db2-controlefichier");
-
-		mv.addObject("db2ControleFiles", this.dataCompiler.getDb2ControleFiles());
-
-		return mv;
+        return new ModelAndView("/fragments/DB2/fragment-db2-controlefichier");
 
 	}
 
 	@GetMapping("/log/conversion/{tableName}")
 	public ModelAndView getConversionLogs(@PathVariable String tableName) {
 
-		ModelAndView mv = new ModelAndView("/fragments/DB2/fragment-db2-log");
+		ModelAndView mv = new ModelAndView("/fragments/DB2/fragment-db2-log-modal");
 		mv.addObject("logFile", this.filesRetriever.getDB2ConversionLogFile(tableName));
 		return mv;
 	}
@@ -50,7 +46,7 @@ public class DB2Controller {
 	@GetMapping("/log/load/{tableName}")
 	public ModelAndView getLoadLogs(@PathVariable String tableName) {
 
-		ModelAndView mv = new ModelAndView("/fragments/DB2/fragment-db2-log");
+		ModelAndView mv = new ModelAndView("/fragments/DB2/fragment-db2-log-modal");
 		mv.addObject("logFile", this.filesRetriever.getDB2LoadLogFile(tableName));
 		return mv;
 	}

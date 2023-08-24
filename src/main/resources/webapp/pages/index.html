@@ -96,8 +96,8 @@
           <tbody>
           <tr th:each="drSynthesis :${tirSynthesis.directionSynthesis}"
               th:unless="${drSynthesis.direction.code == 'DR32' || drSynthesis.direction.code == 'DR65'}">
-            <td th:text=${drSynthesis.direction.code}></td>
-            <td th:text=${drSynthesis.direction.libelle}></td>
+            <td th:text="${drSynthesis.direction.code}"></td>
+            <td th:text="${drSynthesis.direction.libelle}"></td>
           </tr>
           </tbody>
         </table>
