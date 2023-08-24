@@ -3,20 +3,26 @@
 
 <div th:fragment="errors (tirList)" id="errors" class="cardBox cardError"
 	 th:if="${!tir.errors.isEmpty}"
-	 th:with="tir=${tirList.lastTir}"
+	 th:with="tir=${tirList.lastTir}">
 	<!-- Affiche seulement les erreurs du dernier tir. -->
-	<div class="t__card" th:each="error : ${tir.errors}">
-		<div>
-			<div class="cardName">
-				<a th:text="${error.message}"
-				   th:href="${'#tir' + tir.id + '-' + error.code + '-heading'}"></a>
-			</div>
-		</div>
-		<div class="iconBx">
-			<i class="fa-solid fa-circle-exclamation"></i>
-		</div>
-	</div>
+	<div th:each="error : ${tir.errors}">
+		<a th:href="${'#tir' + tir.id + '-' + error.code + '-heading'}">
 
+			<div class="t__card">
+				<div>
+					<div class="cardName">
+				<span th:text="${error.message}">
+
+				</span>
+					</div>
+				</div>
+				<div class="iconBx">
+					<i class="fa-solid fa-circle-exclamation"></i>
+				</div>
+			</div>
+
+		</a>
+	</div>
 </div>
 
 </html>

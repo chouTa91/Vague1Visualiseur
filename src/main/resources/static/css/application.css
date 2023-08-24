@@ -191,7 +191,7 @@ body {
 	background: #f8d7da !important;
 	align-items: center;
 }
-.cardError .t__card .cardName a{
+.cardError .t__card .cardName span{
 	text-decoration: none;
 	position: relative;
 	font-weight: 500;
@@ -208,6 +208,10 @@ body {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 30px;
+}
+
+.cardBox div a {
+	text-decoration: none;
 }
 
 .cardBox .t__card {
