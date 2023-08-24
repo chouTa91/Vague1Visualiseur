@@ -4,21 +4,21 @@
 <head th:replace="~{/fragments/layout/head :: head}"></head>
 <body>
 
-<div class="t__container">
-	<nav th:replace="~{/fragments/layout/sidebar :: sidebar('detailDB2')}"></nav>
-	<div class="main">
-		<header th:replace="~{/fragments/layout/header :: header('detailDB2')}"></header>
-		<div th:each="tir :${tirList.tirs}" class="detailsOneLine">
-			<div class="wrap__table">
-				<div th:replace="~{/fragments/tables/errors :: errors(${tirList})}"></div>
+	<div class="t__container">
+		<nav th:replace="~{/fragments/layout/sidebar :: sidebar('detailDB2')}"></nav>
+		<div class="main">
+			<header th:replace="~{/fragments/layout/header :: header('detailDB2')}"></header>
+			<div th:each="tir :${tirList.tirs}" class="detailsOneLine">
+				<div class="wrap__table">
+					<div th:replace="~{/fragments/tables/errors :: errors(${tirList})}"></div>
 
-				<div>
-					<div th:replace="~{/fragments/layout/body-db2 :: body-db2(${tir})}"></div>
+					<div>
+						<div th:replace="~{/fragments/layout/body-db2 :: body-db2(${tir})}"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 </body>
 </html>

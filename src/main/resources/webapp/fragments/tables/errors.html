@@ -1,15 +1,19 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<div th:fragment="errors (tirList)" id="errors" class="container-md">
-
+<div th:fragment="errors (tirList)" id="errors" class="cardBox cardError"
+	 th:if="${!tir.errors.isEmpty}"
+	 th:with="tir=${tirList.lastTir}"
 	<!-- Affiche seulement les erreurs du dernier tir. -->
-	<div class="alert alert-danger" role="alert"
-		th:if="${!tir.errors.isEmpty}"
-		th:with="tir=${tirList.lastTir}">
-		<div th:each="error : ${tir.errors}">
-			<a th:text="${error.message}"
-				th:href="${'#tir' + tir.id + '-' + error.code + '-heading'}"></a>
+	<div class="t__card" th:each="error : ${tir.errors}">
+		<div>
+			<div class="cardName">
+				<a th:text="${error.message}"
+				   th:href="${'#tir' + tir.id + '-' + error.code + '-heading'}"></a>
+			</div>
+		</div>
+		<div class="iconBx">
+			<i class="fa-solid fa-circle-exclamation"></i>
 		</div>
 	</div>
 

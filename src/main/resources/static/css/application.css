@@ -184,6 +184,23 @@ body {
 	color: var(--blue);
 }
 /* ======================= Cards ====================== */
+.cardError{
+	grid-template-columns: repeat(2, 1fr) !important;
+}
+.cardError .t__card{
+	background: #f8d7da !important;
+	align-items: center;
+}
+.cardError .t__card .cardName a{
+	text-decoration: none;
+	position: relative;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: var(--blue);
+}
+.cardError .t__card .iconBx {
+	color: var(--blue)  !important;
+}
 .cardBox {
 	position: relative;
 	width: 100%;
@@ -196,7 +213,7 @@ body {
 .cardBox .t__card {
 	position: relative;
 	background: var(--white);
-	padding: 30px;
+	padding: 20px;
 	border-radius: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -537,4 +554,15 @@ h1 {
 
 #tir1-dl1-volumetrie-oracle > tbody tr {
 	vertical-align: baseline;
+}
+
+.t__main{
+
+}
+.t__tir{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }

@@ -1,25 +1,25 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head th:replace="~{/fragments/layout/head :: head}"></head>
 <body>
 
-<div class="t__container">
-	<nav th:replace="~{/fragments/layout/sidebar :: sidebar('detailDL1')}"></nav>
-	<div class="main">
-		<header th:replace="~{/fragments/layout/header :: header('detailDL1')}"></header>
-		<div th:each="tir :${tirList.tirs}" class="detailsOneLine">
-			<div class="wrap__table">
-				<div th:replace="~{/fragments/tables/errors :: errors(${tirList})}">
+	<div class="t__container">
+		<nav th:replace="~{/fragments/layout/sidebar :: sidebar('detailDL1')}"></nav>
+		<div class="main">
+			<header th:replace="~{/fragments/layout/header :: header('detailDL1')}"></header>
+			<div th:each="tir :${tirList.tirs}" class="detailsOneLine">
+				<div class="wrap__table">
+					<div th:replace="~{/fragments/tables/errors :: errors(${tirList})}">
 
-				</div>
-				<div>
-					<div th:replace="~{/fragments/layout/body-dl1 :: body-dl1(${tir})}"></div>
+					</div>
+					<div>
+						<div th:replace="~{/fragments/layout/body-dl1 :: body-dl1(${tir})}"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
 </body>
 
 </html>

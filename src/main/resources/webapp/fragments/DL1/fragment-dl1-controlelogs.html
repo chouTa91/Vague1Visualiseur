@@ -37,6 +37,7 @@
 		const tableLogs = $('#tir1-dl1-controle-fichier-logs-table').DataTable({
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/controlelogs",
+			"language": suivi.datatable.i18nMessages(),
 			columns: [
 				{ data: "code" },
 				{ data: "count" },

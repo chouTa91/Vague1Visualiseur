@@ -66,6 +66,7 @@
 		const table = $('#dl1FilesID').DataTable({
 			dom: "Bfrltip",
 			"ajax": "/ajax/datable/dl1Files",
+			"language": suivi.datatable.i18nMessages(),
 			columns: [
 				{ data: "code" },
 				{ data: "count" },
