@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<th:span th:fragment="fragment-dl1-volumetrie (dl1TablesDetailsContainer)" id="fragment-dl1-volumetrie">
+<div th:fragment="fragment-dl1-volumetrie (dl1TablesDetailsContainer)" id="fragment-dl1-volumetrie">
 
 
 
@@ -39,6 +39,7 @@
 					</tr>
 				</tbody>
 			</table>
+
 		</div>
 	</th:block>
 
@@ -49,12 +50,12 @@
 				if(tabId.indexOf(this.dataset.tableid) > -1) return true;
 				tabId.push(this.dataset.tableid);
 				setTimeout(()=>{
-					tab = suivi.datatable.initDataTable("#"+this.dataset.tableid);
+					suivi.datatable.initDataTable("#"+this.dataset.tableid);
 				},230)
 				event.stopPropagation();
 			});
 
 	</script>
-</th:span>
+</div>
 
 </html>

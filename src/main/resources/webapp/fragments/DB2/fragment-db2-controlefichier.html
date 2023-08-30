@@ -19,88 +19,12 @@
 
 	<br />
 
-<!--	<table id="tir1-db2-controle-fichier-table" class="table table-striped table-bordered" style="width:100%">
-		<thead>
-			<tr>
-				<th scope="col">Nombre de fichiers</th>
-				<th scope="col">Fichiers manquants</th>
-			</tr>
-		</thead>
-		<tbody id="controle-fichier-tbody">
-			<tr th:classappend="${!db2ControleFiles.missingFiles.isEmpty ? 'table-danger' : ''}">
-				<td th:text="${db2ControleFiles.count}"></td>
-				<td>
-					<div th:each="fichierManquant : ${db2ControleFiles.missingFiles}">
-						<span class="" th:text="${fichierManquant}"></span>
-					</div>
-				</td>
-			</tr>
-		</tbody>
-	</table>-->
-
 	<table id="controlTable" class="table table-striped table-bordered" style="width: 100%;" >
-
 	</table>
 
 	<script type="text/javascript" th:inline="javascript">
-		// Initialisation du JS du fragment.
-		//suivi.db2.subscriber.initSubscribe();
-
-		suivi.datatable.initDataTableSingleRow("#tir1-db2-controle-fichier-table");
-
-		const controlTable = $('#controlTable').DataTable({
-			dom: "B",
-			"ajax": "/ajax/datable/db2ControlTable",
-			"language": suivi.datatable.i18nMessages(),
-			columns: [
-				{ data: "count", title: "Nombre de fichiers"},
-				{
-					data: "missingFiles", title: "Fichiers manquants",
-					render: function (data, type, row) {
-						let result = "";
-						$.each(row.missingFiles, function( index, value ) {
-							result += `<div>${value}</div>`;
-						});
-						return result;
-					}
-				}
-			],
-			rowCallback: function (row, data, index) {
-				if (!$.isEmptyObject(data['missingFiles'])) {
-					$(row).addClass('table-danger');
-				}
-			},
-			buttons: [
-				{ extend: 'excelHtml5', className: 'btn btn-secondary btn-sm' },
-				{ extend: 'csvHtml5', className: 'btn btn-secondary btn-sm' },
-				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
-			],
-		});
-
-		function updateControlInfo(){
-			$.ajax({
-				url: 'ajax/datable/db2ControlInfo',
-				success: function(data) {
-					$('.count').html(data.count);
-					$('.total').html(data.total);
-					$('.refreshDate').html(data.refreshDate);
-					if(data.count === data.total)
-						$('#blockInfo').removeClass('suivi-migration-error').addClass('suivi-migration-succes');
-					else
-						$('#blockInfo').removeClass('suivi-migration-succes').addClass('suivi-migration-error');
-				}
-			});
-		}
-
-		updateControlInfo();
-
-		if (window.EventSource != null) {
-			const eventSource = new EventSource('/flux/reactor/changements');
-			eventSource.onmessage = function (event) {
-				controlTable.ajax.reload();
-				updateControlInfo()
-			};
-		}
+		suivi.datatable.initControlDb2Table();
+		suivi.updateDb2Infos();
 	</script>
 
 

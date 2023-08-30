@@ -1,29 +1,10 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<th:span th:fragment="fragment-dl1-volumetrie-oracle (dL1TablesVolumeContainer)" id="fragment-dl1-volumetrie-oracle">
-
-	<div class="text-primary">
-		<span>Dernier rafraichissement des données : </span>
-		<span th:text="${dL1TablesVolumeContainer.refreshDate}"></span>
-	</div>
-
-	<table id="tir1-dl1-volumetrie-oracle" class="table table-striped table-bordered" style="width:100%">
-		<thead>
-			<tr>
-				<th scope="col">Table</th>
-				<th scope="col">Nombre d'entrées attendues</th>
-				<th scope="col">Nombre d'entrées Oracle</th>
-				<th scope="col">Écart</th>
-				<th scope="col">Temps de chargement total</th>
-				<th scope="col">Statut</th>
-				<th scope="col" class="no-sort"></th>
-			</tr>
-		</thead>
-	</table>
+<div th:fragment="fragment-dl1-volumetrie-oracle (dL1TablesVolumeContainer)" id="fragment-dl1-volumetrie-oracle">
 
 	<div class="modal fade" id="tir1-dl1-volumetrie-oracle--logs-modals" tabindex="-1"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		 aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -39,76 +20,17 @@
 		</div>
 	</div>
 
+	<div class="text-primary">
+		<span>Dernier rafraichissement des données : </span>
+		<span th:text="${dL1TablesVolumeContainer.refreshDate}"></span>
+	</div>
+
+	<table id="tir1-dl1-volumetrie-oracle" class="table table-striped table-bordered" style="width:100%">
+	</table>
+
 	<script type="text/javascript" th:inline="javascript">
-		// Initialisation du JS du fragment.
-		//suivi.datatable.initDataTable("#tir1-dl1-volumetrie-oracle");
-		const table2 = $('#tir1-dl1-volumetrie-oracle')
-			.on( 'page.dt', function (){
-				setTimeout(()=>{
-					[...document.querySelectorAll('[data-bs-toggle="tooltip"]')].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-				},1000)
-			})
-			.DataTable({
-			"initComplete": function(settings, json) {
-				[...document.querySelectorAll('[data-bs-toggle="tooltip"]')].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-			},
-			dom: "Bfrltip",
-			"ajax": "/ajax/datable/dl1FilesVolumetrieOracle",
-			"language": suivi.datatable.i18nMessages(),
-			columns: [
-				{ "data": "tableName" },
-				{ "data": "volumeLog" },
-				{ "data": "volumeOracle" },
-				{
-					render: function (data, type, row) {
-						return row.volumeLog - row.volumeOracle
-					}
-				},
-				{
-					"data": "totalelapsedTime"
-				},
-				{
-					render: function (data, type, row) {
-						return row.volumeLog == row.volumeOracle ? '<span class="badge bg-success rounded-pill d-inline">OK</span>' : `<span class="badge bg-danger rounded-pill d-inline"   data-bs-toggle="tooltip" data-bs-placement="top" title="${row.alertsMessages}">KO</span>`;
-					}
-				},
-				{
-					render: function (data, type, row) {
-						return `
-						<div class="btn-wrap">
-							<button title="Voir les logs de volume"
-								onclick="suivi.dl1.volumetrie.openModal('${row.tableName}')"
-								data-bs-target="#tir1-dl1-volumetrie-oracle--logs-modals"
-								class="btn">
-								<i class="fa-regular fa-file-lines"></i>
-							</button>
-							<button title="Voir les logs de chargement" class="btn"
-								onclick="suivi.dl1.volumetrie.openModalOracle('${row.tableName}')"
-								data-bs-target="#tir1-dl1-volumetrie-oracle--logs-modals">
-								<i class="fa-regular fa-file-code"></i>
-							</button>
-						</div>
-						`;
-					}
-				},
-			],
-			rowCallback: function (rowDom, data, index) {
-				if (data.volumeLog === data.volumeOracle) return;
-				$(rowDom).addClass('table-danger');
-			},
-			buttons: [
-				{ extend: 'excelHtml5', className: 'btn btn-secondary btn-sm' },
-				{ extend: 'csvHtml5', className: 'btn btn-secondary btn-sm' },
-				{ extend: 'pdfHtml5', className: 'btn btn-secondary btn-sm' },
-			],
-		});
-		if (window.EventSource != null) {
-			const eventSource = new EventSource('/flux/reactor/changements');
-			eventSource.onmessage = function (event) {
-				table2.ajax.reload();
-			};
-		}
+		suivi.datatable.initVolumetrieOracleDl1Table();
 	</script>
-</th:span>
+</div>
 
 </html>

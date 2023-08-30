@@ -2,7 +2,6 @@ var suivi = suivi || {};
 suivi.datatable = suivi.datatable || {};
 suivi.storeId = suivi.storeId || [];
 
-
 suivi.datatable.i18nMessages = function() {
 	return {
 		"lengthMenu": "Afficher _MENU_ lignes par page",
