@@ -8,7 +8,7 @@
 		<span th:text="${dl1ControleFilesContainer.refreshDate}"></span>
 	</div>
 	<div>
-		<span
+		<span class="warningInfo"
 			th:classappend="${dl1ControleFilesContainer.hasMissingFile ? 'suivi-migration-error' : 'suivi-migration-succes'}">
 			<span>Total des fichiers trouvés pour DL1 :</span>
 			<span class="fw-bold" id="dl1FilesNombre"></span>

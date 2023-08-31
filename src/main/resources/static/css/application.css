@@ -251,11 +251,17 @@ body {
 }
 
 
+.warningInfo {
+	padding: 4px;
+}
+
 .suivi-migration-error {
-	background: #fa7272;
+	color: red;
+	background: #f8d7da;
 }
 
 .suivi-migration-succes {
+	color: green;
 	background: #a4ef99;
 }
 
@@ -504,16 +510,6 @@ h1 {
 		right: 0;
 		left: initial;
 	}
-}
-
-
-
-.suivi-migration-error {
-	background: #fa7272;
-}
-
-.suivi-migration-succes {
-	background: #a4ef99;
 }
 
 .hide {
