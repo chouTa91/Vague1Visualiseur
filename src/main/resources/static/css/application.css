@@ -11,7 +11,10 @@
 	--gray: #f5f5f5;
 	--black1: #222;
 	--black2: #999;
+	--error-font-color: #f1416c;
+	--error-background-color: #fff5f8;
 }
+
 body {
 	min-height: 100vh;
 	overflow-x: hidden;
@@ -195,7 +198,7 @@ body {
 	grid-template-columns: repeat(2, 1fr) !important;
 }
 .cardError .t__card{
-	background: #f8d7da !important;
+	background: var(--error-background-color) !important;
 	align-items: center;
 }
 .cardError .t__card .cardName span{
@@ -203,10 +206,10 @@ body {
 	position: relative;
 	font-weight: 500;
 	font-size: 1.5rem;
-	color: var(--blue);
+	color: var(--error-font-color);
 }
 .cardError .t__card .iconBx {
-	color: var(--blue)  !important;
+	color: var(--error-font-color) !important;
 }
 .cardBox {
 	position: relative;
@@ -223,13 +226,16 @@ body {
 
 .cardBox .t__card {
 	position: relative;
-	background: var(--white);
 	padding: 20px;
 	border-radius: 20px;
+	border-color: var(--error-font-color);
+	border-style: solid;
+	border-width: 1px;
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
 	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	line-height: 1;
 }
 
 .cardBox .t__card .numbers {
@@ -246,7 +252,7 @@ body {
 }
 
 .cardBox .t__card .iconBx {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	color: var(--black2);
 }
 
