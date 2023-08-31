@@ -19,6 +19,8 @@ body {
 	min-height: 100vh;
 	overflow-x: hidden;
 }
+
+
 .t__container {
 	position: relative;
 	width: 100%;
@@ -228,7 +230,6 @@ body {
 	position: relative;
 	padding: 20px;
 	border-radius: 20px;
-	border-color: var(--error-font-color);
 	border-style: solid;
 	border-width: 1px;
 	display: flex;
@@ -236,6 +237,10 @@ body {
 	cursor: pointer;
 	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 	line-height: 1;
+}
+
+.cardBox.cardError .t__card {
+	border-color: var(--error-font-color);
 }
 
 .cardBox .t__card .numbers {
@@ -327,9 +332,8 @@ body {
 	vertical-align: baseline;
 }
 
-
-h1 {
-	font-size: 24px;
+h1.tirTitle {
+	font-size: 40px;
 	text-align: center;
 }
 

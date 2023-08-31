@@ -9,7 +9,7 @@
 	<!-- Fenêtres modales. -->
 	<div th:replace="~{/fragments/DL1/fragment-dl1-volumetrie-logs :: fragment-dl1-volumetrie-logs}"></div>
 
-	<h1 th:text="${'Tir ' + tir.id + ' - DL1'}"></h1>
+	<h1 class="tirTitle" th:text="${'Tir ' + tir.id + ' - DL1'}"></h1>
 
 	<h4 id="tir1-dl1-controle-fichier-heading">Contrôle des fichiers</h4>
 	<div th:replace="~{/fragments/DL1/fragment-dl1-controlefichier :: fragment-dl1-controlefichier(${tir.dl1ControleFilesContainer})}">Contrôle des fichiers</div>
