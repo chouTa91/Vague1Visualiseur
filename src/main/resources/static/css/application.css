@@ -256,9 +256,14 @@ body {
 	color: var(--black2);
 }
 
-
 .warningInfo {
 	padding: 4px;
+}
+
+.t__card:hover {
+	transform: scale(1.05);
+	transition: transform 0.3s ease;
+	will-change: transform;
 }
 
 .suivi-migration-error {
