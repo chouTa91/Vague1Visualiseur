@@ -207,7 +207,7 @@ body {
 	text-decoration: none;
 	position: relative;
 	font-weight: 500;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	color: var(--error-font-color);
 }
 .cardError .t__card .iconBx {
@@ -257,7 +257,7 @@ body {
 }
 
 .cardBox .t__card .iconBx {
-	font-size: 3rem;
+	font-size: 2.3rem;
 	color: var(--black2);
 }
 
