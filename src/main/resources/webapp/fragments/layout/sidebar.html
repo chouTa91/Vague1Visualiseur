@@ -1,41 +1,41 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-
-<nav th:span th:fragment="sidebar (active)">
-	<div class="t__navigation">
-		<ul>
-			<li class="first-li">
-				<a href="#">
-                        <span class="icon">
-                            <i class="fa-solid fa-gauge"></i>
-                        </span>
-					<span class="title">Suivi Migration</span>
-				</a>
-			</li>
-			<li th:classappend="${active == 'synthese' ? 'hovered' : ''}">
-				<a th:href="@{/}" >
-              <span class="icon">
-                  <i class="fa-solid fa-house"></i>
-              </span>
-					<span class="title">Synthèse</span>
-				</a>
-			</li>
-			<li th:classappend="${active == 'detailDL1' ? 'hovered' : ''}">
-				<a th:href="@{/detailDL1}" class="">
-              <span class="icon">
-                  <i class="fa-solid fa-database"></i>
-              </span>
-					<span class="title">DL1</span>
-				</a>
-			</li>
-			<li th:classappend="${active == 'detailDB2' ? 'hovered' : ''}">
-				<a th:href="@{/detailDB2}" class="">
-              <span class="icon">
-                  <i class="fa-solid fa-table"></i>
-              </span>
-					<span class="title">DB2</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</nav>
+	<nav th:span th:fragment="sidebar (active)">
+		<div class="t__navigation">
+			<ul>
+				<li class="first-li">
+					<a href="#">
+						<span class="icon">
+							<i class="fa-solid fa-gauge"></i>
+						</span>
+						<span class="title">Suivi Migration</span>
+					</a>
+				</li>
+				<li th:classappend="${active == 'synthese' ? 'hovered' : ''}">
+					<a th:href="@{/}" class="redirectLink">
+						<span class="icon">
+							<i class="fa-solid fa-house"></i>
+						</span>
+						<span class="title">Synthèse</span>
+					</a>
+				</li>
+				<li th:classappend="${active == 'detailDL1' ? 'hovered' : ''}">
+					<a th:href="@{/detailDL1}" class="redirectLink">
+				  		<span class="icon">
+					  		<i class="fa-solid fa-database"></i>
+				  		</span>
+						<span class="title">DL1</span>
+					</a>
+				</li>
+				<li th:classappend="${active == 'detailDB2' ? 'hovered' : ''}">
+					<a th:href="@{/detailDB2}" class="redirectLink">
+				  		<span class="icon">
+					  		<i class="fa-solid fa-table"></i>
+				  		</span>
+						<span class="title">DB2</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</html>

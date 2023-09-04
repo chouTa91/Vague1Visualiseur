@@ -1,4 +1,6 @@
 
+suivi.eventSource =  suivi.eventSource || [];
+
 suivi.updateDl1Infos = function () {
     $.ajax({
         url: 'ajax/datable/dl1ControlInfo',
@@ -42,5 +44,9 @@ suivi.datatable.allDataChangeListener = function () {
             suivi.datatable.controlFilesDl1Table.ajax.reload();
             suivi.updateDl1Infos();
         };
+        if(suivi.eventSource === undefined  || suivi.eventSource.length === 0){
+            suivi.eventSource = [];
+        }
+        suivi.eventSource.push(eventSource);
     }
 }

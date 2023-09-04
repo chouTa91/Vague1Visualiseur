@@ -3,6 +3,7 @@
 
 <header th:fragment="header (active)" id="header2" class="topbar sticky-top">
     <script th:src="@{/js/common/subscriberEnabler.js}"></script>
+    <script th:src="@{/js/common/header.js}"></script>
     <div class="toggle">
         <i class="fa-solid fa-bars"></i>
     </div>
@@ -28,14 +29,6 @@
         <span class="text-end" th:if="${cible} == 'Prod'">Prod</span><br>
         <span class="text-end" th:text="${versionOutil}" style="padding-left: 8px;"></span>
     </div>
-    <script>
-        $(".toggle").click(function(){
-            const navigation  = document.querySelector(".t__navigation");
-            const main  = document.querySelector(".main");
-            navigation.classList.toggle("t__active");
-            main.classList.toggle("t__active");
-        })
-    </script>
 </header>
 
 </html>
